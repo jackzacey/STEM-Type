@@ -13,9 +13,16 @@ export default function CoursePage({ params }: Props) {
   const [selected, setSelected] = useState(units[0] || '');
 
   return (
-    <main className="min-h-screen bg-gif flex flex-col items-center justify-center">
-      <h1 className="text-6xl my-8">{course} — Select a Unit</h1>
-      <UnitSelector units={units} selected={selected} setSelected={(u) => { setSelected(u); router.push(`/unit/${course}/${u}`); }} />
+    <main className="min-h-screen relative flex flex-col items-center justify-center text-white">
+      {/* Full-screen NASA GIF background */}
+      <div className="bg-gif"></div>
+
+      <h1 className="text-6xl my-8 z-10 relative">{course} — Select a Unit</h1>
+      <UnitSelector
+        units={units}
+        selected={selected}
+        setSelected={(u) => { setSelected(u); router.push(`/unit/${course}/${u}`); }}
+      />
     </main>
   );
 }
