@@ -1,6 +1,6 @@
 'use client';
-import { allTerms } from 'data/terms';
-import UnitSelector from 'components/UnitSelector';
+import { allTerms } from '../../data/terms';
+import UnitSelector from '../../components/UnitSelector';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
