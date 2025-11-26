@@ -1,6 +1,6 @@
 'use client';
-import { allTerms } from '../../../../data/terms';
-import TypingEngine from '../../../../components/TypingEngine';
+import { allTerms } from '../../../../../data/terms';
+import TypingEngine from '../../../../../components/TypingEngine';
 
 interface Props { params: { course: string; unit: string } }
 
