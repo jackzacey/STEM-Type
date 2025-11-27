@@ -7,7 +7,7 @@ export default function TypingEngine({ terms }: { terms: Term[] }) {
 
   if (!term) return (
     <div className="flex min-h-screen items-center justify-center text-white text-6xl">
-      ALL DONE 🎉
+      ALL DONE
     </div>
   );
 
