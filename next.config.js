@@ -1,14 +1,11 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        '@': __dirname,
-        'components': __dirname + '/components',
-        'data': __dirname + '/data',
-      };
-    }
+  webpack(config) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': __dirname,
+    };
     return config;
   },
 };
