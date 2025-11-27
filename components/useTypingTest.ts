@@ -10,12 +10,11 @@ export function useTypingTest(terms: Term[]) {
   const [extra, setExtra] = useState('');
   const [startTime, setStartTime] = useState<number | null>(null);
   const [elapsed, setElapsed] = useState(0);
-
   const intervalRef = useRef<NodeJS.Timer | null>(null);
+
   const current = terms[termIndex];
   const chars = current?.definition.split('') || [];
 
-  // Reset when term changes
   useEffect(() => {
     setCursor(0);
     setStates(chars.map(() => 'untyped'));
@@ -24,7 +23,6 @@ export function useTypingTest(terms: Term[]) {
     setElapsed(0);
   }, [termIndex, current]);
 
-  // Timer updates
   useEffect(() => {
     if (startTime === null) return;
     intervalRef.current = setInterval(() => {
@@ -33,13 +31,11 @@ export function useTypingTest(terms: Term[]) {
     return () => intervalRef.current && clearInterval(intervalRef.current);
   }, [startTime]);
 
-  // Key handling
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       e.preventDefault();
       if (!current) return;
 
-      // Start timer immediately
       if (!startTime) {
         setStartTime(Date.now());
         setElapsed(0);
@@ -82,9 +78,8 @@ export function useTypingTest(terms: Term[]) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [cursor, states, extra, current, startTime]);
+  }, [cursor, states, extra, current, startTime, chars.length]);
 
-  // Stats
   const isPerfect = cursor === chars.length && states.every(s => s === 'correct') && extra === '';
   const correctChars = states.filter(s => s === 'correct').length;
   const totalCharsTyped = cursor + extra.length;
