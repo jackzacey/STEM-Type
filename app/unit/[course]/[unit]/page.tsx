@@ -1,10 +1,10 @@
-
 'use client';
-import { allTerms } from 'data/terms';
-import TypingEngine from 'components/TypingEngine';
+import { allTerms } from '../../../data/terms';
+import TypingEngine from '../../../components/TypingEngine';
 
-
-interface Props { params: { course: string; unit: string } }
+interface Props { 
+  params: { course: string; unit: string } 
+}
 
 export default function UnitPage({ params }: Props) {
   const { course, unit } = params;
