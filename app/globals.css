@@ -52,13 +52,14 @@ button[class*="bg-cyan"] {
 }
 
 /* Cursor – thick & soft blink */
+/* Perfect thin cursor that matches huge text */
 .cursor::after {
   content: '';
   position: absolute;
-  left: 0;
-  top: 8%;
-  height: 85%;
-  width: 8px;
+  left: -2px;
+  top: 10%;
+  height: 80%;
+  width: 4px !important;     /* thin and beautiful */
   background: white;
   animation: blink 1s step-end infinite;
 }
