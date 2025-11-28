@@ -52,6 +52,16 @@ button:active {
 .correct   { color: #4ade80; }
 .incorrect { color: #f87171; background: rgba(248,113,113,0.25); }
 
+.untyped   { color: #666; }
+.correct   { color: #a0f0a0; }
+.incorrect { color: #f55; background: rgba(255, 85, 85, 0.2); }
+
+/* MonkeyType-style blinking cursor */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 @keyframes blink {
   50% { border-color: transparent; }
 }
