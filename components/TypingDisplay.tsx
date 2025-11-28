@@ -22,37 +22,23 @@ export default function TypingDisplay({
   elapsed,
 }: Props) {
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center pt-24 px-8">
-      {/* HUGE, SOFT MONKEYTYPE TEXT */}
-      <div className="typing-line text-8xl sm:text-9xl md:text-[10rem] lg:text-[12rem] xl:text-[15rem] 2xl:text-[16rem] font-medium leading-tight tracking-widest break-words text-center">
-        {chars.map((char, i) => {
-          const isCursor = i === cursor;
-          return (
-            <span key={i} className={`relative ${states[i]} ${isCursor ? 'cursor' : ''}`}>
-              {char === ' ' ? '\u00A0' : char}
-            </span>
-          );
+    <div className="flex flex-col items-center min-h-screen bg-black pt-32 px-8">
+      {/* YOUR OLD WINNING MASSIVE FONT + VERTICAL WRAP */}
+      <div className="typing-line text-8xl my-8">
+        {chars.map((char, idx) => {
+          const isCursor = idx === cursor;
+          return <span key={idx} className={`char ${states[idx]} ${isCursor ? 'cursor' : ''}`}>{char}</span>;
         })}
-        {extra.split('').map((char, i) => (
-          <span key={`extra-${i}`} className="relative incorrect">
-            {char}
-          </span>
+        {extra.split('').map((char, idx) => (
+          <span key={idx} className="char incorrect cursor">{char}</span>
         ))}
       </div>
-
-      {/* Stats */}
-      <div className="mt-20 text-4xl text-gray-400 space-x-16 font-light">
-        <span>WPM: <span className="text-white font-bold">{wpm}</span></span>
-        <span>Accuracy: <span className="text-white font-bold">{accuracy}%</span></span>
-        <span>Time: <span className="text-white font-bold">{elapsed}s</span></span>
+      <div className="mt-4 text-white text-2xl flex gap-8">
+        <div>WPM: {wpm}</div>
+        <div>Accuracy: {accuracy}%</div>
+        <div>Time: {elapsed}s</div>
       </div>
-
-      {/* PERFECT – normal size */}
-      {isPerfect && (
-        <div className="mt-24 text-9xl lg:text-[12rem] font-black text-green-400 animate-pulse tracking-widest">
-          PERFECT
-        </div>
-      )}
+      {isPerfect && <div className="mt-4 text-3xl text-green-400">PERFECT ✅</div>}
     </div>
   );
 }
