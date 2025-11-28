@@ -27,10 +27,19 @@ export function useTypingTest(terms: Term[]) {
   // Timer updates
   useEffect(() => {
     if (startTime === null) return;
-    intervalRef.current = setInterval(() => {
+
+    const intervalId = setInterval(() => {
       setElapsed(Math.floor((Date.now() - startTime) / 1000));
     }, 1000);
-    return () => intervalRef.current && clearInterval(intervalRef.current);
+
+    intervalRef.current = intervalId;
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
   }, [startTime]);
 
   // Key handling
@@ -82,7 +91,7 @@ export function useTypingTest(terms: Term[]) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [cursor, states, extra, current, startTime, chars]);
+  }, [cursor, states, extra, current, startTime, chars.length]);
 
   // Stats
   const isPerfect = cursor === chars.length && states.every(s => s === 'correct') && extra === '';
