@@ -21,37 +21,37 @@ export default function TypingDisplay({
   elapsed,
 }: Props) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-8">
-      {/* Your original big font + wraps downward beautifully */}
-      <div className="text-5xl md:text-6xl lg:text-7xl font-medium leading-snug tracking-wider max-w-5xl text-center whitespace-pre-wrap break-words">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6">
+      {/* MONKEYTYPE EXACT STYLE */}
+      <div className="font-mono text-6xl md:text-7xl lg:text-8xl leading-tight tracking-wider text-left max-w-5xl break-words whitespace-pre-wrap">
         {chars.map((char, i) => {
           const isCursor = i === cursor;
           return (
             <span
               key={i}
-              className={`${states[i]} ${isCursor ? 'cursor' : ''}`}
+              className={`relative ${states[i]} ${isCursor ? 'after:absolute after:left-0 after:top-0 after:h-full after:w-1 after:bg-white after:animate-pulse' : ''}`}
             >
               {char === ' ' ? '\u00A0' : char}
             </span>
           );
         })}
         {extra.split('').map((char, i) => (
-          <span key={`extra-${i}`} className="incorrect">
+          <span key={`extra-${i}`} className="incorrect relative">
             {char}
           </span>
         ))}
       </div>
 
-      {/* Stats — centered */}
-      <div className="mt-16 text-3xl text-gray-300 space-x-12">
-        <span>WPM: <span className="text-cyan-400 font-bold">{wpm}</span></span>
-        <span>Accuracy: <span className="text-cyan-400 font-bold">{accuracy}%</span></span>
-        <span>Time: <span className="text-cyan-400 font-bold">{elapsed}s</span></span>
+      {/* Stats — MonkeyType style */}
+      <div className="mt-12 flex gap-16 text-3xl font-medium text-gray-400">
+        <div>wpm <span className="text-white font-bold">{wpm}</span></div>
+        <div>acc <span className="text-white font-bold">{accuracy}%</span></div>
+        <div>time <span className="text-white font-bold">{elapsed}s</span></div>
       </div>
 
       {isPerfect && (
-        <div className="mt-12 text-6xl font-bold text-green-400 animate-pulse">
-          PERFECT
+        <div className="mt-10 text-6xl font-bold text-green-400 animate-bounce">
+          perfect
         </div>
       )}
     </div>
