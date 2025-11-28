@@ -14,7 +14,6 @@ html, body {
 
 /* Home page & course selector stay perfectly centered */
 main {
-  {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
