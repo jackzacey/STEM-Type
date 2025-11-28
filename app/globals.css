@@ -41,13 +41,16 @@ button:active {
   display: inline-block; 
   transition: color 0.1s;
 }
-.char.untyped { color: #888; }
-.char.correct { color: #4ade80; }
-.char.incorrect { color: #f87171; background: rgba(248, 113, 113, 0.2); }
-.char.cursor {
-  border-left: 2px solid white;
-  animation: blink 1s step-start infinite;
+.cursor {
+  border-left: 4px solid white;
+  animation: blink 1s step-end infinite;
 }
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.untyped   { color: #888; }
+.correct   { color: #4ade80; }
+.incorrect { color: #f87171; background: rgba(248,113,113,0.25); }
 
 @keyframes blink {
   50% { border-color: transparent; }
