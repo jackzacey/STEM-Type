@@ -11,9 +11,12 @@ body, html {
 
 /* Full-screen GIF background */
 .bg-gif {
-  background: url('/BHW_Disk_and_Corona.gif') center center / cover no-repeat fixed;
-  min-height: 100vh;
-  position: relative;
+  @apply min-h-screen;
+  background-image: url('/BHW_Disk_and_Corona.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Make sure content is above the GIF */
