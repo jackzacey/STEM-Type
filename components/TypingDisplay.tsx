@@ -14,7 +14,7 @@ export default function TypingDisplay({
   term, chars, states, cursor, extra, isPerfect, wpm, accuracy, elapsed,
 }: Props) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-8">
+    <div className="flex flex-col items-center justify-start min-h-screen px-8 pt-32">
       {/* MASSIVE + wraps + breaks long words */}
       <div className="typing-line text-9xl md:text-10xl lg:text-[11rem] font-medium leading-tight tracking-wider">
         {chars.map((char, i) => {
