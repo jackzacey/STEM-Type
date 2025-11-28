@@ -51,17 +51,21 @@ button[class*="bg-cyan"] {
   display: inline-block;
 }
 
-/* Cursor – thick & soft blink */
-/* Perfect thin cursor that matches huge text */
+/* Perfect thin cursor — no more giant block */
+.cursor {
+  position: relative;
+}
+
 .cursor::after {
   content: '';
   position: absolute;
-  left: -2px;
-  top: 10%;
-  height: 80%;
-  width: 4px !important;     /* thin and beautiful */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.25rem;           /* thin and beautiful */
   background: white;
   animation: blink 1s step-end infinite;
+  margin-left: 0.15rem;     /* tiny offset so it doesn't touch the letter */
 }
 
 @keyframes blink {
