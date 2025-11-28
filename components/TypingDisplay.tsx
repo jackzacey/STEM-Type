@@ -1,6 +1,5 @@
 // components/TypingDisplay.tsx
 interface Props {
-  term: string;
   chars: string[];
   states: ('untyped' | 'correct' | 'incorrect')[];
   cursor: number;
@@ -22,42 +21,38 @@ export default function TypingDisplay({
   elapsed,
 }: Props) {
   return (
-    <div className="flex flex-col items-center max-w-4xl mx-auto px-8">
-      <div className="typing-line text-5xl leading-relaxed tracking-wider my-20">
-        {chars.map((char, idx) => {
-          const isCursor = idx === cursor;
+    <div className="flex flex-col items-center max-w-5xl mx-auto px-4">
+      {/* The typing area — wraps instead of scrolling horizontally */}
+      <div className="text-4xl md:text-5xl lg:text-6xl leading-snug tracking-tight text-left whitespace-pre-wrap break-words font-medium my-20">
+        {chars.map((char, i) => {
+          const isCursor = i === cursor;
           return (
             <span
-              key={idx}
-              className={`char relative inline-block ${
-                states[idx]
-              } ${isCursor ? 'cursor' : ''}`}
+              key={i}
+              className={`relative inline-block ${
+                states[i]
+              } ${isCursor ? 'after:content-["|"] after:animate-ping after:absolute after:text-white' : ''}`}
             >
               {char === ' ' ? '\u00A0' : char}
             </span>
           );
         })}
-        {/* Extra typed characters (red) */}
-        {extra.split('').map((char, idx) => (
-          <span key={`extra-${idx}`} className="char incorrect relative inline-block">
+        {extra.split('').map((char, i) => (
+          <span key={`extra-${i}`} className="incorrect relative inline-block">
             {char}
           </span>
         ))}
-        {/* Blinking cursor at end when finished */}
-        {cursor >= chars.length && extra === '' && (
-          <span className="char cursor inline-block w-1">\u00A0</span>
-        )}
       </div>
 
       {/* Stats */}
-      <div className="mt-8 text-white text-2xl flex gap-12 font-light">
-        <div>WPM: <span className="font-bold text-cyan-400">{wpm}</span></div>
-        <div>Acc: <span className="font-bold text-cyan-400">{accuracy}%</span></div>
-        <div>Time: <span className="font-bold text-cyan-400">{elapsed}s</span></div>
+      <div className="flex gap-12 text-2xl font-light text-gray-300">
+        <div>WPM: <span className="text-cyan-400 font-bold">{wpm}</span></div>
+        <div>Acc: <span className="text-cyan-400 font-bold">{accuracy}%</span></div>
+        <div>Time: <span className="text-cyan-400 font-bold">{elapsed}s</span></div>
       </div>
 
       {isPerfect && (
-        <div className="mt-12 text-5xl font-bold text-green-400 animate-pulse">
+        <div className="mt-12 text-6xl font-bold text-green-400 animate-pulse">
           PERFECT
         </div>
       )}
