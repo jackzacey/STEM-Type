@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Term } from '@data/terms';
+import { Term } from '@/data/terms';
 
 type CharState = 'untyped' | 'correct' | 'incorrect';
 
