@@ -1,3 +1,4 @@
+// components/TypingDisplay.tsx
 interface Props {
   term: string;
   chars: string[];
@@ -22,37 +23,35 @@ export default function TypingDisplay({
   elapsed,
 }: Props) {
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen px-8 pt-32">
-      {/* MASSIVE, SOFT, MONKEYTYPE-STYLE TEXT */}
-      <div className="typing-line text-8xl md:text-9xl lg:text-10xl font-medium leading-snug tracking-wider text-center break-words">
-        {chars.map((char, idx) => {
-          const isCursor = idx === cursor;
+    <div className="min-h-screen bg-black px-8 pt-20 pb-32 flex flex-col items-center">
+      {/* TOP MIDDLE + EXACT MONKEYTYPE FONT & SIZE YOU LOVED */}
+      <div className="typing-line text-8xl md:text-9xl lg:text-[11rem] font-medium leading-tight tracking-widest text-center break-words max-w-6xl">
+        {chars.map((char, i) => {
+          const isCursor = i === cursor;
           return (
             <span
-              key={idx}
-              className={`char relative inline-block ${states[idx]} ${isCursor ? 'cursor' : ''}`}
+              key={i}
+              className={`char ${states[i]} ${isCursor ? 'cursor' : ''}`}
             >
               {char === ' ' ? '\u00A0' : char}
             </span>
           );
         })}
-        {extra.split('').map((char, idx) => (
-          <span key={`extra-${idx}`} className="char incorrect relative inline-block">
+        {extra.split('').map((char, i) => (
+          <span key={`extra-${i}`} className="char incorrect">
             {char}
           </span>
         ))}
       </div>
 
-      {/* Clean centered stats */}
-      <div className="mt-16 text-4xl text-gray-400 space-x-16 font-light">
+      <div className="mt-20 text-4xl text-gray-400 space-x-16 font-light">
         <span>WPM: <span className="text-white font-bold">{wpm}</span></span>
         <span>Accuracy: <span className="text-white font-bold">{accuracy}%</span></span>
         <span>Time: <span className="text-white font-bold">{elapsed}s</span></span>
       </div>
 
-      {/* PERFECT message */}
       {isPerfect && (
-        <div className="mt-20 text-9xl font-black text-green-400 animate-pulse tracking-widest">
+        <div className="mt-24 text-9xl font-black text-green-400 animate-pulse tracking-widest">
           PERFECT
         </div>
       )}
