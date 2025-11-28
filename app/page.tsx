@@ -1,3 +1,4 @@
+// app/page.tsx  ← replace everything with this
 'use client';
 import { allTerms, Course } from '@/data/terms';
 import CourseSelector from '@/components/CourseSelector';
@@ -14,15 +15,17 @@ export default function Home() {
   const [selected, setSelected] = useState<Course>(courses[0]);
 
   return (
-    <main className="min-h-screen bg-gif flex flex-col items-center justify-center">
-      <h1 className="text-6xl my-8">Select a Course</h1>
-      <CourseSelector 
-        courses={courses} 
-        selected={selected} 
-        setSelected={(c: Course) => { 
-          setSelected(c); 
-          router.push(`/course/${c}`); 
-        }} 
+    <main className="min-h-screen bg-gif flex flex-col items-center justify-center px-8">
+      <h1 className="text-7xl md:text-8xl font-bold mb-20 tracking-tight">
+        Select a Course
+      </h1>
+      <CourseSelector
+        courses={courses}
+        selected={selected}
+        setSelected={(c: Course) => {
+          setSelected(c);
+          router.push(`/course/${c}`);
+        }}
       />
     </main>
   );
