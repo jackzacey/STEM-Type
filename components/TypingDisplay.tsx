@@ -1,5 +1,6 @@
 // components/TypingDisplay.tsx
 interface Props {
+  term?: string;          // ← added back
   chars: string[];
   states: ('untyped' | 'correct' | 'incorrect')[];
   cursor: number;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export default function TypingDisplay({
+  term,                   // ← now accepted
   chars,
   states,
   cursor,
@@ -22,16 +24,16 @@ export default function TypingDisplay({
 }: Props) {
   return (
     <div className="flex flex-col items-center max-w-5xl mx-auto px-4">
-      {/* The typing area — wraps instead of scrolling horizontally */}
+      {/* Typing area — wraps perfectly */}
       <div className="text-4xl md:text-5xl lg:text-6xl leading-snug tracking-tight text-left whitespace-pre-wrap break-words font-medium my-20">
         {chars.map((char, i) => {
           const isCursor = i === cursor;
           return (
             <span
               key={i}
-              className={`relative inline-block ${
-                states[i]
-              } ${isCursor ? 'after:content-["|"] after:animate-ping after:absolute after:text-white' : ''}`}
+              className={`relative inline-block ${states[i]} ${
+                isCursor ? 'after:content-["|"] after:animate-ping after:absolute after:text-white after:-ml-1' : ''
+              }`}
             >
               {char === ' ' ? '\u00A0' : char}
             </span>
