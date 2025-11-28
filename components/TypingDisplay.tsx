@@ -1,3 +1,4 @@
+// components/TypingDisplay.tsx
 interface Props {
   term: string;
   chars: string[];
@@ -22,9 +23,9 @@ export default function TypingDisplay({
   elapsed,
 }: Props) {
   return (
-    <div className="flex flex-col items-center max-w-4xl mx-auto px-8">
-      {/* YOUR ORIGINAL CODE — JUST MADE 3× BIGGER */}
-      <div className="typing-line text-8xl md:text-9xl font-medium leading-snug tracking-wider my-32">
+    <div className="flex flex-col items-center justify-center min-h-screen px-8">
+      {/* MASSIVE, SOFT, MONKEYTYPE-STYLE TEXT */}
+      <div className="typing-line text-8xl md:text-9xl lg:text-10xl font-medium leading-snug tracking-wider text-center">
         {chars.map((char, idx) => {
           const isCursor = idx === cursor;
           return (
@@ -43,15 +44,16 @@ export default function TypingDisplay({
         ))}
       </div>
 
-      {/* Your original stats — just centered */}
-      <div className="mt-8 text-white text-3xl flex gap-16 font-light">
-        <div>WPM: <span className="font-bold text-cyan-400">{wpm}</span></div>
-        <div>Accuracy: <span className="font-bold text-cyan-400">{accuracy}%</span></div>
-        <div>Time: <span className="font-bold text-cyan-400">{elapsed}s</span></div>
+      {/* Clean centered stats */}
+      <div className="mt-16 text-4xl text-gray-400 space-x-16 font-light">
+        <span>WPM: <span className="text-white font-bold">{wpm}</span></span>
+        <span>Accuracy: <span className="text-white font-bold">{accuracy}%</span></span>
+        <span>Time: <span className="text-white font-bold">{elapsed}s</span></span>
       </div>
 
+      {/* PERFECT message */}
       {isPerfect && (
-        <div className="mt-16 text-8xl font-bold text-green-400 animate-pulse">
+        <div className="mt-20 text-9xl font-black text-green-400 animate-pulse tracking-widest">
           PERFECT
         </div>
       )}
