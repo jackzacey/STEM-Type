@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base */
 html, body {
   height: 100%;
   margin: 0;
@@ -11,7 +12,9 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Home page & course selector stay perfectly centered */
 main {
+  {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,7 +22,7 @@ main {
   justify-content: center;
 }
 
-/* Buttons – your original glow */
+/* Buttons – your glow */
 button {
   cursor: pointer !important;
   transition: all 0.3s ease;
@@ -30,31 +33,42 @@ button:hover {
   box-shadow: 0 15px 40px rgba(34, 211, 238, 0.5);
 }
 
-/* Typing text – massive + wraps perfectly + breaks long words */
+/* Selected button glow */
+button[class*="bg-cyan"] {
+  background: rgba(6, 182, 212, 0.25) !important;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.7);
+}
+
+/* Typing page styles */
 .typing-line {
   white-space: pre-wrap;
-  word-break: break-word;        /* ← fixes "chemical" */
+  word-break: break-word;
   overflow-wrap: break-word;
-  overflow: hidden;
-  line-height: 1.3;
-  text-align: center;
+  line-height: 1.2;
 }
 
-.char { display: inline-block; }
-
-.cursor {
-  position: relative;
+/* Characters */
+.char {
+  display: inline-block;
 }
+
+/* Cursor – thick & soft blink */
 .cursor::after {
   content: '';
   position: absolute;
-  left: 0; top: 5%; height: 90%; width: 6px;
+  left: 0;
+  top: 8%;
+  height: 85%;
+  width: 8px;
   background: white;
   animation: blink 1s step-end infinite;
 }
 
-.untyped   { color: #666; }
-.correct   { color: #94ef94; }
-.incorrect { color: #ff6666; background: rgba(255,102,102,0.18); }
+@keyframes blink {
+  50% { opacity: 0; }
+}
 
-@keyframes blink { 50% { opacity: 0; } }
+/* Colors – soft MonkeyType style */
+.untyped   { color: #666; }
+.correct   { color: #a0f0a0; }
+.incorrect { color: #ff5555; background: rgba(255,85,85,0.2); }
