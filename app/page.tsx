@@ -15,21 +15,18 @@ export default function Home() {
   const [selected, setSelected] = useState<Course>(courses[0]);
 
   return (
-    <main className="min-h-screen bg-black flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-8xl font-black text-white mb-20 tracking-tight">
-          Select a Course
-        </h1>
-
-        <CourseSelector
-          courses={courses}
-          selected={selected}
-          setSelected={(c: Course) => {
-            setSelected(c);
-            router.push(`/course/${c}`);
-          }}
-        />
-      </div>
+    <main className="min-h-screen bg-black flex flex-col items-center justify-center px-8">
+      <h1 className="text-white text-7xl md:text-8xl font-black mb-16 text-center">
+        Select a Course
+      </h1>
+      <CourseSelector
+        courses={courses}
+        selected={selected}
+        setSelected={(c) => {
+          setSelected(c);
+          router.push(`/course/${c}`);
+        }}
+      />
     </main>
   );
 }
