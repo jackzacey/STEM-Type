@@ -1,89 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* ────────────────────── Base ────────────────────── */
-html, body {
-  height: 100%;
-  margin: 0;
-  background: #000;
-  color: white;
-  font-family: 'JetBrains Mono', monospace;
-  overflow-x: hidden;
+// components/TypingDisplay.tsx
+interface Props {
+  term: string;
+  chars: string[];
+  states: ('untyped' | 'correct' | 'incorrect')[];
+  cursor: number;
+  extra: string;
+  isPerfect: boolean;
+  wpm: number;
+  accuracy: number;
+  elapsed: number;
 }
 
-main {
-  min-height: 100vh;
-  position: relative;
-  z-index: 10;
-}
+export default function TypingDisplay({
+  term,
+  chars,
+  states,
+  cursor,
+  extra,
+  isPerfect,
+  wpm,
+  accuracy,
+  elapsed,
+}: Props) {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen px-8">
+      {/* MASSIVE, SOFT, MONKEYTYPE-STYLE TEXT */}
+      <div className="typing-line text-8xl md:text-9xl lg:text-10xl font-medium leading-snug tracking-wider text-center break-words">
+        {chars.map((char, idx) => {
+          const isCursor = idx === cursor;
+          return (
+            <span
+              key={idx}
+              className={`char relative inline-block ${states[idx]} ${isCursor ? 'cursor' : ''}`}
+            >
+              {char === ' ' ? '\u00A0' : char}
+            </span>
+          );
+        })}
+        {extra.split('').map((char, idx) => (
+          <span key={`extra-${idx}`} className="char incorrect relative inline-block">
+            {char}
+          </span>
+        ))}
+      </div>
 
-/* ────────────────────── Buttons ────────────────────── */
-button {
-  cursor: pointer !important;
-  transition: all 0.3s ease;
-  user-select: none;
-}
-button:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(34, 211, 238, 0.5);
-}
-button:active {
-  transform: translateY(-2px);
-}
-button[class*="bg-cyan"] {
-  background: rgba(6, 182, 212, 0.25) !important;
-  box-shadow: 0 0 30px rgba(34, 211, 238, 0.7);
-}
+      {/* Clean centered stats */}
+      <div className="mt-16 text-4xl text-gray-400 space-x-16 font-light">
+        <span>WPM: <span className="text-white font-bold">{wpm}</span></span>
+        <span>Accuracy: <span className="text-white font-bold">{accuracy}%</span></span>
+        <span>Time: <span className="text-white font-bold">{elapsed}s</span></span>
+      </div>
 
-/* ────────────────────── Typing Display ────────────────────── */
-.typing-line {
-  white-space: pre-wrap;         /* wraps lines vertically */
-  word-break: break-word;         /* ← breaks "chemical" cleanly */
-  overflow-wrap: break-word;      /* ← extra insurance */
-  overflow: hidden;
-  line-height: 1.3;
-  text-align: center;
-}
-
-/* Individual characters */
-.char {
-  display: inline-block;
-}
-
-/* Cursor – thick, soft blink */
-.cursor {
-  position: relative;
-}
-.cursor::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 5%;
-  height: 90%;
-  width: 6px;
-  background: white;
-  animation: blink 1s step-end infinite;
-}
-
-/* Colors – soft MonkeyType style */
-.untyped   { color: #666; }
-.correct   { color: #94ef94; }
-.incorrect { 
-  color: #ff6666; 
-  background: rgba(255, 102, 102, 0.18);
-}
-
-/* Blink animation */
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-/* Hide any accidental scrollbars */
-.typing-line::-webkit-scrollbar {
-  display: none;
-}
-.typing-line {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+      {/* PERFECT message */}
+      {isPerfect && (
+        <div className="mt-20 text-9xl font-black text-green-400 animate-pulse tracking-widest">
+          PERFECT
+        </div>
+      )}
+    </div>
+  );
 }
