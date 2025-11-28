@@ -22,8 +22,8 @@ export default function TypingDisplay({
 }: Props) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-8">
-      {/* 2× BIGGER FONT — one line only, no scroll, no wrap */}
-      <div className="text-8xl md:text-9xl lg:text-[10rem] font-bold tracking-tight whitespace-nowrap overflow-hidden">
+      {/* Your original big font + wraps downward beautifully */}
+      <div className="text-5xl md:text-6xl lg:text-7xl font-medium leading-snug tracking-wider max-w-5xl text-center whitespace-pre-wrap break-words">
         {chars.map((char, i) => {
           const isCursor = i === cursor;
           return (
@@ -42,15 +42,15 @@ export default function TypingDisplay({
         ))}
       </div>
 
-      {/* Stats — big and centered */}
-      <div className="mt-12 text-4xl text-gray-300 space-x-16">
-        <span>WPM: <span className="text-cyan-400 font-black">{wpm}</span></span>
-        <span>Acc: <span className="text-cyan-400 font-black">{accuracy}%</span></span>
-        <span>Time: <span className="text-cyan-400 font-black">{elapsed}s</span></span>
+      {/* Stats — centered */}
+      <div className="mt-16 text-3xl text-gray-300 space-x-12">
+        <span>WPM: <span className="text-cyan-400 font-bold">{wpm}</span></span>
+        <span>Accuracy: <span className="text-cyan-400 font-bold">{accuracy}%</span></span>
+        <span>Time: <span className="text-cyan-400 font-bold">{elapsed}s</span></span>
       </div>
 
       {isPerfect && (
-        <div className="mt-16 text-8xl font-black text-green-400 animate-pulse">
+        <div className="mt-12 text-6xl font-bold text-green-400 animate-pulse">
           PERFECT
         </div>
       )}
