@@ -15,18 +15,20 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gif flex items-center justify-center">
-      <div className="text-center space-y-16 px-8">
-        <h1 className="text-7xl md:text-8xl lg:text-9xl font-black tracking-tight">
+      <div className="w-full max-w-7xl px-8">
+        <h1 className="text-8xl font-black text-center mb-24 tracking-tight">
           Select a Course
         </h1>
-        <CourseSelector
-          courses={courses}
-          selected={selected}
-          setSelected={(c: Course) => {
-            setSelected(c);
-            router.push(`/course/${c}`);
-          }}
-        />
+        <div className="flex justify-center">
+          <CourseSelector
+            courses={courses}
+            selected={selected}
+            setSelected={(c: Course) => {
+              setSelected(c);
+              router.push(`/course/${c}`);
+            }}
+          />
+        </div>
       </div>
     </main>
   );
