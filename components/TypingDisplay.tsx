@@ -11,6 +11,7 @@ interface Props {
 }
 
 export default function TypingDisplay({
+  term,
   chars,
   states,
   cursor,
@@ -21,37 +22,37 @@ export default function TypingDisplay({
   elapsed,
 }: Props) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-6">
-      {/* MONKEYTYPE EXACT STYLE */}
-      <div className="font-mono text-6xl md:text-7xl lg:text-8xl leading-tight tracking-wider text-left max-w-5xl break-words whitespace-pre-wrap">
-        {chars.map((char, i) => {
-          const isCursor = i === cursor;
+    <div className="flex flex-col items-center max-w-4xl mx-auto px-8">
+      {/* YOUR ORIGINAL CODE — JUST MADE 3× BIGGER */}
+      <div className="typing-line text-8xl md:text-9xl font-medium leading-snug tracking-wider my-32">
+        {chars.map((char, idx) => {
+          const isCursor = idx === cursor;
           return (
             <span
-              key={i}
-              className={`relative ${states[i]} ${isCursor ? 'after:absolute after:left-0 after:top-0 after:h-full after:w-1 after:bg-white after:animate-pulse' : ''}`}
+              key={idx}
+              className={`char relative inline-block ${states[idx]} ${isCursor ? 'cursor' : ''}`}
             >
               {char === ' ' ? '\u00A0' : char}
             </span>
           );
         })}
-        {extra.split('').map((char, i) => (
-          <span key={`extra-${i}`} className="incorrect relative">
+        {extra.split('').map((char, idx) => (
+          <span key={`extra-${idx}`} className="char incorrect relative inline-block">
             {char}
           </span>
         ))}
       </div>
 
-      {/* Stats — MonkeyType style */}
-      <div className="mt-12 flex gap-16 text-3xl font-medium text-gray-400">
-        <div>wpm <span className="text-white font-bold">{wpm}</span></div>
-        <div>acc <span className="text-white font-bold">{accuracy}%</span></div>
-        <div>time <span className="text-white font-bold">{elapsed}s</span></div>
+      {/* Your original stats — just centered */}
+      <div className="mt-8 text-white text-3xl flex gap-16 font-light">
+        <div>WPM: <span className="font-bold text-cyan-400">{wpm}</span></div>
+        <div>Accuracy: <span className="font-bold text-cyan-400">{accuracy}%</span></div>
+        <div>Time: <span className="font-bold text-cyan-400">{elapsed}s</span></div>
       </div>
 
       {isPerfect && (
-        <div className="mt-10 text-6xl font-bold text-green-400 animate-bounce">
-          perfect
+        <div className="mt-16 text-8xl font-bold text-green-400 animate-pulse">
+          PERFECT
         </div>
       )}
     </div>
