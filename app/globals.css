@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* FORCE THE HOLY SHIT FONT — NO ESCAPE */
+html, body, div, span, p {
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+}
+
 /* Base */
 html, body {
   height: 100%;
   margin: 0;
   background: #000;
   color: white;
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  font-weight: 500;           /* ← this is the secret sauce */
-  letter-spacing: 0.05em;     /* ← this makes it look premium, not robotic */
   overflow-x: hidden;
 }
 
-/* Home page & course selector stay perfectly centered */
+/* Home page centering */
 main {
   min-height: 100vh;
   display: flex;
@@ -23,7 +27,7 @@ main {
   justify-content: center;
 }
 
-/* Buttons – your glow */
+/* Buttons */
 button {
   cursor: pointer !important;
   transition: all 0.3s ease;
@@ -34,13 +38,7 @@ button:hover {
   box-shadow: 0 15px 40px rgba(34, 211, 238, 0.5);
 }
 
-/* Selected button glow */
-button[class*="bg-cyan"] {
-  background: rgba(6, 182, 212, 0.25) !important;
-  box-shadow: 0 0 30px rgba(34, 211, 238, 0.7);
-}
-
-/* Typing page styles */
+/* Typing text */
 .typing-line {
   white-space: pre-wrap;
   word-break: break-word;
@@ -48,33 +46,23 @@ button[class*="bg-cyan"] {
   line-height: 1.2;
 }
 
-/* Characters */
-.char {
-  display: inline-block;
-}
-
-/* Perfect thin cursor — no more giant block */
-.cursor {
-  position: relative;
-}
-
+/* Cursor — perfect thin */
 .cursor::after {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  width: 0.25rem;           /* thin and beautiful */
+  width: 0.25rem;
   background: white;
   animation: blink 1s step-end infinite;
-  margin-left: 0.15rem;     /* tiny offset so it doesn't touch the letter */
+  margin-left: 0.15rem;
 }
 
 @keyframes blink {
   50% { opacity: 0; }
 }
 
-/* Colors – soft MonkeyType style */
 .untyped   { color: #666; }
 .correct   { color: #a0f0a0; }
 .incorrect { color: #ff5555; background: rgba(255,85,85,0.2); }
