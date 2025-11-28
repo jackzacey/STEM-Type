@@ -1,3 +1,4 @@
+
 export type Course =
   | 'FreshmanBio'
   | 'SophomoreChem'
@@ -20,5 +21,6 @@ export const allTerms: Term[] = [
   { course: 'FreshmanBio', unit: 'Cell Biology', term: 'Mitosis', definition: 'Cell division producing identical daughter cells' },
   { course: 'FreshmanBio', unit: 'Genetics', term: 'Allele', definition: 'Different forms of a gene' },
   { course: 'SophomoreChem', unit: 'Chemical Bonding', term: 'Covalent Bond', definition: 'Bond formed by sharing electrons' },
-  { course: 'APBio', unit: 'Photosynthesis', term: 'Photosynthesis', definition: 'Process  of converting light to chemical energy  hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello ' },
+  { course: 'APBio', unit: 'Photosynthesis', term: 'Photosynthesis', definition: 'Process of converting light to chemical energy ' },
 ];
+
