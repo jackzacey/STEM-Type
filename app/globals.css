@@ -39,30 +39,28 @@ button:hover {
 }
 
 /* Typing text */
+/* Typing line container scrollable */
 .typing-line {
   white-space: pre-wrap;
   word-break: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.2;
+  overflow: hidden;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
-/* Cursor — perfect thin */
-.cursor::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 0.25rem;
-  background: white;
-  animation: blink 1s step-end infinite;
-  margin-left: 0.15rem;
+/* Character states */
+.char { display: inline-block; }
+.char.untyped { color: #888; }
+.char.correct { color: #4ade80; }
+.char.incorrect { color: #f87171; }
+.char.cursor {
+  border-left: 2px solid white;
+  animation: blink 1s step-start infinite;
 }
-
 @keyframes blink {
-  50% { opacity: 0; }
+  0%, 50% { border-color: white; }
+  50.1%, 100% { border-color: transparent; }
 }
-
 .untyped   { color: #666; }
 .correct   { color: #a0f0a0; }
 .incorrect { color: #ff5555; background: rgba(255,85,85,0.2); }
