@@ -10,7 +10,7 @@ export function useTypingTest(terms: Term[]) {
   const [extra, setExtra] = useState('');
   const [startTime, setStartTime] = useState<number | null>(null);
   const [elapsed, setElapsed] = useState(0);
-  const intervalRef = useRef<NodeJS.Timer | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const current = terms[termIndex];
   const chars = current?.definition.split('') || [];
