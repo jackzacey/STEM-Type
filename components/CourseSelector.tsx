@@ -10,24 +10,21 @@ export default function CourseSelector({
   setSelected: (c: Course) => void;
 }) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10">
       {courses.map((course) => (
         <button
           key={course}
           onClick={() => setSelected(course)}
           className={`
-            relative px-12 py-12 text-4xl md:text-5xl font-bold rounded-3xl border-4
-            transition-all duration-500 transform hover:-translate-y-4
+            px-16 py-20 text-5xl font-bold rounded-3xl border-4
+            transition-all duration-300 hover:scale-110 hover:shadow-2xl
             ${selected === course
-              ? 'bg-cyan-500/40 border-cyan-300 text-white shadow-[0_0_60px_rgba(34,211,238,0.8)] scale-110'
-              : 'bg-white/5 backdrop-blur-sm border-gray-500 text-gray-200 hover:bg-white/10 hover:border-gray-300'
+              ? 'bg-cyan-500/40 border-cyan-400 text-white shadow-cyan-500/50'
+              : 'bg-white/10 border-gray-600 text-gray-200 hover:bg-white/20 hover:border-gray-400'
             }
           `}
         >
           {course}
-          {selected === course && (
-            <div className="absolute inset-0 rounded-3xl animate-ping bg-cyan-500/20 pointer-events-none" />
-          )}
         </button>
       ))}
     </div>
