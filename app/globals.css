@@ -8,17 +8,6 @@ body, html {
   font-family: 'JetBrains Mono', monospace;
   cursor: default;
 }
-
-/* Full-screen GIF background */
-.bg-gif {
-  @apply min-h-screen;
-  background-image: url('/BHW_Disk_and_Corona.gif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 /* Make sure content is above the GIF */
 main {
   position: relative;
