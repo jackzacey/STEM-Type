@@ -16,7 +16,7 @@ export default function TypingDisplay({
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-8">
       {/* MASSIVE + wraps + breaks long words */}
-      <div className="typing-line text-8xl md:text-9xl lg:text-10xl font-medium leading-snug tracking-wider">
+      <div className="typing-line text-9xl md:text-10xl lg:text-[11rem] font-medium leading-tight tracking-wider">
         {chars.map((char, i) => {
           const isCursor = i === cursor;
           return (
