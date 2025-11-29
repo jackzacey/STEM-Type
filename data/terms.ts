@@ -6,9 +6,9 @@ export type Term = {
   definition: string;
 };
 
+// Start empty — we'll fill this later per unit
 export const allTerms: Term[] = [];
 
-// Later when you add real terms:
 export const getTermsForUnit = (courseId: string, unit: string): Term[] => {
   return allTerms.filter(t => t.course === courseId && t.unit === unit);
 };
