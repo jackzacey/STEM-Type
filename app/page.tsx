@@ -11,10 +11,10 @@ export default function Home() {
   const [selected, setSelected] = useState<CourseId | null>(null);
 
   const handleStart = () => {
-    if (selected) {
-      router.push(`/typing/${selected}`);
-    }
-  };
+  if (selected) {
+    router.push(`/unit/${selected}`);  // ← THIS LINE CHANGED
+  }
+};
 
   return (
     <main className="min-h-screen bg-black flex flex-col items-center justify-center p-8 gap-16">
