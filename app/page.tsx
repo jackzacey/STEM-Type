@@ -1,33 +1,29 @@
-
+// app/page.tsx
 'use client';
 
-import { allTerms } from '@/data/terms';  // ← removed Course import
-import CourseSelector from '@/components/CourseSelector';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-
-const courses: Course[] = [
-  'FreshmanBio', 'SophomoreChem', 'APBio', 'APChem', 'APPhys',
-  'APPhysC', 'APPhysMech', 'APES', 'APPhys2'
-];
+import CourseSelector from '@/components/CourseSelector';
+import { type CourseId } from '@/data/courses';
+import { COURSES } from '@/data/courses';
 
 export default function Home() {
-  const router = useRouter();
-  const [selected, setSelected] = useState<Course>(courses[0]);
+  const [selected, setSelected] = useState<CourseId | null>(null);
 
   return (
-    <main className="min-h-screen bg-black flex flex-col items-center justify-center px-8">
-      <h1 className="text-white text-7xl md:text-8xl font-black mb-16 text-center">
-        Select a Course
+    <main className="min-h-screen bg-black flex flex-col items-center justify-center p-8">
+      <h1 className="text-6xl md:text-8xl font-bold text-white mb-16 tracking-widest">
+        STEM TYPE
       </h1>
-      <CourseSelector
-        courses={courses}
-        selected={selected}
-        setSelected={(c) => {
-          setSelected(c);
-          router.push(`/course/${c}`);
-        }}
-      />
+
+      <CourseSelector selected={selected} setSelected={setSelected} />
+
+      {selected && (
+        <div className="mt-16">
+          <p className="text-3xl text-cyan-400">
+            Selected: {selected.replace(/-/g, ' ').toUpperCase()}
+          </p>
+        </div>
+      )}
     </main>
   );
 }
