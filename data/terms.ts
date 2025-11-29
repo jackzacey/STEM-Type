@@ -5,12 +5,8 @@ export type Term = {
   term: string;
   definition: string;
 };
-
 export const allTerms: Term[] = [
   {
-    course: "ap-biology",
-    unit: "Unit 1: Chemistry of Life",
-    term: "Element of Life",
     course: "ap-biology",
     unit: "Unit 1: Chemistry of Life",
     term: "Element of Life",
@@ -202,7 +198,6 @@ export const allTerms: Term[] = [
     term: "Polysaccharide",
     definition: "Long chains of monosaccharides linked by glycosidic bonds, functioning in energy storage (starch, glycogen) or structure (cellulose, chitin). Glycogen in liver/muscles stores glucose for quick release during exercise; cellulose in plants is indigestible by humans but provides fiber."
   },
- 32,
   {
     course: "ap-biology",
     unit: "Unit 1: Chemistry of Life",
@@ -257,7 +252,6 @@ export const allTerms: Term[] = [
     term: "Nucleic Acid",
     definition: "Polymers of nucleotides serving as genetic information carriers (DNA) or protein synthesis messengers (RNA). DNA stores hereditary information in double-helix form for replication; RNA translates it via mRNA, tRNA, and rRNA in ribosomes."
   },
- 42,
   {
     course: "ap-biology",
     unit: "Unit 1: Chemistry of Life",
