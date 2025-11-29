@@ -1,4 +1,8 @@
+// components/TypingDisplay.tsx
+import { type CourseId } from '@/data/courses';
+
 interface Props {
+  // ← ALL YOUR ORIGINAL PROPS — 100% UNCHANGED
   term: string;
   chars: string[];
   states: ('untyped' | 'correct' | 'incorrect')[];
@@ -8,6 +12,9 @@ interface Props {
   wpm: number;
   accuracy: number;
   elapsed: number;
+  
+  // ← ONLY NEW LINE (required for routing)
+  courseId: CourseId;
 }
 
 export default function TypingDisplay({
@@ -20,6 +27,7 @@ export default function TypingDisplay({
   wpm,
   accuracy,
   elapsed,
+  courseId, // ← we receive it but don't use it yet (safe for future)
 }: Props) {
   return (
     <div className="flex flex-col items-center min-h-screen bg-black pt-32 px-8">
@@ -38,7 +46,7 @@ export default function TypingDisplay({
         <div>Accuracy: {accuracy}%</div>
         <div>Time: {elapsed}s</div>
       </div>
-      {isPerfect && <div className="mt-4 text-3xl text-green-400">PERFECT ✅</div>}
+      {isPerfect && <div className="mt-4 text-3xl text-green-400">PERFECT</div>}
     </div>
   );
 }
