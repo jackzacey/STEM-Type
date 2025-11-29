@@ -1,6 +1,7 @@
+
 'use client';
 
-import { allTerms, Course } from '@/data/terms';
+import { allTerms } from '@/data/terms';  // ← removed Course import
 import CourseSelector from '@/components/CourseSelector';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
