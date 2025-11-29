@@ -4,9 +4,6 @@
 // components/CourseSelector.tsx  ← top of file
 import { COURSES, type CourseId } from '@/data/courses';
 
-// This is the new correct type — replaces the old Course union
-export type CourseId = keyof typeof COURSES;
-
 type Props = {
   selected: CourseId | null;
   setSelected: (c: CourseId) => void;
