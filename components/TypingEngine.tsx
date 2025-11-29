@@ -13,6 +13,7 @@ export default function TypingEngine({ terms }: { terms: Term[] }) {
 
   return (
     <TypingDisplay
+      courseId={courseId}
       term={term.definition}
       chars={chars}
       states={states}
