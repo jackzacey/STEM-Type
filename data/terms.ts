@@ -1,26 +1,14 @@
-
-export type Course =
-  | 'FreshmanBio'
-  | 'SophomoreChem'
-  | 'APBio'
-  | 'APChem'
-  | 'APPhys'
-  | 'APPhysC'
-  | 'APPhysMech'
-  | 'APES'
-  | 'APPhys2';
-
+// data/terms.ts
 export type Term = {
-  course: Course;
+  course: string;
   unit: string;
   term: string;
   definition: string;
 };
 
-export const allTerms: Term[] = [
-  { course: 'FreshmanBio', unit: 'Cell Biology', term: 'Mitosis', definition: 'Cell division producing identical daughter cells' },
-  { course: 'FreshmanBio', unit: 'Genetics', term: 'Allele', definition: 'Different forms of a gene' },
-  { course: 'SophomoreChem', unit: 'Chemical Bonding', term: 'Covalent Bond', definition: 'Bond formed by sharing electrons' },
-  { course: 'APBio', unit: 'Photosynthesis', term: 'Photosynthesis', definition: 'Process of converting light to chemical energy' },
-];
+export const allTerms: Term[] = [];
 
+// Later when you add real terms:
+export const getTermsForUnit = (courseId: string, unit: string): Term[] => {
+  return allTerms.filter(t => t.course === courseId && t.unit === unit);
+};
