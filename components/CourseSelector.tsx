@@ -1,6 +1,7 @@
-import { Course } from '@/data/terms';
+// Probably in components/CourseSelector.tsx or a types file
+import { COURSES } from '@/data/courses';
 
-export default function CourseSelector({
+export type CourseId = keyof typeof COURSES;  // ← this is the new correct type
   courses,
   selected,
   setSelected,
