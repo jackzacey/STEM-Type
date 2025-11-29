@@ -17,24 +17,24 @@ export default function UnitSelector({ params }: { params: { course: string } })
     .replace('C Em', 'C: E&M');
 
   return (
-    <main className="min-h-screen bg-black flex flex-col items-center justify-center gap-16 px-8">
-      <h1 className="text-6xl md:text-8xl font-bold text-white tracking-widest">
+    <main className="min-h-screen bg-black flex flex-col items-center justify-center gap-20 px-8">
+      <h1 className="text-7xl md:text-9xl font-bold text-white tracking-widest">
         {displayName}
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl w-full">
         {units.map((unit) => (
           <Link
             key={unit}
             href={`/unit/${courseId}/${encodeURIComponent(unit)}`}
-            className="px-12 py-16 text-4xl font-bold text-center bg-gray-900 border-4 border-gray-700 rounded-3xl text-white hover:bg-cyan-900 hover:border-cyan-500 hover:scale-105 transition-all duration-300 shadow-xl"
+            className="px-10 py-14 text-3xl md:text-4xl font-bold text-center bg-gray-900 border-4 border-gray-700 rounded-3xl text-cyan-400 hover:bg-cyan-900 hover:border-cyan-500 hover:scale-105 hover:text-white transition-all duration-300 shadow-2xl"
           >
             {unit}
           </Link>
         ))}
       </div>
 
-      <Link href="/" className="text-2xl text-gray-400 underline">
+      <Link href="/" className="text-2xl text-gray-400 hover:text-cyan-400 underline">
         ← Back to courses
       </Link>
     </main>
