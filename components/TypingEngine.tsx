@@ -4,10 +4,9 @@ import { useTypingTest } from './useTypingTest';
 import { Term } from '@/data/terms';
 import { type CourseId } from '@/data/courses';
 
-// ADD THIS LINE — receives courseId from the page
 interface Props {
   terms: Term[];
-  courseId: CourseId;   // ← THIS WAS MISSING
+  courseId: CourseId;
 }
 
 export default function TypingEngine({ terms, courseId }: Props) {
@@ -15,7 +14,7 @@ export default function TypingEngine({ terms, courseId }: Props) {
 
   if (!term) {
     return (
-      <div className="flex min-h-screen items-center justify-center text-white text-6xl">
+      <div className="flex min-h-screen items-center justify-center text-white text-6xl font-bold">
         ALL DONE
       </div>
     );
@@ -23,8 +22,9 @@ export default function TypingEngine({ terms, courseId }: Props) {
 
   return (
     <TypingDisplay
-      courseId={courseId}           // ← now it exists
-      term={term.definition}
+      courseId={courseId}
+      term={term.term}           // ← NOW SENDS THE TERM NAME (e.g. "Hydrophilic")
+      definition={term.definition} // ← the text you're typing
       chars={chars}
       states={states}
       cursor={cursor}
