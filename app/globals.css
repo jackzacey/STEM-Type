@@ -9,13 +9,31 @@ html, body, div, span, p {
   letter-spacing: 0.06em !important;
 }
 
-/* Base */
+/* NEW: Graphite Glass Background */
 html, body {
   height: 100%;
   margin: 0;
-  background: #000;
-  color: white;
+  background: linear-gradient(135deg, #121212 0%, #1a1a1a 50%, #1e1e1e 100%);
+  color: #e4e4e7;
   overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(30, 30, 30, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass:hover {
+  background: rgba(40, 40, 40, 0.6);
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 12px 40px rgba(34, 211, 238, 0.15);
+  transform: translateY(-4px);
 }
 
 /* Home page centering */
@@ -27,40 +45,41 @@ main {
   justify-content: center;
 }
 
-/* Buttons */
-button {
+/* Buttons — now work perfectly with glass */
+button, a[role="button"] {
   cursor: pointer !important;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
-}
-button:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(34, 211, 238, 0.5);
 }
 
 /* Typing text */
-/* Typing line container scrollable */
 .typing-line {
   white-space: pre-wrap;
   word-break: break-word;
   overflow: hidden;
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 1.5rem;
+  font-size: 2.8rem;
+  line-height: 1.4;
+  background: rgba(20, 20, 20, 0.4);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Character states */
+/* Character states — upgraded colors */
 .char { display: inline-block; }
-.char.untyped { color: #888; }
-.char.correct { color: #4ade80; }
-.char.incorrect { color: #f87171; }
+.char.untyped { color: #71717a; }
+.char.correct { color: #86efac; }
+.char.incorrect { color: #fca5a5; background: rgba(248, 113, 113, 0.2); }
 .char.cursor {
-  border-left: 2px solid white;
+  border-left: 3px solid #22d3ee;
   animation: blink 1s step-start infinite;
 }
+
 @keyframes blink {
-  0%, 50% { border-color: white; }
+  0%, 50% { border-color: #22d3ee; }
   50.1%, 100% { border-color: transparent; }
 }
-.untyped   { color: #666; }
-.correct   { color: #a0f0a0; }
-.incorrect { color: #ff5555; background: rgba(255,85,85,0.2); }
+
+.untyped { color: #71717a; }
+.correct { color: #86efac; }
+.incorrect { color: #fca5a5; background: rgba(248, 113, 113, 0.2); }
