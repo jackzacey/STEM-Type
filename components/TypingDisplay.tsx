@@ -2,8 +2,8 @@
 import { type CourseId } from '@/data/courses';
 
 interface Props {
-  // ← ALL YOUR ORIGINAL PROPS — 100% UNCHANGED
   term: string;
+  definition: string;     // ← NEW: we now receive the full definition text
   chars: string[];
   states: ('untyped' | 'correct' | 'incorrect')[];
   cursor: number;
@@ -12,13 +12,12 @@ interface Props {
   wpm: number;
   accuracy: number;
   elapsed: number;
-  
-  // ← ONLY NEW LINE (required for routing)
   courseId: CourseId;
 }
 
 export default function TypingDisplay({
   term,
+  definition,
   chars,
   states,
   cursor,
@@ -27,26 +26,43 @@ export default function TypingDisplay({
   wpm,
   accuracy,
   elapsed,
-  courseId, // ← we receive it but don't use it yet (safe for future)
+  courseId,
 }: Props) {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-black pt-32 px-8">
-      {/* YOUR OLD WINNING MASSIVE FONT + VERTICAL WRAP */}
+    <div className="flex flex-col items-center min-h-screen bg-black pt-20 px-8">
+      
+      {/* THE BIG TERM NAME — this is what you wanted */}
+      <h2 className="text-6xl md:text-8xl font-bold text-cyan-400 tracking-wider mb-12 text-center leading-tight">
+        {term}
+      </h2>
+
+      {/* Your legendary massive typing line */}
       <div className="typing-line text-8xl my-8">
         {chars.map((char, idx) => {
           const isCursor = idx === cursor;
-          return <span key={idx} className={`char ${states[idx]} ${isCursor ? 'cursor' : ''}`}>{char}</span>;
+          return (
+            <span key={idx} className={`char ${states[idx]} ${isCursor ? 'cursor' : ''}`}>
+              {char}
+            </span>
+          );
         })}
         {extra.split('').map((char, idx) => (
-          <span key={idx} className="char incorrect cursor">{char}</span>
+          <span key={idx} className="char incorrect cursor">
+            {char}
+          </span>
         ))}
       </div>
-      <div className="mt-4 text-white text-2xl flex gap-8">
+
+      {/* Stats */}
+      <div className="mt-8 text-white text-2xl flex gap-10">
         <div>WPM: {wpm}</div>
         <div>Accuracy: {accuracy}%</div>
         <div>Time: {elapsed}s</div>
       </div>
-      {isPerfect && <div className="mt-4 text-3xl text-green-400">PERFECT</div>}
+
+      {isPerfect && (
+        <div className="mt-6 text-4xl text-green-400 font-bold">PERFECT</div>
+      )}
     </div>
   );
 }
