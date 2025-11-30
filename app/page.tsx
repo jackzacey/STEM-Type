@@ -27,7 +27,8 @@ export default function Home() {
       {selected && (
         <button
           onClick={handleStart}
-          className="px-24 py-8 text-5xl font-bold bg-cyan-600 hover:bg-cyan-500 text-white rounded-3xl border-4 border-cyan-400 shadow-2xl shadow-cyan-500/70 hover:scale-110 transition-all duration-300"
+          className="glass glass-hover px-12 py-20 text-5xl md:text-7xl font-black 
+           text-cyan-400 tracking-wider text-center shadow-2xl"
         >
           START TYPING
         </button>
