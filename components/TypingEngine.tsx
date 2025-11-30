@@ -14,25 +14,32 @@ export default function TypingEngine({ terms, courseId }: Props) {
 
   if (!term) {
     return (
-      <div className="flex min-h-screen items-center justify-center text-white text-6xl font-bold">
-        ALL DONE
+      <div className="flex min-h-screen items-center justify-center">
+        <div className="glass p-20 text-7xl font-black text-cyan-400 tracking-wider text-center">
+          ALL DONE
+        </div>
       </div>
     );
   }
 
   return (
-    <TypingDisplay
-      courseId={courseId}
-      term={term.term}           // ← NOW SENDS THE TERM NAME (e.g. "Hydrophilic")
-      definition={term.definition} // ← the text you're typing
-      chars={chars}
-      states={states}
-      cursor={cursor}
-      extra={extra}
-      isPerfect={isPerfect}
-      wpm={wpm}
-      accuracy={accuracy}
-      elapsed={elapsed}
-    />
+    <div className="w-full max-w-7xl">
+      {/* Glass container for the entire typing area */}
+      <div className="glass p-10 md:p-16 rounded-3xl shadow-3xl">
+        <TypingDisplay
+          courseId={courseId}
+          term={term.term}
+          definition={term.definition}
+          chars={chars}
+          states={states}
+          cursor={cursor}
+          extra={extra}
+          isPerfect={isPerfect}
+          wpm={wpm}
+          accuracy={accuracy}
+          elapsed={elapsed}
+        />
+      </div>
+    </div>
   );
 }
