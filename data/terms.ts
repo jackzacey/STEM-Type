@@ -97,4 +97,94 @@ export const allTerms: Term[] = [
     "term": "pH",
     "definition": "pH is a measure of the hydrogen ion concentration in a solution, defined as the negative logarithm of the H+ concentration; biological systems function optimally within a narrow pH range near 7, and cells use buffers to resist changes in pH that could denature proteins or disrupt metabolic processes."
   }
+    {
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Prokaryotic Cell",
+  "definition": "Prokaryotic cells are single-celled organisms that lack a membrane-bound nucleus and membrane-bound organelles; their genetic material is located in a nucleoid region, they possess a cell walls typically made of peptidoglycan in bacteria, and they often contain plasmids as extra-chromosomal DNA."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Eukaryotic Cell",
+  "definition": "Eukaryotic cells are characterized by a membrane-bound nucleus that houses linear chromosomes, numerous membrane-bound organelles that compartmentalize cellular functions, and a cytoskeleton that provides structural support and enables intracellular transport and cell division."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Nucleus",
+  "definition": "The nucleus is a prominent double-membraned organelle that contains the cell's genetic material organized as chromatin; it features nuclear pores for selective transport of mRNA and proteins, and it houses the nucleolus where ribosomal RNA is synthesized and ribosome assembly begins."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Ribosome",
+  "definition": "Ribosomes are macromolecular complexes composed of ribosomal RNA and proteins that serve as the sites of protein synthesis; they can be free in the cytosol to produce cytoplasmic proteins or bound to the rough endoplasmic reticulum to produce secreted or membrane-bound proteins."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Endoplasmic Reticulum",
+  "definition": "The endoplasmic reticulum is an extensive network of membranous tubules and sacs; the rough endoplasmic reticulum is studded with ribosomes and synthesizes proteins destined for secretion or incorporation into membranes, while the smooth endoplasmic reticulum synthesizes lipids, detoxifies drugs, and regulates calcium levels."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Golgi Apparatus",
+  "definition": "The Golgi apparatus is a stacked series of flattened membranous sacs that modifies, sorts, and packages proteins and lipids received from the endoplasmic reticulum; it adds carbohydrates to form glycoproteins and directs vesicles to their proper cellular or extracellular destinations."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Lysosome",
+  "definition": "Lysosomes are membrane-bound organelles containing hydrolytic enzymes that break down macromolecules, damaged organelles, and engulfed pathogens; they maintain an acidic internal pH optimal for enzyme activity and fuse with endosomes or autophagosomes during digestion."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Mitochondria",
+  "definition": "Mitochondria are double-membraned organelles that produce ATP through cellular respiration; their inner membrane folds into cristae to increase surface area for the electron transport chain, and they contain their own circular DNA, supporting the endosymbiotic theory of their bacterial origin."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Chloroplast",
+  "definition": "Chloroplasts are double-membraned organelles found in photosynthetic eukaryotes that convert light energy into chemical energy; they contain thylakoid membranes stacked into grana where light-dependent reactions occur, and a fluid stroma where the Calvin cycle fixes carbon dioxide into glucose."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Cytoskeleton",
+  "definition": "The cytoskeleton is a dynamic network of protein filaments that provides structural support, enables cell movement, and facilitates intracellular transport; it consists of microfilaments for muscle contraction and cell shape, intermediate filaments for mechanical strength, and microtubules for mitosis and vesicle transport."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Cell Wall",
+  "definition": "The cell wall is a rigid layer external to the plasma membrane in plant, fungal, and many prokaryotic cells; in plants it is primarily composed of cellulose microfibrils embedded in a polysaccharide matrix, providing structural support and protection while allowing water and small molecules can pass through."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Plasma Membrane",
+  "definition": "The plasma membrane is a selectively permeable phospholipid bilayer that encloses the cell and regulates the passage of materials; it contains embedded proteins for transport and signaling, cholesterol for fluidity in animal cells, and maintains distinct internal environments through the fluid mosaic model."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Central Vacuole",
+  "definition": "The central vacuole is a large membrane-bound sac in mature plant cells that occupies most of the cell volume; it stores water, ions, nutrients, and waste products, maintains turgor pressure against the cell wall, and contributes to cell growth by rapid water uptake."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Endomembrane System",
+  "definition": "The endomembrane system comprises the nuclear envelope, endoplasmic reticulum, Golgi apparatus, lysosomes, vesicles, and plasma membrane; these components work together to synthesize, modify, transport, and recycle proteins and lipids throughout the eukaryotic cell."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Endosymbiotic Theory",
+  "definition": "The endosymbiotic theory proposes that mitochondria and chloroplasts originated as independent prokaryotes that were engulfed by ancestral eukaryotic cells; evidence includes their own circular DNA, double membranes, autonomous replication, and ribosomes similar to those found in bacteria."
+}
 ];
