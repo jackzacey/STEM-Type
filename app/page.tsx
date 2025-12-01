@@ -36,8 +36,18 @@ export default function Home() {
               key={id}
               className="relative preserve-3d cursor-pointer"
               onClick={() => router.push(`/unit/${id}`)}
-              whileHover={{ y: -40, rotateX: 15, rotateY: 15, scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              whileHover={{ 
+                y: -20,           // was -40 → half the lift
+                rotateX: 8,       // was 15
+                rotateY: 8,       // was 15
+                scale: 1.03       // was 1.05
+              }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 300, 
+                damping: 30       // ← THIS KILLS ALL BOUNCE
+              }}
             >
               {/* Glass card */}
               <div
@@ -69,11 +79,12 @@ export default function Home() {
       </div>
 
       {/* Marble floor */}
-      <div className="absolute bottom-0 left-0 right-0 h-64 opacity-20 pointer-events-none"
-           style={{
-             backgroundImage: `url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="100" height="100" fill="%23000000"/%3E%3Cpath d="M0 50 Q25 30 50 50 T100 50 L100 100 L0 100 Z" fill="%23111111"/%3E%3C/svg%3E')`,
-             backgroundSize: '100px 100px',
-           }}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-64 opacity-20 pointer-events-none"
+        style={{
+          backgroundImage: `url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="100" height="100" fill="%23000000"/%3E%3Cpath d="M0 50 Q25 30 50 50 T100 50 L100 100 L0 100 Z" fill="%23111111"/%3E%3C/svg%3E')`,
+          backgroundSize: '100px 100px',
+        }}
       />
     </main>
   );
