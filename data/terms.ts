@@ -5,8 +5,8 @@ export type Term = {
   term: string;
   definition: string;
 };
+
 export const allTerms: Term[] = [
-[
   {
     "course": "ap-biology",
     "unit": "Unit 1: Chemistry of Life",
@@ -97,4 +97,4 @@ export const allTerms: Term[] = [
     "term": "pH",
     "definition": "pH is a measure of the hydrogen ion concentration in a solution, defined as the negative logarithm of the H+ concentration; biological systems function optimally within a narrow pH range near 7, and cells use buffers to resist changes in pH that could denature proteins or disrupt metabolic processes."
   }
-]
+];
