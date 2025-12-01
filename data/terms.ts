@@ -96,8 +96,8 @@ export const allTerms: Term[] = [
     "unit": "Unit 1: Chemistry of Life",
     "term": "pH",
     "definition": "pH is a measure of the hydrogen ion concentration in a solution, defined as the negative logarithm of the H+ concentration; biological systems function optimally within a narrow pH range near 7, and cells use buffers to resist changes in pH that could denature proteins or disrupt metabolic processes."
-  }
-    {
+  },
+  {
   "course": "ap-biology",
   "unit": "Unit 2: Cell Structure and Function",
   "term": "Prokaryotic Cell",
