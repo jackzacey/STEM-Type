@@ -16,77 +16,55 @@ const courseColors: Record<CourseId, string> = {
   'ap-environmental-science': '#10b981',
 };
 
-const formatCourseName = (id: string) =>
-  id
-    .replace(/-/g, ' ')
-    .replace(/\b\w/g, l => l.toUpperCase())
-    .replace('Ap ', 'AP ')
-    .replace('C Em', 'C E&M');
+const formatName = (id: string) =>
+  id.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()).replace('Ap ', 'AP ').replace('C Em', 'C E&M');
 
-export default function CoursePage() {
-  const { course } = useParams();
+export default function CourseUnits() {
+  const { course } = useParams() as { course: CourseId };
   const router = useRouter();
-  const courseId = course as CourseId;
 
-  if (!COURSES[courseId]) {
-    return <div>Course not found</div>;
+  if (!course || !COURSES[course]) {
+    router.push('/');
+    return null;
   }
 
-  const units = COURSES[courseId].units;
-  const color = courseColors[courseId] || '#22d3ee';
+  const units = COURSES[course].units;
+  const color = courseColors[course] || '#22d3ee';
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black flex flex-col items-center justify-center relative overflow-hidden px-8">
-      {/* Course Title */}
-      <h1 className="text-7xl md:text-8xl font-black text-white tracking-widest mb-20 z-10">
-        {formatCourseName(courseId)}
+    <main className="min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black flex flex-col items-center justify-center relative overflow-hidden">
+      <h1 className="text-8xl md:text-9xl font-black text-white tracking-widest mb-24 z-10">
+        {formatName(course)}
       </h1>
 
-      {/* Unit Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 perspective-1000 max-w-5xl w-full">
-        {units.map((unitName, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 perspective-1000">
+        {units.map((unitName, i) => (
           <motion.div
             key={unitName}
-            className="relative preserve-3d cursor-pointer group"
-            onClick={() => router.push(`/practice/${courseId}/${index + 1}`)}
-            whileHover={{
-              y: -20,
-              rotateX: 8,
-              rotateY: 8,
-              scale: 1.03,
-            }}
+            className="relative preserve-3d cursor-pointer"
+            onClick={() => router.push(`/practice/${course}/${i + 1}`)}
+            whileHover={{ y: -20, rotateX: 8, rotateY: 8, scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            {/* Glass Card */}
             <div
-              className="relative h-40 rounded-3xl border border-white/20 backdrop-blur-xl shadow-2xl overflow-hidden"
+              className="relative w-80 h-48 rounded-3xl border border-white/20 backdrop-blur-xl shadow-2xl overflow-hidden"
               style={{
-                background: `linear-gradient(135deg, ${color}22, ${color}11)`,
+                background: `linear-gradient(135deg, ${color}20, ${color}05)`,
                 boxShadow: `0 20px 40px rgba(0,0,0,0.6)`,
               }}
             >
-              {/* Glow on hover */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-500"
-                style={{
-                  background: `radial-gradient(circle at center, ${color}60, transparent 70%)`,
-                }}
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-
-              <div className="relative h-full flex flex-col items-center justify-center px-8 text-center">
-                <p className="text-xl font-light text-white/70">Unit {index + 1}</p>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 tracking-wide drop-shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="relative h-full flex flex-col items-center justify-center p-8 text śred-center">
+                <p className="text-3xl font-light text-white/80">Unit {i + 1}</p>
+                <h2 className="text-4xl md:text-5xl font-black text-white mt-3 tracking-wider drop-shadow-2xl">
                   {unitName.replace(/^Unit \d+:\s*/, '')}
                 </h2>
               </div>
             </div>
 
-            {/* Reflection */}
             <div
-              className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-full h-32 opacity-30 blur-xl pointer-events-none"
+              className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full h-40 opacity-30 blur-xl"
               style={{
                 background: `linear-gradient(to bottom, ${color}40, transparent)`,
                 transform: 'scaleY(-1)',
@@ -96,16 +74,14 @@ export default function CoursePage() {
         ))}
       </div>
 
-      {/* Back Button */}
-      <motion.button
-        className="mt-20 text-white/70 hover:text-white text-lg tracking-wider transition-colors"
+      <motion.div
+        className="mt-24 text-white/70 hover:text-white text-xl tracking-wider cursor-pointer"
         onClick={() => router.push('/')}
-        whileHover={{ y: -4 }}
+        whileHover={{ y: -6 }}
       >
-        Back to courses
-      </motion.button>
+        ← Back to courses
+      </motion.div>
 
-      {/* Marble floor */}
       <div
         className="absolute bottom-0 left-0 right-0 h-64 opacity-20 pointer-events-none"
         style={{
