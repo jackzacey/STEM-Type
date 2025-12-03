@@ -634,7 +634,6 @@ export const allTerms: Term[] = [
 {
   "course": "ap-biology",
   "unit": "Unit 6: Gene Expression and Regulation",
-  Mise à jour
   "term": "Codon",
   "definition": "A codon is a three-nucleotide sequence in mRNA that specifies a particular amino acid or stop signal. Sixty-one codons code for twenty amino acids, showing redundancy. The genetic code is nearly universal across all organisms. Reading frame determines correct codon sequence."
 },
