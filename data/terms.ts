@@ -1158,5 +1158,101 @@ export const allTerms: Term[] = [
   "unit": "Unit 4: Chemical Reactions",
   "term": "Gravimetric Analysis",
   "definition": "Gravimetric analysis determines the amount of an analyte by converting it into a pure, weighable solid precipitate of known composition; precise mass measurements and careful precipitation techniques yield highly accurate quantitative results for many substances."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Chemical Reactions",
+  "term": "Limiting Reactant",
+  "definition": "The limiting reactant is the substance that is completely consumed first in a chemical reaction, determining the maximum amount of product that can form while any excess reactants remain unreacted after the reaction reaches completion."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Chemical Reactions",
+  "term": "Percent Yield",
+  "definition": "Percent yield compares the actual amount of product obtained in a reaction to the theoretical amount predicted by stoichiometry, revealing how efficiently the reaction proceeded under real laboratory conditions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Chemical Reactions",
+  "term": "Stoichiometry",
+  "definition": "Stoichiometry uses balanced chemical equations and mole ratios to calculate the quantities of reactants consumed and products formed, providing the quantitative foundation for all reaction-based predictions in chemistry."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Chemical Reactions",
+  "term": "Solution Stoichiometry",
+  "definition": "Solution stoichiometry applies mole relationships to reactions occurring in aqueous solutions, using molarity and volume to determine reactant amounts and product concentrations before and after reaction."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Chemical Reactions",
+  "term": "Theoretical Yield",
+  "definition": "Theoretical yield is the maximum amount of product that could form from a given amount of limiting reactant according to the balanced equation, assuming complete reaction and perfect conditions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Reaction Rate",
+  "definition": "Reaction rate measures the change in concentration of reactants or products per unit time, providing essential information about how quickly a chemical reaction proceeds under specific conditions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Rate Law",
+  "definition": "A rate law expresses the relationship between reactant concentrations and the reaction rate, showing the order of each reactant and allowing prediction of how concentration changes affect reaction speed."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Rate Constant",
+  "definition": "The rate constant is the proportionality factor in a rate law that reflects the inherent speed of a reaction at a given temperature, remaining constant regardless of reactant concentrations."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Zero Order Reaction",
+  "definition": "A zero order reaction has a rate that remains constant regardless of reactant concentration, often occurring when a catalyst surface becomes saturated or when a reactant is present in overwhelming excess."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "First Order Reaction",
+  "definition": "A first order reaction has a rate directly proportional to the concentration of one reactant, showing exponential decay of concentration over time and a constant half-life independent of initial concentration."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Second Order Reaction",
+  "definition": "A second order reaction has a rate proportional to the square of one reactant concentration or the product of two different reactant concentrations, resulting in a half-life that increases as concentration decreases."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Collision Theory",
+  "definition": "Collision theory states that reactions occur when molecules collide with sufficient energy and proper orientation, explaining how concentration, temperature, and molecular structure influence reaction rates."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Activation Energy",
+  "definition": "Activation energy is the minimum energy colliding molecules must possess for a successful reaction, forming an energy barrier that determines how readily a reaction proceeds even when thermodynamically favorable."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Catalyst",
+  "definition": "A catalyst increases reaction rate by providing an alternative pathway with lower activation energy while remaining chemically unchanged at the end, enabling reactions to proceed faster without altering equilibrium."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Reaction Mechanism",
+  "definition": "A reaction mechanism is the step-by-step sequence of elementary reactions that describe how reactants transform into products, with the rate-determining step controlling the overall reaction rate."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Kinetics",
+  "term": "Integrated Rate Law",
+  "definition": "An integrated rate law relates reactant concentration to time for reactions of specific order, allowing determination of concentration at any moment or calculation of half-life from experimental data."
 }
 ];
