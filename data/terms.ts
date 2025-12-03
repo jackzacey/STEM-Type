@@ -144,5 +144,215 @@ export const allTerms: Term[] = [
   "unit": "Unit 1: Chemistry of Life",
   "term": "Solvent",
   "definition": "A solvent is a substance that dissolves other substances to form solutions. Water is the universal solvent in living organisms because of its polarity. Polar and ionic compounds dissolve easily in water inside cells. This property allows chemical reactions to occur in aqueous environments."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Eukaryotic Cell",
+  "definition": "A eukaryotic cell contains a true nucleus and multiple membrane-bound organelles that compartmentalize functions. Animals, plants, fungi, and protists are eukaryotic organisms. These cells are generally larger and more complex than prokaryotes. Organelles allow simultaneous incompatible reactions."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Prokaryotic Cell",
+  "definition": "A prokaryotic cell lacks a nucleus and membrane-bound organelles. Bacteria and archaea are the only prokaryotic organisms. DNA resides in the nucleoid while ribosomes float freely in cytoplasm. Prokaryotes reproduce quickly by binary fission."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Plasma Membrane",
+  "definition": "The plasma membrane is a phospholipid bilayer with embedded proteins that controls what enters and leaves the cell. Fluid mosaic model describes its flexible, dynamic structure. Selective permeability maintains internal conditions. Membrane proteins perform transport, signaling, and recognition."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Nucleus",
+  "definition": "The nucleus stores DNA and coordinates protein synthesis and cell division. Nuclear envelope with pores regulates molecular traffic. Chromatin organizes DNA while the nucleolus builds ribosomes. The nucleus is the largest organelle in most cells."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Ribosome",
+  "definition": "Ribosomes are small complexes of RNA and protein that synthesize polypeptides from mRNA instructions. Free ribosomes float in cytosol while bound ribosomes attach to rough ER. All cells contain thousands of ribosomes. Protein synthesis occurs on ribosomes in every domain of life."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Rough Endoplasmic Reticulum",
+  "definition": "The rough endoplasmic reticulum is covered with ribosomes that make proteins for secretion or membrane insertion. Newly formed proteins enter the ER lumen for folding and modification. Rough ER is abundant in cells that export large amounts of protein."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Smooth Endoplasmic Reticulum",
+  "definition": "The smooth endoplasmic reticulum synthesizes lipids, detoxifies drugs, and regulates calcium levels. Liver cells contain extensive smooth ER for metabolism of toxins. This organelle lacks attached ribosomes. Steroid hormones are produced in smooth ER."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Golgi Apparatus",
+  "definition": "The Golgi apparatus receives proteins from the ER, modifies them, and packages them into vesicles. Cis face accepts incoming transport while trans face ships products. Glycosylation adds sugar chains to proteins. The Golgi sorts molecules to correct destinations."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Lysosome",
+  "definition": "Lysosomes contain hydrolytic enzymes that digest macromolecules, old organelles, and engulfed particles. Low internal pH optimizes enzyme activity. Membrane protects the cell from self-digestion. Tay-Sachs disease results from defective lysosomal function."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Vacuole",
+  "definition": "A vacuole is a large membrane-bound sac that stores water, ions, nutrients, or waste. Central vacuole in plant cells maintains turgor pressure and occupies most cell volume. Contractile vacuoles in protists pump out excess water. Vacuoles isolate toxic compounds."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Mitochondria",
+  "definition": "Mitochondria produce ATP through cellular respiration and contain their own circular DNA. Double membrane with folded cristae increases surface area for reactions. Mitochondria divide independently and are inherited maternally. These organelles power eukaryotic cells."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Chloroplast",
+  "definition": "Chloroplasts perform photosynthesis and contain stacks of thylakoids surrounded by stroma. These plant organelles have their own DNA and double membrane. Chlorophyll in thylakoid membranes captures light energy. Chloroplasts evolved from ancient cyanobacteria."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Cytoskeleton",
+  "definition": "The cytoskeleton is a network of protein fibers that maintains cell shape, anchors organelles, and enables movement. Microfilaments, intermediate filaments, and microtubules compose the system. Motor proteins walk along tracks to transport vesicles. The cytoskeleton reorganizes during cell division."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Centriole",
+  "definition": "Centrioles are barrel-shaped microtubule structures that organize the spindle during animal cell division. Pairs of centrioles form centrosomes near the nucleus. Plant cells lack centrioles but still divide properly. Centrioles also build cilia and flagella."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Cell Wall",
+  "definition": "The cell wall is a rigid external layer that protects plant, fungal, and bacterial cells. Cellulose forms primary walls in plants while secondary walls add lignin for strength. Cell walls allow plants to resist gravity and maintain shape. Plasmodesmata connect adjacent plant cells."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Endosymbiont Theory",
+  "definition": "Endosymbiont theory states that mitochondria and chloroplasts originated from engulfed prokaryotes that formed symbiotic relationships. Evidence includes independent division, circular DNA, and double membranes. This event enabled complex eukaryotic life."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Surface-to-Volume Ratio",
+  "definition": "Surface-to-volume ratio determines how efficiently cells exchange materials with the environment. Small cells have high ratios that support rapid diffusion. Larger cells require organelles and transport systems to compensate. Growth decreases this critical ratio."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 2: Cell Structure and Function",
+  "term": "Cilium and Flagellum",
+  "definition": "Cilia and flagella are motile structures with 9+2 microtubule arrangement powered by dynein. Cilia move fluid across surfaces while flagella propel cells. Both structures extend from basal bodies derived from centrioles. Movement requires ATP hydrolysis."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Enzyme",
+  "definition": "Enzymes are biological catalysts that lower activation energy and speed reactions without being consumed. Each enzyme has a specific active site shaped for particular substrates. Temperature and pH affect enzyme efficiency dramatically. Cells depend on enzymes for survival."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Active Site",
+  "definition": "The active site is the pocket on an enzyme where substrates bind and catalysis occurs. Precise shape complementarity ensures specificity. Binding induces conformational changes that strain bonds. Inhibitors can occupy or distort the active site."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Induced Fit",
+  "definition": "Induced fit occurs when substrate binding causes the enzyme to change shape for better fit and catalysis. This model replaced the rigid lock-and-key idea. Stronger interactions stabilize the transition state. Induced fit explains allosteric regulation."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Competitive Inhibition",
+  "definition": "Competitive inhibitors bind directly to the active site and block substrate access. Increasing substrate concentration can overcome this inhibition. Many drugs act as competitive inhibitors. The inhibitor resembles the normal substrate."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Noncompetitive Inhibition",
+  "definition": "Noncompetitive inhibitors bind to a site away from the active site and change enzyme shape. Substrate concentration cannot reverse this inhibition. Heavy metals often act as noncompetitive inhibitors. Maximum reaction rate decreases permanently."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "ATP",
+  "definition": "ATP stores and transfers energy through its high-energy phosphate bonds. Hydrolysis of the terminal phosphate releases about 7.3 kcal/mol. Cells regenerate ATP from ADP using energy from food. ATP powers nearly all cellular work."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Photosynthesis",
+  "definition": "Photosynthesis transforms light energy into chemical energy stored in glucose bonds. Chloroplasts in plants and algae perform this process. Carbon dioxide and water produce glucose and oxygen. The reaction is endergonic and requires sunlight."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Light-Dependent Reactions",
+  "definition": "Light-dependent reactions occur in thylakoid membranes and convert light to ATP and NADPH. Photosystems absorb photons and excite electrons. Water splits to replace electrons and release oxygen. A proton gradient drives ATP synthesis."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Calvin Cycle",
+  "definition": "The Calvin cycle fixes carbon dioxide into glucose using ATP and NADPH in the stroma. RuBisCO adds CO₂ to ribulose bisphosphate in the first step. The cycle regenerates starting molecules while producing G3P. This process is light-independent."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Cellular Respiration",
+  "definition": "Cellular respiration releases energy from glucose to form ATP, CO₂, and water. Aerobic respiration yields up to 32 ATP per glucose molecule. The process includes glycolysis, Krebs cycle, and electron transport. Oxygen serves as final electron acceptor."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Glycolysis",
+  "definition": "Glycolysis breaks glucose into two pyruvate molecules in the cytoplasm. This anaerobic process nets two ATP and two NADH. Ten enzyme-catalyzed steps rearrange and split the sugar. Glycolysis occurs in nearly all organisms."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Pyruvate Oxidation",
+  "definition": "Pyruvate oxidation converts pyruvate to acetyl-CoA in the mitochondrial matrix. One carbon leaves as CO₂ while NAD⁺ becomes NADH. The acetyl group attaches to coenzyme A. This linking step connects glycolysis to the Krebs cycle."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Krebs Cycle",
+  "definition": "The Krebs cycle oxidizes acetyl-CoA to CO₂ in the mitochondrial matrix. Each turn produces one ATP, three NADH, and one FADH₂. Two turns occur per glucose molecule. Electron carriers feed the transport chain."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Electron Transport Chain",
+  "definition": "The electron transport chain passes high-energy electrons through protein complexes in the inner membrane. Energy pumps protons to create a gradient. Oxygen accepts electrons to form water. This chain produces no ATP directly."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Chemiosmosis",
+  "definition": "Chemiosmosis uses proton gradient energy to synthesize ATP as protons flow through ATP synthase. The spinning synthase joins ADP and phosphate. This mechanism links electron transport to phosphorylation. Both mitochondria and chloroplasts use chemiosmosis."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Fermentation",
+  "definition": "Fermentation allows ATP production without oxygen by regenerating NAD⁺ from NADH. Lactic acid fermentation occurs in muscle cells while alcohol fermentation happens in yeast. Only glycolysis produces the two net ATP. Fermentation yields far less energy than respiration."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 3: Cellular Energetics",
+  "term": "Feedback Inhibition",
+  "definition": "Feedback inhibition occurs when a pathway’s end product inhibits an early enzyme to prevent overproduction. Allosteric sites allow product binding away from active site. This regulation maintains cellular homeostasis. ATP often inhibits early respiration steps."
 }
 ];
