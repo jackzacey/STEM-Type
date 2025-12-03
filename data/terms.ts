@@ -834,5 +834,137 @@ export const allTerms: Term[] = [
   "unit": "Unit 7: Natural Selection",
   "term": "Common Ancestry",
   "definition": "Common ancestry means all life descends from a single ancient ancestor. Universal genetic code and conserved molecules support this idea. DNA comparisons reveal degrees of relatedness. Shared ancestry explains hierarchical patterns in biodiversity."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Population",
+  "definition": "A population is a group of individuals of the same species living in the same area at the same time. Populations grow, shrink, or remain stable based on birth, death, immigration, and emigration rates. Ecologists study population size, density, and age structure. Interactions within populations shape community dynamics."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Exponential Growth",
+  "definition": "Exponential growth occurs when a population increases at a constant rate with no limiting factors. The growth curve forms a J-shape as each generation adds more individuals. Real populations rarely sustain exponential growth long-term. Resources eventually limit further increase."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Logistic Growth",
+  "definition": "Logistic growth happens when population increase slows as resources become limited. The growth curve forms an S-shape and levels off at carrying capacity. Environmental resistance imposes the upper limit. Most populations follow logistic growth patterns."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Carrying Capacity",
+  "definition": "Carrying capacity is the maximum population size an environment can sustain indefinitely. Food, water, space, and predators determine carrying capacity. Populations above carrying capacity decline rapidly. Human actions often alter natural carrying capacities."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Density-Dependent Factor",
+  "definition": "Density-dependent factors affect population growth more strongly as population size increases. Competition, predation, disease, and parasitism are density-dependent factors. These factors help regulate populations near carrying capacity. Effects intensify with crowding."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Density-Independent Factor",
+  "definition": "Density-independent factors affect populations regardless of size. Weather events, natural disasters, and human activities are density-independent factors. Floods or fires can drastically reduce populations suddenly. Recovery depends on remaining individuals."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Life History Strategy",
+  "definition": "Life history strategy describes how organisms allocate resources to growth, reproduction, and survival. r-selected species produce many offspring with little care while K-selected species invest heavily in fewer offspring. Environmental stability influences which strategy evolves."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Community",
+  "definition": "A community is all the populations of different species living and interacting in an area. Species diversity, abundance, and interactions define community structure. Changes in one population affect others through interconnected relationships. Communities develop through succession."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Competitive Exclusion",
+  "definition": "Competitive exclusion occurs when one species outcompetes another for resources, driving the weaker species to local extinction. Similar species cannot occupy identical niches indefinitely. Resource partitioning reduces direct competition. Gause’s experiments demonstrated this principle."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Resource Partitioning",
+  "definition": "Resource partitioning allows similar species to coexist by using different resources or the same resources differently. Warblers feed at different tree heights to avoid competition. Morphological or behavioral differences enable partitioning. This process promotes biodiversity."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Keystone Species",
+  "definition": "A keystone species has a disproportionately large effect on community structure relative to its abundance. Sea otters control urchin populations and protect kelp forests. Removal of keystone species causes dramatic community collapse. Predators often serve as keystone species."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Trophic Level",
+  "definition": "A trophic level represents an organism’s position in a food chain based on feeding relationships. Producers occupy the first level while herbivores and carnivores follow. Energy decreases about 90% with each level transfer. Top predators occupy the highest levels."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Biomass Pyramid",
+  "definition": "A biomass pyramid shows the total dry mass of organisms at each trophic level. Most ecosystems have pyramids with wide bases of producers and narrow tops of consumers. Energy loss limits biomass at higher levels. Inverted pyramids occur in some aquatic systems."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Biogeochemical Cycle",
+  "definition": "Biogeochemical cycles recycle essential nutrients through living and nonliving components of ecosystems. Water, carbon, nitrogen, and phosphorus follow distinct cycles. Organisms transform nutrients into different chemical forms. Human activities disrupt natural cycle balances."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Nitrogen Fixation",
+  "definition": "Nitrogen fixation converts atmospheric N₂ gas into ammonia that plants can use. Only certain bacteria and cyanobacteria perform this process. Lightning also fixes small amounts of nitrogen. Fixed nitrogen enters food webs through producers."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Primary Succession",
+  "definition": "Primary succession establishes communities on newly exposed land with no soil. Pioneer species like lichens begin soil formation. Bare rock gradually develops into complex communities over centuries primary succession. Glacial retreat creates areas for primary succession."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Secondary Succession",
+  "definition": "Secondary succession restores communities after disturbance when soil remains intact. Weeds and grasses colonize first after fires or farming. Recovery proceeds faster than primary succession. Climax communities eventually reestablish."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Biodiversity",
+  "definition": "Biodiversity measures the variety of life at genetic, species, and ecosystem levels. High biodiversity increases ecosystem stability and resilience. Human activities currently reduce global biodiversity rapidly. Conservation efforts aim to protect remaining diversity."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Ecosystem Services",
+  "definition": "Ecosystem services are benefits humans receive from natural ecosystems. Pollination, water purification, and climate regulation are vital services. Intact ecosystems provide these benefits free of charge. Destruction of ecosystems threatens human well-being."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Invasive Species",
+  "definition": "Invasive species are non-native organisms that spread aggressively and harm ecosystems. Lack of natural predators allows rapid population growth. Invasive species reduce biodiversity and alter habitats. Human travel and trade introduce most invasives."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Island Biogeography",
+  "definition": "Island biogeography theory explains species richness on islands based on size and distance from mainland. Larger islands closer to mainland support more species. Immigration and extinction rates reach equilibrium. The theory applies to habitat fragments too."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 8: Ecology",
+  "term": "Net Primary Productivity",
+  "definition": "Net primary productivity is the rate at which producers store chemical energy after meeting their own needs. Tropical rainforests show the highest net primary productivity on land. Oceans have lower average productivity despite vast area. Productivity supports all consumers."
 }
 ];
