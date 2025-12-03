@@ -8,183 +8,141 @@ export type Term = {
 
 export const allTerms: Term[] = [
   {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Macromolecule",
-    "definition": "Macromolecules are large organic molecules essential to life that are built from smaller organic monomers through dehydration synthesis reactions and broken down by hydrolysis; the four major classes in living organisms are carbohydrates, lipids, proteins, and nucleic acids, each performing critical functions in cellular structure and metabolism."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Dehydration Synthesis",
-    "definition": "Dehydration synthesis is the covalent bonding process by which two monomers are joined together to form a larger polymer, with the removal of a water molecule; this reaction is catalyzed by enzymes and is essential for building carbohydrates, proteins, and nucleic acids in cells."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Hydrolysis",
-    "definition": "Hydrolysis is the chemical reaction in which a polymer is broken down into its constituent monomers by the addition of a water molecule across the covalent bond; this process, catalyzed by specific enzymes, is crucial for digestion and the recycling of biological molecules within organisms."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Carbohydrate",
-    "definition": "Carbohydrates are organic molecules composed of carbon, hydrogen, and oxygen in an approximate 1:2:1 ratio that serve primarily as energy sources and structural components; they include monosaccharides such as glucose, disaccharides like sucrose, and polysaccharides such as starch, glycogen, and cellulose."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Protein",
-    "definition": "Proteins are polymers of amino acids linked by peptide bonds that fold into unique three-dimensional shapes determined by their primary sequence; they perform diverse functions including enzymatic catalysis, structural support, transport, defense, and regulation of cellular processes."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Amino Acid",
-    "definition": "An amino acid is the monomer of proteins consisting of a central alpha carbon bonded to a hydrogen atom, a carboxyl group, an amino group, and a variable R-group or side chain; the chemical properties of the side chain determine the behavior and role of each amino acid in a polypeptide."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Nucleic Acid",
-    "definition": "Nucleic acids are polymers of nucleotides that store, transmit, and express hereditary information; the two types are deoxyribonucleic acid (DNA), which forms a double helix and serves as the stable repository of genetic information, and ribonucleic acid (RNA), which functions in gene expression."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Lipid",
-    "definition": "Lipids are a diverse group of hydrophobic organic molecules that are insoluble in water but soluble in nonpolar solvents; they include triglycerides for energy storage, phospholipids as the primary component of cell membranes, steroids such as cholesterol, and waxes for protection."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Monomer",
-    "definition": "A monomer is a single molecular unit that can covalently bond with other identical or different monomers to form a polymer; examples include glucose as the monomer of starch, amino acids as monomers of proteins, and nucleotides as monomers of DNA and RNA."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Polymer",
-    "definition": "A polymer is a large macromolecule composed of many repeating monomer subunits linked by covalent bonds; biological polymers such as proteins, nucleic acids, and polysaccharides exhibit tremendous diversity in structure and function due to the variety and arrangement of their monomers."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Hydrogen Bond",
-    "definition": "A hydrogen bond is a weak electrostatic attraction between a partially positive hydrogen atom covalently bonded to nitrogen, oxygen, or fluorine and a partially negative atom on another molecule or within the same molecule; these bonds are critical for the structure of water, proteins, and nucleic acids."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Cohesion",
-    "definition": "Cohesion is the attraction between molecules of the same substance, such as water molecules being attracted to each other through hydrogen bonding; this property allows water to form droplets, maintain surface tension, and move upward in plants through xylem via capillary action."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Adhesion",
-    "definition": "Adhesion is the attraction between molecules of different substances, such as water molecules sticking to the walls of a plant's xylem; together with cohesion, adhesion enables the transpiration pull that transports water and minerals from roots to leaves against gravity."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "Specific Heat",
-    "definition": "Specific heat is the amount of heat energy required to raise the temperature of one gram of a substance by one degree Celsius; water's high specific heat allows it to absorb or release large amounts of heat with only small temperature changes, thereby moderating Earth's climate and stabilizing temperatures in organisms."
-  },
-  {
-    "course": "ap-biology",
-    "unit": "Unit 1: Chemistry of Life",
-    "term": "pH",
-    "definition": "pH is a measure of the hydrogen ion concentration in a solution, defined as the negative logarithm of the H+ concentration; biological systems function optimally within a narrow pH range near 7, and cells use buffers to resist changes in pH that could denature proteins or disrupt metabolic processes."
-  },
-  {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Prokaryotic Cell",
-  "definition": "Prokaryotic cells are single-celled organisms that lack a membrane-bound nucleus and membrane-bound organelles; their genetic material is located in a nucleoid region, they possess a cell walls typically made of peptidoglycan in bacteria, and they often contain plasmids as extra-chromosomal DNA."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Monomer",
+  "definition": "A monomer is a small, simple molecule that serves as the building block of larger polymers. Common examples include glucose for carbohydrates and amino acids for proteins. Many monomers link together through dehydration reactions to form long chains. Cells constantly use monomers to build and repair macromolecules."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Eukaryotic Cell",
-  "definition": "Eukaryotic cells are characterized by a membrane-bound nucleus that houses linear chromosomes, numerous membrane-bound organelles that compartmentalize cellular functions, and a cytoskeleton that provides structural support and enables intracellular transport and cell division."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Polymer",
+  "definition": "A polymer is a large molecule made of many repeating monomer subunits covalently bonded together. Proteins, nucleic acids, carbohydrates, and lipids often exist as polymers in living organisms. Cells synthesize polymers through dehydration reactions and break them down by hydrolysis. These macromolecules perform most functions in cells."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Nucleus",
-  "definition": "The nucleus is a prominent double-membraned organelle that contains the cell's genetic material organized as chromatin; it features nuclear pores for selective transport of mRNA and proteins, and it houses the nucleolus where ribosomal RNA is synthesized and ribosome assembly begins."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Dehydration Synthesis",
+  "definition": "Dehydration synthesis joins two monomers by removing a water molecule and forming a covalent bond. This reaction builds polymers such as proteins from amino acids or starch from glucose. Enzymes catalyze every dehydration synthesis reaction in cells. The process stores energy in the new bonds."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Ribosome",
-  "definition": "Ribosomes are macromolecular complexes composed of ribosomal RNA and proteins that serve as the sites of protein synthesis; they can be free in the cytosol to produce cytoplasmic proteins or bound to the rough endoplasmic reticulum to produce secreted or membrane-bound proteins."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Hydrolysis",
+  "definition": "Hydrolysis breaks polymers into monomers by adding a water molecule and splitting a covalent bond. Digestive enzymes use hydrolysis to break down food into usable subunits. Cells perform hydrolysis to recycle or obtain energy from macromolecules. The reaction is the reverse of dehydration synthesis."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Endoplasmic Reticulum",
-  "definition": "The endoplasmic reticulum is an extensive network of membranous tubules and sacs; the rough endoplasmic reticulum is studded with ribosomes and synthesizes proteins destined for secretion or incorporation into membranes, while the smooth endoplasmic reticulum synthesizes lipids, detoxifies drugs, and regulates calcium levels."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Carbohydrate",
+  "definition": "Carbohydrates are organic molecules made of carbon, hydrogen, and oxygen in a 1:2:1 ratio. Monosaccharides like glucose serve as quick energy sources, while polysaccharides like starch store energy. Plants build cellulose for structural support using carbohydrates. Cells recognize other cells using carbohydrate chains on surfaces."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Golgi Apparatus",
-  "definition": "The Golgi apparatus is a stacked series of flattened membranous sacs that modifies, sorts, and packages proteins and lipids received from the endoplasmic reticulum; it adds carbohydrates to form glycoproteins and directs vesicles to their proper cellular or extracellular destinations."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Monosaccharide",
+  "definition": "A monosaccharide is the simplest carbohydrate and serves as the basic unit of sugars. Glucose, fructose, and galactose are common monosaccharides in living organisms. Cells use monosaccharides for immediate energy through cellular respiration. Two monosaccharides join to form disaccharides like sucrose."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Lysosome",
-  "definition": "Lysosomes are membrane-bound organelles containing hydrolytic enzymes that break down macromolecules, damaged organelles, and engulfed pathogens; they maintain an acidic internal pH optimal for enzyme activity and fuse with endosomes or autophagosomes during digestion."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Polysaccharide",
+  "definition": "A polysaccharide is a complex carbohydrate formed by linking hundreds or thousands of monosaccharides. Starch stores energy in plants, glycogen stores energy in animals, and cellulose provides structural support. These long chains often coil or branch for compact storage. Enzymes break polysaccharides into usable glucose units."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Mitochondria",
-  "definition": "Mitochondria are double-membraned organelles that produce ATP through cellular respiration; their inner membrane folds into cristae to increase surface area for the electron transport chain, and they contain their own circular DNA, supporting the endosymbiotic theory of their bacterial origin."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Lipid",
+  "definition": "Lipids are hydrophobic organic molecules that do not dissolve in water. Fats store long-term energy, phospholipids form cell membranes, and steroids act as signaling molecules. Cells synthesize lipids from glycerol and fatty acids. These molecules provide insulation and cushion organs."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Chloroplast",
-  "definition": "Chloroplasts are double-membraned organelles found in photosynthetic eukaryotes that convert light energy into chemical energy; they contain thylakoid membranes stacked into grana where light-dependent reactions occur, and a fluid stroma where the Calvin cycle fixes carbon dioxide into glucose."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Saturated Fatty Acid",
+  "definition": "A saturated fatty acid contains only single bonds between carbon atoms and the maximum number of hydrogens. These straight chains pack tightly, making butter and animal fats solid at room temperature. High consumption can raise cholesterol levels. Plants rarely produce saturated fatty acids."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Cytoskeleton",
-  "definition": "The cytoskeleton is a dynamic network of protein filaments that provides structural support, enables cell movement, and facilitates intracellular transport; it consists of microfilaments for muscle contraction and cell shape, intermediate filaments for mechanical strength, and microtubules for mitosis and vesicle transport."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Unsaturated Fatty Acid",
+  "definition": "An unsaturated fatty acid has one or more double bonds between carbon atoms. The kinks prevent tight packing, so oils remain liquid at room temperature. Olive oil and fish oils contain many unsaturated fatty acids. These fats generally support heart health better than saturated fats."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Cell Wall",
-  "definition": "The cell wall is a rigid layer external to the plasma membrane in plant, fungal, and many prokaryotic cells; in plants it is primarily composed of cellulose microfibrils embedded in a polysaccharide matrix, providing structural support and protection while allowing water and small molecules can pass through."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Phospholipid",
+  "definition": "A phospholipid consists of a glycerol, two fatty acids, and a phosphate group. The phosphate head loves water, while the fatty acid tails repel water. Phospholipids spontaneously form bilayers that create cell membranes. This structure separates the cell from its environment."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Plasma Membrane",
-  "definition": "The plasma membrane is a selectively permeable phospholipid bilayer that encloses the cell and regulates the passage of materials; it contains embedded proteins for transport and signaling, cholesterol for fluidity in animal cells, and maintains distinct internal environments through the fluid mosaic model."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Protein",
+  "definition": "Proteins are polymers of amino acids that perform most cellular work. Enzymes speed reactions, structural proteins provide support, and hormones carry signals. Each protein folds into a unique three-dimensional shape that determines function. Cells denature proteins with heat or pH changes."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Central Vacuole",
-  "definition": "The central vacuole is a large membrane-bound sac in mature plant cells that occupies most of the cell volume; it stores water, ions, nutrients, and waste products, maintains turgor pressure against the cell wall, and contributes to cell growth by rapid water uptake."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Amino Acid",
+  "definition": "An amino acid contains a central carbon bonded to an amino group, carboxyl group, hydrogen, and a variable R group. Twenty different amino acids build all proteins in living organisms. The R group determines each amino acid's chemical properties. Cells link amino acids by peptide bonds."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Endomembrane System",
-  "definition": "The endomembrane system comprises the nuclear envelope, endoplasmic reticulum, Golgi apparatus, lysosomes, vesicles, and plasma membrane; these components work together to synthesize, modify, transport, and recycle proteins and lipids throughout the eukaryotic cell."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Peptide Bond",
+  "definition": "A peptide bond is a covalent bond that links the carboxyl group of one amino acid to the amino group of another. Dehydration synthesis forms each peptide bond during protein construction. Enzymes called proteases break peptide bonds during digestion. Long chains of peptide bonds create polypeptides."
 },
 {
   "course": "ap-biology",
-  "unit": "Unit 2: Cell Structure and Function",
-  "term": "Endosymbiotic Theory",
-  "definition": "The endosymbiotic theory proposes that mitochondria and chloroplasts originated as independent prokaryotes that were engulfed by ancestral eukaryotic cells; evidence includes their own circular DNA, double membranes, autonomous replication, and ribosomes similar to those found in bacteria."
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Primary Structure",
+  "definition": "Primary structure is the unique linear sequence of amino acids in a polypeptide chain. Peptide bonds hold the amino acids together in this exact order. Even one wrong amino acid can destroy protein function, as in sickle-cell disease. The primary structure determines all higher levels of folding."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Denaturation",
+  "definition": "Denaturation occurs when a protein loses its three-dimensional shape and function due to broken weak bonds. High temperature, extreme pH, or chemicals cause denaturation in cells and cooking. Most denatured proteins cannot refold correctly. Enzymes denature and stop working above certain temperatures."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Nucleic Acid",
+  "definition": "Nucleic acids are polymers that store and transmit genetic information in cells. DNA holds hereditary instructions, while RNA helps build proteins. Nucleotides containing a sugar, phosphate, and nitrogenous base form these long chains. Cells replicate DNA before division to pass genes to offspring."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Nucleotide",
+  "definition": "A nucleotide consists of a five-carbon sugar, a phosphate group, and a nitrogenous base. DNA and RNA are built from chains of nucleotides linked by phosphodiester bonds. ATP is a nucleotide that carries energy for cellular work. Cells constantly recycle and rebuild nucleotides."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Hydrogen Bond",
+  "definition": "A hydrogen bond is a weak attraction between a hydrogen atom and an electronegative atom like oxygen or nitrogen. Hydrogen bonds hold water molecules together and stabilize DNA's double helix. These bonds also maintain protein secondary structure. Though weak individually, many hydrogen bonds create strong effects."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Cohesion",
+  "definition": "Cohesion is the attraction between molecules of the same substance, such as water sticking to water. Hydrogen bonds between water molecules create high cohesion in liquid water. This property allows water to form droplets and move upward in plants. Cohesion supports tall trees through xylem vessels."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Adhesion",
+  "definition": "Adhesion is the attraction between molecules of different substances, such as water sticking to glass. Water adheres to cell walls in plants, counteracting gravity during transport. This property works with cohesion to move water upward in tall trees. Capillary action depends on adhesion."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Specific Heat",
+  "definition": "Specific heat is the amount of energy required to raise the temperature of one gram of a substance by one degree Celsius. Water has a high specific heat due to extensive hydrogen bonding. This property keeps coastal climates mild and cell temperatures stable. Organisms rely on water to resist rapid temperature changes."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 1: Chemistry of Life",
+  "term": "Solvent",
+  "definition": "A solvent is a substance that dissolves other substances to form solutions. Water is the universal solvent in living organisms because of its polarity. Polar and ionic compounds dissolve easily in water inside cells. This property allows chemical reactions to occur in aqueous environments."
 }
 ];
