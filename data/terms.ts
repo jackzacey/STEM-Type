@@ -354,7 +354,7 @@ export const allTerms: Term[] = [
   "unit": "Unit 3: Cellular Energetics",
   "term": "Feedback Inhibition",
   "definition": "Feedback inhibition occurs when a pathway’s end product inhibits an early enzyme to prevent overproduction. Allosteric sites allow product binding away from active site. This regulation maintains cellular homeostasis. ATP often inhibits early respiration steps."
-}
+},
 {
   "course": "ap-biology",
   "unit": "Unit 4: Cell Communication and Cell Cycle",
@@ -606,5 +606,234 @@ export const allTerms: Term[] = [
   "unit": "Unit 5: Heredity",
   "term": "Chromosomal Theory of Inheritance",
   "definition": "The chromosomal theory of inheritance states that genes are located on chromosomes. Mendel’s factors correspond to genes on homologous chromosomes. Meiosis explains segregation and independent assortment. Sutton and Boveri proposed this unifying theory."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "DNA Replication",
+  "definition": "DNA replication copies the entire genome before cell division to ensure daughter cells receive identical genetic information. The process is semiconservative, with each new double helix containing one old strand and one new strand. Helicase unwinds DNA while DNA polymerase adds nucleotides in the 5′ to 3′ direction. Accuracy relies on base pairing and proofreading enzymes."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Transcription",
+  "definition": "Transcription synthesizes an RNA molecule using one DNA strand as a template. RNA polymerase binds the promoter and adds complementary RNA nucleotides. The process occurs in three stages: initiation, elongation, and termination. Eukaryotic mRNA requires processing before translation."
+},
+{
+  "course": "ap-biology Honda",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "RNA Processing",
+  "definition": "RNA processing modifies pre-mRNA in eukaryotes by adding a 5′ cap, a poly-A tail, and splicing out introns. Splicing is performed by the spliceosome, which removes non-coding regions. Processed mRNA exits the nucleus through nuclear pores. Alternative splicing creates multiple proteins from one gene."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Translation",
+  "definition": "Translation converts mRNA sequence into a polypeptide using ribosomes and tRNA. Ribosomes read codons while tRNA brings matching amino acids. The process has initiation, elongation, and termination phases. Multiple ribosomes form polysomes to speed protein synthesis."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  Mise à jour
+  "term": "Codon",
+  "definition": "A codon is a three-nucleotide sequence in mRNA that specifies a particular amino acid or stop signal. Sixty-one codons code for twenty amino acids, showing redundancy. The genetic code is nearly universal across all organisms. Reading frame determines correct codon sequence."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Mutation",
+  "definition": "A mutation is a permanent change in DNA sequence that can alter protein function. Point mutations include substitutions, insertions, or deletions. Frameshift mutations shift the reading frame and usually destroy protein function. Mutations provide raw material for evolution."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Promoter",
+  "definition": "A promoter is a DNA region where RNA polymerase binds to begin transcription. TATA box and other sequences help position the enzyme correctly. Strength of the promoter affects transcription rate. Enhancers and silencers regulate promoter activity from a distance."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Operon",
+  "definition": "An operon is a cluster of genes in prokaryotes controlled by a single promoter and operator. The lac operon turns on when lactose is present and glucose is scarce. Repressors block transcription while activators increase it. Operons allow coordinated gene expression."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "lac Operon",
+  "definition": "The lac oper turned on in E. coli when lactose is available and glucose is low. Lactose inactivates the repressor, allowing RNA polymerase to transcribe enzymes that metabolize lactose. CAP protein boosts transcription when cAMP levels rise. This system optimizes energy use."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "trp Operon",
+  "definition": "The trp operon produces enzymes for tryptophan synthesis in bacteria. High tryptophan levels activate the repressor, turning the operon off. Attenuation provides a second control by stopping transcription early when tryptophan is abundant. This operon is repressible."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Enhancer",
+  "definition": "An enhancer is a DNA sequence that increases transcription when bound by activator proteins. Enhancers can be far from the gene and work when looped close. Multiple enhancers control complex gene expression patterns. Silencers work similarly but decrease transcription."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Epigenetics",
+  "definition": "Epigenetics studies heritable changes in gene expression without altering DNA sequence. DNA methylation and histone modification silence or activate genes. Identical twins show epigenetic differences over time. Environmental factors influence epigenetic marks."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Transcription Factor",
+  "definition": "Transcription factors are proteins that bind DNA to control gene transcription. General factors assemble RNA polymerase while specific factors regulate particular genes. Activators increase transcription; repressors decrease it. These proteins help cells respond to signals."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Alternative Splicing",
+  "definition": "Alternative splicing produces different mRNA isoforms from one gene by including or excluding exons. This mechanism greatly increases protein diversity in eukaryotes. Over 90% of human genes undergo alternative splicing. Regulation determines which proteins cells make."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "miRNA",
+  "definition": "MicroRNAs are small non-coding RNAs that bind mRNA and block translation or cause degradation. One miRNA can regulate hundreds of target genes. These molecules fine-tune gene expression during development. Cancer often involves disrupted miRNA function."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Central Dogma",
+  "definition": "The central dogma describes the flow of genetic information from DNA to RNA to protein. DNA is replicated, transcribed into RNA, and translated into protein. Reverse transcription occurs in retroviruses. This framework explains gene expression universally."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Point Mutation",
+  "definition": "A point mutation changes a single nucleotide in DNA. Silent mutations have no effect while missense mutations change amino acids. Nonsense mutations create premature stop codons. Many genetic diseases arise from point mutations."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 6: Gene Expression and Regulation",
+  "term": "Gene Regulation",
+  "definition": "Gene regulation controls when and where genes are expressed in an organism. Cells express only a fraction of their genes at any time. Regulation occurs at transcription, translation, and post-translation levels. Precise control enables cell differentiation."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Natural Selection",
+  "definition": "Natural selection is the process by which organisms better adapted to their environment survive and reproduce more. Differential survival and reproduction lead to trait changes over generations. Charles Darwin proposed this mechanism as evolution’s driving force. Selection acts on existing variation."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Evolution",
+  "definition": "Evolution is the change in heritable traits of populations over successive generations. Genetic variation, mutation, and natural selection drive evolutionary change. All life shares common ancestry through evolution. Fossil, genetic, and anatomical evidence support evolution."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Fitness",
+  "definition": "Fitness measures an organism’s ability to survive and reproduce in its environment. Individuals with higher fitness contribute more offspring to the next generation. Fitness is relative and environment-dependent. Traits increasing fitness become more common."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Adaptation",
+  "definition": "An adaptation is a heritable trait that increases fitness in a specific environment. Camouflage, antibiotic resistance, and beak shape are adaptations. Adaptations arise through natural selection acting on variation. Not all traits are adaptations."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Artificial Selection",
+  "definition": "Artificial selection occurs when humans choose individuals with desired traits for breeding. Dog breeds and crop varieties result from artificial selection. This process demonstrates how selection modifies populations quickly. Darwin used artificial selection to explain natural selection."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Genetic Drift",
+  "definition": "Genetic drift is random change in allele frequencies due to chance events. Small populations experience stronger drift effects. Bottlenecks and founder effects cause dramatic drift. Drift reduces genetic variation over time."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Bottleneck Effect",
+  "definition": "The bottleneck effect occurs when a population shrinks drastically and then recovers. Surviving individuals carry only a subset of original alleles. Cheetahs show low genetic diversity from a past bottleneck. Random survival shapes future gene pool."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Founder Effect",
+  "definition": "The founder effect happens when a small group starts a new population. The new population has reduced genetic variation from the original. Amish communities show high frequencies of certain disorders due to founder effect. Island species often display this pattern."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Gene Flow",
+  "definition": "Gene flow transfers alleles between populations through migration and interbreeding. Gene flow reduces differences between populations. It can introduce beneficial alleles or prevent adaptation to local conditions. Barriers to flow promote speciation."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Hardy-Weinberg Equilibrium",
+  "definition": "Hardy-Weinberg equilibrium describes a non-evolving population with constant allele frequencies. Five conditions must be met: no selection, mutation, drift, flow, or non-random mating. Real populations rarely meet all conditions. The model provides a null hypothesis for evolution."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Sexual Selection",
+  "definition": "Sexual selection favors traits that improve mating success rather than survival. Male peacock tails and deer antlers evolved through sexual selection. Female choice and male competition drive this process. Costly traits signal genetic quality."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Speciation",
+  "definition": "Speciation forms new species when populations become reproductively isolated. Allopatric speciation occurs with geographic barriers while sympatric speciation happens without them. Reproductive isolation can be prezygotic or postzygotic. Speciation builds biodiversity."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Allopatric Speciation",
+  "definition": "Allopatric speciation occurs when geographic barriers divide a population and prevent gene flow. Isolated populations adapt to different environments. Genetic divergence accumulates until reproductive isolation evolves. Mountain ranges and rivers often cause allopatry."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Evidence of Evolution",
+  "definition": "Evidence of evolution comes from fossils, biogeography, comparative anatomy, embryology, and molecular biology. Transitional fossils show intermediate forms. Homologous structures reveal common ancestry. DNA sequence similarities confirm evolutionary relationships."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Homologous Structure",
+  "definition": "Homologous structures are similar features in different species derived from a common ancestor. Vertebrate forelimbs show the same bones arranged differently for various functions. Homology reflects shared evolutionary history. Convergent evolution produces analogous structures."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Vestigial Structure",
+  "definition": "Vestigial structures are remnants of organs that had functions in ancestors. Human appendix and whale pelvis bones are vestigial. These features lost original purpose but persist in reduced form. Vestigial traits provide evidence of evolutionary history."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Convergent Evolution",
+  "definition": "Convergent evolution produces similar traits in unrelated species facing similar environments. Wings evolved independently in birds, bats, and insects. Streamlined bodies appear in sharks and dolphins. Convergence creates analogous structures."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Divergent Evolution",
+  "definition": "Divergent evolution occurs when related species evolve different traits in different environments. Darwin’s finches show divergent beak shapes for different foods. Adaptive radiation often follows divergence. Common ancestry explains underlying similarities."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Phylogenetic Tree",
+  "definition": "A phylogenetic tree diagrams evolutionary relationships among organisms or genes. Branches represent lineages while nodes show common ancestors. Shared derived characters determine branching order. Trees are hypotheses based on multiple evidence types."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 7: Natural Selection",
+  "term": "Common Ancestry",
+  "definition": "Common ancestry means all life descends from a single ancient ancestor. Universal genetic code and conserved molecules support this idea. DNA comparisons reveal degrees of relatedness. Shared ancestry explains hierarchical patterns in biodiversity."
 }
 ];
