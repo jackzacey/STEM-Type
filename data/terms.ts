@@ -971,103 +971,97 @@ export const allTerms: Term[] = [
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
   "term": "Mole",
-  "definition": "The mole is the SI unit that represents 6.022 × 10²³ particles, allowing chemists to count atoms, molecules, or formula units by weighing measurable masses; one mole of any substance contains Avogadro’s number of particles and has a mass in grams equal to its molar mass."
+  "definition": "The mole is the SI unit for amount of substance that contains exactly six point zero two two times ten to the twenty-third particles; this number, known as Avogadro's number, allows chemists to count atoms or molecules by weighing grams equal to the molar mass."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
   "term": "Atomic Mass",
-  "definition": "Atomic mass is the weighted average mass of an element’s naturally occurring isotopes expressed in atomic mass units; it appears on the periodic table and reflects the relative abundance of each isotope in a typical sample of the element."
+  "definition": "Atomic mass is the weighted average mass of an element's naturally occurring isotopes measured in atomic mass units; values on the periodic table reflect relative isotopic abundances and enable precise stoichiometric calculations in chemical reactions."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
   "term": "Mass Spectrometry",
-  "definition": "Mass spectrometry determines the mass-to-charge ratio of ionized atoms or molecules, producing a spectrum that reveals isotopic composition and allows precise calculation of atomic and molecular masses for elements and compounds."
+  "definition": "Mass spectrometry separates and detects ions based on their mass-to-charge ratio to determine isotopic composition; the resulting spectrum reveals relative abundance of isotopes and permits accurate calculation of average atomic masses."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
   "term": "Photoelectron Spectroscopy",
-  "definition": "Photoelectron spectroscopy measures the kinetic energy of electrons ejected from atoms by high-energy photons, providing direct evidence of electron energy levels and confirming the quantized shell structure of atoms."
+  "definition": "Photoelectron spectroscopy ejects electrons from atoms using high-energy photons and measures their kinetic energy; this technique provides direct evidence of electron energy levels and confirms the quantized nature of atomic orbitals."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
   "term": "Aufbau Principle",
-  "definition": "The Aufbau principle states that electrons fill orbitals starting from the lowest available energy level before occupying higher levels, resulting in the observed ground-state electron configurations of atoms."
+  "definition": "The Aufbau principle states that electrons occupy the lowest available energy orbitals first before filling higher energy levels; this building-up order explains the ground-state electron configurations observed across the periodic table."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
-  "term": "Coulomb’s Law",
-  "definition": "Coulomb’s law describes the electrostatic force between charged particles as directly proportional to the product of their charges and inversely proportional to the square of the distance between them, governing atomic and ionic attractions."
+  "term": "Coulomb's Law",
+  "definition": "Coulomb's law states that the electrostatic force between two charged particles is directly proportional to the product of their charges and inversely proportional to the square of the distance between their centers."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 1: Atomic Structure and Properties",
   "term": "Effective Nuclear Charge",
-  "definition": "Effective nuclear charge is the net positive charge experienced by valence electrons after shielding by inner electrons reduces the full nuclear charge, explaining periodic trends in atomic radius and ionization energy."
+  "definition": "Effective nuclear charge is the net positive charge experienced by valence electrons after inner electrons shield some of the nuclear attraction; this concept explains periodic trends in atomic radius and ionization energy."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Lewis Structure",
-  "definition": "A Lewis structure represents valence electrons as dots around atomic symbols and shared electron pairs as lines, illustrating covalent bonding, octet fulfillment, formal charge, and resonance in molecules and polyatomic ions."
+  "definition": "A Lewis structure uses dots to represent valence electrons and lines to show covalent bonds; it illustrates how atoms achieve octets through sharing or transferring electrons in molecules and polyatomic ions."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "VSEPR Theory",
-  "definition": "VSEPR theory predicts molecular geometry by assuming electron pairs arrange themselves to minimize repulsion, resulting in specific shapes such as linear, trigonal planar, tetrahedral, trigonal bipyramidal, and octahedral."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
-  "term": "Bond Order",
-  "definition": "Bond order equals half the difference between bonding and antibonding electrons in molecular orbital theory, determining whether a bond is single, double, or triple and correlating with bond strength and length."
+  "definition": "VSEPR theory predicts molecular geometry by arranging electron pairs to minimize repulsion; common shapes include linear, trigonal planar, tetrahedral, trigonal bipyramidal, and octahedral based on electron domain count."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Formal Charge",
-  "definition": "Formal charge is calculated as valence electrons minus nonbonding electrons minus half of bonding electrons, helping chemists identify the most plausible Lewis structure when multiple resonance forms are possible."
+  "definition": "Formal charge equals valence electrons minus nonbonding electrons minus half of bonding electrons; chemists use it to determine the most stable Lewis structure when multiple resonance forms are possible."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Resonance",
-  "definition": "Resonance occurs when two or more valid Lewis structures can be drawn for a molecule, indicating the actual structure is a hybrid with electron delocalization that stabilizes species such as carbonate and nitrate ions."
+  "definition": "Resonance describes molecules whose actual electron distribution is an average of multiple valid Lewis structures; delocalized electrons in resonance hybrids often increase stability, as seen in carbonate and benzene."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Lattice Energy",
-  "definition": "Lattice energy is the energy released when gaseous ions form a solid ionic crystal; its magnitude increases with higher ion charges and smaller ion sizes according to Coulomb’s law and Born-Haber cycle calculations."
+  "definition": "Lattice energy is the energy released when one mole of an ionic compound forms from its gaseous ions; higher charge and smaller ion size produce stronger electrostatic attraction and greater lattice energy."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Hybridization",
-  "definition": "Hybridization mixes atomic orbitals to form new hybrid orbitals of equivalent energy suited for the observed geometry, producing sp, sp², sp³, and other hybrids that explain bonding in molecules like methane and ethene."
+  "definition": "Hybridization mixes atomic orbitals to form new hybrid orbitals with geometry matching observed molecular shapes; examples include sp hybrid for linear, sp2 for trigonal planar, and sp3 for tetrahedral arrangements."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Sigma and Pi Bonds",
-  "definition": "Sigma bonds form by head-on overlap of orbitals and allow free rotation, while pi bonds result from sideways overlap of p orbitals, restrict rotation, and contribute to multiple bonds in molecules such as ethene and ethyne."
+  "definition": "Sigma bonds form by direct orbital overlap along the bond axis while pi bonds arise from sideways overlap of p orbitals; single bonds are sigma, double bonds contain one sigma and one pi, and triple bonds contain one sigma and two pi."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
-  "term": "Intramolecular Forces",
-  "definition": "Intramolecular forces include ionic, covalent, and metallic bonds that hold atoms together within compounds, determining molecular shape, polarity, and reactivity far more strongly than intermolecular forces."
+  "term": "Bond Order",
+  "definition": "Bond order is calculated as half the difference between bonding and antibonding electrons in molecular orbital theory; it predicts bond strength and length, with higher order indicating shorter and stronger bonds."
 },
 {
   "course": "ap-chemistry",
   "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
   "term": "Intermolecular Forces",
-  "definition": "Intermolecular forces such as London dispersion forces, dipole-dipole interactions, and hydrogen bonding operate between molecules, governing physical properties including boiling points, solubility, and viscosity of substances."
+  "definition": "Intermolecular forces are attractive forces between molecules that determine physical properties; they include London dispersion forces, dipole-dipole interactions, and hydrogen bonding, with strength increasing in that order."
 },
 {
   "course": "ap-chemistry",
