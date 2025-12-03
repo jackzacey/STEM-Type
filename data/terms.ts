@@ -355,4 +355,256 @@ export const allTerms: Term[] = [
   "term": "Feedback Inhibition",
   "definition": "Feedback inhibition occurs when a pathway’s end product inhibits an early enzyme to prevent overproduction. Allosteric sites allow product binding away from active site. This regulation maintains cellular homeostasis. ATP often inhibits early respiration steps."
 }
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Cell Signaling",
+  "definition": "Cell signaling allows cells to detect and respond to changes in their environment. Cells communicate using chemical signals that bind to specific receptor proteins. The process involves reception, transduction, and response stages. Precise signaling coordinates growth, division, and immune responses."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Ligand",
+  "definition": "A ligand is a signaling molecule that binds to a specific receptor protein and triggers a cellular response. Hormones, neurotransmitters, and local mediators act as ligands. Binding causes the receptor to change shape. Only target cells with matching receptors respond."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Receptor Protein",
+  "definition": "Receptor proteins bind specific ligands and initiate signal transduction inside the cell. Receptors can be on the plasma membrane or inside the cell. Binding alters receptor shape and activates downstream pathways. Cells respond only to ligands that fit their receptors."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Signal Transduction Pathway",
+  "definition": "A signal transduction pathway converts an extracellular signal into an intracellular response. Relay molecules, often proteins, pass the message step by step. Many pathways use phosphorylation cascades. The final molecule triggers the cell’s specific response."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Phosphorylation Cascade",
+  "definition": "A phosphorylation cascade is a series of protein kinases that add phosphate groups to activate the next kinase. Each step amplifies the original signal dramatically. These cascades control rapid responses like fight-or-flight. Phosphatases remove phosphates to turn signals off."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Second Messenger",
+  "definition": "Second messengers are small molecules that spread signals quickly inside the cell after receptor activation. Cyclic AMP and calcium ions are common second messengers. They activate multiple targets at once. Cells degrade second messengers rapidly to stop signaling."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Apoptosis",
+  "definition": "Apoptosis is programmed cell death that removes damaged or unnecessary cells. Caspases execute the orderly breakdown of cellular components. Signals from inside or outside the cell trigger apoptosis. This process shapes tissues during development and prevents cancer."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Cell Cycle",
+  "definition": "The cell cycle is the ordered sequence of events that leads to cell growth and division. Phases include G1, S, G2, and M. Checkpoints ensure proper completion before advancing. Cyclins and cyclin-dependent kinases regulate progression."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Interphase",
+  "definition": "Interphase occupies most of the cell cycle and includes G1, S, and G2 phases. Cells grow, perform normal functions, and duplicate DNA during interphase. Chromosomes are not visible because chromatin remains extended. Metabolism is high throughout interphase."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Mitosis",
+  "definition": "Mitosis divides the nucleus and distributes identical chromosomes to two daughter cells. Stages include prophase, prometaphase, metaphase, anaphase, and telophase. Cytokinesis usually follows to separate cytoplasm. Mitosis produces genetically identical cells for growth and repair."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Cytokinesis",
+  "definition": "Cytokinesis divides the cytoplasm and completes cell division after mitosis. Animal cells form a cleavage furrow using actin filaments. Plant cells build a cell plate from vesicles. Two genetically identical daughter cells result."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Cyclin",
+  "definition": "Cyclins are regulatory proteins whose concentrations rise and fall during the cell cycle. Different cyclins activate specific cyclin-dependent kinases at checkpoints. Rising cyclin levels drive the cycle forward. Destruction of cyclins halts progression."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Cyclin-Dependent Kinase (CDK)",
+  "definition": "Cyclin-dependent kinases are enzymes that phosphorylate target proteins to advance the cell cycle. CDKs require binding to specific cyclins to become active. Activity peaks at cell cycle checkpoints. Mutations in CDKs can cause uncontrolled division."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "G1 Checkpoint",
+  "definition": "The G1 checkpoint determines whether the cell should divide, delay, or enter resting phase. DNA damage, insufficient nutrients, or growth signals influence the decision. Most cells that stop dividing arrest at G1. Cancer cells often ignore this checkpoint."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Metaphase Checkpoint",
+  "definition": "The metaphase checkpoint ensures all chromosomes are properly attached to the mitotic spindle. Unattached kinetochores send wait signals until alignment is perfect. This checkpoint prevents aneuploidy in daughter cells. Errors here cause severe genetic disorders."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Cancer",
+  "definition": "Cancer arises when cells lose control over division and invade surrounding tissues. Mutations disable checkpoints or override growth controls. Tumors form masses of abnormal cells. Metastasis spreads cancer cells throughout the body."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Density-Dependent Inhibition",
+  "definition": "Density-dependent inhibition stops cell division when cells touch neighboring cells. Normal cells in culture form a single layer and halt growth. Cancer cells ignore contact and pile up. Anchorage dependence also limits normal cell division."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Growth Factor",
+  "definition": "Growth factors are proteins that stimulate cell division when they bind surface receptors. Platelets release growth factors to heal wounds. Overproduction leads to excessive cell proliferation. Many cancers overexpress growth factor receptors."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 4: Cell Communication and Cell Cycle",
+  "term": "Quorum Sensing",
+  "definition": "Quorum sensing allows bacterial cells to communicate and coordinate behavior based on population density. Cells release signaling molecules that others detect. High concentrations trigger responses like virulence or biofilm formation. This process resembles eukaryotic cell signaling."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Meiosis",
+  "definition": "Meiosis reduces chromosome number by half to produce haploid gametes. Two divisions create four genetically different daughter cells. Crossing over and independent assortment generate variation. Sexual reproduction depends on meiosis for genetic diversity."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Crossing Over",
+  "definition": "Crossing over exchanges genetic material between homologous chromosomes during prophase I. Chiasmata mark sites of exchange. This process creates recombinant chromosomes with new allele combinations. Crossing over increases genetic variation in offspring."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Independent Assortment",
+  "definition": "Independent assortment randomly distributes maternal and paternal chromosomes into gametes. Each pair aligns independently at metaphase I. This principle produces 2ⁿ possible gamete combinations. Independent assortment adds genetic diversity."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Synapsis",
+  "definition": "Synapsis occurs when homologous chromosomes pair closely during prophase I of meiosis. The synaptonemal complex holds homologs together. Crossing over happens only after synapsis. Tetrads of four chromatids form during this stage."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Nondisjunction",
+  "definition": "Nondisjunction happens when chromosomes fail to separate properly during meiosis or mitosis. Gametes receive extra or missing chromosomes. Fertilization produces aneuploid offspring like Down syndrome. Nondisjunction causes most chromosomal disorders."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Haploid",
+  "definition": "A haploid cell contains one complete set of chromosomes. Gametes are haploid in sexually reproducing organisms. Meiosis reduces diploid cells to haploid. Fusion of two haploid gametes restores diploid number."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Diploid",
+  "definition": "A diploid cell contains two complete sets of chromosomes, one from each parent. Somatic cells are diploid in animals and plants. Diploid cells undergo mitosis for growth. Meiosis in germ cells produces haploid gametes."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Allele",
+  "definition": "An allele is an alternative form of a gene that occupies the same locus on homologous chromosomes. Dominant alleles mask recessive ones in heterozygotes. Different alleles arise by mutation. Organisms inherit one allele from each parent."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Law of Segregation",
+  "definition": "The law of segregation states that allele pairs separate during gamete formation. Each gamete receives one allele randomly. Offspring inherit one allele from each parent. Mendel discovered this principle using pea plants."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Law of Independent Assortment",
+  "definition": "The law of independent assortment states that alleles of different genes segregate independently during gamete formation. This occurs because homologous pairs align randomly at metaphase I. The law applies only to genes on separate chromosomes."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Test Cross",
+  "definition": "A test cross mates an individual of unknown genotype with a homozygous recessive individual. Offspring phenotypes reveal the unknown genotype. Dominant phenotype parents that produce any recessive offspring must be heterozygous. Breeders use test crosses frequently."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Monohybrid Cross",
+  "definition": "A monohybrid cross tracks inheritance of one trait between true-breeding parents. Offspring ratios reveal dominance patterns. Mendel observed 3:1 ratios in F2 generations. This cross tests the law of segregation."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Dihybrid Cross",
+  "definition": "A dihybrid cross follows two traits simultaneously in true-breeding parents. F2 generation shows 9:3:3:1 phenotypic ratio if genes assort independently. Mendel used dihybrid crosses to discover independent assortment. Recombination reveals gene linkage exceptions."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Complete Dominance",
+  "definition": "Complete dominance occurs when one allele completely masks another in heterozygotes. Heterozygotes show only the dominant phenotype. Mendel’s pea traits displayed complete dominance. Most human genes show more complex patterns."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Incomplete Dominance",
+  "definition": "Incomplete dominance produces an intermediate phenotype in heterozygotes. Red and white flowers produce pink offspring. Neither allele is fully dominant. Blending does not occur at the molecular level."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Codominance",
+  "definition": "Codominance allows both alleles to be fully expressed in heterozygotes. AB blood type shows both A and B antigens. Neither allele masks the other. Roan cattle display both red and white hairs."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Multiple Alleles",
+  "definition": "Multiple alleles exist when a gene has more than two possible forms in the population. ABO blood groups have three alleles: A, B, and O. Individuals carry only two alleles. Multiple alleles increase phenotypic variety."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Pleiotropy",
+  "definition": "Pleiotropy occurs when one gene influences multiple unrelated traits. Sickle-cell allele affects red blood cells, circulation, and organ function. Most genes show some pleiotropic effects. Selection acts on the net outcome."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Epistasis",
+  "definition": "Epistasis happens when one gene masks or modifies the expression of another gene. Coat color in Labrador retrievers depends on two genes. A recessive epistatic gene can block pigment entirely. Ratios deviate from 9:3:3:1 in epistatic crosses."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Polygenic Inheritance",
+  "definition": "Polygenic inheritance involves many genes contributing additively to one trait. Human height and skin color are polygenic traits. Phenotypes show continuous variation in populations. Environmental factors also influence polygenic traits."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Linked Genes",
+  "definition": "Linked genes are located close together on the same chromosome and tend to be inherited together. Linkage violates independent assortment. Crossing over can separate linked genes. Recombination frequency measures distance between genes."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Sex-Linked Trait",
+  "definition": "Sex-linked traits are controlled by genes on sex chromosomes, usually the X chromosome. Males express X-linked recessive traits if they inherit one copy. Females need two copies for recessive expression. Color blindness is X-linked recessive."
+},
+{
+  "course": "ap-biology",
+  "unit": "Unit 5: Heredity",
+  "term": "Chromosomal Theory of Inheritance",
+  "definition": "The chromosomal theory of inheritance states that genes are located on chromosomes. Mendel’s factors correspond to genes on homologous chromosomes. Meiosis explains segregation and independent assortment. Sutton and Boveri proposed this unifying theory."
+}
 ];
