@@ -966,5 +966,203 @@ export const allTerms: Term[] = [
   "unit": "Unit 8: Ecology",
   "term": "Net Primary Productivity",
   "definition": "Net primary productivity is the rate at which producers store chemical energy after meeting their own needs. Tropical rainforests show the highest net primary productivity on land. Oceans have lower average productivity despite vast area. Productivity supports all consumers."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Mole",
+  "definition": "The mole is the SI unit that represents 6.022 × 10²³ particles, allowing chemists to count atoms, molecules, or formula units by weighing measurable masses; one mole of any substance contains Avogadro’s number of particles and has a mass in grams equal to its molar mass."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Atomic Mass",
+  "definition": "Atomic mass is the weighted average mass of an element’s naturally occurring isotopes expressed in atomic mass units; it appears on the periodic table and reflects the relative abundance of each isotope in a typical sample of the element."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Mass Spectrometry",
+  "definition": "Mass spectrometry determines the mass-to-charge ratio of ionized atoms or molecules, producing a spectrum that reveals isotopic composition and allows precise calculation of atomic and molecular masses for elements and compounds."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Photoelectron Spectroscopy",
+  "definition": "Photoelectron spectroscopy measures the kinetic energy of electrons ejected from atoms by high-energy photons, providing direct evidence of electron energy levels and confirming the quantized shell structure of atoms."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Aufbau Principle",
+  "definition": "The Aufbau principle states that electrons fill orbitals starting from the lowest available energy level before occupying higher levels, resulting in the observed ground-state electron configurations of atoms."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Coulomb’s Law",
+  "definition": "Coulomb’s law describes the electrostatic force between charged particles as directly proportional to the product of their charges and inversely proportional to the square of the distance between them, governing atomic and ionic attractions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 1: Atomic Structure and Properties",
+  "term": "Effective Nuclear Charge",
+  "definition": "Effective nuclear charge is the net positive charge experienced by valence electrons after shielding by inner electrons reduces the full nuclear charge, explaining periodic trends in atomic radius and ionization energy."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Lewis Structure",
+  "definition": "A Lewis structure represents valence electrons as dots around atomic symbols and shared electron pairs as lines, illustrating covalent bonding, octet fulfillment, formal charge, and resonance in molecules and polyatomic ions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "VSEPR Theory",
+  "definition": "VSEPR theory predicts molecular geometry by assuming electron pairs arrange themselves to minimize repulsion, resulting in specific shapes such as linear, trigonal planar, tetrahedral, trigonal bipyramidal, and octahedral."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Bond Order",
+  "definition": "Bond order equals half the difference between bonding and antibonding electrons in molecular orbital theory, determining whether a bond is single, double, or triple and correlating with bond strength and length."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Formal Charge",
+  "definition": "Formal charge is calculated as valence electrons minus nonbonding electrons minus half of bonding electrons, helping chemists identify the most plausible Lewis structure when multiple resonance forms are possible."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Resonance",
+  "definition": "Resonance occurs when two or more valid Lewis structures can be drawn for a molecule, indicating the actual structure is a hybrid with electron delocalization that stabilizes species such as carbonate and nitrate ions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Lattice Energy",
+  "definition": "Lattice energy is the energy released when gaseous ions form a solid ionic crystal; its magnitude increases with higher ion charges and smaller ion sizes according to Coulomb’s law and Born-Haber cycle calculations."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Hybridization",
+  "definition": "Hybridization mixes atomic orbitals to form new hybrid orbitals of equivalent energy suited for the observed geometry, producing sp, sp², sp³, and other hybrids that explain bonding in molecules like methane and ethene."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Sigma and Pi Bonds",
+  "definition": "Sigma bonds form by head-on overlap of orbitals and allow free rotation, while pi bonds result from sideways overlap of p orbitals, restrict rotation, and contribute to multiple bonds in molecules such as ethene and ethyne."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Intramolecular Forces",
+  "definition": "Intramolecular forces include ionic, covalent, and metallic bonds that hold atoms together within compounds, determining molecular shape, polarity, and reactivity far more strongly than intermolecular forces."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 2: Molecular and Ionic Compound Structure and Properties",
+  "term": "Intermolecular Forces",
+  "definition": "Intermolecular forces such as London dispersion forces, dipole-dipole interactions, and hydrogen bonding operate between molecules, governing physical properties including boiling points, solubility, and viscosity of substances."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "London Dispersion Forces",
+  "definition": "London dispersion forces are weak intermolecular attractions caused by temporary dipoles that form when electron clouds become momentarily uneven; these forces exist between all molecules, increase with molecular size and surface area, and are the only intermolecular force present in nonpolar substances."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Dipole-Dipole Interactions",
+  "definition": "Dipole-dipole interactions occur between polar molecules that possess permanent dipoles; the partially positive end of one molecule attracts the partially negative end of another, resulting in stronger intermolecular forces than London dispersion forces alone."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Hydrogen Bonding",
+  "definition": "Hydrogen bonding is an especially strong dipole-dipole attraction that forms when hydrogen is covalently bonded to highly electronegative nitrogen, oxygen, or fluorine atoms; this interaction significantly raises boiling points and accounts for unique properties of water, ammonia, and alcohols."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Vapor Pressure",
+  "definition": "Vapor pressure is the pressure exerted by a vapor in equilibrium with its liquid phase at a given temperature; stronger intermolecular forces lower vapor pressure because fewer molecules can escape into the gas phase, while higher temperatures increase vapor pressure dramatically."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Boiling Point",
+  "definition": "Boiling point is the temperature at which a liquid’s vapor pressure equals atmospheric pressure; substances with stronger intermolecular forces require higher temperatures to boil because more energy is needed to overcome attractions between molecules."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Surface Tension",
+  "definition": "Surface tension is the resistance of a liquid to increase its surface area, caused by stronger cohesive forces at the surface where molecules experience unbalanced attractions inward; hydrogen bonding in water produces exceptionally high surface tension."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Capillary Action",
+  "definition": "Capillary action is the ability of a liquid to flow against gravity in narrow spaces due to the combination of cohesive forces within the liquid and adhesive forces between the liquid and the container walls; water rises in glass tubes because of strong hydrogen bonding."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 3: Intermolecular Forces and Properties",
+  "term": "Heat of Vaporization",
+  "definition": "Heat of vaporization is the energy required to convert one mole of liquid into gas at its boiling point; large values reflect strong intermolecular forces that must be overcome, making water’s high heat of vaporization crucial for temperature regulation in organisms."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Precipitation Reaction",
+  "definition": "A precipitation reaction occurs when aqueous ions combine to form an insoluble solid precipitate; solubility rules predict whether products remain dissolved or form solids, allowing chemists to identify reactions that produce visible precipitates in solution."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Net Ionic Equation",
+  "definition": "A net ionic equation shows only the species that actually participate in a reaction by omitting spectator ions that remain unchanged; this format clearly reveals the chemical change occurring in precipitation, acid-base, and redox processes."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Oxidation Number",
+  "definition": "Oxidation number is a hypothetical charge assigned to atoms in molecules and ions using specific rules; changes in oxidation numbers identify electron transfer, making them essential for balancing redox reactions and predicting reactivity."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Redox Reaction",
+  "definition": "A redox reaction involves simultaneous reduction and oxidation processes where electrons are transferred between species; the substance oxidized loses electrons and increases oxidation number, while the substance reduced gains electrons and decreases oxidation number."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Combination Reaction",
+  "definition": "A combination reaction occurs when two or more reactants form a single product; metals reacting with nonmetals to form ionic compounds and nonmetals forming covalent molecules are common examples that demonstrate synthesis of new substances."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Decomposition Reaction",
+  "definition": "A decomposition reaction breaks down a single compound into two or more simpler substances, often requiring heat, light, or electricity; examples include electrolysis of water and thermal decomposition of metal carbonates into oxides and carbon dioxide."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Combustion Reaction",
+  "definition": "A combustion reaction is a rapid reaction between a substance and oxygen that produces heat and light; hydrocarbons typically combust to form carbon dioxide and water, making these exothermic reactions essential sources of energy."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 4: Chemical Reactions",
+  "term": "Gravimetric Analysis",
+  "definition": "Gravimetric analysis determines the amount of an analyte by converting it into a pure, weighable solid precipitate of known composition; precise mass measurements and careful precipitation techniques yield highly accurate quantitative results for many substances."
 }
 ];
