@@ -1161,98 +1161,242 @@ export const allTerms: Term[] = [
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 5: Chemical Reactions",
-  "term": "Limiting Reactant",
-  "definition": "The limiting reactant is the substance that is completely consumed first in a chemical reaction, determining the maximum amount of product that can form while any excess reactants remain unreacted after the reaction reaches completion."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 5: Chemical Reactions",
-  "term": "Percent Yield",
-  "definition": "Percent yield compares the actual amount of product obtained in a reaction to the theoretical amount predicted by stoichiometry, revealing how efficiently the reaction proceeded under real laboratory conditions."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 5: Chemical Reactions",
-  "term": "Stoichiometry",
-  "definition": "Stoichiometry uses balanced chemical equations and mole ratios to calculate the quantities of reactants consumed and products formed, providing the quantitative foundation for all reaction-based predictions in chemistry."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 5: Chemical Reactions",
-  "term": "Solution Stoichiometry",
-  "definition": "Solution stoichiometry applies mole relationships to reactions occurring in aqueous solutions, using molarity and volume to determine reactant amounts and product concentrations before and after reaction."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 5: Chemical Reactions",
-  "term": "Theoretical Yield",
-  "definition": "Theoretical yield is the maximum amount of product that could form from a given amount of limiting reactant according to the balanced equation, assuming complete reaction and perfect conditions."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
   "term": "Reaction Rate",
-  "definition": "Reaction rate measures the change in concentration of reactants or products per unit time, providing essential information about how quickly a chemical reaction proceeds under specific conditions."
+  "definition": "Reaction rate measures how quickly reactants turn into products over time. Chemists express rate as the change in concentration of a reactant or product per second. Rates are always positive and typically decrease as the reaction progresses. Factors like temperature and concentration strongly affect the reaction rate."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
   "term": "Rate Law",
-  "definition": "A rate law expresses the relationship between reactant concentrations and the reaction rate, showing the order of each reactant and allowing prediction of how concentration changes affect reaction speed."
+  "definition": "A rate law shows how the reaction rate depends on reactant concentrations. The rate law takes the form rate = k[A]^m[B]^n, where m and n are reaction orders. Scientists determine orders only from experimental data, not from the balanced equation. The overall order is the sum of m and n."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
   "term": "Rate Constant",
-  "definition": "The rate constant is the proportionality factor in a rate law that reflects the inherent speed of a reaction at a given temperature, remaining constant regardless of reactant concentrations."
+  "definition": "The rate constant k is the proportionality factor in the rate law. Its value depends on temperature and the specific reaction but not on concentrations. Larger k values mean faster reactions at the same temperature. Units of k vary with the overall reaction order."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
-  "term": "Zero Order Reaction",
-  "definition": "A zero order reaction has a rate that remains constant regardless of reactant concentration, often occurring when a catalyst surface becomes saturated or when a reactant is present in overwhelming excess."
+  "unit": "Unit 5: Kinetics",
+  "term": "Zero-Order Reaction",
+  "definition": "In a zero-order reaction, the rate does not change with reactant concentration. The rate law is simply rate = k, and the integrated form gives a straight line when concentration is plotted versus time. Zero-order behavior often occurs with saturated catalysts or enzymes."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
-  "term": "First Order Reaction",
-  "definition": "A first order reaction has a rate directly proportional to the concentration of one reactant, showing exponential decay of concentration over time and a constant half-life independent of initial concentration."
+  "unit": "Unit 5: Kinetics",
+  "term": "First-Order Reaction",
+  "definition": "A first-order reaction has a rate proportional to the concentration of one reactant. The rate law is rate = k[A], and half-life remains constant throughout the reaction. Plotting the natural log of concentration versus time yields a straight line with slope -k."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
-  "term": "Second Order Reaction",
-  "definition": "A second order reaction has a rate proportional to the square of one reactant concentration or the product of two different reactant concentrations, resulting in a half-life that increases as concentration decreases."
+  "unit": "Unit 5: Kinetics",
+  "term": "Second-Order Reaction",
+  "definition": "Second-order reactions can depend on one reactant squared or two reactants each to the first power. The rate law is rate = k[A]^2 or rate = k[A][B]. Plotting 1 over concentration versus time produces a straight line for reactions second order in one species."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
+  "term": "Half-Life",
+  "definition": "Half-life is the time required for reactant concentration to drop by half. For first-order reactions, half-life is constant and equals ln(2)/k. Zero-order half-life increases as concentration decreases, while second-order half-life lengthens as reaction progresses."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
   "term": "Collision Theory",
-  "definition": "Collision theory states that reactions occur when molecules collide with sufficient energy and proper orientation, explaining how concentration, temperature, and molecular structure influence reaction rates."
+  "definition": "Collision theory states that reactions occur when molecules collide with sufficient energy and proper orientation. Only a small fraction of collisions lead to product formation. Increasing temperature or concentration raises the number of effective collisions per second."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
   "term": "Activation Energy",
-  "definition": "Activation energy is the minimum energy colliding molecules must possess for a successful reaction, forming an energy barrier that determines how readily a reaction proceeds even when thermodynamically favorable."
+  "definition": "Activation energy is the minimum energy molecules must possess to react upon collision. Reactions with high activation energy proceed slowly at room temperature. The Arrhenius equation relates activation energy to the rate constant and temperature."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
-  "term": "Catalyst",
-  "definition": "A catalyst increases reaction rate by providing an alternative pathway with lower activation energy while remaining chemically unchanged at the end, enabling reactions to proceed faster without altering equilibrium."
-},
-{
-  "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
   "term": "Reaction Mechanism",
-  "definition": "A reaction mechanism is the step-by-step sequence of elementary reactions that describe how reactants transform into products, with the rate-determining step controlling the overall reaction rate."
+  "definition": "A reaction mechanism is the step-by-step sequence of elementary reactions that make up the overall reaction. The slowest step, called the rate-determining step, controls the observed rate law. Intermediates appear in mechanisms but cancel from the net equation."
 },
 {
   "course": "ap-chemistry",
-  "unit": "Unit 6: Kinetics",
+  "unit": "Unit 5: Kinetics",
+  "term": "Elementary Step",
+  "definition": "An elementary step is a single molecular event, such as two molecules colliding or one molecule decomposing. The molecularity of an elementary step equals the number of reactant molecules. Rate laws for elementary steps follow directly from their stoichiometry."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Rate-Determining Step",
+  "definition": "The rate-determining step is the slowest elementary step in a mechanism. This step limits how fast the entire reaction can proceed. The rate law of the overall reaction matches the rate law of the rate-determining step."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Catalyst",
+  "definition": "A catalyst speeds up a reaction without being consumed. Catalysts provide a lower-energy pathway by forming temporary intermediates. The catalyst appears in the mechanism but cancels from the overall equation. Both activation energy and rate constant change with catalysis."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Arrhenius Equation",
+  "definition": "The Arrhenius equation k = A e^(-Ea/RT) links rate constant to temperature. A is the frequency factor, Ea is activation energy, R is the gas constant, and T is Kelvin temperature. Plotting ln k versus 1/T gives a straight line with slope -Ea/R."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Reaction Energy Profile",
+  "definition": "A reaction energy profile plots potential energy versus reaction progress. The peak represents the activated complex at the transition state. Catalysts lower this peak height, reducing activation energy. The difference between reactant and product energy is ΔH."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
   "term": "Integrated Rate Law",
-  "definition": "An integrated rate law relates reactant concentration to time for reactions of specific order, allowing determination of concentration at any moment or calculation of half-life from experimental data."
-}
-];
+  "definition": "Integrated rate laws express concentration as a function of time. Zero-order gives [A] = [A]0 - kt, first-order gives ln[A] = ln[A]0 - kt, and second-order gives 1/[A] = 1/[A]0 + kt. These forms allow determination of order from experimental data."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Transition State",
+  "definition": "The transition state is the highest-energy arrangement along the reaction path. Molecules at the transition state can form products or revert to reactants. The transition state structure explains reaction stereochemistry and isotope effects."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Intermediate",
+  "definition": "An intermediate is a species produced in one elementary step and consumed in a later step. Intermediates have finite lifetimes and do not appear in the overall equation. They often exist in low concentration due to high reactivity."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Molecularity",
+  "definition": "Molecularity is the number of molecules that participate as reactants in an elementary step. Unimolecular steps have molecularity one, bimolecular steps have two, and termolecular steps are rare with three. Molecularity applies only to elementary reactions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 5: Kinetics",
+  "term": "Enzyme Catalysis",
+  "definition": "Enzymes are biological catalysts that dramatically increase reaction rates. They bind substrates at active sites, lowering activation energy through specific interactions. Michaelis-Menten kinetics describes enzyme behavior at varying substrate concentrations."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "System and Surroundings",
+  "definition": "The system is the specific part of the universe under study, such as reactants in a flask. The surroundings include everything else. Open systems exchange matter and energy, closed systems exchange only energy, and isolated systems exchange neither."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Enthalpy",
+  "definition": "Enthalpy H is a state function equal to internal energy plus pressure-volume work. The change ΔH equals heat transferred at constant pressure. Exothermic reactions release heat and have negative ΔH, while endothermic reactions absorb heat with positive ΔH."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Calorimetry",
+  "definition": "Calorimetry measures heat flow in chemical and physical processes. Constant-pressure calorimetry uses coffee-cup calorimeters to find ΔH directly. Bomb calorimetry at constant volume measures ΔU, then converts to ΔH using ΔH = ΔU + Δn_g RT."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Hess's Law",
+  "definition": "Hess's law states that the enthalpy change for a reaction is the same regardless of path taken. Chemists add intermediate enthalpy changes algebraically to find the overall ΔH. This works because enthalpy is a state function."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Standard Enthalpy of Formation",
+  "definition": "Standard enthalpy of formation ΔH_f° is the enthalpy change when one mole of a compound forms from elements in their standard states. The ΔH_f° of elements in standard states is zero. Reaction enthalpy equals sum of products ΔH_f° minus sum of reactants ΔH_f°."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Bond Enthalpy",
+  "definition": "Bond enthalpy is the energy required to break one mole of a specific bond in gaseous molecules. Average bond enthalpies estimate reaction enthalpy changes. Actual values vary slightly with molecular environment. Breaking bonds requires energy, forming bonds releases energy."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Entropy",
+  "definition": "Entropy S measures the disorder or randomness of a system. Gases have higher entropy than liquids, which exceed solids. Entropy increases with temperature and during phase changes like melting. The second law states total entropy of universe always increases for spontaneous processes."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Gibbs Free Energy",
+  "definition": "Gibbs free energy G combines enthalpy and entropy as G = H - TS. The change ΔG = ΔH - TΔS determines spontaneity at constant temperature and pressure. Negative ΔG means spontaneous, positive ΔG means nonspontaneous, and zero ΔG indicates equilibrium."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Standard Free Energy Change",
+  "definition": "Standard free energy change ΔG° is calculated at 298 K and 1 bar pressure. ΔG° = -RT ln K shows the relationship with equilibrium constant. Negative ΔG° favors products at equilibrium, while positive ΔG° favors reactants."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Spontaneous Process",
+  "definition": "A spontaneous process occurs naturally without external intervention. Spontaneity depends on both enthalpy and entropy contributions. Ice melting above 0°C is spontaneous because entropy increase outweighs endothermic enthalpy. Combustion is spontaneous due to large negative enthalpy."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Heat Capacity",
+  "definition": "Heat capacity is the heat needed to raise the temperature of a substance by 1 K. Specific heat capacity applies per gram, molar heat capacity per mole. Water has unusually high heat capacity, helping regulate Earth's temperature."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Endothermic Reaction",
+  "definition": "Endothermic reactions absorb heat from the surroundings. The system gains energy, so ΔH is positive. Photosynthesis and ice melting are common endothermic processes. The surroundings cool during an endothermic reaction in an open container."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Exothermic Reaction",
+  "definition": "Exothermic reactions release heat to the surroundings. The system loses energy, making ΔH negative. Combustion of fuels and neutralization reactions are exothermic. The surroundings warm when an exothermic reaction occurs."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "State Function",
+  "definition": "A state function depends only on the current state, not the path taken to reach it. Enthalpy, entropy, and Gibbs free energy are state functions. Heat and work are path-dependent and not state functions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Third Law of Thermodynamics",
+  "definition": "The third law states that the entropy of a perfect crystal at 0 K is zero. This provides an absolute entropy scale. Entropy approaches a minimum as temperature nears absolute zero. Real substances have small residual entropy at 0 K."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Standard Entropy",
+  "definition": "Standard entropy S° is the absolute entropy of one mole of substance at 298 K and 1 bar. Values increase with molecular complexity and from solids to gases. Entropy changes for reactions are calculated as products minus reactants using S° values."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Free Energy and Equilibrium",
+  "definition": "At equilibrium, ΔG equals zero and Q equals K. The equation ΔG = ΔG° + RT ln Q predicts reaction direction. When Q < K, the reaction shifts right and ΔG is negative. When Q > K, the reaction shifts left."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Temperature Dependence of Spontaneity",
+  "definition": "For reactions where ΔH and ΔS have opposite signs, spontaneity depends on temperature. Exothermic reactions with decreasing entropy become nonspontaneous at high T. Endothermic reactions with increasing entropy become spontaneous above a certain temperature."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Enthalpy-Driven Reaction",
+  "definition": "Enthalpy-driven reactions are spontaneous primarily because ΔH is strongly negative. The entropy term TΔS is small or unfavorable. Most combustion reactions fall in this category. Heat release dominates the free energy change."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 6: Thermodynamics",
+  "term": "Entropy-Driven Reaction",
+  "definition": "Entropy-driven reactions are spontaneous because ΔS is large and positive, even if ΔH is positive. Dissolving many salts in water is entropy-driven. The TΔS term overcomes unfavorable enthalpy at higher temperatures."
+};
+  
