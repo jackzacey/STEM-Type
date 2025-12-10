@@ -1398,5 +1398,5 @@ export const allTerms: Term[] = [
   "unit": "Unit 6: Thermodynamics",
   "term": "Entropy-Driven Reaction",
   "definition": "Entropy-driven reactions are spontaneous because ΔS is large and positive, even if ΔH is positive. Dissolving many salts in water is entropy-driven. The TΔS term overcomes unfavorable enthalpy at higher temperatures."
-};
+}
   
