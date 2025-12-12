@@ -1398,5 +1398,251 @@ export const allTerms: Term[] = [
   "unit": "Unit 6: Thermodynamics",
   "term": "Entropy-Driven Reaction",
   "definition": "Entropy-driven reactions are spontaneous because ΔS is large and positive, even if ΔH is positive. Dissolving many salts in water is entropy-driven. The TΔS term overcomes unfavorable enthalpy at higher temperatures."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Chemical Equilibrium",
+"definition": "Chemical equilibrium occurs when the rates of forward and reverse reactions become equal in a closed system. Reactants and products reach constant concentrations at this point. The system appears static, but molecules continue to react dynamically. Equilibrium favors neither side without external changes."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium Constant",
+"definition": "The equilibrium constant, denoted as K, expresses the ratio of product concentrations to reactant concentrations at equilibrium. Each concentration is raised to its stoichiometric coefficient. K values greater than 1 indicate products are favored. Temperature affects K, but pressure does not for gases."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Le Chatelier's Principle",
+"definition": "Le Chatelier's principle states that a system at equilibrium adjusts to minimize disturbances. Adding reactants shifts equilibrium toward products. Increasing pressure favors the side with fewer gas moles. Temperature changes alter equilibrium based on reaction enthalpy."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Reversible Reaction",
+"definition": "A reversible reaction proceeds in both forward and reverse directions. Reactants form products, and products reform reactants simultaneously. Double arrows denote reversibility in equations. Equilibrium establishes when rates balance."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Kinetics and Equilibrium",
+"definition": "Kinetics studies reaction rates, while equilibrium concerns final concentrations. Catalysts speed both directions equally and do not shift equilibrium. Equilibrium position depends on thermodynamics, not speed. Fast reactions reach equilibrium quicker."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium Position",
+"definition": "Equilibrium position describes whether products or reactants dominate at equilibrium. K greater than 1 means products predominate. K less than 1 favors reactants. The position remains constant unless conditions change."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Reaction Quotient",
+"definition": "The reaction quotient, Q, calculates the ratio of concentrations like K but at any time. Q equals K at equilibrium. If Q is less than K, the reaction shifts forward. Comparing Q and K predicts direction of shift."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Stress on Equilibrium",
+"definition": "A stress disrupts equilibrium by changing concentration, pressure, or temperature. Systems respond by shifting to counteract the stress. Removing products shifts toward more products. Equilibrium restores after adjustment."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Common Ion Effect",
+"definition": "The common ion effect reduces solubility when a product ion is added. Solubility equilibrium shifts left, decreasing dissolved amount. Sodium chloride suppresses silver chloride solubility. This principle applies to buffers too."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Solubility Equilibrium",
+"definition": "Solubility equilibrium exists when dissolved and undissolved solute rates equalize. The solubility product constant, Ksp, quantifies this balance. Low Ksp indicates low solubility. Temperature influences Ksp values."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Acid-Base Equilibrium",
+"definition": "Acid-base equilibrium involves proton transfer in water. Weak acids partially dissociate, establishing equilibrium. Ka measures acid strength. Equilibrium constants help calculate pH."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium Calculations",
+"definition": "Equilibrium calculations use ICE tables to track changes. Initial concentrations start the table. Equilibrium values solve for unknowns. Assumptions simplify weak acid problems."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Heterogeneous Equilibrium",
+"definition": "Heterogeneous equilibrium includes solids and liquids with constant activities. Pure solids do not appear in K expressions. Only gases and aqueous species count. Equilibrium constants remain valid."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium Constant Expressions",
+"definition": "Equilibrium constant expressions use brackets for molar concentrations. Gases sometimes use partial pressures for Kp. Kc and Kp relate via RT. Coefficients become exponents in expressions."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Shifting Equilibrium",
+"definition": "Shifting equilibrium changes reactant and product amounts. Adding heat to endothermic reactions favors products. Catalysts reach equilibrium faster but do not shift it. Pressure affects gaseous equilibria."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium in Gases",
+"definition": "Equilibrium in gases depends on partial pressures. Le Chatelier's principle applies to volume changes. Decreasing volume shifts toward fewer moles. Temperature alters K for all reactions."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Buffer Equilibrium",
+"definition": "Buffer equilibrium resists pH changes with weak acid and conjugate base. Adding acid shifts equilibrium to consume H+. Buffers maintain stable conditions. Ka determines buffer effectiveness."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium Constant Manipulation",
+"definition": "Manipulating equilibrium constants involves reversing reactions or multiplying equations. Reverse reactions use 1/K. Multiplying doubles exponents in K. Hess's law applies to equilibria."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Van't Hoff Equation",
+"definition": "The Van't Hoff equation relates K changes to temperature. Ln K versus 1/T plots yield enthalpy. Positive delta H means K increases with heat. This tool predicts equilibrium shifts."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 7: Equilibrium",
+"term": "Equilibrium in Solutions",
+"definition": "Equilibrium in solutions involves dissolved species concentrations. Dilution shifts equilibria toward more ions. Saturated solutions define solubility limits. Equilibrium constants guide precipitation."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Acid",
+"definition": "An acid donates protons in aqueous solutions. Acids taste sour and turn litmus red. Strong acids fully dissociate in water. Hydrochloric acid exemplifies a common strong acid."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Base",
+"definition": "A base accepts protons or produces hydroxide ions in water. Bases feel slippery and taste bitter. Strong bases completely ionize. Sodium hydroxide serves as a typical strong base."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "pH Scale",
+"definition": "The pH scale measures hydrogen ion concentration logarithmically. pH equals negative log of H+. Values below 7 indicate acidity. Neutral solutions have pH of 7 at 25 degrees Celsius."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Strong Acid",
+"definition": "Strong acids ionize completely in water. They produce high H+ concentrations. Examples include HCl, HNO3, and H2SO4. Strong acids conduct electricity well."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Weak Acid",
+"definition": "Weak acids partially dissociate in solution. Acetic acid represents a common weak acid. Equilibrium constants quantify weakness. Weak acids produce fewer ions than strong ones."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Conjugate Acid",
+"definition": "A conjugate acid forms when a base accepts a proton. Water acts as the conjugate acid of hydroxide. Conjugate pairs differ by one H+. Strength inversely relates between pairs."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Conjugate Base",
+"definition": "A conjugate base results from an acid losing a proton. Acetate is the conjugate base of acetic acid. Conjugates maintain acid-base relationships. Weak acids have strong conjugates."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Bronsted-Lowry Theory",
+"definition": "Bronsted-Lowry theory defines acids as proton donors and bases as acceptors. Water can act as both. This theory explains amphoteric substances. It applies beyond water solutions."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Arrhenius Theory",
+"definition": "Arrhenius theory describes acids as H+ producers and bases as OH- producers in water. It limits to aqueous systems. HCl fits as an Arrhenius acid. Modern theories expand this view."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "pOH",
+"definition": "pOH measures hydroxide ion concentration as negative log of OH-. pH plus pOH equals 14 in water. High pOH indicates strong bases. Calculations mirror pH methods."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Neutralization",
+"definition": "Neutralization occurs when acids react with bases to form water and salt. Stoichiometric amounts achieve neutrality. Titration monitors this process. pH reaches 7 for strong pairs."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Buffer Solution",
+"definition": "A buffer solution resists pH changes upon small additions. It contains weak acid and conjugate base. Blood uses bicarbonate buffers. Capacity depends on concentrations."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Henderson-Hasselbalch Equation",
+"definition": "The Henderson-Hasselbalch equation calculates buffer pH. pH equals pKa plus log of base over acid. It assumes equilibrium holds. This tool predicts buffer effectiveness."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Acid Dissociation Constant",
+"definition": "Acid dissociation constant, Ka, measures weak acid strength. Higher Ka indicates stronger acids. Ka equals products over reactants at equilibrium. Polyprotic acids have multiple Ka values."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Base Dissociation Constant",
+"definition": "Base dissociation constant, Kb, quantifies weak base strength. Kb relates to Ka by Kw. Stronger bases have higher Kb. Calculations parallel acid methods."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Kw",
+"definition": "Kw represents water's ion product as H+ times OH-. At 25 degrees Celsius, Kw equals 10^-14. Temperature increases Kw. Pure water has equal H+ and OH+."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Titration",
+"definition": "Titration determines unknown concentrations by adding titrant. Indicators signal equivalence point. Strong acid-base titrations show sharp curves. Calculations use stoichiometry."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Equivalence Point",
+"definition": "The equivalence point marks when acid and base amounts equalize. pH may not be 7 for weak pairs. Half-equivalence gives pKa for weak acids. Detection uses indicators or pH meters."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Indicator",
+"definition": "An indicator changes color at specific pH ranges. Phenolphthalein turns pink above pH 8. Indicators approximate equivalence points. Choice matches titration type."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Polyprotic Acid",
+"definition": "Polyprotic acids donate multiple protons stepwise. Sulfuric acid acts as diprotic. Each dissociation has its own Ka. First proton removes easiest."
+},
+{
+"course": "ap-chemistry",
+"unit": "Unit 8: Acids and Bases",
+"term": "Amphoteric Substance",
+"definition": "Amphoteric substances act as both acids and bases. Water donates or accepts protons. Aluminum oxide reacts with acids and bases. This property enables buffering."
 }
 ]
