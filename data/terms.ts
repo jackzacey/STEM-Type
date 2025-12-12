@@ -1764,5 +1764,503 @@ export const allTerms: Term[] = [
   "unit": "Unit 9: Applications of Thermodynamics",
   "term": "Galvanic Cell Thermodynamics",
   "definition": "Galvanic cells perform electrical work using spontaneous redox reactions. Cell potential relates to change in G by negative nFE. Larger voltage means more negative free energy change. Temperature and concentration affect actual values."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Position",
+  "definition": "Position describes the location of an object relative to a chosen reference point, called the origin. Scientists usually measure position along a straight line with a coordinate system. The symbol for position is x or y. Positive and negative values indicate direction from the origin."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Displacement",
+  "definition": "Displacement is the straight-line change in position of an object from initial to final location. Displacement includes both magnitude and direction, making it a vector quantity. The symbol Δx represents displacement. Displacement can be positive, negative, or zero."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Distance",
+  "definition": "Distance is the total length of the path traveled by an object, regardless of direction. Distance is a scalar quantity with only magnitude. Distance is always positive or zero. Unlike displacement, distance depends on the actual path taken."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Scalar",
+  "definition": "A scalar is a physical quantity that has magnitude but no direction. Common scalars include mass, time, distance, and speed. Scalars follow ordinary algebra rules. Adding scalars requires only their numerical values."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Vector",
+  "definition": "A vector is a physical quantity that has both magnitude and direction. Displacement, velocity, and acceleration are vectors. Vectors are represented by arrows where length shows magnitude and the tip shows direction. Adding vectors requires vector addition rules."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Speed",
+  "definition": "Speed is the rate at which an object covers distance. Average speed equals total distance divided by total time. Speed is a scalar quantity. Instantaneous speed is the speed at a particular moment."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Velocity",
+  "definition": "Velocity is the rate of change of displacement with time. Velocity is a vector quantity with both magnitude and direction. Average velocity equals displacement divided by time interval. Instantaneous velocity describes motion at a single point."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Acceleration",
+  "definition": "Acceleration is the rate of change of velocity with time. Acceleration is a vector quantity. An object accelerates when it speeds up, slows down, or changes direction. The symbol a represents acceleration."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Uniformly Accelerated Motion",
+  "definition": "Uniformly accelerated motion occurs when acceleration remains constant over time. Objects in free fall near Earth experience uniform acceleration due to gravity. The kinematic equations describe this type of motion precisely. Graphs of velocity versus time are straight lines."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Free Fall",
+  "definition": "Free fall is motion under the influence of gravity alone, with no other forces acting. All objects in free fall near Earth accelerate downward at 9.8 m/s² when air resistance is negligible. The acceleration due to gravity is denoted by g. Direction of velocity changes continuously."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Kinematic Equations",
+  "definition": "Kinematic equations are four formulas that relate displacement, velocity, acceleration, and time for constant acceleration. These equations apply only to uniformly accelerated motion. Students must choose the equation that lacks the unknown variables. Memorizing all four helps solve problems quickly."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Projectile Motion",
+  "definition": "Projectile motion is the curved path followed by an object launched near Earth with initial velocity at an angle. Horizontal velocity remains constant while vertical velocity changes due to gravity. The trajectory forms a parabola when air resistance is negligible. Horizontal and vertical motions are independent."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Range",
+  "definition": "Range is the horizontal distance a projectile travels before returning to the same height. Maximum range occurs when the launch angle is 45 degrees for level ground. Range depends on initial speed and launch angle. Air resistance reduces actual range."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Relative Velocity",
+  "definition": "Relative velocity is the velocity of one object as observed from another moving object. Relative velocity equals the difference between the two velocities when motion is along a straight line. Vector addition rules apply for non-collinear motion. This concept explains motion in moving frames."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Position-Time Graph",
+  "definition": "A position-time graph plots position on the y-axis and time on the x-axis. The slope of the line equals velocity. Straight lines indicate constant velocity. Curved lines show changing velocity or acceleration."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Velocity-Time Graph",
+  "definition": "A velocity-time graph shows velocity on the y-axis and time on the x-axis. The slope represents acceleration. The area under the curve equals displacement. Horizontal lines mean zero acceleration."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Frame of Reference",
+  "definition": "A frame of reference is a coordinate system used to describe the position and motion of objects. Inertial frames have constant velocity or are at rest. Non-inertial frames accelerate. Measurements depend on the chosen frame."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Instantaneous Velocity",
+  "definition": "Instantaneous velocity is the velocity of an object at a specific moment in time. Mathematically, instantaneous velocity is the derivative of position with respect to time. On a position-time graph, it equals the tangent slope. It differs from average velocity over an interval."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Constant Velocity",
+  "definition": "Constant velocity means an object moves with unchanging speed and direction. Net force on the object is zero according to Newton's first law. Position changes linearly with time. Acceleration equals zero in constant velocity motion."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Symmetry in Projectile Motion",
+  "definition": "Symmetry in projectile motion means the time to rise equals the time to fall for level ground launches. Speed at equal heights is the same during ascent and descent. The launch angle and landing angle are equal. This symmetry simplifies many calculations."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Vector Components",
+  "definition": "Vector components are the horizontal and vertical parts of a vector. Components allow treatment of two-dimensional motion as separate one-dimensional motions. Trigonometric functions resolve vectors into components. Adding components uses vector addition rules."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 1: Kinematics",
+  "term": "Initial Velocity",
+  "definition": "Initial velocity is the velocity of an object at the start of a time interval or motion. In projectile motion, initial velocity determines range and height. The symbol u or v₀ often denotes initial velocity. Direction matters for vector quantities."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Force",
+  "definition": "Force is a push or pull that can change the motion of an object. Force is a vector quantity measured in newtons. Forces arise from interactions between objects. Multiple forces can act simultaneously on one object."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Net Force",
+  "definition": "Net force is the vector sum of all forces acting on an object. Net force determines the acceleration according to Newton's second law. When net force is zero, the object maintains constant velocity. Unbalanced forces cause acceleration."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton's First Law",
+  "definition": "Newton's first law states that an object at rest stays at rest and an object in motion continues with constant velocity unless acted upon by a net external force. This law is also called the law of inertia. Inertia resists changes in motion. The law defines inertial frames."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Inertia",
+  "definition": "Inertia is the tendency of an object to resist changes in its velocity. Inertia depends only on mass; greater mass means greater inertia. Inertia explains why objects continue moving without force. Newton's first law is the law of inertia."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Mass",
+  "definition": "Mass is the measure of an object's inertia. Mass is a scalar quantity measured in kilograms. Mass remains constant regardless of location. Weight differs from mass because weight depends on gravity."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton's Second Law",
+  "definition": "Newton's second law states that the acceleration of an object is directly proportional to the net force and inversely proportional to its mass. The law is expressed as F = ma. Direction of acceleration matches the net force direction. This law quantifies force."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton's Third Law",
+  "definition": "Newton's third law states that for every action force, there is an equal and opposite reaction force. Action and reaction forces act on different objects. These forces never cancel each other. The law explains propulsion and recoil."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Free-Body Diagram",
+  "definition": "A free-body diagram shows all external forces acting on a single object as vectors. Each force arrow starts from the object center or point of application. Labels identify force types like gravity or tension. These diagrams help find net force."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Normal Force",
+  "definition": "Normal force is the support force exerted by a surface perpendicular to the surface. Normal force prevents objects from passing through surfaces. The normal force adjusts to balance other forces. On horizontal surfaces, normal force equals weight when at rest."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Weight",
+  "definition": "Weight is the gravitational force exerted on an object by Earth or another planet. Weight equals mass times gravitational acceleration, W = mg. Weight is a vector pointing toward the center of the planet. Weight changes with location unlike mass."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Tension",
+  "definition": "Tension is the pulling force transmitted through a string, rope, or cable. Tension acts along the string and away from the object. Tension magnitude is the same throughout a massless string. Tension enables forces to act at a distance."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Friction",
+  "definition": "Friction is a force that opposes relative motion between two surfaces in contact. Friction arises from surface roughness at the microscopic level. Static friction prevents motion while kinetic friction opposes sliding. Friction direction is parallel to the surface."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Static Friction",
+  "definition": "Static friction is the force that prevents an object from starting to move when a force is applied. Static friction can vary up to a maximum value. The maximum static friction equals μₛ times normal force. Static friction matches the applied force until motion begins."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Kinetic Friction",
+  "definition": "Kinetic friction is the force that opposes motion of an object already sliding. Kinetic friction is usually less than maximum static friction. Kinetic friction remains nearly constant with speed. The force equals μₖ times normal force."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Coefficient of Friction",
+  "definition": "The coefficient of friction is a dimensionless number that describes the roughness between two surfaces. μₛ represents static coefficient and μₖ represents kinetic. Higher values mean rougher surfaces. The coefficient depends on materials but not area."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Equilibrium",
+  "definition": "Equilibrium occurs when the net force on an object is zero. Objects in equilibrium have constant velocity, including zero. Both translational and rotational equilibrium can exist. Forces balance in all directions for translational equilibrium."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Inclined Plane",
+  "definition": "An inclined plane is a slanted surface used to raise objects with less force over longer distance. The normal force is less than weight on an incline. Component of weight parallel to the plane causes acceleration. Friction often acts on inclined planes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Action-Reaction Pair",
+  "definition": "An action-reaction pair consists of two forces that are equal in magnitude, opposite in direction, and act on different objects. These forces are described by Newton's third law. Action-reaction pairs never act on the same object. They do not cancel each other."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Apparent Weight",
+  "definition": "Apparent weight is the normal force supporting a person in an accelerating elevator or similar situation. Apparent weight increases when accelerating upward and decreases when accelerating downward. In free fall, apparent weight is zero. Scales measure apparent weight."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Terminal Velocity",
+  "definition": "Terminal velocity is the constant speed reached when drag force equals gravitational force on a falling object. Acceleration becomes zero at terminal velocity. Skydivers reach terminal velocity when air resistance balances weight. Opening a parachute increases drag and reduces terminal velocity."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Drag Force",
+  "definition": "Drag force is the resistance force exerted by a fluid on an object moving through it. Drag opposes the direction of motion. Drag increases with speed and depends on object shape. At high speeds, drag is proportional to speed squared."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Air Resistance",
+  "definition": "Air resistance is a type of drag force caused by collision with air molecules. Air resistance acts opposite to velocity and increases with speed. Shape affects air resistance; streamlined shapes reduce it. Air resistance is often negligible for dense objects."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton (unit)",
+  "definition": "The newton is the SI unit of force. One newton is the force required to accelerate a 1 kg mass at 1 m/s². Weight of a 1 kg object on Earth is approximately 9.8 newtons. Force vectors are often labeled in newtons."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Uniform Circular Motion",
+  "definition": "Uniform circular motion occurs when an object travels at constant speed along a circular path. The velocity vector changes direction continuously, so acceleration is always present. This centripetal acceleration points toward the center of the circle. Speed remains constant while velocity does not."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Centripetal Acceleration",
+  "definition": "Centripetal acceleration is the acceleration directed toward the center of a circular path. The magnitude equals v squared divided by radius. Centripetal acceleration arises from changing velocity direction. This acceleration is always perpendicular to instantaneous velocity."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Centripetal Force",
+  "definition": "Centripetal force is the net force that causes circular motion by pointing toward the center. Any force can act as centripetal force, including tension, gravity, or friction. The magnitude equals mass times v squared divided by radius. Centripetal force does not do work."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Period",
+  "definition": "Period is the time required for an object to complete one full revolution in circular motion. Period is measured in seconds and denoted by T. Frequency equals one divided by period. Larger radius or slower speed increases period."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Frequency",
+  "definition": "Frequency is the number of revolutions or cycles completed per second in circular motion. Frequency is measured in hertz and equals one divided by period. Higher frequency means faster rotation. Frequency and period are reciprocals."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Newton's Law of Universal Gravitation",
+  "definition": "Newton's law of universal gravitation states that every mass attracts every other mass with a force proportional to the product of their masses and inversely proportional to the square of the distance between their centers. Gravitational force is always attractive. The universal gravitational constant G equals 6.67 times 10 to the negative 11. This law explains planetary orbits."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Gravitational Field Strength",
+  "definition": "Gravitational field strength is the force per unit mass experienced by a test mass at a point. Near Earth surface, gravitational field strength equals 9.8 newtons per kilogram. Field strength decreases with distance from the planet center. The symbol g represents gravitational field strength."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Orbital Speed",
+  "definition": "Orbital speed is the constant tangential speed required for an object to maintain a circular orbit around a larger body. Orbital speed decreases as orbital radius increases. Gravity provides the centripetal force for orbits. Satellites in low Earth orbit travel at about 7.8 kilometers per second."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Centrifugal Force",
+  "definition": "Centrifugal force is a fictitious force that appears to act outward on an object in a rotating reference frame. Centrifugal force does not exist in an inertial frame. People feel centrifugal force in turning cars or spinning rides. Newton laws apply without it in inertial frames."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Banked Curve",
+  "definition": "A banked curve is a roadway tilted at an angle so vehicles can turn without relying on friction. The normal force component provides centripetal force on banked curves. Ideal banking angle depends on speed and radius. Friction helps at speeds different from design speed."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Conical Pendulum",
+  "definition": "A conical pendulum consists of a mass swinging in a horizontal circle while suspended by a string. The string makes a constant angle with the vertical. Tension has vertical and horizontal components. The horizontal component provides centripetal force."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Vertical Circle",
+  "definition": "Vertical circle motion occurs when an object moves along a circular path in a vertical plane, such as a roller coaster loop. Speed is minimum at the top and maximum at the bottom. Normal force and gravity both contribute to centripetal force. Minimum speed at top prevents falling."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Kepler's First Law",
+  "definition": "Kepler's first law states that planets move in elliptical orbits with the Sun at one focus. Orbits are not perfect circles. The law applies to satellites orbiting Earth too. Elliptical shape affects orbital speed."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Kepler's Third Law",
+  "definition": "Kepler's third law states that the square of the orbital period is proportional to the cube of the semi-major axis for objects orbiting the same body. Larger orbits have longer periods. This law connects period and radius. Satellites farther from Earth take longer to orbit."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Geosynchronous Orbit",
+  "definition": "Geosynchronous orbit is a circular orbit where the orbital period matches Earth's rotation period of 24 hours. Satellites in geosynchronous orbit appear stationary from Earth. Geostationary orbits are geosynchronous and equatorial. These orbits are used for communication satellites."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Tangential Velocity",
+  "definition": "Tangential velocity is the instantaneous linear velocity of an object moving along a circular path. Tangential velocity is always perpendicular to the radius. Magnitude equals angular velocity times radius. Direction changes continuously in uniform circular motion."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Radian",
+  "definition": "A radian is the angle subtended at the center of a circle by an arc equal in length to the radius. One full circle equals 2 pi radians. Radians are the natural unit for angular measurements. Angular velocity is measured in radians per second."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Angular Velocity",
+  "definition": "Angular velocity measures how quickly an object rotates or revolves, in radians per second. The symbol omega represents angular velocity. Linear velocity equals angular velocity times radius. Direction is given by the right-hand rule."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 3: Circular Motion and Gravitation",
+  "term": "Gravitational Potential Energy (near Earth)",
+  "definition": "Gravitational potential energy near Earth is the energy stored due to an object's height in a gravitational field. The formula is mgh, where h is height above a reference level. Gravitational potential energy increases with height. This approximation works when height is small compared to Earth's radius."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Work",
+  "definition": "Work is the transfer of energy that occurs when a force acts on an object as it moves through a displacement. Work equals force times displacement times cosine of the angle between them. Work is a scalar measured in joules. Only the force component parallel to displacement does work."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Joule",
+  "definition": "The joule is the SI unit of energy and work. One joule equals one newton-meter. Lifting a 1 kg object about 10 cm against gravity requires roughly one joule. Energy transfers are measured in joules."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Power",
+  "definition": "Power is the rate at which work is done or energy is transferred. Average power equals work divided by time. The unit of power is the watt, equal to one joule per second. Instantaneous power uses instantaneous quantities."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Watt",
+  "definition": "The watt is the SI unit of power. One watt equals one joule per second. A 100-watt light bulb uses 100 joules of electrical energy each second. Power ratings indicate energy use rate."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Kinetic Energy",
+  "definition": "Kinetic energy is the energy an object possesses due to its motion. Kinetic energy equals one-half mass times velocity squared. Kinetic energy is always positive or zero. Faster speed or greater mass increases kinetic energy significantly."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Work-Energy Theorem",
+  "definition": "The work-energy theorem states that the net work done on an object equals the change in its kinetic energy. Positive net work increases kinetic energy. Negative net work, such as friction, decreases kinetic energy. This theorem links force and energy."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Conservative Force",
+  "definition": "A conservative force is a force for which the work done is independent of path and depends only on initial and final positions. Gravity and spring force are conservative forces. Work by conservative forces can be stored as potential energy. Total mechanical energy is conserved for conservative forces."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Non-Conservative Force",
+  "definition": "A non-conservative force is a force whose work depends on the path taken between two points. Friction and air resistance are non-conservative forces. Work by non-conservative forces changes the total mechanical energy. Energy is usually lost to heat."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Mechanical Energy",
+  "definition": "Mechanical energy is the sum of kinetic energy and potential energy in a system. Mechanical energy is conserved when only conservative forces act. Friction reduces mechanical energy by converting it to thermal energy. Conservation of mechanical energy simplifies many problems."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Conservation of Energy",
+  "definition": "The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. Total energy in an isolated system remains constant. Mechanical energy converts between kinetic and potential forms. Non-conservative forces change total mechanical energy."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Gravitational Potential Energy",
+  "definition": "Gravitational potential energy is the energy stored in an object due to its position in a gravitational field. Near Earth, gravitational potential energy equals mass times gravity times height. Potential energy is zero at the chosen reference level. Objects fall to minimize gravitational potential energy."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Elastic Potential Energy",
+  "definition": "Elastic potential energy is the energy stored in a deformed elastic object, such as a stretched spring. Elastic potential energy equals one-half the spring constant times the square of deformation. Energy is released when the spring returns to equilibrium. This energy powers bows and shock absorbers."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Spring Constant",
+  "definition": "The spring constant measures the stiffness of a spring. Spring constant k is the force per unit extension in newtons per meter. Larger spring constant means stiffer spring requiring more force to stretch. Hooke's law states force equals negative k times displacement."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Hooke's Law",
+  "definition": "Hooke's law states that the force exerted by a spring is proportional to its displacement from equilibrium and opposite in direction. The law applies within the elastic limit of the material. Force equals negative spring constant times displacement. Graphs of force versus displacement are straight lines."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Efficiency",
+  "definition": "Efficiency is the ratio of useful work output to total energy input, usually expressed as a percentage. Real machines have efficiency less than 100 percent due to friction and heat loss. Higher efficiency means less wasted energy. Engineers strive to improve efficiency."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Potential Energy Curve",
+  "definition": "A potential energy curve graphs potential energy versus position for a system. The slope of the curve gives the negative of the force. Stable equilibrium occurs at minimum points where the curve has a minimum. Unstable equilibrium occurs at maxima."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Energy Bar Chart",
+  "definition": "An energy bar chart visually represents the initial and final energies in a process using bars for kinetic, gravitational potential, elastic potential, and work. The total height of bars remains constant if mechanical energy is conserved. Energy bar charts help track energy transformations. Non-conservative work appears as separate terms."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "Thermal Energy",
+  "definition": "Thermal energy is the internal energy of an object due to the random motion of its particles. Friction converts mechanical energy into thermal energy. Thermal energy increases temperature or causes phase changes. Conservation of energy includes thermal energy in real processes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 4: Energy",
+  "term": "System",
+  "definition": "A system is the object or group of objects chosen for energy analysis. The surroundings are everything else. Energy can transfer between system and surroundings as work or heat. Isolated systems exchange no energy with surroundings."
 }
 ]
