@@ -1644,5 +1644,125 @@ export const allTerms: Term[] = [
 "unit": "Unit 8: Acids and Bases",
 "term": "Amphoteric Substance",
 "definition": "Amphoteric substances act as both acids and bases. Water donates or accepts protons. Aluminum oxide reacts with acids and bases. This property enables buffering."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Spontaneity",
+  "definition": "Spontaneity determines if a reaction occurs without added energy. Spontaneous processes increase the total entropy of the universe. A negative change in Gibbs free energy signals spontaneity. Temperature can reverse the direction for certain reactions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Gibbs Free Energy",
+  "definition": "Gibbs free energy predicts reaction spontaneity at constant temperature and pressure stay constant. The change in G equals the change in H minus T times the change in S. A negative change in G means the forward reaction is spontaneous. Positive values favor reactants."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Standard Gibbs Free Energy",
+  "definition": "Standard Gibbs free energy change uses reactants and products in their standard states. Tables list standard values for many compounds. The standard change equals the sum of products minus the sum of reactants. Negative values indicate spontaneous standard reactions."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Gibbs Free Energy and Equilibrium",
+  "definition": "The change in G equals zero when a system reaches equilibrium. The equation change in G equals standard change plus RT ln Q applies to any conditions. When Q is less than K the change in G is negative. The reaction stops at equilibrium."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Entropy",
+  "definition": "Entropy measures molecular disorder or randomness in a system. Gases possess much higher entropy than liquids or solids. Entropy increases when matter spreads out. The entropy of the universe rises in every spontaneous process."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Second Law of Thermodynamics",
+  "definition": "The second law states that the total entropy of the universe increases for every spontaneous process. Isolated systems naturally move toward greater disorder. Heat always flows from hot objects to cold objects. This law sets the direction of natural change."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Third Law of Thermodynamics",
+  "definition": "The third law says the entropy of a perfect crystal approaches zero at absolute zero kelvin. All substances have positive absolute entropy at room temperature. This law provides the reference point for entropy calculations. Standard entropy values rely on this principle."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Standard Entropy",
+  "definition": "Standard entropy measures disorder under standard conditions for one mole. Values grow larger with molecular complexity and temperature. Gases show far higher standard entropy than solids. Tables supply standard entropy for common substances."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Entropy Change Calculation",
+  "definition": "The change in standard entropy equals the sum of product entropies minus the sum of reactant entropies. Dissolving ionic solids usually increases entropy. Reactions that produce more gas moles have positive entropy change. Phase changes strongly affect the value."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Enthalpy-Driven Reaction",
+  "definition": "Enthalpy-driven reactions happen mainly because the change in H is strongly negative. Exothermic reactions release heat and favor spontaneity. A small negative or positive entropy change can be overcome. Combustion reactions are classic examples."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Entropy-Driven Reaction",
+  "definition": "Entropy-driven reactions proceed even though the change in H is positive. A large positive change in S makes the overall process spontaneous at high temperature. Dissolving many salts in water cools the solution yet occurs naturally. Gas-producing decompositions illustrate this type."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Temperature Effect on Spontaneity",
+  "definition": "Temperature decides spontaneity when enthalpy and entropy changes have opposite signs. Exothermic reactions with decreasing entropy favor low temperature. Endothermic reactions with increasing entropy require high temperature. Ice melting shows clear temperature dependence."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Free Energy and Equilibrium Constant",
+  "definition": "Standard change in G equals negative RT ln K links thermodynamics to equilibrium. Very negative standard G produces extremely large K values. Positive standard G gives K less than one. This relationship predicts product or reactant favorability."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Hess Law for Free Energy",
+  "definition": "Hess law works for Gibbs free energy because it is a state function. Overall standard G equals the sum of steps after proper manipulation. Reversing a reaction changes the sign of G. This method uses tabulated data efficiently."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Coupled Reactions",
+  "definition": "Coupled reactions join a nonspontaneous process to a highly spontaneous one. ATP hydrolysis powers many unfavorable cell reactions. The combined change in G becomes negative. Living systems rely on coupling for essential synthesis."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Phase Changes and Free Energy",
+  "definition": "Phase changes become spontaneous at specific temperatures. Water freezes spontaneously below zero degrees Celsius at standard pressure. Boiling happens when vapor pressure matches atmospheric pressure. Change in G equals zero exactly at the transition point."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Nonstandard Free Energy",
+  "definition": "Nonstandard conditions use change in G equals standard change plus RT ln Q. Excess reactants make the change in G more negative. High pressure favors the side with fewer gas moles. This equation predicts actual driving force."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Thermodynamic Stability",
+  "definition": "Thermodynamic stability means a substance has the lowest possible free energy. Diamond slowly converts to graphite because graphite is more stable. Kinetic barriers can make unstable forms persist. Stability depends on conditions like temperature."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Reversible vs Irreversible",
+  "definition": "Reversible processes stay infinitely close to equilibrium and produce no entropy. Real processes are irreversible and increase universe entropy. Maximum work comes only from reversible pathways. Heat engines approach but never reach reversibility."
+},
+{
+  "course": "ap-chemistry",
+  "unit": "Unit 9: Applications of Thermodynamics",
+  "term": "Galvanic Cell Thermodynamics",
+  "definition": "Galvanic cells perform electrical work using spontaneous redox reactions. Cell potential relates to change in G by negative nFE. Larger voltage means more negative free energy change. Temperature and concentration affect actual values."
 }
 ]
