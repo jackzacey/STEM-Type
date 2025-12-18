@@ -4326,5 +4326,533 @@ export const allTerms: Term[] = [
   "unit": "Unit 7: Gravitation",
   "term": "Gravitational Field Inside a Uniform Sphere",
   "definition": "Inside a uniform sphere, the gravitational field strength increases linearly with radius from the center. At the center, the field is zero due to symmetry. Outside the sphere, the field behaves as if all mass is at the center. Shell theorem proves these results."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Charge",
+  "definition": "Electric charge is a fundamental property of matter that causes it to experience force in an electric field. Charges come in two types: positive and negative. Like charges repel each other, while opposite charges attract. The smallest unit of charge is the elementary charge carried by protons and electrons."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Coulomb's Law",
+  "definition": "Coulomb's law describes the electric force between two point charges. The force is proportional to the product of the charges and inversely proportional to the square of the distance between them. The force acts along the line joining the charges. Physicists express the magnitude as F = k|q1 q2|/r^2."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Field",
+  "definition": "An electric field is the region around a charged object where another charge experiences a force. Physicists define the field strength as the force per unit positive test charge. The field points away from positive charges and toward negative charges. Units are newtons per coulomb."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Field Strength",
+  "definition": "Electric field strength, denoted by E, measures the force on a unit positive charge at a point. For a point charge, the strength decreases with the square of distance. Superposition allows calculation of the field from multiple charges. The direction follows the force on a positive test charge."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Superposition Principle",
+  "definition": "The superposition principle states that the total electric field or force from multiple charges equals the vector sum of individual contributions. Each charge contributes independently without affecting others. This principle simplifies complex charge distributions. Physicists apply it to both fields and forces."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Dipole",
+  "definition": "An electric dipole consists of equal positive and negative charges separated by a small distance. The dipole moment vector points from negative to positive charge. Dipoles align with external electric fields. Many molecules, like water, are permanent dipoles."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Potential Energy",
+  "definition": "Electric potential energy is the work needed to assemble charges from infinity against electric forces. For two point charges, the energy can be positive or negative depending on signs. The zero point is at infinite separation. Potential energy is a scalar quantity."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Potential",
+  "definition": "Electric potential, denoted by V, is the electric potential energy per unit positive charge at a point. The potential is a scalar field with units of volts. For a point charge, potential decreases with distance. Differences in potential drive charge movement."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Equipotential Surface",
+  "definition": "An equipotential surface connects points with the same electric potential. No work is done moving a charge along such a surface. Electric field lines are always perpendicular to equipotential surfaces. For a point charge, equipotentials are concentric spheres."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Gauss's Law",
+  "definition": "Gauss's law relates the electric flux through a closed surface to the enclosed charge. The flux equals the enclosed charge divided by the permittivity of free space. This law helps calculate fields for symmetric charge distributions. It is one of Maxwell's equations."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Electric Flux",
+  "definition": "Electric flux measures the amount of electric field passing through a surface. Physicists calculate it as the field strength times area times cosine of the angle. For closed surfaces, flux is positive outward for positive enclosed charge. Units are newton-meters squared per coulomb."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Conductors in Electrostatic Equilibrium",
+  "definition": "Conductors in electrostatic equilibrium have zero electric field inside. Excess charge resides on the surface. The surface is an equipotential, and field lines meet it perpendicularly. Charges redistribute quickly to reach equilibrium."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Insulators",
+  "definition": "Insulators prevent the free movement of charges through their material. Charges remain fixed where placed on insulators. Electric fields can exist inside insulators. Common insulators include glass, rubber, and plastic."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Polarization",
+  "definition": "Polarization occurs when an electric field separates positive and negative charges in a material. Insulators develop induced dipoles without charge flow. Conductors polarize by charge redistribution on surfaces. This effect explains attraction of neutral objects to charged ones."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Field Inside a Conductor",
+  "definition": "The electric field inside a conductor in electrostatic equilibrium is zero. Any internal field would cause charges to move until canceled. Excess charges move to the surface quickly. This property enables electrostatic shielding."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Faraday Cage",
+  "definition": "A Faraday cage is a conducting enclosure that blocks external electric fields. The field inside remains zero regardless of outside conditions. Charges redistribute on the outer surface. Applications include protecting electronics from lightning."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Capacitance",
+  "definition": "Capacitance measures the ability of a system to store charge per unit potential difference. The unit is the farad, one coulomb per volt. Capacitors consist of conductors separated by insulators. Capacitance depends on geometry and material."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Parallel Plate Capacitor",
+  "definition": "A parallel plate capacitor has two conducting plates separated by a small distance. The capacitance is proportional to plate area and inversely to separation. Uniform field exists between plates when charged. Dielectrics increase capacitance when inserted."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Dielectric",
+  "definition": "A dielectric is an insulating material placed between capacitor plates to increase capacitance. Polarization of the dielectric reduces the effective field. Common dielectrics include air, paper, and mica. The dielectric constant measures the increase factor."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 1: Electrostatics",
+  "term": "Energy Stored in Capacitor",
+  "definition": "Energy stored in a capacitor equals half the charge times voltage, or half capacitance times voltage squared. This energy resides in the electric field between plates. Charging requires work against repulsive forces. Capacitors release energy quickly in circuits."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 2: Conductors, Capacitors, Dielectrics",
+  "term": "Electrostatic Equilibrium",
+  "definition": "Electrostatic equilibrium occurs when charges are at rest and no currents flow. Electric fields inside conductors are zero in this state. Charges distribute to cancel internal fields. Surfaces become equipotential with excess charge on them."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 2: Conductors, Capacitors, Dielectrics",
+  "term": "Charge Distribution on Conductors",
+  "definition": "Excess charge on isolated conductors resides entirely on the outer surface. Charge density is highest at sharp points or edges. For hollow conductors, charge appears only on the outer surface. Internal cavities remain field-free."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 2: Conductors, Capacitors, Dielectrics",
+  "term": "Capacitors in Series",
+  "definition": "Capacitors in series connect end to end with the same charge on each. The total voltage divides across them. Equivalent capacitance is less than any individual. The reciprocal of total capacitance equals the sum of reciprocals."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 2: Conductors, Capacitors, Dielectrics",
+  "term": "Capacitors in Parallel",
+  "definition": "Capacitors in parallel share the same voltage across each plate pair. Total charge is the sum of individual charges. Equivalent capacitance equals the sum of individual capacitances. Parallel combinations store more charge."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 2: Conductors, Capacitors, Dielectrics",
+  "term": "Dielectric Constant",
+  "definition": "The dielectric constant, denoted by κ, measures how much a material increases capacitance. Capacitance with dielectric equals κ times vacuum capacitance. Values are greater than one for all materials. Polarization reduces the field inside."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Electric Current",
+  "definition": "Electric current is the rate of flow of electric charge through a surface. Conventional current flows from positive to negative terminals. The unit is the ampere, one coulomb per second. Steady current requires a complete conducting path."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Resistance",
+  "definition": "Resistance measures how much a material opposes electric current. Ohm's law relates resistance to voltage and current. Resistors convert electrical energy to heat. The unit is the ohm."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Ohm's Law",
+  "definition": "Ohm's law states that current through a conductor is directly proportional to voltage across it. The proportionality constant is resistance. This law applies to ohmic materials at constant temperature. Graphs of voltage versus current are straight lines."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Resistivity",
+  "definition": "Resistivity is an intrinsic property that quantifies how strongly a material resists current. The value depends on material and temperature. Resistance equals resistivity times length divided by cross-sectional area. Units are ohm-meters."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Series Resistors",
+  "definition": "Resistors in series connect end to end with the same current through each. Total resistance equals the sum of individual resistances. Voltage divides proportionally to resistance. Equivalent resistance is larger than any single value."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Parallel Resistors",
+  "definition": "Resistors in parallel share the same voltage across each branch. Total current divides inversely to resistance. Equivalent resistance is less than the smallest individual. The reciprocal of total equals the sum of reciprocals."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Kirchhoff's Junction Rule",
+  "definition": "Kirchhoff's junction rule states that the sum of currents entering a junction equals the sum leaving it. This rule reflects conservation of charge. Physicists apply it at every branch point. Steady currents require balanced junctions."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Kirchhoff's Loop Rule",
+  "definition": "Kirchhoff's loop rule states that the sum of potential differences around any closed loop equals zero. This rule reflects conservation of energy. Voltage drops across resistors and rises across batteries. Direction matters when traversing loops."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Power in Electric Circuits",
+  "definition": "Electric power is the rate at which electrical energy transfers. Power equals current times voltage. Resistors dissipate power as heat. The unit is the watt."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "EMF",
+  "definition": "Electromotive force, or EMF, is the potential difference of a source with no current flowing. Batteries and generators provide EMF. Internal resistance reduces terminal voltage under load. Units are volts."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Internal Resistance",
+  "definition": "Internal resistance is the opposition within a battery or generator. Terminal voltage drops as current increases. Real sources behave as ideal EMF in series with internal resistance. Power loss occurs internally."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "RC Circuit",
+  "definition": "An RC circuit combines a resistor and capacitor. Charging builds voltage exponentially on the capacitor. Discharging decays exponentially. The time constant equals resistance times capacitance."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Time Constant",
+  "definition": "The time constant measures how quickly an RC circuit charges or discharges. The value equals resistance times capacitance. After one time constant, voltage reaches about sixty-three percent of final value. Units are seconds."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Steady State",
+  "definition": "Steady state occurs when currents and voltages no longer change with time. Capacitors behave as open circuits in DC steady state. Inductors behave as short circuits. Analysis simplifies greatly."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Ammeter",
+  "definition": "An ammeter measures electric current in a circuit. Ideal ammeters have zero resistance. Technicians connect them in series with the branch. Real ammeters have very low resistance."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Voltmeter",
+  "definition": "A voltmeter measures potential difference between two points. Ideal voltmeters have infinite resistance. Technicians connect them in parallel across components. Real voltmeters draw negligible current."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Terminal Voltage",
+  "definition": "Terminal voltage is the actual potential difference across a source when current flows. Internal resistance causes terminal voltage to be less than EMF. The drop equals current times internal resistance. Load affects the value."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Charging Capacitor",
+  "definition": "A capacitor charges when connected to a battery through a resistor. Current decreases exponentially as voltage builds. Charge approaches maximum value asymptotically. Full charge requires several time constants."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Discharging Capacitor",
+  "definition": "A charged capacitor discharges through a resistor. Voltage and current decay exponentially. Charge decreases toward zero over time. Energy dissipates as heat in the resistor."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 3: Electric Circuits",
+  "term": "Energy Stored in Capacitor",
+  "definition": "Energy stored in a charged capacitor equals half capacitance times voltage squared. The energy resides in the electric field. Charging requires work from the source. Discharging releases this energy."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Field",
+  "definition": "A magnetic field is the region where moving charges or magnets experience force. Field lines emerge from north poles and enter south poles. The unit is the tesla. Magnets and currents produce fields."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Force on Moving Charge",
+  "definition": "Magnetic force on a moving charge is perpendicular to both velocity and field. The magnitude equals charge times speed times field times sine of angle. Right-hand rule determines direction. No force acts if velocity parallels field."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Force on Current-Carrying Wire",
+  "definition": "Magnetic force on a current-carrying wire equals current times length vector cross field. The force is perpendicular to both current and field. Right-hand rule gives direction. Motors use this principle."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Biot-Savart Law",
+  "definition": "The Biot-Savart law calculates magnetic field from current elements. Field contribution is proportional to current, length, and sine of angle, inversely to distance squared. Direction follows right-hand rule. Integration yields total field."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Ampere's Law",
+  "definition": "Ampere's law relates magnetic field around a closed loop to enclosed current. The line integral of field equals permeability times enclosed current. Symmetry simplifies calculations for certain geometries. Steady currents apply."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Field of Long Straight Wire",
+  "definition": "A long straight wire produces circular magnetic field lines. Field strength decreases inversely with distance. The magnitude equals permeability times current over two pi times radius. Direction follows right-hand thumb rule."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Field Inside Solenoid",
+  "definition": "Inside a long solenoid, the magnetic field is uniform and parallel to the axis. The strength equals permeability times turns per length times current. Outside, the field is nearly zero. Toroidal shapes behave similarly."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Torque on Current Loop",
+  "definition": "A current loop in a magnetic field experiences torque tending to align it. Torque equals loop area times current times field times sine of angle. Maximum torque occurs when perpendicular. Motors and galvanometers use this."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Dipole Moment",
+  "definition": "The magnetic dipole moment measures the strength and orientation of a current loop. The vector equals current times area, pointing by right-hand rule. Torque and potential energy involve this moment. Units are ampere-meter squared."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Hall Effect",
+  "definition": "The Hall effect produces voltage across a conductor carrying current in a magnetic field. Charge carriers deflect to one side. The voltage is proportional to field and current. Applications include field measurement."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Cyclotron Motion",
+  "definition": "Charged particles in uniform magnetic fields follow circular paths. The radius equals momentum divided by charge times field. Frequency is independent of speed. Particle accelerators use this motion."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Mass Spectrometer",
+  "definition": "A mass spectrometer separates ions by mass-to-charge ratio using magnetic fields. Ions follow curved paths with radius proportional to mass. Different masses strike detectors at different points. Velocity selectors often precede."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Force Between Parallel Wires",
+  "definition": "Parallel current-carrying wires exert magnetic forces on each other. Like currents attract; opposite repel. Force per length equals permeability times currents product over two pi times separation. Definition of ampere uses this."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 4: Magnetic Fields",
+  "term": "Magnetic Field of Circular Loop",
+  "definition": "A circular current loop produces magnetic field along its axis. At the center, field equals permeability times current over two times radius. Field lines resemble those of a bar magnet. Dipole behavior appears far away."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Faraday's Law",
+  "definition": "Faraday's law states that a changing magnetic flux through a loop induces an electromotive force. The induced EMF equals the negative rate of change of magnetic flux. This principle generates electricity in generators. Direction follows Lenz's law."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Magnetic Flux",
+  "definition": "Magnetic flux measures the amount of magnetic field passing through a surface. Physicists calculate it as field strength times area times cosine of the angle. The unit is the weber. Changing flux induces EMF."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Lenz's Law",
+  "definition": "Lenz's law states that induced current creates a magnetic field opposing the change in flux. The negative sign in Faraday's law reflects this opposition. This law conserves energy. Induced currents resist motion in generators."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Induced EMF",
+  "definition": "Induced EMF is the voltage generated by changing magnetic flux. Motion of conductors or changing fields can cause it. Generators and transformers rely on induced EMF. The value equals the rate of flux change."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Motional EMF",
+  "definition": "Motional EMF arises when a conductor moves through a magnetic field. The EMF equals field times length times velocity perpendicular to field. Charges experience force leading to separation. Sliding bars on rails demonstrate this."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Inductance",
+  "definition": "Inductance measures the ability of a coil to store energy in a magnetic field when current flows. The unit is the henry. Self-inductance opposes changes in current. Mutual inductance links two coils."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Self-Inductance",
+  "definition": "Self-inductance causes a coil to induce EMF in itself when current changes. The induced EMF opposes the change per Lenz's law. Inductors store energy in magnetic fields. The value depends on geometry and turns."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Mutual Inductance",
+  "definition": "Mutual inductance occurs when changing current in one coil induces EMF in another nearby coil. The induced EMF equals mutual inductance times rate of current change. Transformers use mutual inductance. Units are henries."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Inductor",
+  "definition": "An inductor is a coil that stores energy in a magnetic field. Inductors oppose sudden current changes. Circuits use them with capacitors for oscillations. Symbol is a series of loops."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Energy Stored in Inductor",
+  "definition": "Energy stored in an inductor equals half inductance times current squared. The energy resides in the magnetic field. Building current requires work against back EMF. Energy releases when current decreases."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "RL Circuit",
+  "definition": "An RL circuit combines a resistor and inductor. Current grows or decays exponentially with time constant inductance over resistance. Steady state reaches constant current. Transients dominate initially."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Back EMF",
+  "definition": "Back EMF is the induced voltage in an inductor opposing applied voltage. The back EMF equals inductance times rate of current change. It limits rapid current growth. Motors produce back EMF when spinning."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Transformer",
+  "definition": "A transformer transfers electrical energy between coils via mutual inductance. Voltage ratio equals turns ratio. Ideal transformers conserve power. Step-up increases voltage; step-down decreases it."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Eddy Currents",
+  "definition": "Eddy currents are induced loops in conductors exposed to changing fields. They cause heating and braking effects. Lamination reduces them in cores. Applications include metal detectors and brakes."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "LC Circuit",
+  "definition": "An LC circuit consists of an inductor and capacitor. Energy oscillates between electric and magnetic fields. Natural frequency depends on inductance and capacitance. Ideal circuits oscillate forever."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Electromagnetic Induction",
+  "definition": "Electromagnetic induction generates EMF from changing magnetic fields. Faraday discovered this phenomenon. Applications include generators and inductors. Opposition to change conserves energy."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Magnetic Energy Density",
+  "definition": "Magnetic energy density is the energy stored per unit volume in a magnetic field. The value equals field squared over twice permeability. Total energy integrates over volume. Inductors store energy this way."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Displacement Current",
+  "definition": "Displacement current accounts for changing electric fields in Ampere's law. Maxwell introduced it for consistency. The term equals permittivity times rate of flux change. It enables electromagnetic waves."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 5: Electromagnetism",
+  "term": "Maxwell's Equations",
+  "definition": "Maxwell's equations describe all classical electromagnetic phenomena. The four equations involve electric and magnetic fields, charges, and currents. They predict waves and unify electricity and magnetism. Gauss's laws and Ampere-Faraday complete the set."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Electromagnetic Wave",
+  "definition": "An electromagnetic wave consists of oscillating electric and magnetic fields perpendicular to each other and to propagation. Waves travel at light speed in vacuum. They require no medium. All frequencies form the spectrum."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Speed of Light",
+  "definition": "The speed of light in vacuum is a universal constant, approximately three times ten to the eighth meters per second. All electromagnetic waves travel at this speed. Maxwell predicted it from constants. The value links electricity and magnetism."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Transverse Wave",
+  "definition": "Electromagnetic waves are transverse with fields perpendicular to direction. Electric and magnetic fields oscillate at right angles. Polarization describes electric field orientation. Light behaves as transverse waves."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Poynting Vector",
+  "definition": "The Poynting vector represents energy flux in electromagnetic waves. Magnitude gives power per area. Direction is wave propagation. Average intensity equals half peak fields product over impedance."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Intensity",
+  "definition": "Intensity is the average power per unit area of an electromagnetic wave. The value equals Poynting vector magnitude averaged. Intensity decreases inversely with distance squared for points. Units are watts per meter squared."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Polarization",
+  "definition": "Polarization describes the orientation of electric field oscillations in a wave. Linear, circular, and elliptical types exist. Polarizers select specific orientations. Natural light is unpolarized."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Electromagnetic Spectrum",
+  "definition": "The electromagnetic spectrum orders waves by frequency or wavelength. Radio waves have longest wavelengths; gamma rays shortest. Visible light occupies a small portion. All travel at light speed."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Plane Wave",
+  "definition": "A plane wave has flat wavefronts and uniform fields in planes perpendicular to propagation. Far from sources, waves approximate planes. Calculations simplify for plane waves. Sinusoidal fields describe them."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Radiation Pressure",
+  "definition": "Radiation pressure is the force per area exerted by electromagnetic waves. Absorption or reflection causes momentum transfer. Pressure equals intensity over light speed for absorption. Solar sails use this effect."
+},
+{
+  "course": "ap-physics-c-em",
+  "unit": "Unit 6: Electromagnetic Waves",
+  "term": "Momentum of EM Waves",
+  "definition": "Electromagnetic waves carry momentum proportional to energy over light speed. Absorption transfers momentum to objects. Reflection doubles the transfer. This property enables light to exert pressure."
 }
 ]
