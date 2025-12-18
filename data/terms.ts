@@ -3546,5 +3546,767 @@ export const allTerms: Term[] = [
   "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
   "term": "Binding Energy",
   "definition": "Binding energy holds nucleus together against repulsion. Mass defect converts to binding energy. Iron has maximum binding per nucleon. Fission and fusion release binding energy."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Displacement",
+  "definition": "Displacement measures the straight-line distance and direction from initial to final position. Vectors describe displacement with magnitude and direction. Distance traveled differs from displacement in curved paths. Units are meters."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Velocity",
+  "definition": "Velocity equals displacement divided by time interval. Instantaneous velocity describes speed at a specific moment. Average velocity uses total displacement over total time. Vectors point in motion direction."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Acceleration",
+  "definition": "Acceleration measures change in velocity over time. Constant acceleration produces linear velocity-time graphs. Positive acceleration increases speed in motion direction. Negative acceleration opposes motion."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Free-Fall Acceleration",
+  "definition": "Free-fall acceleration equals gravitational constant near Earth surface. Objects fall with constant acceleration regardless of mass. Air resistance is neglected in ideal cases. Direction points downward."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Projectile Motion",
+  "definition": "Projectile motion combines horizontal constant velocity with vertical acceleration. Horizontal distance depends on initial speed and time of flight. Vertical motion follows free-fall equations. Range maximizes at forty-five degrees."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Position-Time Graph",
+  "definition": "Position-time graphs show location versus time. Slope equals average velocity. Curved graphs indicate acceleration. Straight lines represent constant velocity."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Velocity-Time Graph",
+  "definition": "Velocity-time graphs plot speed versus time. Slope gives acceleration. Area under curve equals displacement. Constant acceleration yields straight lines."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Kinematic Equations",
+  "definition": "Kinematic equations relate displacement, velocity, acceleration, and time under constant acceleration. Four standard equations solve most problems. Initial and final values plug in directly. Equations assume uniform acceleration."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Relative Motion",
+  "definition": "Relative motion describes one object's movement from another's frame. Velocity adds vectorially between frames. Ground observers see different velocities than moving observers. Airplanes adjust for wind."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Two-Dimensional Motion",
+  "definition": "Two-dimensional motion resolves into independent components. Horizontal and vertical motions separate completely. Vectors combine initial conditions. Analysis uses x and y equations."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Instantaneous Velocity",
+  "definition": "Instantaneous velocity is the limit of average velocity as time approaches zero. Tangent to position-time graph gives this value. Speedometers approximate instantaneous speed. Direction matches tangent."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Uniform Acceleration",
+  "definition": "Uniform acceleration maintains constant rate of velocity change. Kinematic equations apply directly. Gravity provides uniform acceleration downward. Cars accelerating steadily demonstrate uniformity."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Trajectory",
+  "definition": "Trajectory traces the path of a projectile in space. Parabolic shape results from constant horizontal speed. Initial angle determines shape. Air resistance alters ideal parabolas."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Range of Projectile",
+  "definition": "Range measures horizontal distance traveled by projectile. Maximum range occurs at forty-five degree launch. Range depends on initial speed squared. Symmetric flights have equal rise and fall times."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Time of Flight",
+  "definition": "Time of flight equals total duration projectile stays airborne. Vertical motion determines this time. Horizontal velocity affects distance but not time. Symmetric launches halve time at peak."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Vector Components",
+  "definition": "Vector components break velocities into horizontal and vertical parts. Sine and cosine resolve initial speeds. Components add independently. Resolution simplifies two-dimensional problems."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Reference Frame",
+  "definition": "Reference frame defines position and motion measurement. Inertial frames move at constant velocity. Non-inertial frames accelerate. Galilean relativity links inertial frames."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 1: Kinematics",
+  "term": "Sign Convention",
+  "definition": "Sign convention assigns positive and negative directions consistently. Upward usually positive in vertical motion. Rightward positive in horizontal motion. Consistent signs prevent calculation errors."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton's First Law",
+  "definition": "Newton's first law states objects at rest stay at rest and objects in motion stay in motion at constant velocity unless acted on by net force. Inertia resists changes in motion. No net force means zero acceleration."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton's Second Law",
+  "definition": "Newton's second law relates net force to mass times acceleration. Force vector equals mass times acceleration vector. Larger force produces greater acceleration. Units are newtons."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Newton's Third Law",
+  "definition": "Newton's third law states every action force has an equal and opposite reaction force. Forces act on different objects. Pairs never cancel on the same body. Rockets propel using this law."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Inertia",
+  "definition": "Inertia measures resistance to changes in motion. Mass quantifies inertia directly. Objects with greater mass need larger forces to accelerate. Seat belts counteract inertia in crashes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Free-Body Diagram",
+  "definition": "Free-body diagrams show all forces on a single object. Arrows represent force vectors. Diagrams isolate systems for analysis. Net force sums vectorially from diagram."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Normal Force",
+  "definition": "Normal force acts perpendicular to surfaces in contact. Magnitude equals weight on horizontal surfaces at rest. Inclined planes reduce normal force component. Prevents objects from sinking."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Friction Force",
+  "definition": "Friction force opposes relative motion between surfaces. Static friction prevents starting motion. Kinetic friction acts during sliding. Coefficient determines magnitude."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Static Friction",
+  "definition": "Static friction adjusts to match applied force up to maximum value. Maximum equals coefficient times normal force. Objects remain at rest until overcome. Tires grip roads via static friction."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Kinetic Friction",
+  "definition": "Kinetic friction acts on sliding objects. Force equals constant coefficient times normal force. Direction opposes velocity. Usually smaller than maximum static friction."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Tension",
+  "definition": "Tension pulls along strings or ropes. Magnitude equals throughout ideal massless strings. Atwood machines balance tensions and weights. Pulleys redirect tension forces."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Weight",
+  "definition": "Weight equals mass times gravitational acceleration. Force vector points downward. Scales measure normal force equaling weight at rest. Mass remains constant while weight varies."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Net Force",
+  "definition": "Net force sums all forces acting on an object. Zero net force produces no acceleration. Direction matches acceleration. Newton's second law uses net force directly."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Equilibrium",
+  "definition": "Equilibrium occurs when net force equals zero. Objects stay at rest or move constantly. Static equilibrium keeps objects motionless. Dynamic equilibrium maintains uniform motion."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Inclined Plane",
+  "definition": "Inclined planes reduce force needed to move objects upward. Components resolve weight parallel and perpendicular. Friction opposes parallel motion. Angles determine component sizes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Coefficient of Friction",
+  "definition": "Coefficient of friction measures surface roughness. Static coefficient exceeds kinetic coefficient usually. Values less than one for most materials. Tables list typical coefficients."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Atwood Machine",
+  "definition": "Atwood machines connect two masses over a pulley. Acceleration depends on mass difference. Tension remains constant throughout string. Pulleys assumed massless and frictionless."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 2: Dynamics",
+  "term": "Systems of Objects",
+  "definition": "Systems of objects treat connected bodies together or separately. Internal forces cancel in total system. External forces determine acceleration. Diagrams show all interactions."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Work",
+  "definition": "Work measures energy transfer when a force acts over a displacement. Work equals force component parallel to displacement times distance. Positive work increases energy; negative decreases it. Units are joules."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Kinetic Energy",
+  "definition": "Kinetic energy quantifies energy of motion. Formula uses half mass times velocity squared. Speed changes affect kinetic energy quadratically. Collisions conserve or convert kinetic energy."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Potential Energy",
+  "definition": "Potential energy stores in systems due to position or configuration. Gravitational and elastic forms are common. Energy converts to kinetic during motion. Conservation applies in isolated systems."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Gravitational Potential Energy",
+  "definition": "Gravitational potential energy depends on height in a field. Energy equals mass times gravity times height. Zero level is arbitrary but consistent. Lifting objects increases this energy."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Elastic Potential Energy",
+  "definition": "Elastic potential energy stores in deformed springs. Energy equals half spring constant times stretch squared. Restoring force follows Hooke's law. Energy releases during return to equilibrium."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Work-Energy Theorem",
+  "definition": "Work-energy theorem states net work equals change in kinetic energy. All forces contribute to total work. Theorem simplifies dynamics problems. Acceleration relates directly to work."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Conservative Force",
+  "definition": "Conservative forces allow work independent of path. Potential energy associates uniquely with position. Gravity and springs are conservative. Total mechanical energy conserves for conservative forces."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Non-Conservative Force",
+  "definition": "Non-conservative forces depend on path taken. Friction and air resistance dissipate energy. Work converts to heat or other forms. Mechanical energy decreases with non-conservative work."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Mechanical Energy",
+  "definition": "Mechanical energy sums kinetic and potential energies. Conservation holds without non-conservative forces. Systems exchange forms internally. Initial and final energies balance in ideal cases."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Power",
+  "definition": "Power measures work done per unit time. Average power equals total work over time. Instantaneous power uses force times velocity. Units are watts or horsepower."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Hooke's Law",
+  "definition": "Hooke's law states force proportional to displacement for springs. Constant k measures stiffness. Negative sign indicates restoring direction. Law applies within elastic limits."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Energy Conservation",
+  "definition": "Energy conservation states total energy remains constant in isolated systems. Forms convert but quantity preserves. External work changes total energy. Principle guides complex analyses."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Variable Force",
+  "definition": "Variable forces change magnitude or direction. Work requires integration over path. Graphs show force versus position. Area under curve equals work done."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Spring Constant",
+  "definition": "Spring constant k quantifies stiffness of elastic objects. Higher values mean stronger restoring force. Units are newtons per meter. Parallel and series combinations alter effective k."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Dissipation",
+  "definition": "Dissipation converts mechanical energy to thermal forms. Friction causes most dissipation. Systems lose usable energy over time. Real-world motion eventually stops due to dissipation."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Path Independence",
+  "definition": "Path independence characterizes conservative forces. Work depends only on endpoints. Closed loops yield zero net work. Potential energy differences define work uniquely."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Force from Potential",
+  "definition": "Force derives from negative gradient of potential energy. Direction points toward lower potential. Magnitude equals rate of potential change. Conservative forces follow this relation."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 3: Work, Energy, and Power",
+  "term": "Equilibrium Points",
+  "definition": "Equilibrium points occur where net force is zero. Potential energy minima are stable equilibria. Maxima indicate unstable positions. Small displacements reveal stability."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Center of Mass",
+  "definition": "Center of mass averages position weighted by mass. Systems accelerate as if all mass concentrated there. External forces act effectively at center. Motion separates into translation and rotation."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Linear Momentum",
+  "definition": "Linear momentum equals mass times velocity. Vector quantity conserves in isolated systems. Impulse changes momentum directly. Collisions demonstrate conservation clearly."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Impulse",
+  "definition": "Impulse equals force integrated over time. Impulse equals change in momentum. Large forces over short times deliver impulse. Airbags extend time to reduce force."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Conservation of Momentum",
+  "definition": "Conservation of momentum holds without external forces. Total momentum before equals after interactions. Vector conservation applies in each direction. Rockets use propellant expulsion."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Elastic Collision",
+  "definition": "Elastic collisions conserve both momentum and kinetic energy. Relative velocity reverses in one dimension. Two equations solve for final velocities. Ideal gases approximate elastic molecular collisions."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Inelastic Collision",
+  "definition": "Inelastic collisions conserve momentum but lose kinetic energy. Energy converts to deformation or heat. Perfectly inelastic objects stick together afterward. Maximum energy loss occurs in sticking cases."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Coefficient of Restitution",
+  "definition": "Coefficient of restitution measures bounce efficiency. Value equals relative speed after over before. One indicates perfectly elastic; zero inelastic. Real collisions fall between extremes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Center of Mass Frame",
+  "definition": "Center of mass frame moves with system center. Total momentum equals zero here. Collisions simplify in this frame. Internal motions appear clearly separated."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Rocket Propulsion",
+  "definition": "Rocket propulsion expels mass rearward for forward thrust. Momentum conservation drives acceleration. Variable mass requires adjusted equations. Exhaust velocity determines efficiency."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Variable Mass System",
+  "definition": "Variable mass systems gain or lose mass during motion. Rockets and conveyors exemplify this. Thrust relates to relative exhaust velocity. Momentum balance includes mass change."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Two-Dimensional Collision",
+  "definition": "Two-dimensional collisions conserve momentum in x and y separately. Kinetic energy conservation adds constraint for elastic. Angles and speeds determine outcomes. Billiards illustrate complex paths."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Explosion",
+  "definition": "Explosions release internal energy into kinetic form. Initial momentum remains conserved. Fragments fly apart with equal opposite momenta. Fireworks display momentum conservation vividly."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Internal Forces",
+  "definition": "Internal forces act between system parts. Pairs cancel by Newton's third law. Total momentum unaffected by internals. External forces alone change system momentum."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "External Forces",
+  "definition": "External forces originate outside the system. Net external force equals mass times center acceleration. Momentum changes only from externals. Isolation maximizes conservation time."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Ballistic Pendulum",
+  "definition": "Ballistic pendulums measure projectile speed via inelastic collision. Bullet embeds in block; momentum conserves initially. Height rise allows energy calculation. Devices demonstrate two-stage conservation."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 4: Systems of Particles and Linear Momentum",
+  "term": "Recoil",
+  "definition": "Recoil occurs when systems expel mass rapidly. Guns kick backward when firing bullets. Momentum balances between projectile and gun. Conservation dictates equal opposite changes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Uniform Circular Motion",
+  "definition": "Uniform circular motion occurs when an object travels at constant speed along a circular path. Velocity changes direction continuously. Centripetal acceleration points toward the center. Period measures time for one revolution."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Centripetal Acceleration",
+  "definition": "Centripetal acceleration keeps objects in circular paths. Magnitude equals velocity squared over radius. Direction always toward the center. Acceleration arises from net centripetal force."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Centripetal Force",
+  "definition": "Centripetal force provides the inward force for circular motion. Any force can act centripetally. Magnitude equals mass times velocity squared over radius. Tension or gravity often supplies it."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Angular Velocity",
+  "definition": "Angular velocity measures rotational speed in radians per second. Vector direction follows right-hand rule. Linear velocity equals radius times angular velocity. Constant angular velocity yields uniform motion."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Period",
+  "definition": "Period is time for one complete circular orbit. Reciprocal relates to frequency. Larger radius often increases period. Satellites have periods matching orbital heights."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Frequency",
+  "definition": "Frequency counts revolutions per second. Units are hertz. Angular velocity equals two pi times frequency. Higher frequency means faster rotation."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Newton's Law of Universal Gravitation",
+  "definition": "Newton's law states every mass attracts every other mass. Force proportional to product of masses and inverse square of distance. Gravitational constant determines strength. Law applies universally."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Gravitational Field",
+  "definition": "Gravitational field measures force per unit mass. Field points toward attracting mass. Strength decreases with inverse square of distance. Planets create fields guiding orbits."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Orbital Motion",
+  "definition": "Orbital motion balances gravitational attraction with tangential velocity. Circular orbits require specific speeds. Elliptical paths follow Kepler's laws. Satellites maintain stable orbits."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Kepler's First Law",
+  "definition": "Kepler's first law states planets orbit in ellipses with sun at one focus. Paths deviate from perfect circles. Eccentricity measures elongation. Law derived from observations."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Kepler's Second Law",
+  "definition": "Kepler's second law describes equal areas in equal times. Planets sweep equal areas regardless of position. Speed increases nearer the sun. Conservation of angular momentum explains this."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Kepler's Third Law",
+  "definition": "Kepler's third law relates period squared to semi-major axis cubed. Constant holds for objects orbiting same body. Larger orbits have longer periods. Law connects size and time."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Gravitational Potential Energy",
+  "definition": "Gravitational potential energy is negative for bound systems. Energy equals negative G times masses over separation. Zero at infinite distance. Escape requires positive total energy."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Escape Speed",
+  "definition": "Escape speed allows objects to reach infinity with zero kinetic energy. Speed equals square root of two G M over radius. Earth escape speed is about eleven kilometers per second. Planets retain atmospheres partially."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Conical Pendulum",
+  "definition": "Conical pendulums swing in horizontal circles. Tension provides centripetal component. Height and radius determine period. Angle relates to speed and gravity."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Banked Curve",
+  "definition": "Banked curves allow vehicles to turn without friction. Angle provides centripetal force component. Ideal speed depends on radius and banking. Highways bank for safety."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Geostationary Orbit",
+  "definition": "Geostationary orbits match Earth's rotation period. Satellites appear fixed above equator. Height calculates from Kepler's law. Communication satellites use this orbit."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 5: Circular Motion and Gravitation",
+  "term": "Tangential Velocity",
+  "definition": "Tangential velocity directs perpendicular to radius in circular motion. Magnitude equals radius times angular velocity. Direction changes continuously. Provides inertia against centripetal force."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Simple Harmonic Motion",
+  "definition": "Simple harmonic motion occurs with restoring force proportional to displacement. Position follows sinusoidal function of time. Springs and pendulums approximate this motion. Period independent of amplitude."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Restoring Force",
+  "definition": "Restoring force pulls systems back to equilibrium. Force proportional and opposite to displacement in SHM. Springs provide linear restoring force. Magnitude increases with stretch."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Amplitude",
+  "definition": "Amplitude measures maximum displacement from equilibrium. Energy proportional to amplitude squared. Velocity peaks at equilibrium. Larger amplitude increases maximum speed."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Period in SHM",
+  "definition": "Period in simple harmonic motion is time for one cycle. Mass-spring period depends on mass and spring constant. Pendulum period relies on length and gravity. Period independent of amplitude."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Frequency in SHM",
+  "definition": "Frequency counts cycles per second in oscillations. Reciprocal equals period. Angular frequency relates by two pi. Higher stiffness increases frequency."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Angular Frequency",
+  "definition": "Angular frequency measures oscillation rate in radians per second. Value equals two pi over period. Equations use omega for simplicity. Springs have omega as square root of k over m."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Phase",
+  "definition": "Phase determines position and direction in oscillation cycle. Initial conditions set phase constant. Phase difference compares two oscillators. Waves use phase for interference."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Mass-Spring System",
+  "definition": "Mass-spring systems oscillate horizontally or vertically. Period equals two pi times square root of mass over k. Equilibrium shifts downward in gravity. Energy exchanges between kinetic and elastic."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Simple Pendulum",
+  "definition": "Simple pendulums approximate SHM for small angles. Period equals two pi times square root of length over g. Mass independent period. Real pendulums deviate at large angles."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Physical Pendulum",
+  "definition": "Physical pendulums pivot about points not at ends. Period depends on moment of inertia and distance to center. Compound objects oscillate as physical pendulums. Formula generalizes simple case."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Total Energy in SHM",
+  "definition": "Total energy in simple harmonic motion remains constant without damping. Energy equals half k times amplitude squared. Kinetic and potential interchange fully. Conservation simplifies analysis."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Reference Circle",
+  "definition": "Reference circles project uniform circular motion onto diameter. Projection yields simple harmonic motion. Radius equals amplitude. Angular speed matches oscillator frequency."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Damped Oscillation",
+  "definition": "Damped oscillations lose amplitude over time due to resistance. Light damping allows many cycles. Critical damping returns fastest without overshoot. Overdamping slows return."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Driven Oscillation",
+  "definition": "Driven oscillations receive periodic external force. Steady state matches driving frequency. Resonance amplifies amplitude dramatically. Bridges and instruments avoid or use resonance."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Resonance",
+  "definition": "Resonance occurs when driving frequency matches natural frequency. Amplitude grows large with light damping. Energy input balances losses. Tacoma Bridge collapsed from resonance."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Small Angle Approximation",
+  "definition": "Small angle approximation treats sine as angle in radians. Pendulums achieve SHM only for small swings. Error grows with larger angles. Approximation simplifies derivations."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Velocity in SHM",
+  "definition": "Velocity in simple harmonic motion varies sinusoidally. Maximum speed occurs at equilibrium position. Speed equals omega times amplitude times cosine. Direction reverses at extremes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 6: Oscillations",
+  "term": "Acceleration in SHM",
+  "definition": "Acceleration in simple harmonic motion directs toward equilibrium. Magnitude peaks at maximum displacement. Acceleration equals negative omega squared times position. Proportionality defines SHM."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Rotational Kinematics",
+  "definition": "Rotational kinematics describes angular motion with constant angular acceleration. Equations mirror linear kinematics using theta, omega, and alpha. Initial and final conditions solve for unknowns. Graphs relate angular quantities over time."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Angular Displacement",
+  "definition": "Angular displacement measures rotation angle in radians. Positive direction follows right-hand rule convention. Total angle accumulates over time. Full circle equals two pi radians."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Angular Velocity",
+  "definition": "Angular velocity equals change in angular displacement over time. Vector points along axis using right-hand rule. Instantaneous value gives rotational speed. Units are radians per second."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Angular Acceleration",
+  "definition": "Angular acceleration measures change in angular velocity over time. Constant acceleration simplifies equations. Tangential acceleration relates by radius. Vector direction aligns with velocity change."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Moment of Inertia",
+  "definition": "Moment of inertia quantifies resistance to angular acceleration. Value depends on mass distribution and axis. Formulas vary by shape and rotation point. Larger distance from axis increases inertia."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Torque",
+  "definition": "Torque causes angular acceleration about an axis. Magnitude equals force times perpendicular lever arm. Vector direction follows right-hand rule. Net torque determines rotational dynamics."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Newton's Second Law for Rotation",
+  "definition": "Newton's second law for rotation states net torque equals moment of inertia times angular acceleration. Parallel to linear form. Direction consistency crucial for vectors. Applies to rigid bodies."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Rotational Kinetic Energy",
+  "definition": "Rotational kinetic energy equals half moment of inertia times angular velocity squared. Adds to translational energy for rolling. Conservation includes both forms. Power relates to torque and velocity."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Angular Momentum",
+  "definition": "Angular momentum equals moment of inertia times angular velocity for rigid bodies. Vector points along rotation axis. Conservation holds without external torque. Direction follows right-hand rule."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Conservation of Angular Momentum",
+  "definition": "Conservation of angular momentum occurs in isolated systems. Initial equals final without external torque. Ice skaters spin faster by reducing inertia. Collisions preserve total momentum."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Parallel Axis Theorem",
+  "definition": "Parallel axis theorem adds mass times distance squared to center moment. Applies to axes parallel to center of mass. Simplifies calculations for offset rotations. Engineers use for complex shapes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Perpendicular Axis Theorem",
+  "definition": "Perpendicular axis theorem sums moments in plane for planar objects. Total about z equals x plus y components. Applies only to lamina perpendicular to axis. Useful for flat shapes."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Rolling Without Slipping",
+  "definition": "Rolling without slipping links linear and angular motion. Velocity at contact point equals zero. Acceleration relates by radius. Friction provides torque without energy loss."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Rotational Equilibrium",
+  "definition": "Rotational equilibrium requires zero net torque. Objects remain at rest or constant angular velocity. Multiple torques balance around pivot. Static problems solve with equilibrium conditions."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Lever Arm",
+  "definition": "Lever arm measures perpendicular distance from axis to force line. Maximum torque occurs when force perpendicular to radius. Longer arms amplify torque effect. Tools extend lever arms for advantage."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Rigid Body",
+  "definition": "Rigid bodies maintain fixed distances between points. Internal forces preserve shape during motion. Rotation describes about fixed axes or points. Simplifies complex system analysis."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Axis of Rotation",
+  "definition": "Axis of rotation defines line about which body turns. Fixed axes simplify torque calculations. Instantaneous axes apply to general motion. Choice affects moment of inertia."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Precession",
+  "definition": "Precession describes slow axis rotation under torque. Spinning tops wobble in circles. Angular momentum changes direction gradually. Gyroscopes maintain orientation against precession."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Gyroscope",
+  "definition": "Gyroscopes resist orientation changes due to angular momentum. High spin rates stabilize direction. Navigation systems rely on gyroscopic stability. Precession occurs under applied torque."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Tangential Acceleration",
+  "definition": "Tangential acceleration changes rotational speed. Relates to angular acceleration by radius. Acts along circumference direction. Combines with centripetal for curved paths."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Rotational Power",
+  "definition": "Rotational power equals torque times angular velocity. Measures work rate in rotation. Units are watts. Engines deliver power through rotational motion."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Rotation",
+  "term": "Vector Cross Product",
+  "definition": "Vector cross product yields perpendicular vector for torque and momentum. Magnitude equals product times sine of angle. Right-hand rule determines direction. Essential for rotational vectors."
 }
 ]
