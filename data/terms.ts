@@ -2262,5 +2262,455 @@ export const allTerms: Term[] = [
   "unit": "Unit 4: Energy",
   "term": "System",
   "definition": "A system is the object or group of objects chosen for energy analysis. The surroundings are everything else. Energy can transfer between system and surroundings as work or heat. Isolated systems exchange no energy with surroundings."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Linear Momentum",
+  "definition": "Linear momentum measures an object's motion as the product of its mass and velocity. Momentum is a vector quantity with both magnitude and direction. The SI unit is kilogram meters per second. An object with greater mass or higher speed has larger momentum."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Impulse",
+  "definition": "Impulse equals the change in an object's momentum over time. Impulse occurs when a net force acts on an object for a duration. The formula is force times time interval. Impulse changes momentum in collisions or when forces apply briefly."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Conservation of Momentum",
+  "definition": "Conservation of momentum states that total momentum remains constant in an isolated system with no external forces. Momentum before an event equals momentum after. This law applies to collisions and explosions. The principle holds in one or two dimensions."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Elastic Collision",
+  "definition": "An elastic collision conserves both momentum and kinetic energy. Objects bounce apart after impact. Kinetic energy before equals kinetic energy after. Ideal elastic collisions occur without energy loss to deformation or sound."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Inelastic Collision",
+  "definition": "An inelastic collision conserves momentum but not kinetic energy. Some kinetic energy converts to other forms like heat or sound. Objects may stick together after collision. Most real-world collisions are inelastic."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Perfectly Inelastic Collision",
+  "definition": "A perfectly inelastic collision conserves momentum and causes objects to stick together. Maximum kinetic energy loss occurs. The combined mass moves with common velocity after impact. Examples include ballistic pendulums."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Isolated System",
+  "definition": "An isolated system experiences no external forces or interactions. Total momentum stays constant within it. Collisions in isolated systems follow conservation laws perfectly. Real systems approximate isolation when external forces are negligible."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Center of Mass",
+  "definition": "The center of mass is the average position of mass in a system. Momentum conservation relates to center of mass motion. External forces accelerate the center of mass. No external forces keep the center of mass at rest or constant velocity."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Change in Momentum",
+  "definition": "Change in momentum equals final momentum minus initial momentum. Impulse causes this change. Larger impulse results in greater momentum change. Momentum change is a vector quantity."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Impulse-Momentum Theorem",
+  "definition": "The impulse-momentum theorem states that impulse equals change in momentum. Force times time interval changes an object's momentum. The theorem applies to forces varying over time. It explains why airbags increase time to reduce force."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Coefficient of Restitution",
+  "definition": "The coefficient of restitution measures elasticity in collisions. It equals relative velocity after collision divided by relative velocity before. A value of one indicates perfectly elastic collision. Zero indicates perfectly inelastic."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Recoil",
+  "definition": "Recoil occurs when an object pushes back after firing or exploding. Momentum conservation causes opposite momentum in the recoiling object. Rockets use recoil for propulsion. Guns kick back due to recoil."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Two-Dimensional Collision",
+  "definition": "Two-dimensional collisions involve momentum conservation in x and y directions separately. Components of momentum before equal components after. Vector addition resolves velocities. Analysis requires resolving into perpendicular axes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Explosions",
+  "definition": "Explosions conserve momentum in isolated systems. Initial momentum is zero. Fragments move in opposite directions after explosion. Total momentum remains zero afterward. Energy converts to kinetic form."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Internal Forces",
+  "definition": "Internal forces act between parts of the system. Internal forces do not change total momentum. Momentum conservation relies on no external forces. Internal forces cancel in pairs by Newton's third law."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "External Forces",
+  "definition": "External forces act from outside the system. External forces change total momentum. Friction and gravity often act as external forces. Isolated systems minimize external forces."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Ballistic Pendulum",
+  "definition": "A ballistic pendulum measures bullet speed using inelastic collision. The bullet embeds in the pendulum. Momentum conservation finds initial speed. Energy conservation calculates height rise."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 5: Momentum",
+  "term": "Head-on Collision",
+  "definition": "A head-on collision occurs along a straight line. Momentum conservation simplifies to one dimension. Velocities may reverse or combine after impact. Elastic or inelastic types determine final speeds."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Simple Harmonic Motion",
+  "definition": "Simple harmonic motion is periodic oscillation with restoring force proportional to displacement. The motion follows a sinusoidal path. Examples include mass-spring systems and pendulums. SHM maintains constant frequency independent of amplitude."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Restoring Force",
+  "definition": "The restoring force pulls an object back to equilibrium position. This force opposes displacement. In SHM, restoring force is directly proportional to displacement. Hooke's law describes the restoring force for springs."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Hooke's Law",
+  "definition": "Hooke's law states that spring force equals negative spring constant times displacement. The force restores the system to equilibrium. Springs obey Hooke's law within elastic limits. The constant k measures stiffness."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Period",
+  "definition": "The period is time for one complete oscillation cycle. Period remains constant for a given oscillator. For springs, period depends on mass and spring constant. For pendulums, period depends on length and gravity."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Frequency",
+  "definition": "Frequency measures oscillations per unit time. Frequency is the reciprocal of period. Units are hertz or cycles per second. Higher frequency means faster oscillations."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Amplitude",
+  "definition": "Amplitude is maximum displacement from equilibrium. Amplitude affects energy but not period in SHM. Larger amplitude means greater maximum speed. Energy is proportional to amplitude squared."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Equilibrium Position",
+  "definition": "The equilibrium position is where restoring force is zero. Objects pass through equilibrium with maximum speed. Displacement is zero at equilibrium. The system balances forces here."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Spring Constant",
+  "definition": "The spring constant k measures spring stiffness. Higher k means stiffer spring and faster oscillation. Units are newtons per meter. Hooke's law uses the spring constant."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Angular Frequency",
+  "definition": "Angular frequency is 2π times frequency. It describes oscillation rate in radians per second. Angular frequency appears in SHM equations. It determines period through ω = 2π/T."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Mass on a Spring",
+  "definition": "A mass on a spring oscillates horizontally or vertically in SHM. Period is 2π times square root of mass over spring constant. Vertical springs include gravity effects on equilibrium. Energy transfers between kinetic and potential."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Simple Pendulum",
+  "definition": "A simple pendulum oscillates with small angles in SHM. Period is 2π times square root of length over g. Period is independent of mass. Pendulums approximate SHM for small displacements."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Potential Energy in SHM",
+  "definition": "Potential energy in SHM is stored in the spring or gravitational field. Spring potential energy is half k times displacement squared. Potential energy peaks at maximum displacement. Total energy conserves in ideal SHM."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Kinetic Energy in SHM",
+  "definition": "Kinetic energy in SHM is maximum at equilibrium position. Kinetic energy is half m times velocity squared. Velocity peaks at equilibrium. Energy converts to potential at extremes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Total Mechanical Energy in SHM",
+  "definition": "Total mechanical energy in SHM is constant without friction. Energy equals half k times amplitude squared. Energy oscillates between kinetic and potential forms. Conservation holds in ideal systems."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Phase",
+  "definition": "Phase describes the position in the oscillation cycle. Phase difference compares two oscillators. Phase affects superposition in waves. Initial conditions determine phase."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Damped Oscillation",
+  "definition": "Damped oscillation occurs with friction or air resistance. Amplitude decreases over time. Energy dissipates as heat. Damping prevents perpetual motion in real systems."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 6: Simple Harmonic Motion",
+  "term": "Driven Oscillator",
+  "definition": "A driven oscillator receives external periodic force. Resonance occurs when driving frequency matches natural frequency. Amplitude peaks at resonance. Energy input sustains motion."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Torque",
+  "definition": "Torque measures the rotational effect of a force around an axis. Torque equals force times perpendicular distance from the axis to the line of force. The lever arm determines the effectiveness of the force. Torque is a vector quantity with direction given by the right-hand rule."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Rotational Equilibrium",
+  "definition": "Rotational equilibrium occurs when net torque on an object is zero. The object remains at rest or rotates at constant angular velocity. Balanced torques prevent angular acceleration. Seesaws and bridges rely on rotational equilibrium."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Center of Gravity",
+  "definition": "The center of gravity is the point where gravitational force effectively acts. Weight balances around this point. Objects stay stable when the center of gravity lies above the base. Tilting raises the center and causes tipping."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Moment of Inertia",
+  "definition": "Moment of inertia measures resistance to rotational acceleration. It depends on mass and distance from the rotation axis. Larger moment means harder to change angular speed. Different shapes have unique formulas for moment of inertia."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Angular Momentum",
+  "definition": "Angular momentum quantifies rotational motion. Angular momentum equals moment of inertia times angular velocity. It is conserved in isolated systems. Direction follows the right-hand rule."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Conservation of Angular Momentum",
+  "definition": "Conservation of angular momentum states that total angular momentum remains constant without external torques. Ice skaters spin faster by pulling arms in. Satellites adjust orientation using this principle. The law applies to isolated systems."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Lever Arm",
+  "definition": "The lever arm is the perpendicular distance from the pivot to the force line. Maximum torque occurs when force is perpendicular to the lever. Longer lever arms produce greater torque for the same force. Tools like wrenches use long levers."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Static Equilibrium",
+  "definition": "Static equilibrium requires zero net force and zero net torque. Objects remain completely at rest. Structures like buildings depend on static equilibrium. Both translational and rotational conditions must hold."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Rotational Kinetic Energy",
+  "definition": "Rotational kinetic energy is energy due to rotation. It equals half moment of inertia times angular velocity squared. Rolling objects have both translational and rotational kinetic energy. Energy conservation includes both forms."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Axis of Rotation",
+  "definition": "The axis of rotation is the line about which an object rotates. Fixed axes simplify problems like doors on hinges. Instantaneous axes apply to rolling without slip. Torque acts around a chosen axis."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Newton's Second Law for Rotation",
+  "definition": "Newton's second law for rotation states that net torque equals moment of inertia times angular acceleration. Torque causes rotational acceleration. Larger moment of inertia reduces acceleration for the same torque. The law parallels linear motion."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Rolling Without Slipping",
+  "definition": "Rolling without slipping links linear and angular motion. Linear velocity equals radius times angular velocity. Acceleration relates similarly. Friction provides torque without causing slip."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Parallel Axis Theorem",
+  "definition": "The parallel axis theorem relates moment of inertia about parallel axes. Moment about any axis equals moment about center of mass plus mass times distance squared. The theorem helps calculate complex rotations. Engineers use it for irregular objects."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Rotational Inertia",
+  "definition": "Rotational inertia is another name for moment of inertia. It resists changes in rotational motion. Mass farther from axis increases rotational inertia. Flywheels store energy using high rotational inertia."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Couple",
+  "definition": "A couple consists of two equal and opposite forces not along the same line. Couples produce pure torque without net force. Steering wheels use couples for rotation. Net torque equals force times separation distance."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Angular Acceleration",
+  "definition": "Angular acceleration measures change in angular velocity over time. Torque produces angular acceleration. Units are radians per second squared. Constant torque yields constant angular acceleration."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Rotational Dynamics",
+  "definition": "Rotational dynamics studies forces causing rotational motion. Torque and moment of inertia play key roles. Equations mirror linear dynamics. Real-world applications include wheels and gears."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Stability",
+  "definition": "Stability depends on the position of the center of gravity relative to the base. Low center of gravity enhances stability. Objects return to equilibrium when disturbed slightly. Racing cars lower centers for better stability."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Gyroscope",
+  "definition": "A gyroscope maintains orientation due to angular momentum conservation. Spinning wheels resist torque changes. Precession occurs when torque is applied. Navigation systems use gyroscopes for stability."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 7: Torque and Rotational Motion",
+  "term": "Precession",
+  "definition": "Precession is slow rotation of the axis of a spinning object. Gravity torque causes precession in tops. Angular momentum direction changes gradually. Earth experiences precession over long periods."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Mechanical Wave",
+  "definition": "A mechanical wave transfers energy through a medium by disturbing particles. Waves require matter to propagate. Transverse and longitudinal waves differ in particle motion. Energy moves without net matter transport."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Transverse Wave",
+  "definition": "Transverse waves oscillate perpendicular to the direction of propagation. Rope waves demonstrate transverse motion. Crests and troughs mark high and low points. Polarization applies only to transverse waves."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Longitudinal Wave",
+  "definition": "Longitudinal waves oscillate parallel to the propagation direction. Sound waves are longitudinal. Compressions and rarefactions form the pattern. Pressure variations carry the energy."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Wave Speed",
+  "definition": "Wave speed equals frequency times wavelength. Speed depends on medium properties. Tension and density affect string waves. Temperature influences sound speed in air."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Period",
+  "definition": "The period of a wave is time for one complete cycle. Period equals reciprocal of frequency. Longer periods mean lower frequencies. Clocks use pendulums with consistent periods."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Frequency",
+  "definition": "Frequency measures waves passing a point per second. Units are hertz. Higher frequency waves carry more energy. Human hearing ranges from low to high frequencies."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Wavelength",
+  "definition": "Wavelength is distance between consecutive crests or compressions. Wavelength relates inversely to frequency for constant speed. Shorter wavelengths bend more around obstacles. Colors depend on light wavelength."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Superposition",
+  "definition": "Superposition occurs when waves overlap and combine displacements. Resultant displacement equals the sum of individual waves. Interference patterns arise from superposition. Waves pass through each other unchanged."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Interference",
+  "definition": "Interference combines waves to produce larger or smaller amplitudes. Constructive interference increases amplitude. Destructive interference reduces amplitude. Noise-canceling headphones use destructive interference."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Standing Wave",
+  "definition": "Standing waves form from interference of identical waves traveling oppositely. Nodes remain stationary; antinodes oscillate maximally. Strings produce standing waves at resonant frequencies. Harmonics determine musical notes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Node",
+  "definition": "A node is a point of zero displacement in a standing wave. Destructive interference causes nodes. Nodes space half wavelength apart. Fixed ends of strings create nodes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Antinode",
+  "definition": "An antinode is a point of maximum displacement in standing waves. Constructive interference produces antinodes. Antinodes lie midway between nodes. Greatest energy transfer occurs at antinodes."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Resonance",
+  "definition": "Resonance occurs when driving frequency matches natural frequency. Amplitude grows dramatically at resonance. Bridges and buildings avoid resonant frequencies. Musical instruments use resonance for sound."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Sound Wave",
+  "definition": "Sound waves are longitudinal mechanical waves in matter. Air molecules vibrate to transmit sound. Speed in air increases with temperature. Intensity determines loudness; frequency determines pitch."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Pitch",
+  "definition": "Pitch is the perceived frequency of sound. Higher frequency yields higher pitch. Human ears detect pitch differences. Musical notes correspond to specific frequencies."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Intensity",
+  "definition": "Intensity measures sound power per unit area. Loudness relates to intensity logarithmically. Decibels quantify intensity levels. Distance reduces intensity inversely with square."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Doppler Effect",
+  "definition": "The Doppler effect changes observed frequency due to relative motion. Approaching sources raise pitch; receding lower it. Sirens demonstrate the effect. Speed calculations use Doppler shifts."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Beat",
+  "definition": "Beats arise from interference of close frequencies. Beat frequency equals difference between two frequencies. Tuning instruments uses beats. Periodic volume changes characterize beats."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Harmonics",
+  "definition": "Harmonics are integer multiples of fundamental frequency. Strings and pipes produce specific harmonics. Open pipes allow all harmonics; closed allow odd only. Tone quality depends on harmonics."
+},
+{
+  "course": "ap-physics-1",
+  "unit": "Unit 8: Mechanical Waves and Sound",
+  "term": "Fundamental Frequency",
+  "definition": "Fundamental frequency is the lowest resonant frequency. It determines the first harmonic. Wavelength equals twice string length for fundamentals. Pitch relates directly to fundamental frequency."
 }
 ]
