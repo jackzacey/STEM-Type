@@ -4179,134 +4179,152 @@ export const allTerms: Term[] = [
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Rotational Kinematics",
-  "definition": "Rotational kinematics describes angular motion with constant angular acceleration. Equations mirror linear kinematics using theta, omega, and alpha. Initial and final conditions solve for unknowns. Graphs relate angular quantities over time."
+  "unit": "Unit 7: Gravitation",
+  "term": "Newton's Law of Universal Gravitation",
+  "definition": "Newton's law of universal gravitation states that every point mass attracts every other point mass with a force directed along the line connecting the centers. The force is proportional to the product of the masses and inversely proportional to the square of the distance between them. This law explains planetary orbits and many everyday phenomena. Physicists express the law mathematically as F = G(m1 m2)/r^2."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Angular Displacement",
-  "definition": "Angular displacement measures rotation angle in radians. Positive direction follows right-hand rule convention. Total angle accumulates over time. Full circle equals two pi radians."
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Constant",
+  "definition": "The gravitational constant, denoted by G, measures the strength of gravity in Newton's law of universal gravitation. Scientists determined its value through precise experiments, such as the Cavendish torsion balance. The accepted value is approximately 6.67430 × 10^{-11} m^3 kg^{-1} s^{-2}. This constant remains the same throughout the universe."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Angular Velocity",
-  "definition": "Angular velocity equals change in angular displacement over time. Vector points along axis using right-hand rule. Instantaneous value gives rotational speed. Units are radians per second."
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Force",
+  "definition": "Gravitational force is the attractive force between any two objects with mass. The force acts along the line joining the centers of the masses. Its magnitude follows Newton's law of universal gravitation. Near Earth's surface, this force produces the familiar weight of objects."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Angular Acceleration",
-  "definition": "Angular acceleration measures change in angular velocity over time. Constant acceleration simplifies equations. Tangential acceleration relates by radius. Vector direction aligns with velocity change."
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Field",
+  "definition": "A gravitational field describes the region around a mass where another mass experiences a force. Physicists define the field strength as the force per unit mass on a test mass. The field points toward the source mass. Common units are newtons per kilogram."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Moment of Inertia",
-  "definition": "Moment of inertia quantifies resistance to angular acceleration. Value depends on mass distribution and axis. Formulas vary by shape and rotation point. Larger distance from axis increases inertia."
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Field Strength",
+  "definition": "Gravitational field strength, denoted by g, equals the gravitational force per unit mass at a point. Near Earth's surface, the value is about 9.8 N/kg downward. The strength decreases with distance from the mass. For a point mass, physicists calculate it as g = GM/r^2."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Torque",
-  "definition": "Torque causes angular acceleration about an axis. Magnitude equals force times perpendicular lever arm. Vector direction follows right-hand rule. Net torque determines rotational dynamics."
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Potential Energy",
+  "definition": "Gravitational potential energy is the energy stored due to the position of masses in a gravitational field. For two point masses, the potential energy is negative and proportional to the product of the masses. It becomes zero at infinite separation. The formula is U = -G(m1 m2)/r."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Newton's Second Law for Rotation",
-  "definition": "Newton's second law for rotation states net torque equals moment of inertia times angular acceleration. Parallel to linear form. Direction consistency crucial for vectors. Applies to rigid bodies."
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Potential",
+  "definition": "Gravitational potential, denoted by V, is the potential energy per unit mass at a point in a gravitational field. The potential is negative for attractive fields and zero at infinity. Physicists calculate it for a point mass as V = -GM/r. Units are joules per kilogram."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Rotational Kinetic Energy",
-  "definition": "Rotational kinetic energy equals half moment of inertia times angular velocity squared. Adds to translational energy for rolling. Conservation includes both forms. Power relates to torque and velocity."
+  "unit": "Unit 7: Gravitation",
+  "term": "Kepler's First Law",
+  "definition": "Kepler's first law states that planets move in elliptical orbits with the Sun at one focus. The ellipse has two foci, and the orbit is not perfectly circular. This law replaced the earlier idea of circular orbits. Elliptical paths explain varying orbital speeds."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Angular Momentum",
-  "definition": "Angular momentum equals moment of inertia times angular velocity for rigid bodies. Vector points along rotation axis. Conservation holds without external torque. Direction follows right-hand rule."
+  "unit": "Unit 7: Gravitation",
+  "term": "Kepler's Second Law",
+  "definition": "Kepler's second law describes equal areas swept in equal times by the line from the Sun to a planet. A planet moves faster when closer to the Sun and slower when farther away. This law reflects conservation of angular momentum. The areal velocity remains constant."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Conservation of Angular Momentum",
-  "definition": "Conservation of angular momentum occurs in isolated systems. Initial equals final without external torque. Ice skaters spin faster by reducing inertia. Collisions preserve total momentum."
+  "unit": "Unit 7: Gravitation",
+  "term": "Kepler's Third Law",
+  "definition": "Kepler's third law relates the orbital period squared to the semi-major axis cubed for planets around the Sun. The square of the period is proportional to the cube of the average distance. Newton generalized this law using gravity. The constant involves the central mass."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Parallel Axis Theorem",
-  "definition": "Parallel axis theorem adds mass times distance squared to center moment. Applies to axes parallel to center of mass. Simplifies calculations for offset rotations. Engineers use for complex shapes."
+  "unit": "Unit 7: Gravitation",
+  "term": "Orbital Motion",
+  "definition": "Orbital motion occurs when gravitational force provides the centripetal force for circular or elliptical paths. Objects in orbit continuously fall toward the central body but move forward fast enough to miss it. Satellites and planets follow this motion. Stable orbits require specific speeds."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Perpendicular Axis Theorem",
-  "definition": "Perpendicular axis theorem sums moments in plane for planar objects. Total about z equals x plus y components. Applies only to lamina perpendicular to axis. Useful for flat shapes."
+  "unit": "Unit 7: Gravitation",
+  "term": "Circular Orbit",
+  "definition": "A circular orbit is a special elliptical orbit with zero eccentricity. The distance from the central body remains constant. Gravitational force equals the required centripetal force. Orbital speed is constant in magnitude for circular paths."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Rolling Without Slipping",
-  "definition": "Rolling without slipping links linear and angular motion. Velocity at contact point equals zero. Acceleration relates by radius. Friction provides torque without energy loss."
+  "unit": "Unit 7: Gravitation",
+  "term": "Orbital Speed",
+  "definition": "Orbital speed is the tangential speed needed to maintain a stable orbit at a given radius. For circular orbits, the speed satisfies gravitational force equaling centripetal force. The speed decreases with increasing orbital radius. Physicists derive it as v = sqrt(GM/r)."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Rotational Equilibrium",
-  "definition": "Rotational equilibrium requires zero net torque. Objects remain at rest or constant angular velocity. Multiple torques balance around pivot. Static problems solve with equilibrium conditions."
+  "unit": "Unit 7: Gravitation",
+  "term": "Orbital Period",
+  "definition": "The orbital period is the time for one complete revolution around the central body. For circular orbits, the period relates to radius and central mass via Kepler's third law. Longer periods correspond to larger orbits. The formula is T = 2π sqrt(r^3/GM)."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Lever Arm",
-  "definition": "Lever arm measures perpendicular distance from axis to force line. Maximum torque occurs when force perpendicular to radius. Longer arms amplify torque effect. Tools extend lever arms for advantage."
+  "unit": "Unit 7: Gravitation",
+  "term": "Escape Speed",
+  "definition": "Escape speed is the minimum speed needed to escape a body's gravitational pull to infinity. At this speed, kinetic energy equals the magnitude of gravitational potential energy. The speed depends only on the mass and radius of the body. The formula is v_esc = sqrt(2GM/r)."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Rigid Body",
-  "definition": "Rigid bodies maintain fixed distances between points. Internal forces preserve shape during motion. Rotation describes about fixed axes or points. Simplifies complex system analysis."
+  "unit": "Unit 7: Gravitation",
+  "term": "Binding Energy",
+  "definition": "Binding energy is the energy required to separate an object from a gravitational system to infinity. For an object on a planet's surface, binding energy equals the negative of gravitational potential energy. Rockets must supply this energy to escape. It is also called gravitational binding energy."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Axis of Rotation",
-  "definition": "Axis of rotation defines line about which body turns. Fixed axes simplify torque calculations. Instantaneous axes apply to general motion. Choice affects moment of inertia."
+  "unit": "Unit 7: Gravitation",
+  "term": "Geostationary Orbit",
+  "definition": "A geostationary orbit places a satellite directly above the equator with a period matching Earth's rotation. The satellite appears stationary from the ground. This orbit requires a specific radius of about 42,164 km from Earth's center. Communication satellites often use geostationary orbits."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Precession",
-  "definition": "Precession describes slow axis rotation under torque. Spinning tops wobble in circles. Angular momentum changes direction gradually. Gyroscopes maintain orientation against precession."
+  "unit": "Unit 7: Gravitation",
+  "term": "Elliptical Orbit",
+  "definition": "An elliptical orbit follows the path of an ellipse with the central body at one focus. The distance varies from periapsis (closest) to apoapsis (farthest). Speed is highest at periapsis and lowest at apoapsis. Most planetary orbits are elliptical."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Gyroscope",
-  "definition": "Gyroscopes resist orientation changes due to angular momentum. High spin rates stabilize direction. Navigation systems rely on gyroscopic stability. Precession occurs under applied torque."
+  "unit": "Unit 7: Gravitation",
+  "term": "Periapsis and Apoapsis",
+  "definition": "Periapsis is the closest point in an orbit to the central body; apoapsis is the farthest point. For Earth orbits, these are perigee and apogee. The line connecting them is the major axis. Distances determine orbital energy and period."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Tangential Acceleration",
-  "definition": "Tangential acceleration changes rotational speed. Relates to angular acceleration by radius. Acts along circumference direction. Combines with centripetal for curved paths."
+  "unit": "Unit 7: Gravitation",
+  "term": "Semi-Major Axis",
+  "definition": "The semi-major axis is half the longest diameter of an elliptical orbit. It equals the average distance from the focus to points on the ellipse. Kepler's third law uses the semi-major axis cubed. The value determines the orbital period."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Rotational Power",
-  "definition": "Rotational power equals torque times angular velocity. Measures work rate in rotation. Units are watts. Engines deliver power through rotational motion."
+  "unit": "Unit 7: Gravitation",
+  "term": "Eccentricity",
+  "definition": "Eccentricity measures how much an orbit deviates from a circle. The value ranges from 0 for circular orbits to nearly 1 for highly elongated ones. Eccentricity determines the shape of the ellipse. Zero eccentricity means perfect circular motion."
 },
 {
   "course": "ap-physics-c-mechanics",
-  "unit": "Unit 7: Rotation",
-  "term": "Vector Cross Product",
-  "definition": "Vector cross product yields perpendicular vector for torque and momentum. Magnitude equals product times sine of angle. Right-hand rule determines direction. Essential for rotational vectors."
-}
+  "unit": "Unit 7: Gravitation",
+  "term": "Conservation of Angular Momentum in Orbits",
+  "definition": "Angular momentum remains constant in gravitational orbits because torque is zero. The radius decreases when speed increases to keep the product constant. This principle explains Kepler's second law. Planets move faster near the Sun."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Gravitation",
+  "term": "Total Mechanical Energy in Orbit",
+  "definition": "Total mechanical energy in a gravitational orbit is the sum of kinetic and potential energy. For bound orbits, the total energy is negative. The magnitude determines the semi-major axis. Energy is constant unless external forces act."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Gravitation",
+  "term": "Gauss's Law for Gravity",
+  "definition": "Gauss's law for gravity relates the gravitational flux through a closed surface to the enclosed mass. The flux equals -4πG times the enclosed mass. This law helps calculate fields for symmetric mass distributions. It parallels the electric version in electrostatics."
+},
+{
+  "course": "ap-physics-c-mechanics",
+  "unit": "Unit 7: Gravitation",
+  "term": "Gravitational Field Inside a Uniform Sphere",
+  "definition": "Inside a uniform sphere, the gravitational field strength increases linearly with radius from the center. At the center, the field is zero due to symmetry. Outside the sphere, the field behaves as if all mass is at the center. Shell theorem proves these results."
+},
 ]
