@@ -4326,5 +4326,5 @@ export const allTerms: Term[] = [
   "unit": "Unit 7: Gravitation",
   "term": "Gravitational Field Inside a Uniform Sphere",
   "definition": "Inside a uniform sphere, the gravitational field strength increases linearly with radius from the center. At the center, the field is zero due to symmetry. Outside the sphere, the field behaves as if all mass is at the center. Shell theorem proves these results."
-},
+}
 ]
