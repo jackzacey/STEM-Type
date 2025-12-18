@@ -4854,5 +4854,1115 @@ export const allTerms: Term[] = [
   "unit": "Unit 6: Electromagnetic Waves",
   "term": "Momentum of EM Waves",
   "definition": "Electromagnetic waves carry momentum proportional to energy over light speed. Absorption transfers momentum to objects. Reflection doubles the transfer. This property enables light to exert pressure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Ecosystem",
+  "definition": "An ecosystem includes all living organisms in an area and the nonliving components with which they interact. Energy flows through ecosystems while matter cycles within them. Ecosystems vary greatly in size from a pond to a forest. Interactions among organisms and the environment sustain life."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Biotic Factors",
+  "definition": "Biotic factors are the living components of an ecosystem, such as plants, animals, fungi, and bacteria. Organisms interact through competition, predation, and symbiosis. These factors influence population sizes and community structure. Biotic elements depend on abiotic resources."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Abiotic Factors",
+  "definition": "Abiotic factors are the nonliving components of an ecosystem, including sunlight, temperature, water, soil, and nutrients. These elements shape where organisms can live and thrive. Changes in abiotic conditions affect biotic communities. Climate largely determines biome types."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Trophic Levels",
+  "definition": "Trophic levels organize organisms by their feeding relationships in a food chain. Producers occupy the first level, followed by primary consumers, secondary consumers, and tertiary consumers. Energy transfer decreases at each higher level. Decomposers break down dead matter."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Producers",
+  "definition": "Producers, mainly green plants and algae, convert sunlight into chemical energy through photosynthesis. These autotrophs form the base of most food webs. Producers support all higher trophic levels. Aquatic producers include phytoplankton."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Primary Consumers",
+  "definition": "Primary consumers are herbivores that eat producers directly. Animals like deer, rabbits, and zooplankton belong to this group. These organisms transfer energy from plants to higher levels. Populations often fluctuate with food availability."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Secondary Consumers",
+  "definition": "Secondary consumers are carnivores or omnivores that feed on primary consumers. Examples include frogs, spiders, and small fish. These animals help control herbivore populations. Energy available to them is less than to lower levels."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Tertiary Consumers",
+  "definition": "Tertiary consumers are top carnivores that eat secondary consumers. Hawks, wolves, and sharks often occupy this level. Few ecosystems support many tertiary consumers due to energy loss. These predators regulate lower trophic levels."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Food Chain",
+  "definition": "A food chain shows the linear transfer of energy from producers to consumers. Each link represents a trophic level. Arrows indicate energy flow direction. Real ecosystems contain many interconnected food chains."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Food Web",
+  "definition": "A food web illustrates complex feeding relationships among organisms in an ecosystem. Multiple interconnected food chains form the web. Food webs reveal energy pathways and species interactions. Disruptions can affect the entire system."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Ten Percent Rule",
+  "definition": "The ten percent rule states that only about ten percent of energy transfers to the next trophic level. Most energy loses as heat during metabolism. This limit explains why food chains are short. Biomass decreases at higher levels."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Gross Primary Productivity",
+  "definition": "Gross primary productivity is the total energy captured by producers through photosynthesis in an ecosystem. The rate measures energy fixed per unit area over time. Sunlight and nutrients influence this value. Plants use some for respiration."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Net Primary Productivity",
+  "definition": "Net primary productivity equals gross primary productivity minus energy used for plant respiration. This value represents energy available to consumers. Forests and wetlands often show high net productivity. It indicates ecosystem health."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Biogeochemical Cycle",
+  "definition": "Biogeochemical cycles recycle essential nutrients through ecosystems. Water, carbon, nitrogen, and phosphorus cycle between biotic and abiotic components. Human activities can disrupt these cycles. Balance maintains ecosystem stability."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Carbon Cycle",
+  "definition": "The carbon cycle moves carbon among atmosphere, oceans, organisms, and rocks. Photosynthesis removes carbon dioxide; respiration and combustion release it. Oceans store large amounts of carbon. Deforestation affects the cycle."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Nitrogen Cycle",
+  "definition": "The nitrogen cycle converts atmospheric nitrogen into forms usable by organisms. Bacteria fix nitrogen in soil and roots. Denitrification returns it to the atmosphere. Fertilizers add excess nitrogen to ecosystems."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Phosphorus Cycle",
+  "definition": "The phosphorus cycle moves phosphorus through rocks, soil, water, and organisms. Weathering releases phosphate from rocks. Plants absorb it; animals obtain it from food. Runoff carries excess to water bodies."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Hydrologic Cycle",
+  "definition": "The hydrologic cycle circulates water through evaporation, condensation, precipitation, and runoff. Solar energy drives evaporation from oceans and land. Plants release water via transpiration. Humans alter it through dams and withdrawals."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Biome",
+  "definition": "A biome is a large community of plants and animals defined by climate and vegetation. Major biomes include tundra, taiga, temperate forest, grassland, desert, and tropical rainforest. Temperature and precipitation determine biome distribution."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Biodiversity",
+  "definition": "Biodiversity encompasses the variety of life at genetic, species, and ecosystem levels. High biodiversity increases ecosystem resilience. Hotspots contain exceptional species richness. Human actions threaten global biodiversity."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 1: The Living World: Ecosystems",
+  "term": "Keystone Species",
+  "definition": "A keystone species exerts strong influence on community structure despite low abundance. Removal causes major changes in the ecosystem. Sea otters and wolves are classic examples. Protection often preserves entire communities."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Species Richness",
+  "definition": "Species richness counts the number of different species in a community or ecosystem. Higher richness generally indicates greater biodiversity. Tropical regions show exceptional species richness. Simple counts ignore abundance differences."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Species Evenness",
+  "definition": "Species evenness measures how equal species abundances are in a community. Communities with similar population sizes have high evenness. Evenness combines with richness for overall diversity. Rare species affect evenness greatly."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Island Biogeography",
+  "definition": "Island biogeography theory explains species richness on islands. Larger islands closer to mainland support more species. Immigration and extinction rates balance diversity. Habitat fragments behave like islands."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Natural Selection",
+  "definition": "Natural selection drives evolution by favoring traits that improve survival and reproduction. Variations arise randomly; advantageous ones spread. Environments select adapted individuals. This process explains species diversity."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Speciation",
+  "definition": "Speciation creates new species when populations become reproductively isolated. Geographic barriers often initiate the process. Genetic differences accumulate over time. Adaptive radiation produces many species from one ancestor."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Extinction",
+  "definition": "Extinction occurs when the last individual of a species dies. Background rates are natural; mass extinctions are rare. Human activities accelerate current extinction rates. Loss reduces biodiversity permanently."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Endemic Species",
+  "definition": "Endemic species occur naturally in only one geographic area. Islands and isolated habitats host many endemics. These species face high extinction risk from threats. Conservation prioritizes endemic-rich regions."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Ecosystem Services",
+  "definition": "Ecosystem services are benefits humans receive from healthy ecosystems. Categories include provisioning, regulating, cultural, and supporting services. Pollination and water purification are vital examples. Biodiversity sustains these services."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Genetic Diversity",
+  "definition": "Genetic diversity represents variation in genes within a species or population. High diversity aids adaptation to changing conditions. Inbreeding reduces genetic diversity. Crop and livestock breeding rely on it."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Habitat Loss",
+  "definition": "Habitat loss destroys or fragments natural areas for species survival. Agriculture, urban development, and logging cause most loss. This threat drives many extinctions. Remaining fragments support fewer species."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Invasive Species",
+  "definition": "Invasive species are non-native organisms that spread aggressively and harm ecosystems. Lack of natural controls allows rapid growth. These species outcompete natives and alter habitats. Prevention is the best management strategy."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Overexploitation",
+  "definition": "Overexploitation occurs when humans harvest species faster than they reproduce. Overfishing and poaching are common examples. Populations decline or collapse under pressure. Regulations help sustainable use."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "HIPPCO",
+  "definition": "HIPPCO summarizes major threats to biodiversity: habitat loss, invasive species, pollution, population growth, climate change, and overexploitation. These human-driven factors interact and amplify effects. Addressing them requires global action."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Biodiversity Hotspot",
+  "definition": "A biodiversity hotspot contains exceptional species richness and faces serious habitat loss. Hotspots cover little land but hold many endemic species. Conservation International identifies thirty-six such regions. Protection yields high returns."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Ecological Footprint",
+  "definition": "The ecological footprint measures human demand on Earth's ecosystems. It compares resource consumption and waste to biocapacity. Many countries exceed sustainable levels. Reducing footprints preserves biodiversity."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Conservation Biology",
+  "definition": "Conservation biology applies science to preserve biodiversity and ecosystems. Strategies include protected areas and restoration. This field addresses urgent species loss. Interdisciplinary approaches guide effective actions."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Ex Situ Conservation",
+  "definition": "Ex situ conservation protects species outside natural habitats. Zoos, botanical gardens, and seed banks maintain populations. These efforts preserve genetic material. Reintroduction programs return species to wild areas."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "In Situ Conservation",
+  "definition": "In situ conservation protects species within natural habitats. National parks and wildlife reserves are key examples. This approach maintains ecosystems and processes. Community involvement improves success rates."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Endangered Species",
+  "definition": "Endangered species face high risk of extinction in the near future. Habitat destruction and other threats reduce populations. Laws like the Endangered Species Act provide protection. Recovery plans aim to increase numbers."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 2: The Living World: Biodiversity",
+  "term": "Threatened Species",
+  "definition": "Threatened species are likely to become endangered soon if trends continue. Monitoring tracks population declines. Proactive measures prevent further loss. Many species recover with timely intervention."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Population",
+  "definition": "A population consists of all individuals of one species living in a specific area at the same time. Members interbreed and share resources. Populations change in size through births, deaths, immigration, and emigration. Ecologists study dynamics to understand growth patterns."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Exponential Growth",
+  "definition": "Exponential growth occurs when a population increases at a constant rate per individual, producing a J-shaped curve. Unlimited resources allow rapid doubling. Real populations rarely sustain this pattern long. Bacteria in ideal conditions show exponential growth."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Logistic Growth",
+  "definition": "Logistic growth happens when population increase slows as it approaches carrying capacity, forming an S-shaped curve. Environmental resistance limits growth at higher densities. Many populations follow this model. Resources become scarce near capacity."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Carrying Capacity",
+  "definition": "Carrying capacity is the maximum population size an environment can sustain indefinitely. Food, water, space, and other resources set the limit. Populations fluctuate around this level. Human actions often alter carrying capacity."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Density-Dependent Factors",
+  "definition": "Density-dependent factors intensify as population size increases. Competition, predation, disease, and parasitism belong to this group. These factors regulate populations near carrying capacity. Effects strengthen with crowding."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Density-Independent Factors",
+  "definition": "Density-independent factors affect populations regardless of size. Weather events, natural disasters, and human disturbances cause sudden declines. These factors often strike unpredictably. Recovery depends on remaining individuals."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "r-Selected Species",
+  "definition": "r-selected species produce many offspring with little parental care. Rapid growth and early reproduction characterize them. These organisms thrive in unstable environments. Weeds and insects often show r-selection traits."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "K-Selected Species",
+  "definition": "K-selected species invest in fewer offspring with extensive care. Long lifespans and late reproduction help maintain populations near carrying capacity. Large mammals and birds display K-selection. Stable environments favor this strategy."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Survivorship Curve",
+  "definition": "A survivorship curve graphs the number of individuals alive at each age. Type I shows low early mortality; Type III high early losses; Type II constant rates. Curves reveal life history strategies. Humans follow Type I patterns."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Age Structure Diagram",
+  "definition": "An age structure diagram displays population distribution by age and sex. Wide bases indicate rapid growth; narrow bases suggest decline. Stable populations show even distribution. Diagrams predict future trends."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Limiting Resource",
+  "definition": "A limiting resource restricts population growth when scarce. Water in deserts or nitrogen in soils often limits plants. Competition intensifies for essential resources. Single factors can control entire populations."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Interspecific Competition",
+  "definition": "Interspecific competition occurs between different species for shared resources. Strong competition leads to resource partitioning or exclusion. One species may outcompete another locally. Niche differentiation reduces overlap."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Boom and Bust Cycle",
+  "definition": "Boom and bust cycles feature rapid population growth followed by sharp crashes. Predator-prey relationships often drive these patterns. Snowshoe hares and lynx show classic cycles. Resource depletion triggers declines."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Demography",
+  "definition": "Demography studies population size, composition, and change over time. Birth rates, death rates, and migration drive dynamics. Ecologists use demographic data for predictions. Human demography influences environmental impact."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Total Fertility Rate",
+  "definition": "Total fertility rate estimates average children a woman will bear in her lifetime. Replacement level is about two point one in developed countries. High rates drive rapid population growth. Cultural and economic factors influence it."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Population Pyramid",
+  "definition": "A population pyramid visually represents age and sex distribution. Expanding populations have broad bases and narrow tops. Contracting ones show narrow bases. Developed nations often display columnar shapes."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Ecological Footprint",
+  "definition": "An ecological footprint measures land and water needed to support a population's resource use and waste. Many countries exceed Earth's biocapacity. Reducing footprints eases environmental pressure. Lifestyle choices greatly affect size."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Human Population Growth",
+  "definition": "Human population growth accelerated after the Industrial Revolution. Improved medicine and agriculture reduced mortality. Current growth concentrates in developing regions. Projections suggest stabilization later this century."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Demographic Transition",
+  "definition": "The demographic transition model describes shifts from high to low birth and death rates. Stages reflect economic development. Most developed nations complete the transition. Developing countries progress through earlier stages."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 3: Populations",
+  "term": "Overshoot",
+  "definition": "Overshoot occurs when a population exceeds carrying capacity temporarily. Resource depletion follows excessive growth. Crashes often result from overshoot. Reindeer on islands demonstrate dramatic examples."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Plate Tectonics",
+  "definition": "Plate tectonics explains movement of Earth's lithospheric plates on the mantle. Convection drives slow drifting. Boundaries create earthquakes, volcanoes, and mountains. This theory unifies geology processes."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Soil Horizon",
+  "definition": "Soil horizons are distinct layers with different properties in a profile. O horizon contains organic matter; A is topsoil; B accumulates minerals; C is weathered rock. Horizons reflect formation processes. Farming affects upper layers."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Soil Texture",
+  "definition": "Soil texture describes proportions of sand, silt, and clay particles. Loam balances all three for good drainage and nutrients. Texture influences water holding and root growth. Triangle diagrams classify types."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Rock Cycle",
+  "definition": "The rock cycle transforms rocks among igneous, sedimentary, and metamorphic types. Heat, pressure, weathering, and cementation drive changes. Processes operate continuously over geologic time. Plate movements influence pathways."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Watershed",
+  "definition": "A watershed drains all precipitation into a common body of water. Boundaries follow topographic highs. Activities upstream affect downstream quality. Management requires watershed-scale planning."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Aquifer",
+  "definition": "An aquifer is an underground layer of permeable rock storing groundwater. Confined aquifers lie between impermeable layers. Unconfined ones recharge directly from surface. Overpumping causes depletion and subsidence."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Atmospheric Layers",
+  "definition": "Earth's atmosphere divides into layers based on temperature. Troposphere contains weather; stratosphere holds ozone; mesosphere burns meteors; thermosphere absorbs radiation. Altitude defines boundaries."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Coriolis Effect",
+  "definition": "The Coriolis effect deflects moving objects right in the Northern Hemisphere and left in the Southern. Earth's rotation causes this apparent force. Winds and ocean currents curve accordingly. Strength increases toward poles."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "El Niño",
+  "definition": "El Niño warms surface waters in the eastern Pacific periodically. Trade winds weaken, altering global weather. Droughts and floods result in distant regions. The cycle disrupts fisheries and agriculture."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "La Niña",
+  "definition": "La Niña cools eastern Pacific surface waters below average. Stronger trade winds enhance upwelling. Opposite weather patterns to El Niño occur worldwide. The phase often follows El Niño events."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Soil Erosion",
+  "definition": "Soil erosion removes topsoil by wind or water faster than formation. Farming, deforestation, and overgrazing accelerate loss. Terracing and cover crops reduce erosion. Fertile land declines globally."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Soil Degradation",
+  "definition": "Soil degradation reduces productivity through erosion, salinization, and nutrient loss. Irrigation in dry areas causes salt buildup. Desertification affects marginal lands. Sustainable practices restore soil health."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Convergent Boundary",
+  "definition": "Convergent boundaries collide plates, forming mountains or subduction zones. Continental collisions create ranges like the Himalayas. Oceanic plates subduct, producing trenches and volcanoes. Earthquakes mark these zones."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Divergent Boundary",
+  "definition": "Divergent boundaries separate plates, allowing magma to rise. Mid-ocean ridges form new oceanic crust. Rift valleys develop on continents. Iceland sits on a spreading ridge."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Solar Intensity",
+  "definition": "Solar intensity measures energy received from the Sun per unit area. Latitude, season, and atmosphere affect local values. High intensity drives evaporation and winds. Equatorial regions receive most energy."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Greenhouse Effect",
+  "definition": "The greenhouse effect traps heat in the atmosphere via gases like carbon dioxide and methane. Solar radiation warms Earth; infrared reradiates upward. Gases absorb and re-emit energy downward. Natural process sustains life."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Ocean Conveyor Belt",
+  "definition": "The ocean conveyor belt circulates deep and surface waters globally. Cold, salty water sinks in polar regions. Currents distribute heat and nutrients. Disruptions could alter climate patterns."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Upwelling",
+  "definition": "Upwelling brings cold, nutrient-rich water from depths to surface. Winds drive coastal upwelling. Phytoplankton bloom in response. Fisheries thrive in upwelling zones."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Weathering",
+  "definition": "Weathering breaks down rocks physically or chemically at Earth's surface. Frost action and plant roots cause mechanical breakdown. Acids from rain dissolve minerals. Soil forms from weathered material."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 4: Earth Systems and Resources",
+  "term": "Salinization",
+  "definition": "Salinization accumulates salts in soil from poor irrigation practices. Evaporation leaves salts behind in dry climates. Crops suffer as salts increase. Flushing with excess water can reverse effects."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Tragedy of the Commons",
+  "definition": "The tragedy of the commons describes how individuals overuse shared resources for personal gain. Each user benefits fully while costs spread among all. Overgrazing of public pastures illustrates this problem. Regulation or privatization often prevents depletion."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Clear-Cutting",
+  "definition": "Clear-cutting removes all trees from an area in one operation. Loggers access timber efficiently this way. Soil erosion, habitat loss, and reduced biodiversity follow. Selective cutting leaves some trees standing."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Selective Cutting",
+  "definition": "Selective cutting harvests only mature or specific trees from a forest. Younger trees remain to grow and maintain cover. This method reduces erosion and preserves habitat. Biodiversity stays higher than with clear-cutting."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Sustainable Forestry",
+  "definition": "Sustainable forestry manages forests to meet current needs without compromising future ones. Practices include replanting and protecting watersheds. Certification programs promote responsible harvesting. Long-term ecosystem health guides decisions."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Urban Sprawl",
+  "definition": "Urban sprawl spreads low-density development outward from cities. Cars and highways enable distant suburbs. Farmland and habitats convert to housing. Traffic, pollution, and infrastructure costs increase."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Green Revolution",
+  "definition": "The Green Revolution boosted crop yields with high-yield varieties, fertilizers, and irrigation. Food production rose dramatically in developing countries. Hunger declined but chemical use harmed environments. Monocultures increased vulnerability."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Monoculture",
+  "definition": "Monoculture grows a single crop over large areas year after year. Efficiency and mechanization benefit farmers. Pests and diseases spread easily without diversity. Soil nutrients deplete faster than in polycultures."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Irrigation",
+  "definition": "Irrigation supplies water to crops from rivers, wells, or reservoirs. Techniques include flood, drip, and sprinkler systems. Yields increase in dry regions. Overuse causes salinization and water shortages."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Overgrazing",
+  "definition": "Overgrazing occurs when too many animals remove vegetation faster than regrowth. Soil compacts and erodes without plant cover. Deserts expand in affected areas. Rotational grazing prevents damage."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Rangeland",
+  "definition": "Rangeland supports native grasses for livestock grazing. Arid and semi-arid regions dominate these lands. Proper stocking rates maintain productivity. Overgrazing leads to degradation and weed invasion."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Desertification",
+  "definition": "Desertification turns productive land into desert-like conditions. Drought, overgrazing, and poor farming accelerate the process. Vegetation loss exposes soil to erosion. Millions of hectares degrade annually."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Mining",
+  "definition": "Mining extracts minerals and ores from Earth for human use. Surface and underground methods access deposits. Habitats destroy and tailings pollute. Reclamation restores some sites after closure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Surface Mining",
+  "definition": "Surface mining removes overburden to reach shallow deposits. Strip mining and open-pit are common types. Large areas disturb with waste piles. Coal and metals often come from surface operations."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Mountaintop Removal",
+  "definition": "Mountaintop removal blasts away peaks to expose coal seams. Valleys fill with rubble and spoil. Streams bury and water quality declines. Appalachia experiences widespread landscape change."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Subsistence Agriculture",
+  "definition": "Subsistence agriculture grows food primarily for family consumption. Farmers use traditional methods and local varieties. Little surplus reaches markets. Shifting cultivation practices in tropical areas."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Shifting Cultivation",
+  "definition": "Shifting cultivation clears forest patches for temporary farming. Plots abandon after soil depletes. Vegetation regrows during fallow periods. Long cycles sustain fertility in low populations."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Feedlot",
+  "definition": "A feedlot confines livestock in dense pens for finishing on grain. Rapid weight gain occurs before slaughter. Manure concentrates and pollutes nearby water. Efficiency reduces grazing pressure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Urbanization",
+  "definition": "Urbanization shifts populations from rural to city areas. Infrastructure expands to support growth. Services concentrate but green space declines. Energy and resource demands rise sharply."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "Public Lands",
+  "definition": "Public lands belong to governments for multiple uses like recreation and resource extraction. National parks protect scenery; forests allow logging. Management balances conservation and development. Access rights vary by designation."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 5: Land and Water Use",
+  "term": "National Park",
+  "definition": "A national park preserves natural and cultural features for public enjoyment. Development restricts to maintain integrity. Wildlife and landscapes receive strong protection. Visitation supports education and tourism."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Fossil Fuels",
+  "definition": "Fossil fuels form from ancient organic remains under heat and pressure. Coal, oil, and natural gas dominate energy supply. Combustion releases carbon dioxide and pollutants. Reserves deplete over time."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Coal",
+  "definition": "Coal is a solid fossil fuel rich in carbon from plant remains. Mining extracts it for electricity generation. Burning produces sulfur dioxide and ash. Carbon emissions contribute heavily to climate change."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Crude Oil",
+  "definition": "Crude oil is a liquid fossil fuel from marine organisms. Refineries process it into gasoline, diesel, and plastics. Extraction includes drilling and fracking. Spills harm ecosystems severely."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Natural Gas",
+  "definition": "Natural gas consists mainly of methane from underground deposits. Pipelines transport it for heating and power. Cleaner burning than coal reduces some pollutants. Methane leaks potent greenhouse effects."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Nuclear Energy",
+  "definition": "Nuclear energy releases power from uranium fission in reactors. Steam drives turbines for electricity. No carbon emissions occur during operation. Radioactive waste requires long-term storage."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Hydropower",
+  "definition": "Hydropower generates electricity from flowing water through dams. Reservoirs store energy potential. Renewable and flexible output meets demand. Ecosystems alter from flooded valleys."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Biomass",
+  "definition": "Biomass energy comes from organic materials like wood, crops, and waste. Burning or conversion produces heat and power. Renewable when managed sustainably. Emissions vary by source."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Solar Energy",
+  "definition": "Solar energy captures sunlight via panels or mirrors for electricity or heat. Abundant and renewable resource grows rapidly. Intermittency requires storage solutions. Land use concerns arise at scale."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Wind Energy",
+  "definition": "Wind energy converts kinetic motion into electricity using turbines. Onshore and offshore farms expand quickly. No fuel costs after installation. Bird collisions and noise affect locals."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Geothermal Energy",
+  "definition": "Geothermal energy taps heat from Earth's interior for power and heating. Hot water or steam drives turbines. Reliable baseload supply in suitable locations. Limited geographic availability restricts use."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Energy Efficiency",
+  "definition": "Energy efficiency uses less input for the same output. Insulation, LED lights, and appliances reduce consumption. Cost savings and lower emissions result. Policies promote efficient technologies."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Hubbert Peak",
+  "definition": "Hubbert peak predicts maximum production rate of oil before decline. Global peak oil concerns supply security. Discovery and extraction rates influence timing. Alternatives gain importance afterward."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Fracking",
+  "definition": "Fracking injects high-pressure fluid to extract oil and gas from shale. Horizontal drilling accesses tight formations. Production booms but water contamination risks arise. Methane leaks add greenhouse impact."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Tar Sands",
+  "definition": "Tar sands contain bitumen mixed with sand for oil extraction. Mining or steam injection recovers heavy crude. High energy and water use intensify impacts. Greenhouse emissions exceed conventional oil."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Renewable Energy",
+  "definition": "Renewable energy derives from naturally replenishing sources like sun, wind, and water. Supplies never exhaust with proper management. Transition reduces fossil dependence. Costs decline rapidly for many types."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Nonrenewable Energy",
+  "definition": "Nonrenewable energy comes from finite resources like fossil fuels and uranium. Extraction depletes stocks over time. Prices rise as reserves dwindle. External costs include pollution and climate effects."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Energy Conservation",
+  "definition": "Energy conservation reduces overall use through behavior and technology. Turning off lights and carpooling save resources. Lower demand eases environmental pressure. Education promotes conservation habits."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Cogeneration",
+  "definition": "Cogeneration produces electricity and useful heat from one fuel source. Efficiency reaches high levels in combined systems. Industrial plants and districts apply it widely. Waste heat recovery cuts emissions."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Fission",
+  "definition": "Fission splits heavy atomic nuclei to release energy. Uranium-235 reactors sustain chain reactions. Massive power generates from small fuel mass. Waste remains radioactive for millennia."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 6: Energy Resources and Consumption",
+  "term": "Fusion",
+  "definition": "Fusion combines light nuclei to form heavier ones with energy release. Stars power by hydrogen fusion. Earth experiments seek controlled reactions. Clean abundant fuel promises future supply."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Air Pollution",
+  "definition": "Air pollution introduces harmful substances into the atmosphere from natural or human sources. Gases, particulates, and aerosols affect health and climate. Primary pollutants emit directly; secondary form through reactions. Urban areas often experience high concentrations."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Primary Pollutant",
+  "definition": "A primary pollutant releases directly into the air from a source. Carbon monoxide, sulfur dioxide, and particulate matter are common examples. Vehicles and industries emit most primary pollutants. These substances cause immediate harm."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Secondary Pollutant",
+  "definition": "A secondary pollutant forms when primary pollutants react in the atmosphere. Ozone and sulfuric acid develop this way. Sunlight often drives the reactions. Secondary pollutants contribute to smog and acid rain."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Particulate Matter",
+  "definition": "Particulate matter consists of tiny solid or liquid particles suspended in air. PM10 and PM2.5 refer to sizes in micrometers. Inhalation damages lungs and heart. Sources include combustion and dust."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Smog",
+  "definition": "Smog combines smoke and fog with pollutants. Photochemical smog forms from vehicle emissions under sunlight. Industrial smog arises from coal burning in cold weather. Both types reduce visibility and harm health."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Photochemical Smog",
+  "definition": "Photochemical smog develops when sunlight reacts with nitrogen oxides and volatile organic compounds. Ozone forms as a key component. Warm, sunny cities experience it most. Eye irritation and respiratory issues result."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Tropospheric Ozone",
+  "definition": "Tropospheric ozone acts as a harmful pollutant near ground level. Vehicle emissions and sunlight produce it. Plants suffer damage; humans experience breathing difficulties. Stratospheric ozone protects from ultraviolet radiation."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Volatile Organic Compounds",
+  "definition": "Volatile organic compounds evaporate easily and contribute to smog formation. Paints, fuels, and solvents release them. Plants also emit natural VOCs. Reactions with nitrogen oxides create ozone."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Nitrogen Oxides",
+  "definition": "Nitrogen oxides include NO and NO2 from high-temperature combustion. Vehicles and power plants emit most. Brown haze appears in polluted air. Acid rain and ozone form from them."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Sulfur Dioxide",
+  "definition": "Sulfur dioxide releases mainly from coal and oil combustion. Power plants produce large amounts. The gas forms acid rain and particulates. Respiratory problems worsen with exposure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Carbon Monoxide",
+  "definition": "Carbon monoxide forms from incomplete combustion of fuels. Vehicles in traffic emit significant quantities. The odorless gas binds hemoglobin strongly. High levels cause poisoning and death."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Lead",
+  "definition": "Lead entered air historically from leaded gasoline. Paint and industry also contributed. The heavy metal accumulates in bones and tissues. Children suffer developmental damage from exposure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Thermal Inversion",
+  "definition": "A thermal inversion traps cool air under warm air, preventing vertical mixing. Pollutants accumulate near the ground. Cities in valleys experience frequent inversions. Air quality worsens dramatically."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Acid Deposition",
+  "definition": "Acid deposition includes wet acid rain and dry fallout of acidic particles. Sulfur and nitrogen oxides cause most acidity. Forests, lakes, and buildings suffer damage. Soils lose nutrients over time."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Indoor Air Pollution",
+  "definition": "Indoor air pollution often exceeds outdoor levels in developing countries. Cooking with biomass fuels releases smoke and particulates. Radon, asbestos, and formaldehyde also pose risks. Ventilation reduces concentrations."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Noise Pollution",
+  "definition": "Noise pollution arises from traffic, industry, and construction sounds. Prolonged exposure causes stress and hearing loss. Wildlife communication disrupts in noisy areas. Regulations limit acceptable levels."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Clean Air Act",
+  "definition": "The Clean Air Act regulates air emissions in the United States. Standards set limits for criteria pollutants. Amendments strengthened controls over time. Enforcement improved national air quality."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Catalytic Converter",
+  "definition": "A catalytic converter reduces vehicle emissions of CO, NOx, and hydrocarbons. Precious metals speed chemical reactions. Oxygen converts pollutants to less harmful gases. Mandatory use cut urban smog."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "Scrubber",
+  "definition": "A scrubber removes pollutants from industrial exhaust gases. Limestone slurry captures sulfur dioxide effectively. Wet and dry types exist. Power plants install them for compliance."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 7: Atmospheric Pollution",
+  "term": "VOCs Reduction",
+  "definition": "Reducing volatile organic compounds involves reformulated fuels and vapor recovery. Low-VOC paints and solvents help too. Stage II systems capture gasoline vapors. These measures lower ozone formation."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Point Source Pollution",
+  "definition": "Point source pollution enters water from a single identifiable location. Factories and sewage pipes discharge directly. Regulations target specific outlets effectively. Monitoring and permits control releases."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Nonpoint Source Pollution",
+  "definition": "Nonpoint source pollution comes from diffuse runoff over large areas. Agricultural fields and urban streets contribute nutrients and sediments. Control requires best management practices. Rain events carry pollutants widely."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Eutrophication",
+  "definition": "Eutrophication enriches water with nutrients, causing excessive algae growth. Oxygen depletes as algae die and decompose. Fish and aquatic life suffocate in hypoxic zones. Fertilizer runoff drives most cases."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Cultural Eutrophication",
+  "definition": "Cultural eutrophication accelerates natural enrichment from human activities. Sewage and agricultural fertilizers add phosphorus and nitrogen. Algal blooms disrupt ecosystems rapidly. Management focuses on nutrient reduction."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Biomagnification",
+  "definition": "Biomagnification increases toxin concentrations at higher trophic levels. Persistent chemicals like mercury accumulate in fat. Top predators suffer highest levels. Food webs transfer and concentrate pollutants."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Bioaccumulation",
+  "definition": "Bioaccumulation builds toxins within an organism over time. Individuals absorb pollutants faster than elimination. Long-lived species store more. Mercury in fish exemplifies the process."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Persistent Organic Pollutants",
+  "definition": "Persistent organic pollutants resist breakdown and travel globally. DDT and PCBs belong to this group. Bans reduced many concentrations. Wildlife reproduction suffers from exposure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Heavy Metals",
+  "definition": "Heavy metals like lead, mercury, and cadmium pollute water and soil. Mining and industry release them. Toxicity affects nervous systems and organs. Treatment removes metals from waste."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Thermal Pollution",
+  "definition": "Thermal pollution raises water temperature from industrial cooling. Power plants discharge heated water. Dissolved oxygen decreases with warmth. Aquatic species shift or die from stress."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Oil Spill",
+  "definition": "An oil spill releases petroleum into water from accidents or leaks. Surface slicks harm birds and marine life. Cleanup uses booms, skimmers, and dispersants. Long-term ecosystem damage persists."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Plastic Pollution",
+  "definition": "Plastic pollution accumulates durable debris in oceans and land. Microplastics enter food chains widely. Marine animals ingest or entangle in waste. Reduction requires less single-use items."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Sediment Pollution",
+  "definition": "Sediment pollution clouds water from erosion and runoff. Construction and farming increase loads. Light penetration reduces for plants. Fish gills clog with particles."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Pathogens",
+  "definition": "Pathogens in water include bacteria and viruses from sewage. Untreated waste spreads diseases like cholera. Beach closures follow high indicator levels. Disinfection treats water supplies."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Clean Water Act",
+  "definition": "The Clean Water Act regulates discharges into United States waters. Permits limit pollutants from points. Goals restore and maintain water integrity. Wetlands receive protection."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "LD50",
+  "definition": "LD50 measures the dose lethal to fifty percent of test organisms. Toxicity tests determine values for chemicals. Lower numbers indicate higher toxicity. Regulations use LD50 data."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Dose-Response Curve",
+  "definition": "A dose-response curve plots effects against toxin exposure levels. Thresholds show safe limits often. Shapes reveal toxicity patterns. Risk assessment relies on these relationships."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Wastewater Treatment",
+  "definition": "Wastewater treatment removes contaminants before discharge. Primary removes solids; secondary uses bacteria; tertiary adds nutrients reduction. Reclaimed water supports reuse."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Septic System",
+  "definition": "A septic system treats household wastewater onsite. Tanks settle solids; drain fields filter liquids. Bacteria decompose waste naturally. Proper maintenance prevents groundwater contamination."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Solid Waste",
+  "definition": "Solid waste includes garbage, refuse, and sludge from daily activities. Landfills and incineration handle most disposal. Recycling diverts materials from waste streams. Reduction starts at source."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 8: Aquatic and Terrestrial Pollution",
+  "term": "Hazardous Waste",
+  "definition": "Hazardous waste poses substantial threats to health or environment. Chemicals, batteries, and electronics qualify often. Special handling and disposal prevent harm. Regulations track cradle to grave."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Stratospheric Ozone",
+  "definition": "Stratospheric ozone forms a layer in the upper atmosphere that absorbs most harmful ultraviolet radiation from the sun. This protective shield allows life on Earth to thrive by reducing damage to DNA in organisms. Natural processes create and break down ozone molecules constantly. Human activities can disrupt this balance."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Ozone Depletion",
+  "definition": "Ozone depletion occurs when chemicals release chlorine or bromine atoms that destroy ozone molecules in the stratosphere. Chlorofluorocarbons from old refrigerants and aerosols cause most human-related loss. Thinner ozone layers let more UV radiation reach Earth. Increased UV exposure raises risks of skin cancer and cataracts in humans."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Chlorofluorocarbons",
+  "definition": "Chlorofluorocarbons, or CFCs, are synthetic compounds once used in refrigeration, air conditioning, and spray cans. These stable molecules rise to the stratosphere where UV light breaks them apart. Released chlorine atoms then catalyze ozone destruction. International agreements have phased out CFC production worldwide."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Montreal Protocol",
+  "definition": "The Montreal Protocol is an international treaty signed in 1987 to protect the ozone layer. Countries agreed to phase out production of ozone-depleting substances like CFCs. Amendments strengthened controls on additional chemicals. This agreement has led to ozone layer recovery signs."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Greenhouse Effect",
+  "definition": "The greenhouse effect warms Earth naturally when gases in the atmosphere trap heat from the sun. Solar radiation passes through and warms the surface. The surface emits infrared radiation that greenhouse gases absorb and re-emit. This process keeps Earth's temperature suitable for life."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Greenhouse Gases",
+  "definition": "Greenhouse gases include carbon dioxide, methane, water vapor, and nitrous oxide. These gases trap infrared radiation in the atmosphere and warm the planet. Human activities like burning fossil fuels increase their concentrations. Higher levels enhance the natural greenhouse effect."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Enhanced Greenhouse Effect",
+  "definition": "The enhanced greenhouse effect results from higher concentrations of greenhouse gases due to human actions. Fossil fuel combustion and deforestation release extra carbon dioxide. This intensification traps more heat than natural levels. Global temperatures rise as a consequence."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Global Warming",
+  "definition": "Global warming refers to the long-term increase in Earth's average surface temperature. Human emissions of greenhouse gases drive most recent warming. Temperatures have risen about one degree Celsius since pre-industrial times. Continued warming affects weather patterns worldwide."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Global Climate Change",
+  "definition": "Global climate change encompasses shifts in temperature, precipitation, and weather patterns over decades. Human greenhouse gas emissions alter Earth's energy balance. Changes include warmer oceans and melting ice caps. Ecosystems and human societies face widespread impacts."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Thermal Expansion",
+  "definition": "Thermal expansion happens when ocean water warms and increases in volume. Warmer temperatures cause seawater to expand slightly. This process contributes to rising sea levels. Combined with melting ice, it threatens coastal areas."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Sea Level Rise",
+  "definition": "Sea level rise occurs as glaciers and ice sheets melt and ocean water expands from warming. Global sea levels have risen about twenty centimeters in the last century. Coastal communities face flooding risks. Low-lying islands risk submersion."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Ocean Acidification",
+  "definition": "Ocean acidification results when seawater absorbs excess carbon dioxide from the atmosphere. Dissolved CO2 forms carbonic acid and lowers ocean pH. Shell-building organisms like corals struggle in acidic conditions. Marine food webs face disruption."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Coral Bleaching",
+  "definition": "Coral bleaching happens when stressed corals expel colorful algae living in their tissues. Warmer ocean temperatures often trigger this event. Bleached corals turn white and may die if stress persists. Reefs lose biodiversity and structure."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Permafrost Melting",
+  "definition": "Permafrost melting releases stored methane as Arctic soils thaw from warming. Frozen ground holds vast carbon reserves. Thawing accelerates greenhouse gas emissions. This process creates a feedback loop that worsens climate change."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Positive Feedback Loop",
+  "definition": "A positive feedback loop amplifies changes in a system. Melting sea ice exposes darker ocean water that absorbs more heat. This causes further melting and warming. Such loops accelerate global climate change effects."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Invasive Species",
+  "definition": "Invasive species are non-native organisms that spread rapidly and harm ecosystems. Human travel and trade introduce them to new areas. They outcompete native species for resources. Biodiversity declines in affected habitats."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Endangered Species",
+  "definition": "Endangered species face high risk of extinction in the near future. Habitat loss and climate change threaten many populations. Small numbers reduce genetic diversity. Conservation efforts aim to protect them."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Extinction",
+  "definition": "Extinction occurs when the last individual of a species dies. Human activities drive current high extinction rates. Loss of species reduces ecosystem resilience. Biodiversity supports vital services like pollination."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Biodiversity Loss",
+  "definition": "Biodiversity loss involves declining numbers of species and genetic variety. Habitat destruction and pollution contribute significantly. Climate change shifts suitable ranges for organisms. Healthy ecosystems depend on diverse life forms."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "HIPPCO",
+  "definition": "HIPPCO summarizes major threats to biodiversity: habitat loss, invasive species, population growth, pollution, climate change, and overexploitation. Human actions drive these factors. Combined effects accelerate species declines. Conservation addresses multiple threats."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Island Biogeography",
+  "definition": "Island biogeography theory explains species richness on islands based on size and distance from mainland. Larger islands closer to sources support more species. Habitat fragments act like islands in landscapes. Fragmentation reduces biodiversity."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Endemic Species",
+  "definition": "Endemic species occur naturally in only one geographic area. Isolated habitats like islands foster high endemism. These species often face greater extinction risks. Habitat changes threaten them uniquely."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Kyoto Protocol",
+  "definition": "The Kyoto Protocol is an international agreement linked to climate change mitigation. Developed countries committed to reduce greenhouse gas emissions. It set binding targets for the first period. Participation varied among nations."
+},
+{
+  "course": "ap-environmental-science",
+  "unit": "Unit 9: Global Change",
+  "term": "Paris Agreement",
+  "definition": "The Paris Agreement unites countries to combat climate change and limit warming. Nations submit voluntary emission reduction plans. The goal keeps temperature rise well below two degrees Celsius. Regular reviews track progress."
 }
 ]
