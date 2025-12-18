@@ -2712,5 +2712,839 @@ export const allTerms: Term[] = [
   "unit": "Unit 8: Mechanical Waves and Sound",
   "term": "Fundamental Frequency",
   "definition": "Fundamental frequency is the lowest resonant frequency. It determines the first harmonic. Wavelength equals twice string length for fundamentals. Pitch relates directly to fundamental frequency."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Density",
+  "definition": "Density measures mass per unit volume of a substance. Materials with higher density sink in fluids with lower density. The formula relates mass to volume directly. Density remains constant for most solids and liquids under normal conditions."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Pressure",
+  "definition": "Pressure equals force distributed over an area. Fluids exert pressure equally in all directions. Deeper in a fluid, pressure increases due to weight above. Atmospheric pressure decreases with altitude."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Hydrostatic Pressure",
+  "definition": "Hydrostatic pressure arises from the weight of fluid at rest. Pressure increases linearly with depth. The formula includes density, gravity, and depth. Submarines experience greater hydrostatic pressure at deeper levels."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Buoyant Force",
+  "definition": "Buoyant force pushes upward on objects submerged in fluids. Archimedes' principle states it equals the weight of displaced fluid. Objects float when buoyant force equals weight. Density comparison determines sinking or floating."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Archimedes' Principle",
+  "definition": "Archimedes' principle explains buoyancy in fluids. The upward force equals the weight of fluid displaced. Ships float by displacing water equal to their weight. Submerged objects appear lighter due to this principle."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Pascal's Principle",
+  "definition": "Pascal's principle states pressure applied to enclosed fluid transmits equally everywhere. Hydraulic lifts use this to multiply force. Small force on small piston lifts heavy loads on large piston. Brakes in cars operate on Pascal's principle."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Fluid Flow",
+  "definition": "Fluid flow describes movement through pipes or open channels. Steady flow maintains constant velocity at points. Streamlines show paths of fluid particles. Laminar flow is smooth; turbulent is chaotic."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Continuity Equation",
+  "definition": "The continuity equation conserves mass in fluid flow. Volume flow rate remains constant in incompressible fluids. Narrow pipes increase speed to maintain flow. Blood vessels demonstrate continuity in circulation."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Bernoulli's Principle",
+  "definition": "Bernoulli's principle relates pressure, speed, and height in flowing fluids. Faster flow corresponds to lower pressure. Airplane wings generate lift from this effect. Venturi tubes measure flow speed using pressure differences."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Viscosity",
+  "definition": "Viscosity measures resistance to flow in fluids. Thick fluids like honey have high viscosity. Temperature affects viscosity strongly. Friction between layers causes viscous drag."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Laminar Flow",
+  "definition": "Laminar flow occurs in smooth, orderly layers. Slow speeds favor laminar conditions. Streamlines remain parallel. Smoke rising steadily shows laminar flow initially."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Turbulent Flow",
+  "definition": "Turbulent flow features chaotic, swirling motion. High speeds produce turbulence. Eddies and vortices form randomly. Rivers often show turbulent flow over rocks."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Gauge Pressure",
+  "definition": "Gauge pressure measures above atmospheric pressure. Tire gauges read gauge pressure. Absolute pressure includes atmospheric contribution. Deep divers monitor gauge pressure carefully."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Absolute Pressure",
+  "definition": "Absolute pressure includes atmospheric pressure plus gauge pressure. Vacuum has zero absolute pressure. Formulas often require absolute pressure. Scuba tanks store gas at high absolute pressure."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Atmospheric Pressure",
+  "definition": "Atmospheric pressure results from air weight above. Sea level standard is one atmosphere. Pressure decreases with higher altitude. Barometers measure atmospheric pressure changes."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Ideal Fluid",
+  "definition": "An ideal fluid has no viscosity and is incompressible. Real fluids approximate ideal under certain conditions. Bernoulli's equation applies directly to ideal fluids. Simplifications aid calculations."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Streamline",
+  "definition": "Streamlines trace paths of fluid particles. Tangents show velocity direction. Streamlines never cross in steady flow. Visualization helps understand complex flows."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Venturi Effect",
+  "definition": "The Venturi effect lowers pressure in constricted flow. Faster speed reduces pressure per Bernoulli. Carburetors mix fuel using this effect. Blood flow narrows cause pressure drops."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 1: Fluids",
+  "term": "Surface Tension",
+  "definition": "Surface tension makes liquid surfaces act like stretched membranes. Cohesive forces cause this property. Insects walk on water due to surface tension. Droplets form spheres to minimize surface."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Thermodynamics",
+  "definition": "Thermodynamics studies heat, work, and energy transfers. Laws govern energy conservation and direction. Systems exchange energy with surroundings. Engines and refrigerators apply thermodynamic principles."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Internal Energy",
+  "definition": "Internal energy is total kinetic and potential energy of molecules. Temperature relates to average kinetic energy. Changes occur through heat or work. Gases have internal energy from molecular motion."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "First Law of Thermodynamics",
+  "definition": "The first law conserves energy in thermodynamic processes. Change in internal energy equals heat added minus work done. Energy transfers alter system state. Cycles return to initial energy."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Heat",
+  "definition": "Heat transfers thermal energy due to temperature differences. Conduction, convection, and radiation move heat. Systems gain or lose internal energy via heat. Calories or joules measure heat quantity."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Work in Thermodynamics",
+  "definition": "Work in thermodynamics often involves pressure-volume changes. Gas expansion does positive work on surroundings. Compression requires work on the gas. Area under PV curves represents work."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Thermal Equilibrium",
+  "definition": "Thermal equilibrium occurs when objects share the same temperature. No net heat flows between them. Thermometers reach equilibrium with measured objects. Systems isolated maintain equilibrium."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Temperature",
+  "definition": "Temperature measures average molecular kinetic energy. Scales include Celsius, Kelvin, and Fahrenheit. Absolute zero means no molecular motion. Thermometers calibrate using fixed points."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Kinetic Theory",
+  "definition": "Kinetic theory explains gas behavior through molecular motion. Molecules collide elastically with walls. Pressure arises from collisions. Temperature proportional to average kinetic energy."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Ideal Gas Law",
+  "definition": "The ideal gas law relates pressure, volume, temperature, and moles. Constant holds for many gases at low density. Real gases approximate ideal behavior. Boyle's and Charles's laws combine here."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "PV Diagram",
+  "definition": "PV diagrams plot pressure against volume for processes. Area under curves shows work done. Isothermal curves are hyperbolic. Adiabatic curves are steeper than isothermal."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Isothermal Process",
+  "definition": "Isothermal processes maintain constant temperature. Internal energy stays constant for ideal gases. Heat equals work in expansion. Slow compression allows heat exchange."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Adiabatic Process",
+  "definition": "Adiabatic processes involve no heat exchange. Compression increases temperature rapidly. Expansion cools the gas. Diesel engines use adiabatic compression. Curves follow Poisson's laws."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Isobaric Process",
+  "definition": "Isobaric processes occur at constant pressure. Volume changes with temperature. Heat added expands the gas. Work equals pressure times volume change."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Isochoric Process",
+  "definition": "Isochoric processes keep volume constant. Pressure rises with added heat. No work done since volume unchanged. Heating in rigid containers is isochoric."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Specific Heat",
+  "definition": "Specific heat measures energy to raise temperature per unit mass. Water has high specific heat capacity. Different materials require different energies. Calorimetry uses specific heat values."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Heat Engine",
+  "definition": "Heat engines convert thermal energy to work. Cycles absorb heat from hot reservoirs. Efficiency limits by Carnot ideal. Cars and power plants operate as heat engines."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Thermal Efficiency",
+  "definition": "Thermal efficiency measures work output over heat input. Real engines achieve less than Carnot limit. Higher hot reservoir temperature improves efficiency. Waste heat reduces overall efficiency."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Second Law of Thermodynamics",
+  "definition": "The second law states entropy increases in isolated systems. Heat flows naturally from hot to cold. Perpetual motion machines violate this law. Direction of processes follows entropy."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Entropy",
+  "definition": "Entropy measures disorder or randomness in systems. Processes increase total entropy. Reversible processes maintain constant entropy. Universe entropy grows over time."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 2: Thermodynamics",
+  "term": "Carnot Cycle",
+  "definition": "The Carnot cycle achieves maximum theoretical efficiency. It uses isothermal and adiabatic processes. No real engine surpasses Carnot efficiency. Ideal model guides engine design."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electric Charge",
+  "definition": "Electric charge is a fundamental property of matter that causes electrostatic interactions. Charges come in positive and negative types. Like charges repel while opposite charges attract. Charge quantizes in multiples of electron charge."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Coulomb's Law",
+  "definition": "Coulomb's law describes force between point charges. Force magnitude equals constant times product of charges divided by distance squared. Force direction follows attraction or repulsion. Vacuum constant determines strength."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electric Field",
+  "definition": "Electric field measures force per unit positive test charge. Fields point away from positive charges. Superposition adds vector fields from multiple charges. Field lines show direction and strength."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electric Field Lines",
+  "definition": "Electric field lines illustrate field direction and relative strength. Lines start on positive charges and end on negative. Density indicates field magnitude. Lines never cross in electrostatics."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electric Potential Energy",
+  "definition": "Electric potential energy stores in charge configurations. Energy increases when like charges approach. Opposite charges lower energy when closer. Conservation applies in isolated systems."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electric Potential",
+  "definition": "Electric potential equals potential energy per unit charge. Potential is scalar with units of volts. Positive charges create high potential regions. Equipotential surfaces connect equal potential points."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Equipotential Lines",
+  "definition": "Equipotential lines connect points of same electric potential. No work occurs moving charges along equipotentials. Lines perpendicular to field lines. Surfaces form concentric spheres around point charges."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Conductors in Electrostatics",
+  "definition": "Conductors allow free charge movement to surfaces. Excess charge resides on outer surfaces. Electric field inside conductors equals zero at equilibrium. Sharp points concentrate charge."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Insulators",
+  "definition": "Insulators prevent easy charge flow. Charges remain fixed where placed. Materials like glass and rubber act as insulators. Polarization occurs without conduction."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electrostatic Shielding",
+  "definition": "Electrostatic shielding blocks external fields inside conductors. Charges rearrange to cancel interior fields. Faraday cages protect sensitive equipment. Hollow conductors shield interiors completely."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Point Charge",
+  "definition": "Point charges model charges concentrated at single points. Fields and potentials follow inverse square laws. Real charges approximate points when far away. Calculations simplify with point assumption."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Superposition Principle",
+  "definition": "Superposition principle adds contributions from multiple charges. Net force or field equals vector sum. Potentials add as scalars. Principle holds for linear electrostatics."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Dipole",
+  "definition": "Electric dipoles consist of equal opposite charges separated by distance. Fields far away fall off faster than point charges. Dipoles align with external fields. Water molecules form natural dipoles."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Polarization",
+  "definition": "Polarization shifts charges in dielectrics under fields. Induced dipoles reduce overall field inside materials. Capacitors use dielectrics to increase capacitance. Neutral objects attract via polarization."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Volt",
+  "definition": "Volt measures electric potential difference. One volt means one joule per coulomb. Batteries provide constant voltage. Circuits maintain potential differences across components."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electronvolt",
+  "definition": "Electronvolt equals energy gained by electron across one volt. Unit suits atomic and particle scales. Accelerators use mega-electronvolts. Conversion relates to joules precisely."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Gauss's Law",
+  "definition": "Gauss's law relates flux through closed surface to enclosed charge. Symmetry simplifies calculations for spheres and cylinders. Law holds universally in electrostatics. Flux measures field penetration."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 3: Electric Force, Field, and Potential",
+  "term": "Electric Flux",
+  "definition": "Electric flux quantifies field lines through surfaces. Flux equals field times area times cosine of angle. Closed surfaces enclose net charge via Gauss. Positive flux indicates outward field."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Electric Current",
+  "definition": "Electric current measures charge flow rate through conductors. Conventional current flows positive to negative. Amperes quantify current strength. Steady currents maintain constant flow."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Resistance",
+  "definition": "Resistance opposes current flow in materials. Ohms measure resistance magnitude. Length, area, and material affect resistance. Temperature often increases resistance in metals."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Ohm's Law",
+  "definition": "Ohm's law states voltage equals current times resistance. Linear resistors obey this relation. Graphs show straight lines for ohmic materials. Non-ohmic devices deviate from linearity."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Resistor",
+  "definition": "Resistors limit current in circuits. Carbon and metal films form common resistors. Color codes indicate values. Fixed and variable types serve different purposes."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Series Circuit",
+  "definition": "Series circuits connect components end to end. Current remains same through all parts. Total resistance adds individually. Voltage divides across resistors proportionally."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Parallel Circuit",
+  "definition": "Parallel circuits provide multiple paths for current. Voltage stays same across branches. Total resistance decreases with more paths. Current divides inversely with resistance."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Power in Circuits",
+  "definition": "Electric power equals voltage times current. Energy delivers as joules per second. Resistors dissipate power as heat. Batteries supply power to circuits."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Capacitor",
+  "definition": "Capacitors store charge on parallel plates. Capacitance measures storage ability. Dielectrics increase capacitance values. Circuits use capacitors for timing and filtering."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Capacitance",
+  "definition": "Capacitance equals charge stored per volt applied. Plate area and separation determine values. Units are farads. Parallel plate formula includes dielectric constant."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "RC Circuit",
+  "definition": "RC circuits combine resistors and capacitors. Charging curves rise exponentially. Time constant equals resistance times capacitance. Discharging follows similar decay patterns."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Kirchhoff's Laws",
+  "definition": "Kirchhoff's laws analyze complex circuits. Junction rule conserves charge at nodes. Loop rule conserves energy around closed paths. Laws solve unknown currents and voltages."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Ammeter",
+  "definition": "Ammeters measure current in circuits. Low resistance connects in series. Ideal ammeters draw no extra current. Digital types provide precise readings."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Voltmeter",
+  "definition": "Voltmeters measure potential differences. High resistance connects in parallel. Ideal voltmeters draw negligible current. Placement avoids altering circuit behavior."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Direct Current",
+  "definition": "Direct current flows steadily in one direction. Batteries produce direct current. Electronic devices often use DC power. Converters change AC to DC."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Terminal Voltage",
+  "definition": "Terminal voltage equals emf minus internal drop. Current causes voltage loss inside batteries. Full emf appears only at no load. Real sources model with internal resistance."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Internal Resistance",
+  "definition": "Internal resistance limits current from real sources. Voltage drops across internal resistance with load. Fresh batteries show low internal values. Aging increases internal resistance."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Energy in Capacitors",
+  "definition": "Capacitors store energy in electric fields. Energy equals half capacitance times voltage squared. Charging requires work against repulsion. Stored energy releases during discharge."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Dielectric",
+  "definition": "Dielectrics insulate plates while increasing capacitance. Materials polarize in fields to reduce effective voltage. Common dielectrics include paper and mica. Breakdown occurs at high voltages."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 4: Electric Circuits",
+  "term": "Time Constant",
+  "definition": "Time constant governs exponential rates in RC circuits. Value equals resistance times capacitance. Circuits reach about sixty-three percent in one time constant. Multiple constants approach steady state."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Magnetic Field",
+  "definition": "A magnetic field exerts force on moving charges and magnetic materials. Field lines emerge from north poles and enter south poles. The direction follows the right-hand rule for currents. Strength measures in teslas."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Magnetic Force on Charge",
+  "definition": "Magnetic force acts on moving charges perpendicular to velocity and field. The force magnitude equals charge times speed times field times sine of angle. Direction uses right-hand rule. No force occurs when motion parallels field."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Magnetic Force on Wire",
+  "definition": "Magnetic force on current-carrying wires equals current times length times field times sine of angle. Force direction follows right-hand rule. Parallel currents attract; opposite repel. Motors use this force for rotation."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Biot-Savart Law",
+  "definition": "The Biot-Savart law calculates magnetic field from current elements. Field contribution depends on current, length, distance, and angle. Circular loops produce uniform fields at centers. Integration sums tiny contributions."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Ampere's Law",
+  "definition": "Ampere's law relates magnetic field around closed loops to enclosed current. Symmetry simplifies calculations for wires and solenoids. Field inside solenoids remains uniform. Outside ideal solenoids, field approaches zero."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Solenoid",
+  "definition": "Solenoids consist of coiled wires carrying current. Uniform magnetic fields form inside long solenoids. Field strength depends on turns per length and current. Electromagnets use solenoids for controllable fields."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Torque on Loop",
+  "definition": "Current loops in magnetic fields experience torque. Torque aligns magnetic moment with field. Maximum torque occurs when loop plane perpendicular to field. Electric motors rely on continuous torque."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Magnetic Flux",
+  "definition": "Magnetic flux measures field passing through areas. Flux equals field times area times cosine of angle. Units are webers. Changing flux induces electromagnetic effects."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Faraday's Law",
+  "definition": "Faraday's law states induced emf equals negative rate of flux change. Motion or field changes cause induction. Generators convert mechanical to electrical energy. Lenz's law determines direction."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Lenz's Law",
+  "definition": "Lenz's law predicts induced currents oppose flux changes. Currents create fields countering original changes. Energy conservation underlies this opposition. Eddy currents demonstrate braking effects."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Induced Emf",
+  "definition": "Induced emf drives current in closed loops from changing flux. Motion through fields or varying fields produce emf. Transformers and generators rely on induced emf. Magnitude follows Faraday's law."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Motional Emf",
+  "definition": "Motional emf arises when conductors move in magnetic fields. Emf equals field times length times velocity perpendicular. Sliding bars on rails demonstrate this effect. Generators often use motional emf."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Transformer",
+  "definition": "Transformers change voltage using mutual induction. Primary coils induce flux in secondary coils. Voltage ratio equals turns ratio. Ideal transformers conserve power."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Inductor",
+  "definition": "Inductors store energy in magnetic fields from current. Coils resist current changes. Back emf opposes rapid changes. Circuits use inductors for filtering."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Self-Inductance",
+  "definition": "Self-inductance measures flux linkage per current in single coils. Changing current induces opposing emf. Inductance units are henries. Energy stores as half inductance times current squared."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Mutual Inductance",
+  "definition": "Mutual inductance couples flux between separate coils. Current change in one induces emf in another. Transformers exploit mutual inductance. Symbol M denotes mutual value."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Right-Hand Rule",
+  "definition": "Right-hand rules determine directions in magnetism. Fingers show current; thumb points field for wires. Curled fingers indicate field circles. Loops use palm push for force."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Mass Spectrometer",
+  "definition": "Mass spectrometers separate ions by charge-to-mass ratio. Velocity selectors use crossed fields. Circular paths in magnetic fields reveal masses. Applications include isotope analysis."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 5: Magnetism and Electromagnetic Induction",
+  "term": "Eddy Currents",
+  "definition": "Eddy currents form in conductors from changing fields. Circulating currents produce opposing fields. Applications include braking and induction cooking. Lamination reduces unwanted eddies."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Electromagnetic Wave",
+  "definition": "Electromagnetic waves consist of oscillating electric and magnetic fields. Fields regenerate perpendicular to propagation. Speed in vacuum equals light speed. All frequencies form the spectrum."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Speed of Light",
+  "definition": "Speed of light in vacuum remains constant for all observers. Value defines fundamental constant c. Waves travel slower in materials. Relativity builds on this invariance."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Polarization",
+  "definition": "Polarization describes electric field oscillation direction in waves. Transverse waves allow polarization. Filters select specific orientations. Sunglasses reduce glare via polarization."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Reflection",
+  "definition": "Reflection occurs when light bounces off surfaces. Angle of incidence equals angle of reflection. Mirrors form images by regular reflection. Diffuse reflection scatters light."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Refraction",
+  "definition": "Refraction bends light passing between media. Speed changes cause direction shifts. Snell's law relates angles and indices. Lenses use refraction for focusing."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Index of Refraction",
+  "definition": "Index of refraction measures light speed reduction in materials. Ratio equals vacuum speed over medium speed. Higher indices bend light more. Diamonds have high indices."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Snell's Law",
+  "definition": "Snell's law governs refraction angles. Product of index and sine of angle remains constant. Critical angles cause total internal reflection. Fiber optics use this principle."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Total Internal Reflection",
+  "definition": "Total internal reflection traps light in high-index media. Incidence beyond critical angle reflects fully. Optical fibers guide light efficiently. Prisms use this for dispersion."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Dispersion",
+  "definition": "Dispersion separates light by wavelength in materials. Indices vary with color. Prisms create rainbows from dispersion. Lenses suffer chromatic aberration."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Convex Lens",
+  "definition": "Convex lenses converge parallel rays to focal points. Positive focal lengths characterize them. Real images form beyond focal points. Magnifiers and cameras use convex lenses."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Concave Lens",
+  "definition": "Concave lenses diverge parallel rays. Negative focal lengths apply. Virtual images form on same side. Corrective glasses use concave lenses."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Thin Lens Equation",
+  "definition": "Thin lens equation relates object distance, image distance, and focal length. Reciprocals sum for convergence. Sign conventions determine real or virtual. Ray diagrams verify solutions."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Magnification",
+  "definition": "Magnification equals image height over object height. Ratio also uses distances with signs. Negative values indicate inversion. Microscopes achieve high magnification."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Plane Mirror",
+  "definition": "Plane mirrors produce virtual upright images. Image distance equals object distance behind mirror. Lateral inversion occurs left to right. Periscopes use multiple plane mirrors."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Spherical Mirror",
+  "definition": "Spherical mirrors curve surfaces for focusing. Concave mirrors converge; convex diverge. Mirror equation uses radius related to focal length. Telescopes employ large concave mirrors."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Diffraction",
+  "definition": "Diffraction bends waves around obstacles or through slits. Single slits produce central maxima with minima. Patterns depend on wavelength and size. Resolution limits arise from diffraction."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Interference",
+  "definition": "Interference combines waves for constructive or destructive patterns. Double slits create bright and dark fringes. Path difference determines type. Young's experiment demonstrated light waves."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Double-Slit Experiment",
+  "definition": "Double-slit experiments show interference from two sources. Bright fringes occur at integer wavelengths difference. Screens display pattern intensity. Results confirm wave nature of light."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Ray Optics",
+  "definition": "Ray optics approximates light as straight paths. Lenses and mirrors follow geometric rules. Thin lens assumptions simplify calculations. Complex systems trace multiple rays."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 6: Electromagnetism and Optics",
+  "term": "Wave Optics",
+  "definition": "Wave optics treats light as electromagnetic waves. Interference and diffraction dominate small scales. Huygens' principle explains propagation. Modern physics embraces wave-particle duality."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Photon",
+  "definition": "Photons are massless particles that carry electromagnetic energy. Each photon travels at the speed of light in vacuum. Energy of a photon equals Planck's constant times frequency. Light behaves as both waves and photons."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Photoelectric Effect",
+  "definition": "The photoelectric effect ejects electrons from metal surfaces using light. Electrons emit only when photon frequency exceeds threshold. Kinetic energy of electrons increases with frequency above threshold. Einstein explained this with photon model."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Threshold Frequency",
+  "definition": "Threshold frequency is the minimum frequency needed to eject electrons. Below this value, no emission occurs regardless of intensity. Threshold depends on metal work function. Higher work function requires higher frequency."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Work Function",
+  "definition": "Work function is minimum energy to remove an electron from metal surface. Photons must supply at least this energy. Values vary by material. Clean surfaces maintain consistent work functions."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "de Broglie Wavelength",
+  "definition": "de Broglie wavelength associates waves with moving particles. Wavelength equals Planck's constant divided by momentum. Electrons show wave behavior in diffraction. Smaller momentum yields longer wavelengths."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Wave-Particle Duality",
+  "definition": "Wave-particle duality describes light and matter behaving as waves or particles. Light shows interference as waves and photons in detection. Electrons diffract like waves yet localize as particles. Context determines observed behavior."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Energy Level",
+  "definition": "Energy levels are discrete states atoms can occupy. Electrons jump between levels absorbing or emitting photons. Ground state holds lowest energy. Excited states decay spontaneously to lower levels."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Emission Spectrum",
+  "definition": "Emission spectra show bright lines at specific wavelengths from excited atoms. Each element produces unique line patterns. Lines correspond to photon energies from level transitions. Spectra identify elements in stars."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Absorption Spectrum",
+  "definition": "Absorption spectra display dark lines where light passes through cool gas. Atoms absorb specific wavelengths matching energy differences. Patterns match emission lines of same elements. Stellar atmospheres reveal compositions via absorption."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Bohr Model",
+  "definition": "The Bohr model places electrons in circular orbits with quantized angular momentum. Orbits correspond to specific energy levels. Electrons emit photons jumping inward. Model explains hydrogen spectrum accurately."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Quantum Model",
+  "definition": "Quantum models describe electrons with probability clouds called orbitals. Orbitals define regions of high electron presence. Energy levels split into subshells. Models predict chemical properties accurately."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Nucleus",
+  "definition": "The nucleus contains protons and neutrons bound by strong force. Positive protons determine element identity. Mass concentrates almost entirely in nucleus. Radius scales with mass number."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Atomic Number",
+  "definition": "Atomic number equals proton count in nucleus. It defines chemical element uniquely. Neutral atoms have equal electrons and protons. Periodic table orders by atomic number."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Mass Number",
+  "definition": "Mass number sums protons and neutrons in nucleus. Isotopes share atomic number but differ in mass number. Nuclear reactions conserve total mass number approximately. Notation places mass above atomic number."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Isotope",
+  "definition": "Isotopes are atoms with same protons but different neutrons. Chemical properties remain nearly identical. Radioactive isotopes decay over time. Applications include dating and medical imaging."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Radioactive Decay",
+  "definition": "Radioactive decay transforms unstable nuclei spontaneously. Alpha, beta, and gamma emissions occur. Decay rates follow exponential laws. Half-lives characterize each isotope."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Alpha Decay",
+  "definition": "Alpha decay emits helium nuclei from heavy elements. Daughter nucleus loses two protons and two neutrons. Energy releases as kinetic motion. Smoke detectors use americium alpha sources."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Beta Decay",
+  "definition": "Beta decay converts neutrons to protons or vice versa. Electrons or positrons emit with neutrinos. Weak force mediates the process. Carbon-14 dating relies on beta decay."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Gamma Decay",
+  "definition": "Gamma decay releases high-energy photons from excited nuclei. No change occurs in atomic or mass number. Gamma rays accompany other decays often. Medical treatments use gamma sources."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Half-Life",
+  "definition": "Half-life measures time for half radioactive sample to decay. Values range from fractions of seconds to billions of years. Activity halves each half-life period. Dating techniques use known half-lives."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Nuclear Fission",
+  "definition": "Nuclear fission splits heavy nuclei into lighter fragments. Neutrons trigger chain reactions in uranium. Large energy releases per event. Power plants control sustained fission."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Nuclear Fusion",
+  "definition": "Nuclear fusion combines light nuclei into heavier ones. Hydrogen fuses to helium in stars. Tremendous energy releases at high temperatures. Research seeks controlled fusion power."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Mass-Energy Equivalence",
+  "definition": "Mass-energy equivalence states mass converts to energy and vice versa. Equation links energy to mass times speed squared. Nuclear reactions release binding energy. Sun powers through mass conversion."
+},
+{
+  "course": "ap-physics-2",
+  "unit": "Unit 7: Quantum, Atomic, and Nuclear Physics",
+  "term": "Binding Energy",
+  "definition": "Binding energy holds nucleus together against repulsion. Mass defect converts to binding energy. Iron has maximum binding per nucleon. Fission and fusion release binding energy."
 }
 ]
