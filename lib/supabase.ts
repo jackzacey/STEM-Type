@@ -1,2 +1,6 @@
-NEXT_PUBLIC_SUPABASE_URL=https://lnhyfxnqhnqyqyfyfpmo.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxuaHlmeG5xaG5xeXF5ZnlmcG1vIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjYxMTgxNzksImV4cCI6MjA4MTY5NDE3OX0.fvsJzDawGfSUueZ8vT7T2OKrerYTq3Y8yegtaecGweU
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
