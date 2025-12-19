@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { COURSES } from '@/data/courses';
 import { type CourseId } from '@/data/courses';
+import { useEffect, useState } from 'react';
 
 const courseColors = {
   'ap-biology': '#00d4aa',
@@ -18,13 +19,34 @@ const courseColors = {
 
 export default function Home() {
   const router = useRouter();
+  const [totalUses, setTotalUses] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch('/api/counter')
+      .then(res => res.json())
+      .then(data => {
+        if (data.total !== undefined) {
+          setTotalUses(data.total);
+        }
+      })
+      .catch(err => console.error('Failed to load total uses:', err));
+  }, []);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black flex flex-col items-center justify-center relative overflow-hidden">
       {/* Title */}
-      <h1 className="text-8xl md:text-9xl font-black text-white tracking-widest mb-24 z-10">
+      <h1 className="text-8xl md:text-9xl font-black text-white tracking-widest mb-12 z-10">
         STEM TYPE
       </h1>
+
+      {/* Total Uses Counter */}
+      <div className="mb-16 text-4xl md:text-5xl font-bold text-cyan-400 tracking-wider">
+        {totalUses !== null ? (
+          <>Total Uses Worldwide: {totalUses.toLocaleString()}</>
+        ) : (
+          'Loading uses...'
+        )}
+      </div>
 
       {/* Floating 3D glass cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 perspective-1000">
@@ -37,19 +59,18 @@ export default function Home() {
               className="relative preserve-3d cursor-pointer"
               onClick={() => router.push(`/unit/${id}`)}
               whileHover={{ 
-                y: -20,           // was -40 → half the lift
-                rotateX: 8,       // was 15
-                rotateY: 8,       // was 15
-                scale: 1.03       // was 1.05
+                y: -20,
+                rotateX: 8,
+                rotateY: 8,
+                scale: 1.03
               }}
               whileTap={{ scale: 0.98 }}
               transition={{ 
                 type: "spring", 
                 stiffness: 300, 
-                damping: 30       // ← THIS KILLS ALL BOUNCE
+                damping: 30
               }}
             >
-              {/* Glass card */}
               <div
                 className="relative w-80 h-48 rounded-3xl border border-white/20 backdrop-blur-xl shadow-2xl overflow-hidden"
                 style={{
@@ -65,7 +86,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Reflection on marble floor */}
               <div
                 className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full h-40 opacity-30 blur-xl"
                 style={{
