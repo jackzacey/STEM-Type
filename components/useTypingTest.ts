@@ -5,34 +5,132 @@ import { Term } from '@/data/terms';
 type CharState = 'untyped' | 'correct' | 'incorrect';
 
 export function useTypingTest(terms: Term[]) {
-  // ... all your existing state/code stays the same ...
+  const [termIndex, setTermIndex] = useState(0);
+  const [cursor, setCursor] = useState(0);
+  const [states, setStates] = useState<CharState[]>([]);
+  const [extra, setExtra] = useState('');
+  const [startTime, setStartTime] = useState<number | null>(null);
+  const [elapsed, setElapsed] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Add this ref to prevent double-increments
+  // Refs to handle increment logic
   const hasIncrementedRef = useRef(false);
-
-  // Detect perfect completion and increment global counter
-  useEffect(() => {
-    if (isPerfect && cursor === chars.length && extra === '' && !hasIncrementedRef.current) {
-      hasIncrementedRef.current = true;
-
-      // Fire and forget — we don't block the user if it fails
-      fetch('/api/counter', { method: 'POST' }).catch(console.error);
-    }
-
-    // Reset the flag when moving to next term
-    if (termIndex !== previousTermIndexRef.current) {
-      hasIncrementedRef.current = false;
-      previousTermIndexRef.current = termIndex;
-    }
-  }, [isPerfect, cursor, chars.length, extra, termIndex]);
-
-  // Add this ref to track previous term index
   const previousTermIndexRef = useRef(0);
 
-  // Make sure to initialize it
-  previousTermIndexRef.current = termIndex;
+  const current = terms[termIndex];
+  const chars = current?.definition.split('') || [];
 
-  // ... rest of your code unchanged ...
+  // Reset when term changes
+  useEffect(() => {
+    setCursor(0);
+    setStates(chars.map(() => 'untyped'));
+    setExtra('');
+    setStartTime(null);
+    setElapsed(0);
+    hasIncrementedRef.current = false; // Reset increment flag for new term
+  }, [termIndex, current]);
 
-  return { term: current, chars, states, cursor, extra, termIndex, totalTerms: terms.length, isPerfect, wpm, accuracy, elapsed };
+  // Timer updates
+  useEffect(() => {
+    if (startTime === null) return;
+
+    const intervalId = setInterval(() => {
+      setElapsed(Math.floor((Date.now() - startTime) / 1000));
+    }, 1000);
+
+    intervalRef.current = intervalId;
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [startTime]);
+
+  // Increment global counter when perfect
+  useEffect(() => {
+    const isPerfect = cursor === chars.length && states.every(s => s === 'correct') && extra === '';
+
+    if (isPerfect && !hasIncrementedRef.current) {
+      hasIncrementedRef.current = true;
+
+      // Fire-and-forget POST to increment counter (silent on failure)
+      fetch('/api/counter', { method: 'POST' }).catch(console.error);
+    }
+  }, [cursor, states, extra, chars.length]);
+
+  // Key handling
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      e.preventDefault();
+      if (!current) return;
+
+      // Start timer on first key
+      if (!startTime) {
+        setStartTime(Date.now());
+        setElapsed(0);
+      }
+
+      if (e.key === 'Backspace') {
+        if (extra) {
+          setExtra(extra.slice(0, -1));
+        } else if (cursor > 0) {
+          setStates(prev => {
+            const next = [...prev];
+            next[cursor - 1] = 'untyped';
+            return next;
+          });
+          setCursor(c => c - 1);
+        }
+        return;
+      }
+
+      if (e.key === 'Enter') {
+        const isPerfect = cursor === chars.length && states.every(s => s === 'correct') && extra === '';
+        if (isPerfect) {
+          setTermIndex(i => i + 1);
+        }
+        return;
+      }
+
+      if (e.key.length === 1) {
+        if (cursor < chars.length) {
+          const correct = e.key === chars[cursor];
+          setStates(prev => {
+            const next = [...prev];
+            next[cursor] = correct ? 'correct' : 'incorrect';
+            return next;
+          });
+          setCursor(c => c + 1);
+        } else {
+          setExtra(prev => prev + e.key);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [cursor, states, extra, current, startTime, chars.length]);
+
+  // Stats calculation
+  const isPerfect = cursor === chars.length && states.every(s => s === 'correct') && extra === '';
+  const correctChars = states.filter(s => s === 'correct').length;
+  const totalCharsTyped = cursor + extra.length;
+  const accuracy = totalCharsTyped ? Math.round((correctChars / totalCharsTyped) * 100) : 100;
+  const wpm = elapsed ? Math.round((correctChars / 5) / (elapsed / 60)) : 0;
+
+  return {
+    term: current,
+    chars,
+    states,
+    cursor,
+    extra,
+    termIndex,
+    totalTerms: terms.length,
+    isPerfect,
+    wpm,
+    accuracy,
+    elapsed,
+  };
 }
