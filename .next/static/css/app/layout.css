@@ -1,0 +1,97 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FORCE THE HOLY SHIT FONT — NO ESCAPE */
+html, body, div, span, p {
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+}
+
+/* NEW: Graphite Glass Background */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #121212 0%, #1a1a1a 50%, #1e1e1e 100%);
+  color: #e4e4e7;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(30, 30, 30, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass:hover {
+  background: rgba(40, 40, 40, 0.6);
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 12px 40px rgba(34, 211, 238, 0.15);
+  transform: translateY(-4px);
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Home page centering */
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons — now work perfectly with glass */
+button, a[role="button"] {
+  cursor: pointer !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* Typing text */
+.typing-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 2.8rem;
+  line-height: 1.4;
+  background: rgba(20, 20, 20, 0.4);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Character states — upgraded colors */
+.char { display: inline-block; }
+.char.untyped { color: #71717a; }
+.char.correct { color: #86efac; }
+.char.incorrect { color: #fca5a5; background: rgba(248, 113, 113, 0.2); }
+.char.cursor {
+  border-left: 3px solid #22d3ee;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: #22d3ee; }
+  50.1%, 100% { border-color: transparent; }
+}
+
+.untyped { color: #71717a; }
+.correct { color: #86efac; }
+.incorrect { color: #fca5a5; background: rgba(248, 113, 113, 0.2); }
+
