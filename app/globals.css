@@ -94,3 +94,26 @@ a {
 .untyped { color: #71717a; }
 .correct { color: #86efac; }
 .incorrect { color: #fca5a5; background: rgba(248, 113, 113, 0.2); }
+/* ---------- COURSE PAGE UI FIX ---------- */
+/* Restore proper typography + hierarchy for interactive UI */
+
+.course-ui,
+.course-ui * {
+  letter-spacing: normal !important;
+}
+
+.course-ui h1,
+.course-ui h2 {
+  font-weight: 800 !important;
+}
+
+.course-ui .unit-title {
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.course-ui .unit-meta {
+  font-weight: 500 !important;
+  letter-spacing: 0.2em !important;
+  opacity: 0.6;
+}
