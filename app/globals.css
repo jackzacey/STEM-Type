@@ -85,6 +85,11 @@ button, a[role="button"] {
   0%, 50% { border-color: #22d3ee; }
   50.1%, 100% { border-color: transparent; }
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 .untyped { color: #71717a; }
 .correct { color: #86efac; }
