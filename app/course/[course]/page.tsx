@@ -41,7 +41,6 @@ export default function CourseUnits() {
       </h1>
 
       {/* Button list */}
-      <div className="not-prose text-white [&_a]:text-white [&_a]:no-underline">
       <div className="w-full max-w-5xl space-y-6 mb-32">
         {units.map((unit, i) => (
           <motion.button
