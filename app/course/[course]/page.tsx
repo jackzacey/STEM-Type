@@ -1,4 +1,4 @@
-'use client';
+  'use client';
 
 import { motion } from 'framer-motion';
 import { useParams, useRouter } from 'next/navigation';
@@ -70,12 +70,14 @@ export default function CourseUnits() {
 
               {/* Text */}
               <div className="flex-1">
-                <div className="text-xs uppercase tracking-[0.25em] text-white/40 mb-1">
-                  Unit {i + 1}
-                </div>
-                <div className="text-2xl md:text-3xl font-bold text-white tracking-wide">
+               <div className="unit-meta text-xs uppercase mb-1">
+              Unit {i + 1}
+                  </div>
+
+                    <div className="unit-title text-2xl md:text-3xl text-white">
                   {unit}
                 </div>
+
               </div>
 
               {/* Chevron */}
