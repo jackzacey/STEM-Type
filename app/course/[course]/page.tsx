@@ -32,57 +32,51 @@ export default function CourseUnits() {
   }
 
   const units = COURSES[course].units;
-  const color = courseColors[course] ?? '#22d3ee';
+  const color = courseColors[course] || '#22d3ee';
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Course title */}
-      <h1 className="text-6xl md:text-7xl font-black text-white tracking-widest mb-16 z-10 text-center">
+      <h1 className="text-8xl md:text-9xl font-black text-white tracking-widest mb-24 z-10">
         {formatName(course)}
       </h1>
 
-      {/* Units grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 perspective-1000 z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 perspective-1000">
         {units.map((unitName, i) => (
           <motion.div
             key={unitName}
             className="relative preserve-3d cursor-pointer"
             onClick={() => router.push(`/unit/${course}/${i + 1}`)}
             whileHover={{
-              y: -16,
-              rotateX: 6,
-              rotateY: 6,
-              scale: 1.02,
+              y: -20,
+              rotateX: 8,
+              rotateY: 8,
+              scale: 1.03,
             }}
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 0.98 }}
             transition={{
               type: 'spring',
-              stiffness: 280,
-              damping: 26,
+              stiffness: 300,
+              damping: 30,
             }}
           >
             <div
-              className="relative w-72 h-44 rounded-3xl border border-white/20 backdrop-blur-xl shadow-2xl overflow-hidden"
+              className="relative w-80 h-48 rounded-3xl border border-white/20 backdrop-blur-xl shadow-2xl overflow-hidden"
               style={{
                 background: `linear-gradient(135deg, ${color}20, ${color}05)`,
                 boxShadow: `0 20px 40px rgba(0,0,0,0.6)`,
               }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
 
-              <div className="relative h-full flex flex-col items-center justify-center p-6 text-center">
-                <div className="text-sm uppercase tracking-widest text-white/50 mb-2">
-                  Unit {i + 1}
-                </div>
-                <h2 className="text-3xl md:text-4xl font-black text-white tracking-wide drop-shadow-2xl leading-tight">
+              <div className="relative h-full flex items-center justify-center p-8">
+                <h2 className="text-5xl md:text-6xl font-black text-white text-center tracking-wider drop-shadow-2xl">
                   {unitName}
                 </h2>
               </div>
             </div>
 
-            {/* Glow reflection */}
             <div
-              className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-full h-32 opacity-30 blur-xl"
+              className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full h-40 opacity-30 blur-xl"
               style={{
                 background: `linear-gradient(to bottom, ${color}40, transparent)`,
                 transform: 'scaleY(-1)',
