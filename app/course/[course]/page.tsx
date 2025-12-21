@@ -34,7 +34,7 @@ export default function CourseUnits() {
   const color = courseColors[course] ?? '#22d3ee';
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black flex flex-col items-center px-6">
+    <main className="course-ui min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black flex flex-col items-center px-6">
       {/* Header */}
       <h1 className="text-6xl md:text-7xl font-black text-white tracking-widest mt-32 mb-20 text-center">
         {formatName(course)}
