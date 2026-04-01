@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEMType — Master Chemistry by Typing It</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+
+:root {
+  --bg:       #0a0a0a;
+  --bg2:      #101010;
+  --bg3:      #161616;
+  --line:     rgba(255,255,255,0.06);
+  --line2:    rgba(255,255,255,0.12);
+  --text:     #e8eaf0;
+  --dim:      rgba(232,234,240,0.22);
+  --muted:    #4a5060;
+  --accent:   #7dd3f0;
+  --accent-d: #4db8e8;
+  --red:      #ff4d6a;
+  --yellow:   #ffd23f;
+  --cursor-color: #7dd3f0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* chemistry background — faint benzene-ring hex pattern */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='104' viewBox='0 0 120 104'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.028)' stroke-width='1'%3E%3Cpolygon points='60,2 112,30 112,74 60,102 8,74 8,30'/%3E%3Cline x1='60' y1='2' x2='60' y2='30'/%3E%3Cline x1='112' y1='30' x2='86' y2='30'/%3E%3Cline x1='112' y1='74' x2='86' y2='74'/%3E%3Cline x1='60' y1='102' x2='60' y2='74'/%3E%3Cline x1='8' y1='74' x2='34' y2='74'/%3E%3Cline x1='8' y1='30' x2='34' y2='30'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 104px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(10,10,10,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line2);
+  padding: 0 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+.logo-dot { color: var(--accent); }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+.nav-count span { color: var(--accent); }
+
+/* ─── SCREENS ─── */
+.screen {
+  position: relative;
+  z-index: 1;
+  display: none;
+  min-height: calc(100vh - 56px);
+  animation: fadeUp 0.35s ease both;
+}
+.screen.active { display: flex; flex-direction: column; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── SCREEN: HOME ─── */
+#screen-home {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+}
+
+.hero-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(125,211,240,0.25);
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.hero-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.0;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  max-width: 700px;
+}
+
+.hero-title .hl { color: var(--accent); }
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 440px;
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line2);
+  border: 1px solid var(--line2);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 680px;
+  width: 100%;
+}
+
+.course-card {
+  background: var(--bg2);
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover { background: var(--bg3); }
+.course-card:hover::after { transform: scaleX(1); }
+
+.course-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.course-name {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.course-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ─── SCREEN: UNITS ─── */
+#screen-units {
+  padding: 3rem 2rem;
+  max-width: 760px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  letter-spacing: 0.04em;
+}
+.back-btn:hover { color: var(--text); }
+.back-btn::before { content: '←'; font-size: 1rem; }
+
+.screen-heading {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.unit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--line2);
+  border: 1px solid var(--line2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.unit-item {
+  background: var(--bg2);
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.unit-item:hover { background: var(--bg3); }
+
+.unit-item-left { display: flex; align-items: center; gap: 1rem; }
+
+.unit-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  min-width: 24px;
+}
+
+.unit-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.unit-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.unit-arrow {
+  font-size: 0.9rem;
+  color: var(--muted);
+  transition: transform 0.2s, color 0.2s;
+}
+.unit-item:hover .unit-arrow { transform: translateX(4px); color: var(--accent); }
+
+/* ─── SCREEN: TERMS ─── */
+#screen-terms {
+  padding: 3rem 2rem;
+  max-width: 760px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--line2);
+  border: 1px solid var(--line2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.term-card {
+  background: var(--bg2);
+  padding: 1.2rem 1.3rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: background 0.15s;
+  position: relative;
+}
+.term-card:hover { background: var(--bg3); }
+
+.term-card-name {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.term-card-preview {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.term-card-status {
+  position: absolute;
+  top: 10px; right: 12px;
+  font-size: 0.7rem;
+}
+
+/* ─── SCREEN: TYPING ─── */
+#screen-typing {
+  padding: 3rem 2rem;
+  max-width: 820px;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.typing-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.typing-breadcrumb {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.typing-breadcrumb span { color: var(--accent); }
+
+.term-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+/* ─── TYPING AREA ─── */
+.typing-container {
+  position: relative;
+  background: var(--bg2);
+  border: 1px solid var(--line2);
+  border-radius: 12px;
+  padding: 2.5rem 2.5rem;
+  cursor: text;
+  overflow: hidden;
+}
+
+.typing-container:focus-within {
+  border-color: rgba(125,211,240,0.25);
+  box-shadow: 0 0 0 1px rgba(125,211,240,0.08);
+}
+
+.definition-display {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.15rem;
+  line-height: 2.1;
+  letter-spacing: 0.01em;
+  user-select: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.def-char {
+  color: rgba(232,234,240,0.22);
+  transition: color 0.04s, text-shadow 0.04s;
+}
+
+/* correct — bright white with green glow */
+.def-char.correct {
+  color: #e8eaf0;
+  text-shadow:
+    0 0 10px rgba(125,211,240,0.65),
+    0 0 3px rgba(125,211,240,0.35);
+}
+
+/* wrong — red with red glow */
+.def-char.wrong {
+  color: #ff6b7a;
+  background: rgba(255,75,106,0.15);
+  border-radius: 2px;
+  text-shadow: 0 0 8px rgba(255,75,106,0.55);
+}
+
+/* blinking cursor */
+.def-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.15em;
+  background: var(--accent);
+  vertical-align: text-bottom;
+  animation: blink 0.9s step-end infinite;
+  border-radius: 1px;
+  box-shadow: 0 0 8px rgba(125,211,240,0.9);
+  margin: 0 1px;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.hidden-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  top: 0; left: 0;
+}
+
+/* progress bar */
+.typing-progress-bar {
+  height: 2px;
+  background: var(--line2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.typing-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+  width: 0%;
+}
+
+/* stats row */
+.typing-stats {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.stat-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.stat-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.typing-hint {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ─── SCREEN: COMPLETE ─── */
+#screen-complete {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  gap: 2.5rem;
+}
+
+.complete-icon {
+  font-size: 3rem;
+  animation: popIn 0.4s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.complete-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  letter-spacing: -0.04em;
+}
+
+.complete-term-name {
+  color: var(--accent);
+}
+
+.complete-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 2rem 3rem;
+  border: 1px solid var(--line2);
+  border-radius: 12px;
+  background: var(--bg2);
+}
+
+.complete-stat { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+.complete-stat-val {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+}
+.complete-stat-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.complete-definition {
+  max-width: 580px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-style: italic;
+  padding: 1.2rem 1.5rem;
+  border-left: 2px solid var(--accent);
+  text-align: left;
+  background: var(--bg2);
+  border-radius: 0 8px 8px 0;
+}
+
+.btn-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.18s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #080808;
+}
+.btn-primary:hover {
+  background: var(--accent-d);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line2);
+}
+.btn-ghost:hover {
+  color: var(--text);
+  border-color: var(--line2);
+  background: var(--bg3);
+}
+
+/* ─── FOOTER ─── */
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--line);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 700px) {
+  .course-grid { grid-template-columns: repeat(2, 1fr); }
+  .complete-stats { gap: 2rem; padding: 1.5rem 2rem; }
+  .typing-stats { gap: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo" onclick="goHome()">STEM<span class="logo-dot">Type</span></div>
+  <div class="nav-right">
+    <div class="nav-count"><span id="count-terms">—</span> terms typed</div>
+    <div class="nav-count" style="margin-left:1.2rem"><span id="count-problems">—</span> problems solved</div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     SCREEN: HOME
+════════════════════════════════════════ -->
+<div class="screen active" id="screen-home">
+  <div class="hero-label">Type to Learn</div>
+  <h1 class="hero-title">Master chemistry<br>by <span class="hl">typing it.</span></h1>
+  <p class="hero-sub">Select a course, choose a unit, pick a term. Then type the definition from memory. Precision builds retention.</p>
+
+  <div class="course-grid">
+    <div class="course-card" onclick="selectCourse('gen1')">
+      <div class="course-tag">Course 01</div>
+      <div class="course-name">General Chemistry I</div>
+      <div class="course-meta" id="meta-gen1">Loading…</div>
+    </div>
+    <div class="course-card" onclick="selectCourse('gen2')">
+      <div class="course-tag">Course 02</div>
+      <div class="course-name">General Chemistry II</div>
+      <div class="course-meta" id="meta-gen2">Loading…</div>
+    </div>
+    <div class="course-card" onclick="selectCourse('orgo1')">
+      <div class="course-tag">Course 03</div>
+      <div class="course-name">Organic Chemistry I</div>
+      <div class="course-meta" id="meta-orgo1">Loading…</div>
+    </div>
+    <div class="course-card" onclick="selectCourse('orgo2')">
+      <div class="course-tag">Course 04</div>
+      <div class="course-name">Organic Chemistry II</div>
+      <div class="course-meta" id="meta-orgo2">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN: UNITS
+════════════════════════════════════════ -->
+<div class="screen" id="screen-units">
+  <button class="back-btn" onclick="goHome()"> Home</button>
+  <h2 class="screen-heading" id="units-heading">Units</h2>
+  <div class="unit-list" id="unit-list"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN: TERMS
+════════════════════════════════════════ -->
+<div class="screen" id="screen-terms">
+  <button class="back-btn" id="terms-back"> Units</button>
+  <h2 class="screen-heading" id="terms-heading">Terms</h2>
+  <div class="terms-grid" id="terms-grid"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN: TYPING
+════════════════════════════════════════ -->
+<div class="screen" id="screen-typing">
+  <div class="typing-header">
+    <div class="typing-breadcrumb" id="typing-breadcrumb"></div>
+    <div class="term-title" id="term-title"></div>
+  </div>
+
+  <div class="typing-progress-bar">
+    <div class="typing-progress-fill" id="progress-fill"></div>
+  </div>
+
+  <div class="typing-container" onclick="focusInput()">
+    <div class="definition-display" id="definition-display"></div>
+    <input class="hidden-input" id="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  </div>
+
+  <div class="typing-stats">
+    <div class="stat-item">
+      <div class="stat-label">Accuracy</div>
+      <div class="stat-value" id="stat-accuracy">—</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Time</div>
+      <div class="stat-value" id="stat-time">0s</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Progress</div>
+      <div class="stat-value" id="stat-progress">0%</div>
+    </div>
+  </div>
+
+  <div class="typing-hint">Click the box above and start typing — backspace to correct mistakes</div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN: COMPLETE
+════════════════════════════════════════ -->
+<div class="screen" id="screen-complete">
+  <div class="complete-icon">✓</div>
+  <h2 class="complete-title"><span class="complete-term-name" id="complete-term-name"></span><br>mastered.</h2>
+
+  <div class="complete-stats">
+    <div class="complete-stat">
+      <div class="complete-stat-val" id="final-accuracy">—</div>
+      <div class="complete-stat-label">Accuracy</div>
+    </div>
+    <div class="complete-stat">
+      <div class="complete-stat-val" id="final-time">—</div>
+      <div class="complete-stat-label">Time</div>
+    </div>
+    <div class="complete-stat">
+      <div class="complete-stat-val" id="final-errors">—</div>
+      <div class="complete-stat-label">Errors</div>
+    </div>
+  </div>
+
+  <div class="complete-definition" id="complete-definition"></div>
+
+  <div class="btn-row">
+    <button class="btn btn-primary" id="btn-next">Next Term →</button>
+    <button class="btn btn-ghost" onclick="retryTerm()">↺ Retry</button>
+    <button class="btn btn-ghost" onclick="goToTerms()">All Terms</button>
+  </div>
+</div>
+
+<footer>
+  STEMType — built for college chem students · definitions are placeholders, replace with your own
+</footer>
+
+<script>
+const COURSES = {
+  "gen1": {
+    label: "General Chemistry I",
+    units: [
+      {
+        id: "atomic-structure",
+        label: "Atomic Structure",
+        terms: [
+          { term: "Atom", definition: "The smallest unit of an element that retains its chemical properties, made up of protons and neutrons in a nucleus surrounded by electrons." }
+        ]
+      },
+      { id: "periodic-table", label: "Periodic Table & Trends", terms: [] },
+      { id: "bonding", label: "Chemical Bonding", terms: [] },
+      { id: "stoichiometry", label: "Stoichiometry", terms: [] },
+      { id: "gases", label: "Gases", terms: [] }
+    ]
+  },
+
+  "gen2": {
+    label: "General Chemistry II",
+    units: [
+      { id: "thermodynamics", label: "Thermodynamics", terms: [] },
+      { id: "equilibrium", label: "Chemical Equilibrium", terms: [] },
+      { id: "acids-bases", label: "Acids & Bases", terms: [] },
+      { id: "kinetics", label: "Chemical Kinetics", terms: [] },
+      { id: "electrochemistry", label: "Electrochemistry", terms: [] }
+    ]
+  },
+
+  "orgo1": {
+    label: "Organic Chemistry I",
+    units: [
+      { id: "nomenclature", label: "Nomenclature & Structure", terms: [] },
+      { id: "stereochemistry", label: "Stereochemistry", terms: [] },
+      { id: "reactions", label: "Reaction Mechanisms", terms: [] },
+      { id: "carbonyl", label: "Carbonyl Chemistry", terms: [] },
+      { id: "aromatic", label: "Aromatic Chemistry", terms: [] }
+    ]
+  },
+
+  "orgo2": {
+    label: "Organic Chemistry II",
+    units: [
+      { id: "conjugation", label: "Conjugation & MO Theory", terms: [] },
+      { id: "amines", label: "Amines", terms: [] },
+      { id: "carboxylic-deriv", label: "Carboxylic Acid Derivatives", terms: [] },
+      { id: "enols-enolates", label: "Enols & Enolates", terms: [] },
+      { id: "pericyclic", label: "Pericyclic Reactions", terms: [] },
+      { id: "carbonyl-advanced", label: "Advanced Carbonyl Chemistry", terms: [] },
+      { id: "biomolecules", label: "Carbohydrates & Biomolecules", terms: [] }
+    ]
+  }
+};
+
+</script>
+<script>
+/* ═══════════════════════════════════════
+   STATE
+═══════════════════════════════════════ */
+let currentCourse = null;
+let currentUnit   = null;
+let currentTerm   = null;
+let currentTermIndex = 0;
+
+// Typing state
+let typedSoFar   = '';
+let startTime    = null;
+let timerInterval = null;
+let totalErrors  = 0;
+let totalKeystrokes = 0;
+
+/* ═══════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════ */
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  const el = document.getElementById(id);
+  el.classList.add('active');
+  // re-trigger animation
+  el.style.animation = 'none';
+  el.offsetHeight;
+  el.style.animation = '';
+}
+
+function goHome() {
+  showScreen('screen-home');
+}
+
+function selectCourse(courseId) {
+  currentCourse = courseId;
+  const course = COURSES[courseId];
+  document.getElementById('units-heading').textContent = course.label;
+  renderUnits(course);
+  showScreen('screen-units');
+}
+
+function renderUnits(course) {
+  const list = document.getElementById('unit-list');
+  list.innerHTML = course.units.map((u, i) => `
+    <div class="unit-item" onclick="selectUnit(${i})">
+      <div class="unit-item-left">
+        <span class="unit-num">0${i+1}</span>
+        <span class="unit-name">${u.label}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:1.2rem">
+        <span class="unit-count">${u.terms.length} terms</span>
+        <span class="unit-arrow">→</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function selectUnit(unitIndex) {
+  currentUnit = COURSES[currentCourse].units[unitIndex];
+  document.getElementById('terms-heading').textContent = currentUnit.label;
+  document.getElementById('terms-back').onclick = () => selectCourse(currentCourse);
+  renderTerms();
+  showScreen('screen-terms');
+}
+
+
+function renderTerms() {
+  const grid = document.getElementById('terms-grid');
+  if (!currentUnit.terms || currentUnit.terms.length === 0) {
+    grid.innerHTML = `<div style="padding:2.5rem;text-align:center;color:var(--muted);font-family:'IBM Plex Mono',monospace;font-size:0.8rem;grid-column:1/-1;">— terms coming soon —</div>`;
+    return;
+  }
+  grid.innerHTML = currentUnit.terms.map((t, i) => `
+    <div class="term-card" onclick="startTyping(${i})">
+      <div class="term-card-name">${t.term}</div>
+      <div class="term-card-preview">${t.definition}</div>
+    </div>
+  `).join('');
+}
+
+function goToTerms() {
+  renderTerms();
+  showScreen('screen-terms');
+}
+
+/* ═══════════════════════════════════════
+   TYPING ENGINE
+═══════════════════════════════════════ */
+function startTyping(termIndex) {
+  currentTermIndex = termIndex;
+  currentTerm = currentUnit.terms[termIndex];
+  resetTypingState();
+
+  // Breadcrumb
+  const course = COURSES[currentCourse];
+  document.getElementById('typing-breadcrumb').innerHTML =
+    `<span>${course.label}</span> / ${currentUnit.label}`;
+
+  document.getElementById('term-title').textContent = currentTerm.term;
+  renderDefinitionDisplay();
+  showScreen('screen-typing');
+  focusInput();
+
+  // set up next button on complete screen
+  const nextIndex = termIndex + 1;
+  const nextBtn = document.getElementById('btn-next');
+  if (nextIndex < currentUnit.terms.length) {
+    nextBtn.textContent = `Next: ${currentUnit.terms[nextIndex].term} →`;
+    nextBtn.onclick = () => startTyping(nextIndex);
+  } else {
+    nextBtn.textContent = 'Back to Unit';
+    nextBtn.onclick = goToTerms;
+  }
+}
+
+function resetTypingState() {
+  typedSoFar    = '';
+  startTime     = null;
+  totalErrors   = 0;
+  totalKeystrokes = 0;
+  clearInterval(timerInterval);
+
+  document.getElementById('progress-fill').style.width = '0%';
+  document.getElementById('stat-accuracy').textContent = '—';
+  document.getElementById('stat-time').textContent = '0s';
+  document.getElementById('stat-progress').textContent = '0%';
+
+  const input = document.getElementById('hidden-input');
+  input.value = '';
+}
+
+function renderDefinitionDisplay() {
+  const def = currentTerm.definition;
+  const display = document.getElementById('definition-display');
+  display.innerHTML = '';
+
+  for (let i = 0; i < def.length; i++) {
+    const span = document.createElement('span');
+    span.className = 'def-char';
+    span.dataset.index = i;
+    // Keep spaces as real spaces so text wraps naturally
+    span.textContent = def[i];
+    display.appendChild(span);
+  }
+
+  insertCursor(0);
+}
+
+function insertCursor(position) {
+  // Remove existing cursor
+  const existing = document.querySelector('.def-cursor');
+  if (existing) existing.remove();
+
+  const cursor = document.createElement('span');
+  cursor.className = 'def-cursor';
+
+  const chars = document.querySelectorAll('.def-char');
+  if (position < chars.length) {
+    chars[position].parentNode.insertBefore(cursor, chars[position]);
+  } else if (chars.length > 0) {
+    chars[chars.length - 1].parentNode.appendChild(cursor);
+  }
+}
+
+function focusInput() {
+  document.getElementById('hidden-input').focus();
+}
+
+// Main input handler
+document.getElementById('hidden-input').addEventListener('input', function(e) {
+  handleTypingInput(this.value);
+});
+
+document.getElementById('hidden-input').addEventListener('keydown', function(e) {
+  // Prevent default for Tab
+  if (e.key === 'Tab') e.preventDefault();
+});
+
+function handleTypingInput(value) {
+  if (!currentTerm) return;
+  const def = currentTerm.definition;
+
+  // Start timer on first keypress
+  if (!startTime && value.length > 0) {
+    startTime = Date.now();
+    timerInterval = setInterval(updateTimer, 100);
+  }
+
+  typedSoFar = value;
+  totalKeystrokes = Math.max(totalKeystrokes, value.length);
+
+  const chars = document.querySelectorAll('.def-char');
+  let errors = 0;
+
+  for (let i = 0; i < chars.length; i++) {
+    chars[i].classList.remove('correct', 'wrong');
+    if (i < value.length) {
+      if (value[i] === def[i]) {
+        chars[i].classList.add('correct');
+      } else {
+        chars[i].classList.add('wrong');
+        errors++;
+      }
+    }
+  }
+
+  totalErrors = errors;
+  insertCursor(value.length);
+
+  // Progress
+  const pct = Math.round((value.length / def.length) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('stat-progress').textContent = pct + '%';
+
+  // Accuracy
+  if (value.length > 0) {
+    const correctChars = value.split('').filter((c, i) => c === def[i]).length;
+    const acc = Math.round((correctChars / value.length) * 100);
+    document.getElementById('stat-accuracy').textContent = acc + '%';
+  }
+
+  // Check completion — entire definition typed correctly
+  if (value.length === def.length && errors === 0) {
+    onComplete();
+  }
+}
+
+function updateTimer() {
+  if (!startTime) return;
+  const elapsed = Math.round((Date.now() - startTime) / 1000);
+  document.getElementById('stat-time').textContent = elapsed + 's';
+}
+
+function onComplete() {
+  clearInterval(timerInterval);
+  const elapsed = startTime ? Math.round((Date.now() - startTime) / 1000) : 0;
+  const def = currentTerm.definition;
+
+  // Calculate final accuracy
+  const correctChars = typedSoFar.split('').filter((c, i) => c === def[i]).length;
+  const accuracy = Math.round((correctChars / def.length) * 100);
+
+  // Populate complete screen
+  document.getElementById('complete-term-name').textContent = currentTerm.term;
+  document.getElementById('final-accuracy').textContent = accuracy + '%';
+  document.getElementById('final-time').textContent = elapsed + 's';
+  document.getElementById('final-errors').textContent = totalErrors;
+  document.getElementById('complete-definition').textContent = currentTerm.definition;
+
+  incrementTermsTyped();
+  setTimeout(() => showScreen('screen-complete'), 200);
+}
+
+function retryTerm() {
+  startTyping(currentTermIndex);
+}
+
+/* ═══════════════════════════════════════
+   USE COUNTER
+═══════════════════════════════════════ */
+/* ── COUNTER: terms typed (increments every completion, repeatable) ── */
+async function incrementTermsTyped() {
+  try {
+    await fetch('https://api.counterapi.dev/v1/stemtype/terms/up');
+    loadTermsCount();
+  } catch (e) {}
+}
+
+async function loadTermsCount() {
+  try {
+    const res = await fetch('https://api.counterapi.dev/v1/stemtype/terms/get');
+    const data = await res.json();
+    console.log('terms counter:', data);
+    const val = data.value ?? data.count ?? data.hits ?? 0;
+    document.getElementById('count-terms').textContent = Number(val).toLocaleString();
+  } catch (e) {
+    console.error('terms counter error:', e);
+    document.getElementById('count-terms').textContent = '0';
+  }
+}
+
+/* ── COUNTER: problems solved (increments every completion, repeatable) ── */
+async function incrementProblemsSolved() {
+  try {
+    await fetch('https://api.counterapi.dev/v1/stemtype/problems/up');
+    loadProblemsCount();
+  } catch (e) {}
+}
+
+async function loadProblemsCount() {
+  try {
+    const res = await fetch('https://api.counterapi.dev/v1/stemtype/problems/get');
+    const data = await res.json();
+    console.log('problems counter:', data);
+    const val = data.value ?? data.count ?? data.hits ?? 0;
+    document.getElementById('count-problems').textContent = Number(val).toLocaleString();
+  } catch (e) {
+    console.error('problems counter error:', e);
+    document.getElementById('count-problems').textContent = '0';
+  }
+}
+
+/* ═══════════════════════════════════════
+   INIT
+═══════════════════════════════════════ */
+function init() {
+  // Populate course metadata
+  Object.entries(COURSES).forEach(([id, course]) => {
+    const el = document.getElementById('meta-' + id);
+    if (el) {
+      const termCount = course.units.reduce((acc, u) => acc + u.terms.length, 0);
+      el.textContent = `${course.units.length} units · ${termCount} terms`;
+    }
+  });
+
+  loadTermsCount();
+  loadProblemsCount();
+}
+
+init();
+</script>
+</body>
+</html>
