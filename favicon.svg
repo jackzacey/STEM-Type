@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ee1f2"/>
+      <stop offset="1" stop-color="#22b8d4"/>
+    </linearGradient>
+  </defs>
+  <!-- background -->
+  <rect width="64" height="64" rx="14" fill="#07080a"/>
+  <rect width="64" height="64" rx="14" fill="url(#g)" opacity="0.06"/>
+  <!-- geometric P monogram, built from simple shapes to echo Space Grotesk's chunky geometric letterforms -->
+  <g>
+    <rect x="20" y="14" width="7.5" height="36" rx="2.4" fill="url(#g)"/>
+    <path d="M27.5 14 H37 C43.5 14 48.5 18.7 48.5 25 C48.5 31.3 43.5 36 37 36 H27.5 V29 H37 C39.9 29 41.5 27.3 41.5 25 C41.5 22.7 39.9 20.5 37 20.5 H27.5 Z" fill="url(#g)"/>
+  </g>
+  <!-- typing cursor accent -->
+  <rect x="45.5" y="42" width="4" height="12" rx="2" fill="url(#g)"/>
+</svg>
