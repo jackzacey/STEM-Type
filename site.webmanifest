@@ -1,0 +1,13 @@
+{
+  "name": "PubHealthPress",
+  "short_name": "PubHealthPress",
+  "description": "Master public health by typing it — epidemiology, biostatistics, environmental health, and global health.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080a",
+  "theme_color": "#07080a",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
