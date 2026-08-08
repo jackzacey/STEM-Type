@@ -1,0 +1,2799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PubHealthPress — Master Public Health by Typing It</title>
+<meta name="description" content="Type your way to mastery of epidemiology, biostatistics, environmental health, and global health — built for public health majors.">
+
+<!-- ─────────────────────────────────────────
+     FAVICON / APP ICONS
+     Domain: stemtype.app
+───────────────────────────────────────── -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#07080a">
+
+<!-- Open Graph (Slack, iMessage, Facebook, Discord, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PubHealthPress">
+<meta property="og:title" content="PubHealthPress — Master Public Health by Typing It">
+<meta property="og:description" content="Type your way to mastery of epidemiology, biostatistics, environmental health, and global health. 208 terms, 26 units, 67 practice questions.">
+<meta property="og:url" content="https://stemtype.app/">
+<meta property="og:image" content="https://stemtype.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PubHealthPress — Master Public Health by Typing It">
+<meta name="twitter:description" content="Type your way to mastery of epidemiology, biostatistics, environmental health, and global health.">
+<meta name="twitter:image" content="https://stemtype.app/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+/* ─────────────────────────────────────────
+   RESET & TOKENS
+───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+
+:root {
+  --bg:            #07080a;
+  --bg2:           #0d1014;
+  --bg3:           #12161c;
+  --bg-elevated:   #10141a;
+  --line:          rgba(255,255,255,0.07);
+  --line2:         rgba(255,255,255,0.13);
+  --line-strong:   rgba(255,255,255,0.22);
+  --text:          #f2f4f8;
+  --text-dim:      #aab2c0;
+  --muted:         #6c7684;
+  --accent:        #4ee1f2;
+  --accent-2:      #22b8d4;
+  --accent-dim:    #1a8fa3;
+  --accent-soft:   rgba(78,225,242,0.10);
+  --accent-soft-2: rgba(78,225,242,0.20);
+  --green:         #34d399;
+  --green-soft:    rgba(52,211,153,0.14);
+  --red:           #fb7185;
+  --red-soft:      rgba(251,113,133,0.10);
+  --amber:         #fbbf24;
+  --font-display:  'Space Grotesk', sans-serif;
+  --font-body:     'Inter', sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+  --r-sm: 8px; --r-md: 12px; --r-lg: 18px;
+}
+
+::selection { background: var(--accent-soft-2); color: var(--text); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ─────────────────────────────────────────
+   BASE
+───────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ambient network pattern */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.026)' stroke-width='1'%3E%3Cline x1='20' y1='20' x2='70' y2='45'/%3E%3Cline x1='70' y1='45' x2='120' y2='25'/%3E%3Cline x1='70' y1='45' x2='55' y2='95'/%3E%3Cline x1='70' y1='45' x2='110' y2='90'/%3E%3Cline x1='55' y1='95' x2='15' y2='115'/%3E%3Cline x1='55' y1='95' x2='95' y2='125'/%3E%3C/g%3E%3Cg fill='rgba(255,255,255,0.045)'%3E%3Ccircle cx='20' cy='20' r='3'/%3E%3Ccircle cx='70' cy='45' r='3.5'/%3E%3Ccircle cx='120' cy='25' r='3'/%3E%3Ccircle cx='55' cy='95' r='3'/%3E%3Ccircle cx='110' cy='90' r='3'/%3E%3Ccircle cx='15' cy='115' r='2.5'/%3E%3Ccircle cx='95' cy='125' r='2.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 140px 140px;
+  pointer-events: none;
+  z-index: 0;
+}
+/* ambient cyan glow, top of viewport */
+body::after {
+  content: '';
+  position: fixed;
+  top: -10%; left: 50%;
+  transform: translateX(-50%);
+  width: 1100px; height: 620px;
+  background: radial-gradient(ellipse at center, rgba(78,225,242,0.09), transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─────────────────────────────────────────
+   NAV
+───────────────────────────────────────── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(7,8,10,0.86);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line2);
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  user-select: none;
+}
+.logo-dot { color: var(--accent); }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.nav-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.nav-count span { color: var(--accent); font-weight: 500; }
+.nav-count.streak span { color: var(--amber); }
+.nav-sep { width: 1px; height: 14px; background: var(--line2); }
+
+@media (max-width: 640px) {
+  .nav-count.hide-mobile { display: none; }
+}
+
+/* ─────────────────────────────────────────
+   SCREEN SYSTEM
+───────────────────────────────────────── */
+.screen {
+  position: relative;
+  z-index: 1;
+  display: none;
+  min-height: calc(100vh - 60px);
+  animation: fadeUp 0.35s ease both;
+}
+.screen.active { display: flex; flex-direction: column; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─────────────────────────────────────────
+   SCREEN: HOME
+───────────────────────────────────────── */
+#screen-home {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4.5rem 2rem 3.5rem;
+  gap: 2.2rem;
+}
+
+.hero-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(78,225,242,0.28);
+  padding: 0.35rem 0.95rem;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5.6vw, 4.4rem);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  max-width: 720px;
+}
+.hero-title .hl { color: var(--accent); }
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  max-width: 480px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.hero-stats {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-stats strong { color: var(--accent); font-weight: 500; }
+.hero-stats .dot { color: var(--line-strong); }
+
+/* quick actions */
+.quick-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+.quick-card {
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1.3rem;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid var(--line2);
+  background: var(--bg2);
+  transition: border-color 0.18s, background 0.18s, transform 0.18s;
+  text-align: left;
+}
+.quick-card:hover { transform: translateY(-1px); }
+.quick-card-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color: #06181c;
+}
+.quick-card-primary:hover { box-shadow: 0 6px 24px rgba(78,225,242,0.28); }
+.quick-card-ghost { color: var(--text-dim); }
+.quick-card-ghost:hover { border-color: var(--accent-soft-2); color: var(--text); background: var(--bg3); }
+.quick-card-icon { font-size: 1.05rem; line-height: 1; }
+.quick-card-text { display: flex; flex-direction: column; gap: 1px; }
+.quick-card-label { font-size: 0.85rem; font-weight: 600; }
+.quick-card-sub { font-size: 0.72rem; opacity: 0.75; font-family: var(--font-mono); }
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line2);
+  border: 1px solid var(--line2);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  max-width: 860px;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+.course-card {
+  background: var(--bg2);
+  padding: 1.9rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: background 0.2s;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.course-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.course-card:hover { background: var(--bg3); }
+.course-card:hover::after { transform: scaleX(1); }
+
+.course-icon {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-icon svg { width: 19px; height: 19px; }
+
+.course-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.course-meta { font-size: 0.78rem; color: var(--muted); font-family: var(--font-mono); }
+
+.mini-progress { height: 4px; border-radius: 3px; background: var(--line2); overflow: hidden; margin-top: 2px; }
+.mini-progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent-dim), var(--accent)); border-radius: 3px; transition: width 0.4s ease; }
+.mini-progress-label { font-size: 0.68rem; font-family: var(--font-mono); color: var(--muted); margin-top: 4px; }
+.mini-progress-label span { color: var(--accent); }
+
+/* ─────────────────────────────────────────
+   SCREEN: UNITS
+───────────────────────────────────────── */
+#screen-units {
+  padding: 2.8rem 2rem 4rem;
+  max-width: 780px;
+  margin: 0 auto;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  letter-spacing: 0.02em;
+  align-self: flex-start;
+}
+.back-btn:hover { color: var(--text); }
+.back-btn::before { content: '←'; font-size: 1rem; }
+
+.screen-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.screen-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
+}
+.screen-heading-sub {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.btn-shuffle {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(78,225,242,0.28);
+  padding: 0.55rem 1.1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.18s, transform 0.18s;
+  white-space: nowrap;
+}
+.btn-shuffle:hover { background: var(--accent-soft-2); transform: translateY(-1px); }
+
+.filter-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.filter-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  background: var(--bg2);
+  border: 1px solid var(--line2);
+  padding: 0.4rem 0.85rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-chip:hover { color: var(--text); border-color: var(--line-strong); }
+.filter-chip.active { color: #06181c; background: var(--accent); border-color: var(--accent); font-weight: 500; }
+
+.unit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--line2);
+  border: 1px solid var(--line2);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.unit-item {
+  background: var(--bg2);
+  padding: 1.05rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.15s;
+  gap: 1rem;
+}
+.unit-item:hover { background: var(--bg3); }
+.unit-item-left { display: flex; align-items: center; gap: 1rem; min-width: 0; flex: 1; }
+.unit-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  min-width: 22px;
+}
+.unit-item-text { display: flex; flex-direction: column; gap: 5px; min-width: 0; flex: 1; }
+.unit-name { font-weight: 500; font-size: 0.95rem; font-family: var(--font-body); }
+.unit-item .mini-progress { width: 100%; max-width: 220px; margin-top: 0; }
+.unit-count { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); white-space: nowrap; }
+.unit-count .mastered-num { color: var(--accent); }
+.unit-arrow { font-size: 0.9rem; color: var(--muted); transition: transform 0.2s, color 0.2s; }
+.unit-item:hover .unit-arrow { transform: translateX(4px); color: var(--accent); }
+.unit-item-right { display: flex; align-items: center; gap: 1.1rem; flex-shrink: 0; }
+
+/* ─────────────────────────────────────────
+   SCREEN: TERMS
+───────────────────────────────────────── */
+#screen-terms {
+  padding: 2.8rem 2rem 4rem;
+  max-width: 780px;
+  margin: 0 auto;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.section-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+.section-nav-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: var(--bg2);
+  border: 1px solid var(--line2);
+  padding: 0.42rem 0.9rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+.section-nav-chip:hover { color: var(--text); border-color: var(--accent-soft-2); }
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1px;
+  background: var(--line2);
+  border: 1px solid var(--line2);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.term-card {
+  background: var(--bg2);
+  padding: 1.2rem 1.3rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: background 0.15s;
+  position: relative;
+}
+.term-card:hover { background: var(--bg3); }
+.term-card.mastered { box-shadow: inset 3px 0 0 var(--green); }
+.term-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; }
+.term-card-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: -0.005em;
+}
+.term-mastered-badge {
+  font-size: 0.65rem;
+  color: var(--green);
+  background: var(--green-soft);
+  border-radius: 100px;
+  width: 18px; height: 18px;
+  min-width: 18px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.term-card-preview {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─────────────────────────────────────────
+   MCQ SECTION
+───────────────────────────────────────── */
+.mcq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.mcq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.mcq-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.mcq-score {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.mcq-divider { flex: 1; height: 1px; background: var(--line2); }
+
+.mcq-card {
+  background: var(--bg2);
+  border: 1px solid var(--line2);
+  border-radius: var(--r-md);
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mcq-question { font-size: 0.95rem; font-weight: 500; line-height: 1.55; font-family: var(--font-body); }
+.mcq-options { display: flex; flex-direction: column; gap: 0.5rem; }
+.mcq-option {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.65rem 1rem;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line2);
+  background: var(--bg3);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.mcq-option:hover:not(.disabled) {
+  background: var(--bg);
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+.mcq-option.correct {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.mcq-option.wrong {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-soft);
+}
+.mcq-option.disabled { cursor: default; }
+.mcq-option-letter { font-size: 0.68rem; opacity: 0.5; min-width: 14px; }
+
+.mcq-feedback {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--r-sm);
+  display: none;
+}
+.mcq-feedback.correct { background: var(--accent-soft); color: var(--accent); display: block; }
+.mcq-feedback.wrong   { background: var(--red-soft);  color: var(--red);    display: block; }
+
+/* ─────────────────────────────────────────
+   SCREEN: TYPING
+───────────────────────────────────────── */
+#screen-typing {
+  padding: 2.8rem 2rem 4rem;
+  max-width: 840px;
+  margin: 0 auto;
+  gap: 2.2rem;
+  width: 100%;
+}
+
+.typing-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.typing-header-left { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; }
+.typing-breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+.typing-breadcrumb span { color: var(--accent); }
+
+.term-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4.6vw, 3.1rem);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+.btn-skip {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line2);
+  padding: 0.5rem 0.95rem;
+  border-radius: 100px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.btn-skip:hover { color: var(--text); border-color: var(--line-strong); }
+
+.typing-progress-bar { height: 3px; background: var(--line2); border-radius: 3px; overflow: hidden; }
+.typing-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-dim), var(--accent));
+  border-radius: 3px;
+  transition: width 0.1s linear;
+  width: 0%;
+}
+
+.typing-container {
+  position: relative;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line2);
+  border-radius: var(--r-lg);
+  padding: 2.4rem 2.5rem;
+  cursor: text;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.typing-container:focus-within {
+  border-color: rgba(78,225,242,0.35);
+  box-shadow: 0 0 0 1px rgba(78,225,242,0.12), 0 0 40px rgba(78,225,242,0.06);
+}
+
+.definition-display {
+  font-family: var(--font-mono);
+  font-size: 1.12rem;
+  line-height: 2.05;
+  letter-spacing: 0.005em;
+  user-select: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.def-char { color: rgba(242,244,248,0.24); transition: color 0.04s, text-shadow 0.04s; }
+.def-char.correct {
+  color: #f2f4f8;
+  text-shadow: 0 0 10px rgba(78,225,242,0.65), 0 0 3px rgba(78,225,242,0.4);
+}
+.def-char.wrong {
+  color: #ff8a97;
+  background: rgba(251,113,133,0.16);
+  border-radius: 2px;
+  text-shadow: 0 0 8px rgba(251,113,133,0.55);
+}
+
+.def-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.15em;
+  background: var(--accent);
+  vertical-align: text-bottom;
+  animation: blink 0.9s step-end infinite;
+  border-radius: 1px;
+  box-shadow: 0 0 8px rgba(78,225,242,0.9);
+  margin: 0 1px;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+.hidden-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 1px; height: 1px;
+  top: 0; left: 0;
+}
+
+.typing-stats { display: flex; gap: 2.2rem; align-items: center; flex-wrap: wrap; }
+.stat-item { display: flex; flex-direction: column; gap: 3px; }
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.typing-hint {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ─────────────────────────────────────────
+   SCREEN: COMPLETE
+───────────────────────────────────────── */
+#screen-complete {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  gap: 2.2rem;
+}
+
+.complete-icon {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--green-soft);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  animation: popIn 0.4s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes popIn { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.complete-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  letter-spacing: -0.02em;
+}
+.complete-term-name { color: var(--accent); }
+
+.complete-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 1.8rem 3rem;
+  border: 1px solid var(--line2);
+  border-radius: var(--r-lg);
+  background: var(--bg2);
+}
+.complete-stat { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+.complete-stat-val {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+.complete-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.complete-definition {
+  max-width: 580px;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  padding: 1.2rem 1.5rem;
+  border-left: 2px solid var(--accent);
+  text-align: left;
+  background: var(--bg2);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+}
+
+.btn-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.6rem;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.18s;
+}
+.btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #06181c; }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(78,225,242,0.28); }
+.btn-ghost { background: transparent; color: var(--text-dim); border: 1px solid var(--line2); }
+.btn-ghost:hover { color: var(--text); background: var(--bg3); border-color: var(--line-strong); }
+
+/* ─────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────── */
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+@media (max-width: 700px) {
+  .course-grid { grid-template-columns: repeat(2, 1fr); }
+  .complete-stats { gap: 2rem; padding: 1.5rem 2rem; }
+  .typing-stats { gap: 1.2rem; }
+  .typing-container { padding: 1.6rem 1.4rem; }
+  .quick-actions { flex-direction: column; width: 100%; }
+  .quick-card { justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────
+     NAV
+───────────────────────────────────────── -->
+<nav>
+  <div class="logo" onclick="goHome()">PubHealth<span class="logo-dot">Press</span></div>
+  <div class="nav-right">
+    <div class="nav-count streak hide-mobile">🔥 <span id="count-streak">0</span> day streak</div>
+    <div class="nav-sep hide-mobile"></div>
+    <div class="nav-count"><span id="count-terms">—</span> terms typed</div>
+    <div class="nav-sep hide-mobile"></div>
+    <div class="nav-count hide-mobile"><span id="count-problems">—</span> problems solved</div>
+  </div>
+</nav>
+
+<!-- ─────────────────────────────────────────
+     SCREEN: HOME
+───────────────────────────────────────── -->
+<div class="screen active" id="screen-home">
+  <div class="hero-label">Type to Learn</div>
+  <h1 class="hero-title">Master public health<br>by <span class="hl">typing it.</span></h1>
+  <p class="hero-sub">Select a course, choose a unit, pick a term. Then type the definition from memory. Built for public health majors — precision builds retention.</p>
+  <div class="hero-stats" id="hero-stats"></div>
+
+  <div class="quick-actions" id="quick-actions"></div>
+
+  <div class="course-grid" id="course-grid"></div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     SCREEN: UNITS
+───────────────────────────────────────── -->
+<div class="screen" id="screen-units">
+  <button class="back-btn" onclick="goHome()"> Home</button>
+  <div class="screen-head-row">
+    <div>
+      <h2 class="screen-heading" id="units-heading">Units</h2>
+      <div class="screen-heading-sub" id="units-heading-sub"></div>
+    </div>
+    <button class="btn-shuffle" onclick="shuffleCoursePractice()">🔀 Shuffle Practice</button>
+  </div>
+  <div class="filter-row" id="unit-filter-row"></div>
+  <div class="unit-list" id="unit-list"></div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     SCREEN: TERMS + MCQ
+───────────────────────────────────────── -->
+<div class="screen" id="screen-terms">
+  <button class="back-btn" id="terms-back"> Units</button>
+  <div class="screen-head-row">
+    <div>
+      <h2 class="screen-heading" id="terms-heading">Terms</h2>
+      <div class="screen-heading-sub" id="terms-heading-sub"></div>
+    </div>
+    <button class="btn-shuffle" onclick="shuffleUnitPractice()">🔀 Shuffle & Practice All</button>
+  </div>
+  <div class="section-nav" id="terms-section-nav"></div>
+  <div class="terms-grid" id="terms-grid"></div>
+  <div class="mcq-section" id="mcq-section" style="display:none;">
+    <div class="mcq-header">
+      <span class="mcq-label">Practice Questions</span>
+      <div class="mcq-divider"></div>
+      <span class="mcq-score" id="mcq-score" style="display:none;"></span>
+    </div>
+    <div id="mcq-list"></div>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     SCREEN: TYPING
+───────────────────────────────────────── -->
+<div class="screen" id="screen-typing">
+  <div class="typing-header">
+    <div class="typing-header-left">
+      <div class="typing-breadcrumb" id="typing-breadcrumb"></div>
+      <div class="term-title" id="term-title"></div>
+    </div>
+    <button class="btn-skip" id="btn-skip" onclick="skipTerm()">Skip →</button>
+  </div>
+  <div class="typing-progress-bar">
+    <div class="typing-progress-fill" id="progress-fill"></div>
+  </div>
+  <div class="typing-container" onclick="focusInput()">
+    <div class="definition-display" id="definition-display"></div>
+    <input class="hidden-input" id="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  </div>
+  <div class="typing-stats">
+    <div class="stat-item">
+      <div class="stat-label">Accuracy</div>
+      <div class="stat-value" id="stat-accuracy">—</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Time</div>
+      <div class="stat-value" id="stat-time">0s</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Progress</div>
+      <div class="stat-value" id="stat-progress">0%</div>
+    </div>
+  </div>
+  <div class="typing-hint">Click the box above and start typing — backspace to correct mistakes</div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     SCREEN: COMPLETE
+───────────────────────────────────────── -->
+<div class="screen" id="screen-complete">
+  <div class="complete-icon">✓</div>
+  <h2 class="complete-title"><span class="complete-term-name" id="complete-term-name"></span><br>mastered.</h2>
+  <div class="complete-stats">
+    <div class="complete-stat">
+      <div class="complete-stat-val" id="final-accuracy">—</div>
+      <div class="complete-stat-label">Accuracy</div>
+    </div>
+    <div class="complete-stat">
+      <div class="complete-stat-val" id="final-time">—</div>
+      <div class="complete-stat-label">Time</div>
+    </div>
+    <div class="complete-stat">
+      <div class="complete-stat-val" id="final-errors">—</div>
+      <div class="complete-stat-label">Errors</div>
+    </div>
+  </div>
+  <div class="complete-definition" id="complete-definition"></div>
+  <div class="btn-row">
+    <button class="btn btn-primary" id="btn-next">Next Term →</button>
+    <button class="btn btn-ghost" onclick="retryTerm()">↺ Retry</button>
+    <button class="btn btn-ghost" onclick="goToTerms()">All Terms</button>
+  </div>
+</div>
+
+<footer>PubHealthPress — built for college public health students</footer>
+
+<!-- ─────────────────────────────────────────
+     DATA (inlined for reliable Vercel serving)
+     To edit content: pubhealthdata.js / mcqdata.js
+     are the source files — copy changes here.
+───────────────────────────────────────── -->
+<script>
+// ============================================================
+//  pubhealthdata.js — PubHealthPress Term Definitions
+//  Structure: COURSES[courseId].units[n].terms[]
+//  Each term: { term: "Name", definition: "Full definition." }
+//  To add terms: find the right unit and add to its terms array.
+// ============================================================
+
+const COURSES = {
+
+  // ── GLOBAL HEALTH ────────────────────────────────────────
+  "global": {
+    label: "Global Health",
+    units: [
+      {
+        id: "global-foundations",
+        label: "Foundations of Global Health",
+        terms: [
+          { term: "Global Health", definition: "Global health is an area of study, research, and practice that prioritizes improving health and achieving health equity for all people worldwide, emphasizing transnational health issues and cross-border collaboration. It draws on epidemiology, medicine, economics, and policy to address problems that no single country can solve alone." },
+          { term: "Health Equity", definition: "Health equity is the principle that everyone should have a fair and just opportunity to attain their highest level of health, which requires removing obstacles such as poverty, discrimination, and lack of access to care. It differs from health equality because it accounts for differing needs rather than distributing resources identically." },
+          { term: "Social Determinants of Health", definition: "Social determinants of health are the non-medical conditions in which people are born, grow, live, work, and age that shape health outcomes, including income, education, housing, and access to food. These conditions are shaped by the distribution of money, power, and resources at global, national, and local levels." },
+          { term: "Universal Health Coverage", definition: "Universal health coverage means that all individuals and communities receive the health services they need without suffering financial hardship, encompassing the full range of essential health services from promotion to palliative care. It is a central target of the United Nations Sustainable Development Goals." },
+          { term: "Primary Health Care", definition: "Primary health care is a whole-of-society approach to health that integrates promotive, preventive, curative, rehabilitative, and palliative care as close as possible to where people live and work. It emphasizes first-contact, accessible, and continuous care rather than specialized hospital-based treatment." },
+          { term: "Health Disparity", definition: "A health disparity is a preventable difference in the burden of disease, injury, or opportunity to achieve optimal health that is experienced by socially disadvantaged populations. Disparities are often linked to social, economic, or environmental disadvantage rather than biology alone." },
+          { term: "Health Literacy", definition: "Health literacy is the degree to which individuals have the capacity to obtain, process, and understand basic health information and services needed to make appropriate health decisions. Low health literacy is associated with poorer health outcomes and less effective use of health services." },
+          { term: "Cultural Competency", definition: "Cultural competency is the ability of health systems and providers to deliver effective care to patients with diverse values, beliefs, and behaviors by adapting services to meet patients' social, cultural, and linguistic needs. It is considered essential to reducing disparities and improving trust between communities and health institutions." }
+        ]
+      },
+      {
+        id: "burden-disease",
+        label: "Global Burden of Disease",
+        terms: [
+          { term: "Global Burden of Disease", definition: "The Global Burden of Disease is a comprehensive research program that quantifies health loss from hundreds of diseases, injuries, and risk factors across countries and time using standardized metrics. It allows comparison of the relative impact of different conditions to guide health priority-setting." },
+          { term: "DALY", definition: "A Disability-Adjusted Life Year (DALY) is a summary measure of overall disease burden that combines years of life lost due to premature death with years lived with disability, weighted by severity. One DALY represents one lost year of healthy life." },
+          { term: "QALY", definition: "A Quality-Adjusted Life Year (QALY) is a measure of health outcome that combines length of life with quality of life, where a year in perfect health equals 1.0 and death equals 0. It is commonly used in cost-effectiveness analysis to compare the value of different health interventions." },
+          { term: "Epidemiologic Transition", definition: "The epidemiologic transition describes the long-term shift in a population's leading causes of death and illness from infectious diseases and malnutrition toward chronic and degenerative diseases as societies develop economically. This shift is typically accompanied by declining fertility and rising life expectancy." },
+          { term: "Double Burden of Disease", definition: "The double burden of disease refers to the simultaneous presence of infectious diseases and undernutrition alongside rising rates of noncommunicable diseases and obesity within the same population, often seen in low- and middle-income countries undergoing rapid transition. It strains health systems designed around a single disease profile." },
+          { term: "Life Expectancy", definition: "Life expectancy is the average number of years a person is expected to live based on current age-specific mortality rates in a population. It is one of the most widely used summary indicators of a population's overall health status." },
+          { term: "Years of Life Lost", definition: "Years of Life Lost (YLL) is a measure of premature mortality that estimates the number of years an individual would have lived had they not died prematurely, calculated relative to a standard life expectancy. It is one of the two components, alongside years lived with disability, that together make up the DALY." },
+          { term: "Morbidity", definition: "Morbidity refers to the state of being symptomatic or unhealthy due to a disease or condition, encompassing both the presence of illness and the degree to which it affects a person's functioning. It is distinct from mortality, which refers specifically to death." }
+        ]
+      },
+      {
+        id: "health-systems",
+        label: "Health Systems & Policy",
+        terms: [
+          { term: "Health System", definition: "A health system consists of all organizations, people, and actions whose primary intent is to promote, restore, or maintain health, including financing, workforce, service delivery, and governance components. The World Health Organization frames these as interacting building blocks that together determine system performance." },
+          { term: "WHO (World Health Organization)", definition: "The World Health Organization is the specialized agency of the United Nations responsible for international public health, setting norms and standards, coordinating global responses to health emergencies, and providing technical support to member states. It was established in 1948 and is headquartered in Geneva, Switzerland." },
+          { term: "Health Financing", definition: "Health financing refers to the function of a health system concerned with mobilizing, pooling, and allocating money to pay for health services, encompassing mechanisms like taxation, insurance, and out-of-pocket payment. The way a system is financed strongly influences equity of access and financial protection." },
+          { term: "Community Health Worker", definition: "A community health worker is a trusted member of the community who provides basic health education, referral, and follow-up services, often serving as a bridge between formal health systems and underserved populations. They are especially important for extending care in areas with workforce shortages." },
+          { term: "Health Policy", definition: "Health policy encompasses the decisions, plans, and actions undertaken by governments and organizations to achieve specific health care goals within a society, including laws, regulations, and funding priorities. Effective health policy requires balancing scientific evidence with political, economic, and social considerations." },
+          { term: "Task Shifting", definition: "Task shifting is the rational redistribution of health tasks among health workforce teams, moving specific tasks from highly qualified health workers to those with fewer qualifications where appropriate, to make more efficient use of available health workers. It has been widely used to expand access to services like HIV treatment in low-resource settings." },
+          { term: "Out-of-Pocket Expenditure", definition: "Out-of-pocket expenditure is the direct payment made by individuals for health services at the time of use, without reimbursement from insurance or a third party. High reliance on out-of-pocket spending is associated with catastrophic health expenditure and reduced access to care among poorer households." },
+          { term: "Health System Strengthening", definition: "Health system strengthening refers to coordinated efforts to improve the building blocks of a health system, such as workforce, financing, and information systems, in order to achieve more equitable and sustainable improvements in health outcomes. It emphasizes durable, system-wide investment rather than isolated, disease-specific programs." }
+        ]
+      },
+      {
+        id: "mch",
+        label: "Maternal & Child Health",
+        terms: [
+          { term: "Maternal Mortality Ratio", definition: "The maternal mortality ratio is the number of maternal deaths during a given time period per 100,000 live births during the same period, reflecting the risk of death once a woman becomes pregnant. It is one of the most sensitive indicators of the strength and equity of a health system." },
+          { term: "Under-5 Mortality Rate", definition: "The under-5 mortality rate is the probability of a child dying between birth and exactly five years of age, expressed per 1,000 live births. It is widely used as a key indicator of child health, nutrition, and overall development in a population." },
+          { term: "Skilled Birth Attendant", definition: "A skilled birth attendant is an accredited health professional, such as a midwife, doctor, or nurse, trained to manage normal pregnancies, childbirth, and the immediate postnatal period, and to identify and manage complications. Skilled attendance at birth is strongly associated with reduced maternal and neonatal mortality." },
+          { term: "Family Planning", definition: "Family planning refers to the ability of individuals and couples to anticipate and attain their desired number of children and the spacing and timing of their births, achieved through use of contraceptive methods and treatment of infertility. Access to family planning improves maternal and child health outcomes and supports reproductive autonomy." },
+          { term: "Exclusive Breastfeeding", definition: "Exclusive breastfeeding means an infant receives only breast milk, with no other liquids or solids except medically indicated supplements, for the first six months of life. The World Health Organization recommends this practice due to its protective effects against infection and malnutrition." },
+          { term: "Antenatal Care", definition: "Antenatal care refers to the care provided by skilled health workers to pregnant women and adolescent girls to ensure the best health outcomes for both mother and baby, including screening, monitoring, and health education. The World Health Organization recommends a minimum of eight contacts during pregnancy for optimal outcomes." },
+          { term: "Stillbirth", definition: "A stillbirth is the death of a baby before or during delivery, typically defined as occurring after a specified gestational age threshold, such as 28 weeks. Stillbirth rates are an important but often underreported indicator of the quality of maternal and perinatal care." },
+          { term: "Contraceptive Prevalence Rate", definition: "The contraceptive prevalence rate is the proportion of women of reproductive age who are currently using, or whose partner is using, at least one method of contraception. It is a key indicator for tracking progress toward family planning and reproductive health goals." }
+        ]
+      },
+      {
+        id: "infectious-global",
+        label: "Infectious Disease & Global Health Security",
+        terms: [
+          { term: "Global Health Security", definition: "Global health security refers to the activities required to minimize the danger and impact of acute public health events that endanger the collective health of populations across national borders. It encompasses preparedness, detection, and response capacities for outbreaks and other health emergencies." },
+          { term: "Pandemic", definition: "A pandemic is an epidemic that has spread across multiple countries or continents, typically affecting a large number of people through sustained human-to-human transmission of a new or re-emerging pathogen. Unlike an epidemic, a pandemic implies wide geographic spread rather than a fixed threshold of cases." },
+          { term: "International Health Regulations", definition: "The International Health Regulations are a legally binding agreement among World Health Organization member states that requires countries to develop core capacities to detect, assess, report, and respond to public health events of international concern. They establish the framework under which a Public Health Emergency of International Concern can be declared." },
+          { term: "Zoonotic Disease", definition: "A zoonotic disease is an infectious disease that has jumped from a non-human animal to a human, often through direct contact, vectors, or contaminated food and water. A large majority of newly emerging infectious diseases in humans originate from animal reservoirs." },
+          { term: "Neglected Tropical Disease", definition: "Neglected tropical diseases are a diverse group of communicable diseases that prevail in tropical and subtropical conditions in low-income populations and historically have received less funding and research attention than diseases like HIV, tuberculosis, and malaria. They include conditions such as lymphatic filariasis, schistosomiasis, and trachoma." },
+          { term: "One Health", definition: "One Health is a collaborative, multisectoral approach that recognizes the interconnection between human health, animal health, and environmental health, and works across these disciplines to achieve optimal health outcomes for all. It is particularly relevant to understanding and preventing zoonotic disease emergence and antimicrobial resistance." },
+          { term: "Public Health Emergency of International Concern", definition: "A Public Health Emergency of International Concern is a formal declaration by the World Health Organization Director-General that an extraordinary event constitutes a public health risk to other countries through international spread and potentially requires a coordinated international response. It is the highest level of alarm the WHO can issue under the International Health Regulations." },
+          { term: "Antimicrobial Resistance", definition: "Antimicrobial resistance occurs when bacteria, viruses, fungi, or parasites evolve mechanisms to survive exposure to drugs that were previously able to kill or inhibit them, making infections harder or impossible to treat. It is driven in part by overuse and misuse of antimicrobials in humans, animals, and agriculture." }
+        ]
+      },
+      {
+        id: "global-ethics",
+        label: "Global Health Ethics & Research",
+        terms: [
+          { term: "Informed Consent", definition: "Informed consent is the process by which a research participant or patient voluntarily agrees to a procedure or study after being given adequate information about its purpose, risks, benefits, and alternatives. It is a foundational ethical requirement for both clinical care and human subjects research." },
+          { term: "Institutional Review Board", definition: "An Institutional Review Board (IRB) is a formally designated committee that reviews and approves research involving human subjects to ensure the rights, safety, and welfare of participants are protected. Global health research conducted across borders often requires ethical approval from IRBs in both the researcher's home country and the host country." },
+          { term: "Belmont Report", definition: "The Belmont Report is a foundational document in research ethics that established three core principles for the ethical conduct of research involving human subjects: respect for persons, beneficence, and justice. It has shaped modern research regulations, including the requirement for informed consent." },
+          { term: "Health Diplomacy", definition: "Health diplomacy refers to the practice of using health as a platform or tool for building relationships, negotiating agreements, and advancing cooperation between countries, particularly during crises such as pandemics. It sits at the intersection of foreign policy, global governance, and public health practice." },
+          { term: "Parachute Research", definition: "Parachute research, also called helicopter research, describes a practice in which researchers from wealthier countries conduct studies in low-resource settings without meaningfully involving local researchers, institutions, or communities, and often without leaving lasting benefit behind. It is increasingly criticized as an equity issue in global health research partnerships." },
+          { term: "Vulnerable Population", definition: "A vulnerable population is a group of individuals who have a reduced capacity to protect their own interests due to factors such as limited resources, restricted autonomy, or diminished decision-making capacity, requiring additional ethical safeguards in research and care. Examples often cited include children, prisoners, and individuals experiencing poverty or displacement." },
+          { term: "Beneficence", definition: "Beneficence is an ethical principle requiring that actions taken in research or clinical care actively promote the well-being of participants or patients while minimizing possible harm. Alongside non-maleficence, it forms one of the central pillars of biomedical and research ethics." },
+          { term: "Distributive Justice", definition: "Distributive justice in global health ethics concerns the fair allocation of benefits and burdens, such as access to vaccines, treatments, or research resources, across different populations and countries. It is central to debates over equitable global responses to pandemics and resource-limited health interventions." }
+        ]
+      }
+    ]
+  },
+
+  // ── EPIDEMIOLOGY ─────────────────────────────────────────
+  "epi": {
+    label: "Epidemiology",
+    units: [
+      {
+        id: "epi-foundations",
+        label: "Foundations of Epidemiology",
+        terms: [
+          { term: "Epidemiology", definition: "Epidemiology is the study of the distribution and determinants of health-related states or events in specified populations, and the application of this study to control health problems. It forms the scientific foundation for public health practice and evidence-based policy." },
+          { term: "Public Health Surveillance", definition: "Public health surveillance is the ongoing, systematic collection, analysis, and interpretation of health data essential to planning, implementing, and evaluating public health practice, closely integrated with timely dissemination to those who need to know. It allows early detection of changes in disease patterns and outbreak trends." },
+          { term: "Epidemiologic Triad", definition: "The epidemiologic triad is a model describing the interaction between an agent, a host, and the environment that must align for disease to occur, historically developed to explain infectious disease causation. Modifying any one of the three components can be used to interrupt disease transmission." },
+          { term: "Natural History of Disease", definition: "The natural history of disease describes the progression of a disease process in an individual over time, from exposure and biological onset through subclinical and clinical stages to resolution, disability, or death, in the absence of intervention. Understanding this timeline helps identify optimal points for prevention and treatment." },
+          { term: "Determinants of Health", definition: "Determinants of health are the range of biological, behavioral, social, and environmental factors that influence the health status of individuals or populations. They include genetics, individual behavior, access to health services, and the social and physical environment." },
+          { term: "Case Definition", definition: "A case definition is a set of standardized diagnostic criteria that must be fulfilled for an individual to be classified as a case of a particular disease or health condition in surveillance or an investigation. Using a consistent case definition allows valid comparison of disease occurrence across time, place, and person." },
+          { term: "Host Susceptibility", definition: "Host susceptibility refers to the degree to which an individual is vulnerable to developing disease upon exposure to an agent, influenced by factors such as genetics, immune status, age, and prior exposure. Differences in susceptibility help explain why not everyone exposed to the same agent develops disease." },
+          { term: "Endemic", definition: "A disease is considered endemic when it is consistently present at a baseline, expected level within a particular geographic area or population. This baseline level serves as the reference point against which outbreaks or epidemics, defined by cases exceeding the expected level, are identified." }
+        ]
+      },
+      {
+        id: "disease-frequency",
+        label: "Measures of Disease Frequency",
+        terms: [
+          { term: "Incidence", definition: "Incidence is the number of new cases of a disease that occur in a population during a specified period of time, reflecting the rate at which new disease develops. It is a key measure of disease risk and is essential for studying disease etiology." },
+          { term: "Prevalence", definition: "Prevalence is the proportion of a population that has a specific disease or condition at a given point or period in time, reflecting the existing burden of disease rather than new occurrences. It is influenced by both incidence and the duration of the disease." },
+          { term: "Cumulative Incidence", definition: "Cumulative incidence, also called attack rate, is the proportion of an initially disease-free population that develops a disease over a specified period of time, calculated as new cases divided by the population at risk at the start of that period. It represents the average risk of developing disease over that time frame." },
+          { term: "Incidence Rate", definition: "Incidence rate, or person-time incidence, measures the number of new cases of disease per unit of person-time at risk, accounting for varying lengths of follow-up among individuals in a study. It is especially useful when participants enter or leave a study at different times." },
+          { term: "Point Prevalence", definition: "Point prevalence is the proportion of a population that has a disease at one specific point in time, as opposed to period prevalence, which measures the proportion affected at any time during a defined interval. Point prevalence is often assessed through a single cross-sectional survey." },
+          { term: "Age-Adjusted Rate", definition: "An age-adjusted rate is a summary rate that has been statistically modified to remove the effect of differing age distributions when comparing disease or mortality rates between populations. This adjustment allows for a fairer comparison of underlying disease risk between groups with different age structures." },
+          { term: "Morbidity Rate", definition: "A morbidity rate measures the frequency of illness or disease within a defined population over a specified period, often used broadly to describe overall disease burden rather than a single specific measure. It complements mortality statistics by capturing the burden of non-fatal illness." },
+          { term: "Case Fatality Rate", definition: "The case fatality rate is the proportion of individuals diagnosed with a particular disease who die from that disease within a specified time period, calculated as deaths divided by diagnosed cases. It reflects the severity of a disease rather than its frequency in the general population." }
+        ]
+      },
+      {
+        id: "study-designs",
+        label: "Study Designs",
+        terms: [
+          { term: "Cohort Study", definition: "A cohort study is an observational study design that follows a group of individuals sharing a common exposure status forward in time to compare the incidence of an outcome between exposed and unexposed groups. It can be conducted prospectively or retrospectively and allows direct calculation of incidence and relative risk." },
+          { term: "Case-Control Study", definition: "A case-control study is an observational study design that identifies individuals with a disease outcome (cases) and without it (controls) and then looks backward to compare their history of exposure. This design is efficient for studying rare diseases but is more prone to recall and selection bias than a cohort study." },
+          { term: "Cross-Sectional Study", definition: "A cross-sectional study assesses exposure and outcome simultaneously in a population at a single point in time, providing a snapshot of prevalence rather than incidence. Because exposure and outcome are measured together, this design cannot establish the temporal sequence needed to infer causation." },
+          { term: "Randomized Controlled Trial", definition: "A randomized controlled trial is an experimental study design in which participants are randomly assigned to receive an intervention or a control, minimizing confounding and allowing for the strongest causal inference among common study designs. Randomization helps ensure that known and unknown confounders are evenly distributed between groups." },
+          { term: "Ecological Study", definition: "An ecological study analyzes data at the population or group level rather than the individual level, examining associations between average exposure and average outcome across different groups. This design is useful for generating hypotheses but is vulnerable to the ecological fallacy, in which group-level associations do not reflect individual-level relationships." },
+          { term: "Case Series", definition: "A case series is a descriptive study that reports the characteristics and clinical course of a group of patients who share a particular disease or exposure, without a comparison group. It is often used to identify unusual patterns that generate hypotheses for further, more rigorous investigation." },
+          { term: "Nested Case-Control Study", definition: "A nested case-control study is a hybrid design in which cases and controls are drawn from within an existing cohort study, comparing exposure data already collected for a subset of cohort members. This design retains much of the efficiency of a case-control study while reducing certain biases because exposure data were collected before disease onset." },
+          { term: "Systematic Review", definition: "A systematic review is a study that uses a rigorous, predefined methodology to identify, evaluate, and synthesize all available evidence addressing a specific research question. When results from multiple studies are statistically combined, this process is called a meta-analysis." }
+        ]
+      },
+      {
+        id: "measures-association",
+        label: "Measures of Association",
+        terms: [
+          { term: "Relative Risk", definition: "Relative risk is the ratio of the incidence of disease in an exposed group to the incidence of disease in an unexposed group, indicating how many times more (or less) likely the exposed group is to develop the outcome. A relative risk greater than 1 suggests the exposure increases risk of disease." },
+          { term: "Odds Ratio", definition: "An odds ratio is the ratio of the odds of exposure among cases to the odds of exposure among controls, most commonly used in case-control studies where incidence and relative risk cannot be directly calculated. When disease is rare, the odds ratio closely approximates the relative risk." },
+          { term: "Attributable Risk", definition: "Attributable risk is the difference in incidence rates between an exposed group and an unexposed group, representing the excess risk of disease that can be attributed to the exposure itself. It is useful for estimating the public health impact of removing a specific exposure." },
+          { term: "Population Attributable Risk", definition: "Population attributable risk estimates the proportion of disease incidence in the entire population, including both exposed and unexposed individuals, that could be eliminated if the exposure were removed. It depends on both the strength of the association and the prevalence of the exposure in the population." },
+          { term: "Number Needed to Treat", definition: "Number needed to treat is the average number of patients who need to receive a given intervention for one additional person to benefit, calculated as the inverse of the absolute risk reduction. A lower number needed to treat generally indicates a more effective intervention." },
+          { term: "Risk Difference", definition: "Risk difference, also called absolute risk reduction or excess risk, is the arithmetic difference between the risk of an outcome in an exposed group and the risk in an unexposed group. Unlike relative risk, it conveys the absolute impact of an exposure on disease occurrence." },
+          { term: "Standardized Mortality Ratio", definition: "The standardized mortality ratio is the ratio of observed deaths in a study population to the number of deaths that would be expected based on the age-specific rates of a reference population. A ratio above 1.0 indicates more deaths occurred than expected given the population's age structure." },
+          { term: "Hazard Ratio", definition: "A hazard ratio compares the instantaneous rate of an event, such as death or disease onset, between two groups over the entire follow-up period, commonly derived from survival analysis. A hazard ratio greater than 1 indicates a higher event rate in the group of interest compared to the reference group." }
+        ]
+      },
+      {
+        id: "bias-confounding",
+        label: "Bias, Confounding & Effect Modification",
+        terms: [
+          { term: "Selection Bias", definition: "Selection bias occurs when the individuals included in a study are not representative of the target population, or when comparison groups differ systematically in ways related to both exposure and outcome. It arises from how subjects are selected, recruited, or retained in a study." },
+          { term: "Information Bias", definition: "Information bias arises from systematic errors in how exposure, outcome, or covariate data are measured or classified among study participants, which can distort the observed association. It includes forms such as misclassification, recall bias, and observer bias." },
+          { term: "Confounding", definition: "Confounding occurs when a third variable is associated with both the exposure and the outcome, without being on the causal pathway between them, distorting the true relationship between exposure and disease. Controlling for confounders through study design or statistical analysis is essential for valid causal inference." },
+          { term: "Effect Modification", definition: "Effect modification occurs when the strength or direction of an association between an exposure and outcome differs across levels of a third variable, meaning the effect is genuinely different in different subgroups. Unlike confounding, effect modification is a real biological or social phenomenon that should be reported rather than removed through adjustment." },
+          { term: "Recall Bias", definition: "Recall bias is a type of information bias in which study participants with a disease outcome are more likely to remember and report past exposures differently than those without the disease, often due to greater motivation to identify a cause. It is a particular concern in retrospective study designs such as case-control studies." },
+          { term: "Reverse Causation", definition: "Reverse causation occurs when the presumed outcome actually precedes and causes the presumed exposure, reversing the true direction of the causal relationship being studied. It is a particular threat in cross-sectional studies where exposure and outcome are measured at the same point in time." },
+          { term: "Berkson's Bias", definition: "Berkson's bias is a form of selection bias that can arise in hospital-based case-control studies when the combination of exposure and disease jointly influences the likelihood of hospital admission, creating a spurious association between them. It highlights the risk of drawing cases and controls exclusively from hospitalized populations." },
+          { term: "Confounding by Indication", definition: "Confounding by indication occurs in observational studies of treatment effects when the underlying reason a treatment was prescribed is also related to the outcome being studied, making it difficult to separate the effect of the treatment from the effect of the condition that prompted it. It is a persistent challenge in pharmacoepidemiology and comparative effectiveness research." }
+        ]
+      },
+      {
+        id: "screening",
+        label: "Screening & Diagnostic Testing",
+        terms: [
+          { term: "Sensitivity", definition: "Sensitivity is the ability of a test to correctly identify individuals who truly have the disease, calculated as the proportion of true positives among all individuals who actually have the disease. A highly sensitive test produces few false negatives and is useful for ruling out disease when the result is negative." },
+          { term: "Specificity", definition: "Specificity is the ability of a test to correctly identify individuals who truly do not have the disease, calculated as the proportion of true negatives among all individuals who do not have the disease. A highly specific test produces few false positives and is useful for ruling in disease when the result is positive." },
+          { term: "Positive Predictive Value", definition: "Positive predictive value is the probability that a person with a positive test result actually has the disease, and unlike sensitivity and specificity, it is directly influenced by the prevalence of disease in the population being tested. It answers the clinically relevant question of how much confidence to place in a positive result." },
+          { term: "Negative Predictive Value", definition: "Negative predictive value is the probability that a person with a negative test result truly does not have the disease, and like positive predictive value, it varies with the underlying prevalence of disease in the tested population. Higher disease prevalence tends to lower negative predictive value even when test performance is unchanged." },
+          { term: "Lead-Time Bias", definition: "Lead-time bias occurs when early detection through screening appears to prolong survival simply because the disease is diagnosed earlier in its natural history, without actually delaying death or improving outcomes. It can create a false impression that a screening program is effective." },
+          { term: "ROC Curve", definition: "A receiver operating characteristic (ROC) curve is a graphical plot that illustrates the diagnostic performance of a test across all possible cutoff thresholds by plotting sensitivity against one minus specificity. The area under the ROC curve summarizes overall test accuracy, with a value closer to 1.0 indicating better discrimination." },
+          { term: "Youden's Index", definition: "Youden's index is a single summary statistic of diagnostic test performance calculated as sensitivity plus specificity minus one, used to identify the optimal cutoff point on a ROC curve. A higher value, closer to 1.0, indicates better overall test performance at that threshold." },
+          { term: "Overdiagnosis", definition: "Overdiagnosis is the detection, often through screening, of a condition that would never have caused symptoms or harm during a person's lifetime, leading to unnecessary labeling and treatment. It is an important potential harm to weigh against the benefits of any screening program." }
+        ]
+      },
+      {
+        id: "outbreak",
+        label: "Outbreak Investigation & Surveillance",
+        terms: [
+          { term: "Outbreak", definition: "An outbreak is the occurrence of disease cases in excess of what would normally be expected in a defined community, geographic area, or season, and may involve as few as two related cases. The term is often used interchangeably with a localized epidemic." },
+          { term: "Epidemic Curve", definition: "An epidemic curve is a graphical display of the number of new cases of a disease plotted against time of onset, used to characterize an outbreak's pattern of transmission, magnitude, and trend over time. Its shape can help investigators infer whether transmission is from a point source, a continuous source, or person-to-person spread." },
+          { term: "Index Case", definition: "The index case is the first documented case of a disease within an outbreak investigation, often used as the starting point for identifying the source and tracing subsequent transmission. It is not necessarily the true first case in the community, only the first one detected by investigators." },
+          { term: "Herd Immunity", definition: "Herd immunity is the indirect protection from infectious disease that occurs when a sufficiently high proportion of a population is immune, whether through vaccination or prior infection, reducing the likelihood of transmission to susceptible individuals. The threshold needed to achieve herd immunity varies depending on the pathogen's transmissibility." },
+          { term: "Basic Reproduction Number (R0)", definition: "The basic reproduction number, R0, is the average number of secondary infections produced by a single infectious individual in a completely susceptible population. An R0 greater than 1 indicates that an outbreak is expected to grow, while an R0 less than 1 suggests it will decline." },
+          { term: "Contact Tracing", definition: "Contact tracing is the process of identifying, assessing, and managing people who have been exposed to a person infected with a communicable disease, in order to prevent further onward transmission. It is a core tool of outbreak control for diseases spread through close contact." },
+          { term: "Common Source Outbreak", definition: "A common source outbreak occurs when a group of people are exposed to the same harmful source, such as contaminated food or water, typically producing an epidemic curve with a sharp rise and a peak within one incubation period. This pattern helps distinguish it from an outbreak spread progressively from person to person." },
+          { term: "Secondary Attack Rate", definition: "The secondary attack rate is the proportion of susceptible people who develop disease after being exposed to a primary case within a defined setting, such as a household. It is used to measure how efficiently an infectious agent spreads among close contacts." }
+        ]
+      },
+      {
+        id: "epi-chronic",
+        label: "Chronic Disease Epidemiology",
+        terms: [
+          { term: "Noncommunicable Disease", definition: "A noncommunicable disease is a medical condition that is not directly transmissible from person to person, typically resulting from a combination of genetic, physiological, environmental, and behavioral factors, and includes conditions such as heart disease, cancer, and diabetes. These diseases are now the leading cause of death worldwide, driving much of the double burden of disease in developing economies." },
+          { term: "Risk Factor", definition: "A risk factor is any attribute, characteristic, or exposure that increases the likelihood of a person developing a disease or health condition. Risk factors can be modifiable, such as smoking or diet, or non-modifiable, such as age or genetic predisposition." },
+          { term: "Latency Period", definition: "The latency period is the time interval between exposure to a causal agent and the clinical manifestation of the resulting disease, which can range from days to decades depending on the condition. Long latency periods, common in many chronic diseases and cancers, make it especially challenging to establish causal links to specific exposures." },
+          { term: "Multifactorial Etiology", definition: "Multifactorial etiology describes a disease process that results from the combined influence of multiple genetic, environmental, and behavioral factors rather than a single cause. Most chronic diseases, such as cardiovascular disease and type 2 diabetes, are understood to have multifactorial etiology." },
+          { term: "Primary Prevention", definition: "Primary prevention refers to interventions that aim to prevent disease or injury before it ever occurs, such as vaccination, health education, and policies that reduce exposure to risk factors. It is the earliest point of intervention in the natural history of disease." },
+          { term: "Secondary Prevention", definition: "Secondary prevention refers to efforts to detect and treat disease early in its course, often before symptoms appear, in order to halt or slow its progression, commonly through screening programs. It targets individuals who already have early or asymptomatic disease." },
+          { term: "Tertiary Prevention", definition: "Tertiary prevention refers to interventions aimed at reducing the impact of an already established disease by restoring function, reducing complications, and improving quality of life through treatment and rehabilitation. It focuses on managing existing disease rather than preventing its initial onset." },
+          { term: "Disease Registry", definition: "A disease registry is an organized system that collects standardized data on individuals diagnosed with a particular disease over time, used to monitor trends, evaluate care quality, and support research. Cancer registries are among the most well-established examples used in chronic disease epidemiology." }
+        ]
+      }
+    ]
+  },
+
+  // ── ENVIRONMENTAL HEALTH ────────────────────────────────
+  "envhealth": {
+    label: "Environmental Health",
+    units: [
+      {
+        id: "env-foundations",
+        label: "Foundations of Environmental Health",
+        terms: [
+          { term: "Environmental Health", definition: "Environmental health is the branch of public health concerned with all aspects of the natural and built environment that may affect human health, including air, water, soil, food, and the workplace. It focuses on assessing, correcting, and preventing environmental factors that could adversely impact present and future generations." },
+          { term: "Exposure Assessment", definition: "Exposure assessment is the process of measuring or estimating the intensity, frequency, and duration of human contact with a chemical, physical, or biological agent, along with the number of people exposed. It is a critical step in characterizing the potential health risk posed by an environmental hazard." },
+          { term: "Environmental Hazard", definition: "An environmental hazard is any physical, chemical, or biological agent present in the environment that has the potential to cause harm to human health or ecosystems. Hazards can originate from natural sources or human activity and range from air pollutants to extreme weather events." },
+          { term: "Dose-Response Relationship", definition: "A dose-response relationship describes how the frequency or severity of a health effect changes as the level of exposure to an agent increases, forming a fundamental concept in toxicology and risk assessment. Establishing this relationship helps determine safe exposure thresholds and guides regulatory limits." },
+          { term: "Risk Assessment", definition: "Risk assessment is the systematic process of evaluating the potential for adverse health effects from exposure to an environmental hazard, typically involving hazard identification, dose-response assessment, exposure assessment, and risk characterization. It provides the scientific basis for environmental regulations and public health decisions." },
+          { term: "Precautionary Principle", definition: "The precautionary principle holds that when an activity raises threats of harm to human health or the environment, protective measures should be taken even if some cause-and-effect relationships are not fully established scientifically. It shifts the burden of proof toward demonstrating safety rather than waiting for definitive proof of harm." },
+          { term: "Hazard Identification", definition: "Hazard identification is the first step of environmental risk assessment, involving the determination of whether a particular agent is capable of causing an adverse health effect in humans. It typically relies on evidence from toxicological studies, epidemiologic research, and case reports." },
+          { term: "Environmental Monitoring", definition: "Environmental monitoring is the ongoing measurement and observation of environmental conditions, such as air, water, or soil quality, to track exposure levels over time and detect changes that could pose a risk to health. It provides the data foundation for both regulatory compliance and public health surveillance." }
+        ]
+      },
+      {
+        id: "toxicology",
+        label: "Toxicology",
+        terms: [
+          { term: "Toxicology", definition: "Toxicology is the scientific study of the adverse effects of chemical, physical, or biological agents on living organisms, encompassing how substances enter the body, how they are processed, and the mechanisms by which they cause harm. It provides the foundational science underlying environmental and occupational health regulation." },
+          { term: "LD50", definition: "LD50, or median lethal dose, is the dose of a substance required to kill 50 percent of a test population of organisms, typically expressed in milligrams of substance per kilogram of body weight. It is a standard measure used to compare the acute toxicity of different chemicals." },
+          { term: "Acute Toxicity", definition: "Acute toxicity refers to adverse health effects that occur rapidly, usually within 24 to 96 hours, following a single or short-term exposure to a substance, in contrast to chronic toxicity, which develops from repeated or prolonged exposure over months or years. Both are essential considerations in determining safe exposure limits." },
+          { term: "Bioaccumulation", definition: "Bioaccumulation is the gradual buildup of a substance, such as a pesticide or heavy metal, within an organism over time because the rate of intake exceeds the rate of elimination. Substances that bioaccumulate can also biomagnify, reaching increasingly higher concentrations at higher levels of the food chain." },
+          { term: "Endocrine Disruptor", definition: "An endocrine disruptor is a chemical that interferes with the body's hormone systems by mimicking, blocking, or altering natural hormone signaling, potentially causing developmental, reproductive, or metabolic effects. Common examples include certain plastics additives, pesticides, and industrial chemicals." },
+          { term: "Carcinogen", definition: "A carcinogen is any substance, organism, or agent capable of causing cancer by damaging the genome or disrupting cellular metabolic processes that control cell growth and division. Carcinogens are classified by organizations such as the International Agency for Research on Cancer based on the strength of evidence from human and animal studies." },
+          { term: "Teratogen", definition: "A teratogen is a substance or agent that can cause abnormal fetal development when a pregnant person is exposed during a critical period of gestation, potentially leading to birth defects. Known teratogens include certain medications, alcohol, and some infectious agents." },
+          { term: "Biomarker of Exposure", definition: "A biomarker of exposure is a measurable substance, its metabolite, or its biological effect found within a tissue or fluid of the body, such as blood or urine, that indicates a person has been exposed to a specific environmental agent. Biomarkers provide more direct and individualized evidence of exposure than estimates based on environmental sampling alone." }
+        ]
+      },
+      {
+        id: "air-water",
+        label: "Air & Water Quality",
+        terms: [
+          { term: "Criteria Air Pollutants", definition: "Criteria air pollutants are six common pollutants regulated by the U.S. Environmental Protection Agency because of their widespread presence and demonstrated harm to human health and the environment: particulate matter, ground-level ozone, carbon monoxide, sulfur dioxide, nitrogen dioxide, and lead. National standards set allowable concentrations for each pollutant in outdoor air." },
+          { term: "Particulate Matter (PM2.5)", definition: "PM2.5 refers to fine particulate matter with a diameter of 2.5 micrometers or smaller, small enough to penetrate deep into the lungs and enter the bloodstream. Exposure is associated with cardiovascular disease, respiratory illness, and premature death, making it one of the most studied air pollutants in public health." },
+          { term: "Safe Drinking Water Act", definition: "The Safe Drinking Water Act is the primary federal law in the United States that establishes standards for public drinking water systems, setting enforceable limits on contaminants to protect public health. It requires water systems to monitor and report contaminant levels and to notify the public of violations." },
+          { term: "Maximum Contaminant Level", definition: "The maximum contaminant level is the highest concentration of a contaminant legally allowed in drinking water delivered to any user of a public water system, set by regulatory agencies based on health risk and technical feasibility. Levels are established to protect public health while remaining achievable given available treatment technology." },
+          { term: "Waterborne Disease", definition: "A waterborne disease is an illness caused by pathogenic microorganisms or toxins transmitted through contaminated water, including bacteria, viruses, and parasites that cause conditions such as cholera, giardiasis, and cryptosporidiosis. Access to safe water and sanitation is one of the most effective interventions for preventing these diseases globally." },
+          { term: "Air Quality Index", definition: "The Air Quality Index is a standardized scale used to communicate how polluted the air currently is or how polluted it is forecast to become, translating pollutant concentrations into a single number and color-coded category. It helps the public understand health risks and take precautions on days with poor air quality." },
+          { term: "Clean Air Act", definition: "The Clean Air Act is the primary federal law in the United States that regulates air emissions from stationary and mobile sources, authorizing the Environmental Protection Agency to set national air quality standards to protect public health and welfare. It has been amended several times to address acid rain, ozone depletion, and air toxics." },
+          { term: "Eutrophication", definition: "Eutrophication is the process by which a body of water becomes overly enriched with nutrients, often from agricultural runoff or wastewater, leading to excessive algae growth that depletes oxygen and can harm both aquatic life and water quality for human use. Severe cases can produce harmful algal blooms that pose direct health risks." }
+        ]
+      },
+      {
+        id: "env-justice",
+        label: "Environmental Justice",
+        terms: [
+          { term: "Environmental Justice", definition: "Environmental justice is the fair treatment and meaningful involvement of all people, regardless of race, color, national origin, or income, in the development, implementation, and enforcement of environmental laws, regulations, and policies. It seeks to ensure that no group bears a disproportionate share of negative environmental consequences." },
+          { term: "Environmental Racism", definition: "Environmental racism refers to the disproportionate placement of environmental hazards, such as landfills, industrial facilities, and polluting infrastructure, in or near communities of color, often as a result of discriminatory policy and disinvestment. It is a specific manifestation of environmental injustice rooted in structural racism." },
+          { term: "Cumulative Impact", definition: "Cumulative impact refers to the combined effect of multiple environmental exposures and social stressors experienced by a community over time, which can produce health consequences greater than the sum of any single exposure evaluated in isolation. Communities facing high cumulative impact often bear layered burdens from pollution, poverty, and limited health care access." },
+          { term: "Sacrifice Zone", definition: "A sacrifice zone is a geographic area, typically low-income or minority, that has been heavily polluted or degraded by industrial activity to the point that residents' health and quality of life are severely compromised, often to benefit broader economic interests. The term highlights how environmental costs are unevenly distributed across society." },
+          { term: "NIMBY", definition: "NIMBY, an acronym for \"Not In My Back Yard,\" describes opposition by residents to the siting of a proposed facility, such as a landfill or treatment plant, in their own local area, even if they may not object to the facility existing elsewhere. This dynamic can contribute to environmentally hazardous facilities being pushed into communities with less political power to resist." },
+          { term: "Community-Based Participatory Research", definition: "Community-based participatory research is a collaborative approach to research that equitably involves community members, researchers, and other stakeholders throughout the research process, from identifying the problem to disseminating results. It aims to combine knowledge with action to address community-identified health and environmental concerns." },
+          { term: "Redlining", definition: "Redlining was a discriminatory practice, formalized through federal housing policy in the mid-20th century United States, of denying mortgages and investment to neighborhoods, disproportionately those with Black residents, based on maps that marked them as high-risk. Its legacy continues to shape present-day patterns of environmental hazard exposure and health disparities in many cities." },
+          { term: "Fenceline Community", definition: "A fenceline community is a neighborhood located immediately adjacent to an industrial facility, such as a refinery or chemical plant, whose residents bear disproportionate exposure to that facility's pollution and safety risks. These communities are often central to environmental justice research and advocacy." }
+        ]
+      },
+      {
+        id: "occ-health",
+        label: "Occupational Health",
+        terms: [
+          { term: "Occupational Health", definition: "Occupational health is the field of public health focused on promoting and maintaining the physical, mental, and social well-being of workers by preventing hazards and diseases related to working conditions. It addresses risks arising from chemical, physical, biological, and ergonomic exposures in the workplace." },
+          { term: "OSHA", definition: "The Occupational Safety and Health Administration (OSHA) is the federal agency within the U.S. Department of Labor responsible for setting and enforcing workplace safety and health standards. It was created by the Occupational Safety and Health Act of 1970 to ensure safe and healthful working conditions for employees." },
+          { term: "Threshold Limit Value", definition: "A threshold limit value is an occupational exposure guideline representing the airborne concentration of a substance to which nearly all workers can be repeatedly exposed without adverse health effects, typically expressed as a time-weighted average over an eight-hour workday. These values are developed and published by professional organizations to inform workplace exposure limits." },
+          { term: "Hierarchy of Controls", definition: "The hierarchy of controls is a framework for prioritizing methods to reduce workplace hazards, ranked from most to least effective: elimination, substitution, engineering controls, administrative controls, and personal protective equipment. Controls higher on the hierarchy are generally more reliable because they reduce the hazard at its source rather than relying on worker behavior." },
+          { term: "Personal Protective Equipment", definition: "Personal protective equipment refers to specialized clothing or equipment worn by workers to minimize exposure to hazards, including respirators, gloves, eye protection, and protective clothing. It is considered the least effective control in the hierarchy of controls because it depends on consistent and correct use by the worker." },
+          { term: "Sentinel Health Event", definition: "A sentinel health event is a preventable disease, disability, or death that serves as a warning signal indicating a potential failure in prevention or treatment within a workplace or environmental setting. Identifying such an event should prompt investigation into its underlying cause to prevent similar occurrences." },
+          { term: "Ergonomics", definition: "Ergonomics is the scientific discipline concerned with designing tasks, equipment, and work environments to fit the physical and cognitive capabilities of workers, in order to reduce injury and improve efficiency. Poor ergonomic design is a leading contributor to musculoskeletal disorders in the workplace." },
+          { term: "Workers' Compensation", definition: "Workers' compensation is a form of insurance that provides wage replacement and medical benefits to employees who are injured or become ill as a direct result of their job, in exchange for the employee relinquishing the right to sue their employer for negligence. It is typically administered at the state level in the United States." }
+        ]
+      },
+      {
+        id: "climate-health",
+        label: "Climate Change & Health",
+        terms: [
+          { term: "Climate Change", definition: "Climate change refers to long-term shifts in temperature and weather patterns, largely driven since the mid-20th century by human activities such as burning fossil fuels, which increase concentrations of greenhouse gases in the atmosphere. It is increasingly recognized as a fundamental driver of health risk, affecting everything from infectious disease patterns to food security." },
+          { term: "Heat-Related Illness", definition: "Heat-related illness encompasses a spectrum of conditions, from heat cramps and heat exhaustion to life-threatening heat stroke, caused by the body's inability to adequately regulate its internal temperature during exposure to excessive heat. Older adults, outdoor workers, and people without access to cooling are at particularly elevated risk." },
+          { term: "Vector-Borne Disease", definition: "A vector-borne disease is an illness transmitted to humans through the bite of an infected arthropod, such as a mosquito or tick, that carries a pathogen between hosts. Climate change is expected to shift the geographic range and seasonality of many disease vectors, altering patterns of disease risk." },
+          { term: "Climate Adaptation", definition: "Climate adaptation refers to actions taken to adjust systems, practices, or infrastructure in anticipation of or response to the effects of climate change, in order to reduce harm or take advantage of new opportunities. In public health, adaptation might include early warning systems for heat waves or redesigning health infrastructure to withstand extreme weather." },
+          { term: "Climate Mitigation", definition: "Climate mitigation refers to efforts aimed at reducing or preventing the emission of greenhouse gases in order to limit the extent of future climate change. Unlike adaptation, which responds to climate impacts already occurring, mitigation addresses the root causes driving those impacts." },
+          { term: "Urban Heat Island", definition: "An urban heat island is a metropolitan area that experiences significantly higher temperatures than surrounding rural areas, primarily due to human activities and infrastructure such as pavement and buildings that absorb and retain heat. Urban heat islands often disproportionately affect lower-income neighborhoods with less tree cover and green space." },
+          { term: "Food Security", definition: "Food security exists when all people, at all times, have physical and economic access to sufficient, safe, and nutritious food to meet their dietary needs for an active and healthy life. Climate-related disruptions to agriculture, such as droughts and extreme weather, pose a growing threat to food security worldwide." },
+          { term: "Climate Migration", definition: "Climate migration refers to the movement of people, within or across borders, driven wholly or partly by the effects of climate change, such as sea level rise, drought, or extreme weather events that make an area uninhabitable or unable to sustain livelihoods. It raises complex public health challenges related to displacement, resource strain, and access to care." }
+        ]
+      }
+    ]
+  },
+
+  // ── BIOSTATISTICS ────────────────────────────────────────
+  "biostats": {
+    label: "Biostatistics",
+    units: [
+      {
+        id: "descriptive-stats",
+        label: "Descriptive Statistics",
+        terms: [
+          { term: "Mean", definition: "The mean is the arithmetic average of a set of values, calculated by summing all observations and dividing by the number of observations. It is sensitive to extreme values, or outliers, which can pull the mean away from where most of the data actually lie." },
+          { term: "Median", definition: "The median is the middle value in a data set when all observations are ordered from smallest to largest, dividing the distribution into two equal halves. Because it is not affected by extreme values, the median is often a more appropriate measure of central tendency for skewed distributions than the mean." },
+          { term: "Mode", definition: "The mode is the value that occurs most frequently in a data set, and a distribution can have one mode, more than one mode, or no mode at all if every value occurs with equal frequency. It is the only measure of central tendency that can be used with purely categorical, or nominal, data." },
+          { term: "Standard Deviation", definition: "Standard deviation is a measure of the amount of variation or dispersion in a set of values, calculated as the square root of the variance, and is expressed in the same units as the original data. A small standard deviation indicates that values tend to be close to the mean, while a large one indicates greater spread." },
+          { term: "Variance", definition: "Variance is a measure of how far a set of values are spread out from their mean, calculated as the average of the squared differences between each observation and the mean. Because it is expressed in squared units, variance is often converted to standard deviation for easier interpretation." },
+          { term: "Skewness", definition: "Skewness describes the asymmetry of a probability distribution around its mean, with positive skew indicating a longer tail toward higher values and negative skew indicating a longer tail toward lower values. In a skewed distribution, the mean, median, and mode typically differ, and the median often better represents the center." },
+          { term: "Range", definition: "The range is the simplest measure of spread in a data set, calculated as the difference between the maximum and minimum observed values. While easy to compute, it is highly sensitive to outliers because it depends entirely on the two most extreme values." },
+          { term: "Interquartile Range", definition: "The interquartile range is a measure of statistical spread calculated as the difference between the 75th percentile (third quartile) and the 25th percentile (first quartile) of a data set, representing the range of the middle 50 percent of observations. Because it excludes extreme values, it is a more robust measure of spread than the range for skewed data." }
+        ]
+      },
+      {
+        id: "probability",
+        label: "Probability & Distributions",
+        terms: [
+          { term: "Probability", definition: "Probability is a numerical measure, ranging from 0 to 1, of the likelihood that a particular event will occur, with 0 indicating impossibility and 1 indicating certainty. It provides the mathematical foundation for statistical inference and hypothesis testing." },
+          { term: "Normal Distribution", definition: "The normal distribution is a continuous, symmetric, bell-shaped probability distribution defined by its mean and standard deviation, in which most observations cluster around the mean. Many biological and health-related variables approximate a normal distribution, and it underlies many common statistical tests." },
+          { term: "Binomial Distribution", definition: "The binomial distribution describes the probability of obtaining a specific number of successes in a fixed number of independent trials, each with the same probability of success, such as the number of patients who respond to a treatment out of a fixed sample. It is commonly used to model dichotomous, or yes/no, outcomes in epidemiologic and clinical research." },
+          { term: "Poisson Distribution", definition: "The Poisson distribution models the probability of a given number of events occurring within a fixed interval of time or space, assuming events occur independently and at a constant average rate. It is frequently used in epidemiology to model rare disease counts and incidence rates." },
+          { term: "Central Limit Theorem", definition: "The central limit theorem states that the distribution of sample means will approximate a normal distribution as the sample size becomes sufficiently large, regardless of the shape of the underlying population distribution. This theorem justifies the use of normal-based statistical methods even when individual data are not normally distributed." },
+          { term: "Confidence Interval", definition: "A confidence interval is a range of values, calculated from sample data, that is likely to contain the true population parameter with a specified level of confidence, such as 95 percent. It reflects the precision of an estimate, with narrower intervals indicating greater precision." },
+          { term: "Standard Error", definition: "The standard error is a measure of how much a sample statistic, such as the sample mean, is expected to vary from sample to sample, calculated as the standard deviation divided by the square root of the sample size. It decreases as sample size increases, reflecting greater precision in larger samples." },
+          { term: "Chi-Square Distribution", definition: "The chi-square distribution is a probability distribution used primarily in hypothesis tests involving categorical data, such as the chi-square test of independence, to assess whether observed frequencies differ significantly from expected frequencies. Its shape depends on the degrees of freedom associated with the analysis." }
+        ]
+      },
+      {
+        id: "hypothesis-testing",
+        label: "Hypothesis Testing & Inference",
+        terms: [
+          { term: "Null Hypothesis", definition: "The null hypothesis is a statement asserting that there is no true effect or association between the variables being studied in the underlying population, serving as the default assumption to be tested against the collected data. Statistical tests are designed to assess how compatible the observed data are with this hypothesis." },
+          { term: "Alternative Hypothesis", definition: "The alternative hypothesis is a statement that contradicts the null hypothesis, proposing that a true effect, difference, or association does exist in the population being studied. Researchers seek evidence in their data strong enough to reject the null hypothesis in favor of the alternative." },
+          { term: "P-Value", definition: "The p-value is the probability of observing a result as extreme as, or more extreme than, the one obtained, assuming the null hypothesis is true. A small p-value, conventionally below 0.05, suggests the observed data would be unusual under the null hypothesis, but a p-value alone does not indicate the size or importance of an effect." },
+          { term: "Type I Error", definition: "A Type I error occurs when a study rejects a true null hypothesis, incorrectly concluding that an effect or association exists when it does not. The probability of committing a Type I error is denoted by alpha, most commonly set at 0.05." },
+          { term: "Type II Error", definition: "A Type II error occurs when a study fails to reject a false null hypothesis, incorrectly concluding that no effect or association exists when one truly does. The probability of committing a Type II error is denoted by beta and is directly related to a study's statistical power." },
+          { term: "Statistical Power", definition: "Statistical power is the probability that a study will correctly detect a true effect or association when one actually exists, calculated as one minus the probability of a Type II error. Power increases with larger sample sizes, larger true effect sizes, and less variability in the data." },
+          { term: "Two-Sided Test", definition: "A two-sided test, also called a two-tailed test, evaluates whether a sample statistic differs from a hypothesized value in either direction, rather than testing for a difference in only one specified direction. It is generally considered more conservative and is the default choice unless there is strong prior justification for testing a single direction." },
+          { term: "Confidence Level", definition: "The confidence level is the pre-specified probability, commonly 95 percent, that the method used to construct a confidence interval will capture the true population parameter across repeated sampling. A higher confidence level produces a wider interval, reflecting the tradeoff between certainty and precision." }
+        ]
+      },
+      {
+        id: "regression",
+        label: "Regression & Correlation",
+        terms: [
+          { term: "Correlation Coefficient", definition: "The correlation coefficient is a statistic, typically Pearson's r, that measures the strength and direction of a linear relationship between two continuous variables, ranging from -1 to +1. A value near 0 indicates little to no linear relationship, while values close to -1 or +1 indicate a strong negative or positive relationship." },
+          { term: "Linear Regression", definition: "Linear regression is a statistical technique used to model the relationship between a continuous outcome variable and one or more predictor variables by fitting a straight line that best describes the data. The resulting equation can be used to estimate the outcome for given values of the predictors and to quantify the strength of the association." },
+          { term: "Logistic Regression", definition: "Logistic regression is a statistical technique used to model the relationship between one or more predictor variables and a binary outcome, estimating the probability of the outcome occurring in terms of odds. It is widely used in epidemiology to calculate adjusted odds ratios while controlling for confounding variables." },
+          { term: "R-Squared", definition: "R-squared is a statistic that represents the proportion of variability in the outcome variable that is explained by the predictor variables in a regression model, ranging from 0 to 1. A higher R-squared indicates that the model accounts for more of the variation in the observed data, though it does not by itself indicate whether the model is correctly specified." },
+          { term: "Multivariable Regression", definition: "Multivariable regression is a statistical method that examines the relationship between an outcome and multiple predictor variables simultaneously, allowing researchers to estimate the independent effect of one exposure while adjusting for other variables. It is a primary tool for controlling confounding in observational epidemiologic studies." },
+          { term: "Confounder Adjustment", definition: "Confounder adjustment refers to statistical techniques, such as stratification or multivariable regression, used to account for the distorting effect of confounding variables so that the association between the exposure and outcome of interest can be more accurately estimated. Proper adjustment requires correctly identifying which variables are true confounders rather than mediators or colliders." },
+          { term: "Interaction Term", definition: "An interaction term is a variable included in a regression model, created by multiplying two predictor variables together, used to formally test and quantify effect modification between them. A statistically significant interaction term indicates that the effect of one predictor on the outcome depends on the level of another." },
+          { term: "Multicollinearity", definition: "Multicollinearity occurs when two or more predictor variables in a regression model are highly correlated with one another, making it difficult to isolate the independent effect of each variable and destabilizing the model's coefficient estimates. It is typically assessed using diagnostics such as the variance inflation factor." }
+        ]
+      },
+      {
+        id: "sampling",
+        label: "Sampling & Study Design",
+        terms: [
+          { term: "Random Sampling", definition: "Random sampling is a method of selecting a subset of individuals from a larger population in which every member has a known, non-zero chance of being chosen, minimizing selection bias and supporting generalizability of results. Simple random sampling is the most basic form, giving every individual an equal chance of selection." },
+          { term: "Stratified Sampling", definition: "Stratified sampling involves dividing a population into distinct subgroups, or strata, based on a shared characteristic such as age or sex, and then randomly sampling from within each stratum. This method ensures adequate representation of important subgroups and can improve the precision of estimates compared to simple random sampling." },
+          { term: "Convenience Sampling", definition: "Convenience sampling is a non-probability sampling method in which participants are selected based on their ease of access rather than through a random process, making the resulting sample less likely to be representative of the broader population. While quick and inexpensive, it carries a high risk of selection bias." },
+          { term: "Sample Size", definition: "Sample size refers to the number of observations or participants included in a study, which must be large enough to provide adequate statistical power to detect a true effect if one exists. Sample size calculations typically depend on the expected effect size, desired significance level, and desired power." },
+          { term: "Sampling Error", definition: "Sampling error is the difference between a sample statistic and the true population parameter that arises simply because a sample, rather than the entire population, was measured. Unlike bias, sampling error is a random and expected consequence of sampling and tends to decrease as sample size increases." },
+          { term: "Nonresponse Bias", definition: "Nonresponse bias occurs when individuals who do not respond to a survey or study differ systematically from those who do respond, in ways that are related to the outcome being studied, distorting the study's results. High response rates alone do not guarantee the absence of nonresponse bias if non-respondents differ meaningfully from respondents." },
+          { term: "Cluster Sampling", definition: "Cluster sampling is a method in which the population is divided into naturally occurring groups, or clusters, such as schools or neighborhoods, and a random selection of entire clusters is included in the study rather than sampling individuals directly. It is often more practical and cost-effective for large geographic studies, though it typically requires a larger sample size than simple random sampling to achieve the same precision." },
+          { term: "Systematic Sampling", definition: "Systematic sampling involves selecting individuals from a population at fixed, regular intervals from a randomly chosen starting point, such as every tenth person on a list. It is easier to implement than simple random sampling while still providing a representative sample, provided there is no hidden periodic pattern in the list." }
+        ]
+      },
+      {
+        id: "survival-analysis",
+        label: "Survival Analysis & Advanced Methods",
+        terms: [
+          { term: "Survival Analysis", definition: "Survival analysis is a branch of statistics focused on analyzing the expected duration of time until an event of interest occurs, such as death, disease relapse, or recovery. It is uniquely suited to handle data in which some subjects have not yet experienced the event by the end of the study." },
+          { term: "Kaplan-Meier Curve", definition: "A Kaplan-Meier curve is a graphical representation of the estimated probability of survival over time, calculated using a non-parametric method that accounts for censored observations. It is one of the most widely used tools for visualizing time-to-event data in clinical and epidemiologic research." },
+          { term: "Hazard Function", definition: "The hazard function represents the instantaneous risk of an event occurring at a given point in time, given that the subject has survived up to that point. It provides more detailed information about the timing of risk than a single summary survival probability." },
+          { term: "Censoring", definition: "Censoring occurs in survival analysis when the exact event time for a subject is unknown, most commonly because the study ends or the subject withdraws before experiencing the event of interest. Properly accounting for censored data, rather than discarding it, is a defining feature of survival analysis methods." },
+          { term: "Cox Proportional Hazards Model", definition: "The Cox proportional hazards model is a widely used regression method in survival analysis that estimates the effect of one or more predictor variables on the hazard, or instantaneous risk, of an event occurring, without requiring assumptions about the underlying shape of the hazard function over time. It assumes that the ratio of hazards between groups remains constant over the study period." },
+          { term: "Log-Rank Test", definition: "The log-rank test is a statistical test used to compare the survival distributions of two or more groups, commonly applied alongside Kaplan-Meier curves to determine whether observed differences in survival are statistically significant. It is a nonparametric test that gives equal weight to differences at all time points." },
+          { term: "Time-to-Event Data", definition: "Time-to-event data, also called survival data, records both whether a specific event occurred and how much time elapsed before it occurred or before the observation period ended. This type of data requires specialized statistical methods because standard techniques cannot properly account for censored observations." },
+          { term: "Loss to Follow-Up", definition: "Loss to follow-up occurs when study participants stop participating or become impossible to locate before the study or their observation period is complete, resulting in incomplete outcome data for those individuals. High rates of loss to follow-up can introduce bias if the reasons for dropout are related to the outcome being studied." }
+        ]
+      }
+    ]
+  }
+
+};
+
+
+// ============================================================
+//  mcqdata.js — PubHealthPress Multiple Choice Questions
+//  Structure: MCQ[unitId] = array of question objects
+//  Each question: { q: "Question text", options: ["A","B","C","D"], answer: 0 }
+//  answer is the 0-indexed position of the correct option.
+//  To add questions: find the unit id below and add to its array.
+// ============================================================
+
+const MCQ = {
+
+  // ── GLOBAL HEALTH ────────────────────────────────────────
+
+  "global-foundations": [
+    {
+      q: "Which best describes health equity?",
+      options: [
+        "Giving every population the exact same resources",
+        "A fair and just opportunity for everyone to attain their highest level of health",
+        "The average life expectancy of a country",
+        "A measure of how many people have health insurance"
+      ],
+      answer: 1
+    },
+    {
+      q: "Social determinants of health primarily refer to:",
+      options: [
+        "Genetic mutations that cause disease",
+        "The types of medications available in a country",
+        "Non-medical conditions such as income, education, and housing that shape health",
+        "The number of hospitals in a region"
+      ],
+      answer: 2
+    },
+    {
+      q: "Primary health care is best characterized as:",
+      options: [
+        "Specialized hospital-based treatment only",
+        "A whole-of-society approach delivering accessible, continuous care close to where people live",
+        "Emergency care provided only during outbreaks",
+        "Care available only to insured individuals"
+      ],
+      answer: 1
+    }
+  ],
+  "burden-disease": [
+    {
+      q: "A DALY primarily measures:",
+      options: [
+        "The cost of a health intervention",
+        "Years of life lost to death plus years lived with disability",
+        "The number of doctors per capita",
+        "The prevalence of a disease at one point in time"
+      ],
+      answer: 1
+    },
+    {
+      q: "The epidemiologic transition describes:",
+      options: [
+        "A shift from infectious to chronic disease as leading causes of death as societies develop",
+        "The movement of patients between hospitals",
+        "A change in disease case definitions over time",
+        "The process of vaccine approval"
+      ],
+      answer: 0
+    }
+  ],
+  "health-systems": [
+    {
+      q: "Task shifting refers to:",
+      options: [
+        "Moving patients between clinics",
+        "Redistributing health tasks from highly qualified workers to less specialized workers where appropriate",
+        "Changing a country's health financing model",
+        "Reassigning WHO leadership roles"
+      ],
+      answer: 1
+    },
+    {
+      q: "Which organization sets international health norms and coordinates outbreak response across countries?",
+      options: [
+        "OSHA",
+        "World Health Organization",
+        "Safe Drinking Water Act agency",
+        "International Health Regulations Council"
+      ],
+      answer: 1
+    }
+  ],
+  "mch": [
+    {
+      q: "The maternal mortality ratio is expressed as:",
+      options: [
+        "Maternal deaths per 1,000 live births",
+        "Maternal deaths per 100,000 live births",
+        "Maternal deaths per 10,000 pregnancies",
+        "Percentage of pregnancies ending in death"
+      ],
+      answer: 1
+    },
+    {
+      q: "Exclusive breastfeeding, as recommended by WHO, means:",
+      options: [
+        "Breast milk plus formula for the first month",
+        "Only breast milk for the first six months, with no other liquids or solids",
+        "Breastfeeding only at night",
+        "Breast milk until age two with no solids ever introduced"
+      ],
+      answer: 1
+    }
+  ],
+  "infectious-global": [
+    {
+      q: "A zoonotic disease is one that:",
+      options: [
+        "Only affects animals, never humans",
+        "Has jumped from a non-human animal to a human",
+        "Is spread exclusively through contaminated water",
+        "Only occurs in tropical climates"
+      ],
+      answer: 1
+    },
+    {
+      q: "The One Health approach emphasizes:",
+      options: [
+        "Treating only human patients in a hospital setting",
+        "The interconnection between human, animal, and environmental health",
+        "A single global health insurance system",
+        "Focusing exclusively on infectious disease vaccines"
+      ],
+      answer: 1
+    }
+  ],
+
+  // ── EPIDEMIOLOGY ─────────────────────────────────────────
+
+  "epi-foundations": [
+    {
+      q: "Epidemiology is best defined as the study of:",
+      options: [
+        "The treatment of individual patients in a clinical setting",
+        "The distribution and determinants of health-related states in populations, and applying this to control health problems",
+        "The chemical composition of pathogens",
+        "Hospital administration and billing practices"
+      ],
+      answer: 1
+    },
+    {
+      q: "The epidemiologic triad describes the interaction between:",
+      options: [
+        "Incidence, prevalence, and mortality",
+        "Sensitivity, specificity, and predictive value",
+        "Agent, host, and environment",
+        "Cases, controls, and confounders"
+      ],
+      answer: 2
+    },
+    {
+      q: "A case definition is used to:",
+      options: [
+        "Determine a patient's insurance eligibility",
+        "Standardize diagnostic criteria so cases can be validly compared across time, place, and person",
+        "Calculate a country's GDP",
+        "Assign treatment protocols in a hospital"
+      ],
+      answer: 1
+    }
+  ],
+  "disease-frequency": [
+    {
+      q: "Incidence measures:",
+      options: [
+        "The proportion of a population with existing disease at a point in time",
+        "The number of new cases of disease occurring over a specified period",
+        "The total number of deaths in a population",
+        "The accuracy of a diagnostic test"
+      ],
+      answer: 1
+    },
+    {
+      q: "Prevalence is influenced by:",
+      options: [
+        "Only the incidence rate",
+        "Only the duration of disease",
+        "Both incidence and duration of disease",
+        "Neither incidence nor duration of disease"
+      ],
+      answer: 2
+    },
+    {
+      q: "Age-adjusted rates are used to:",
+      options: [
+        "Inflate disease rates for funding purposes",
+        "Remove the effect of differing age distributions when comparing populations",
+        "Calculate the exact number of cases in a population",
+        "Replace the need for incidence data"
+      ],
+      answer: 1
+    }
+  ],
+  "study-designs": [
+    {
+      q: "Which study design randomly assigns participants to intervention or control groups?",
+      options: [
+        "Case-control study",
+        "Cross-sectional study",
+        "Randomized controlled trial",
+        "Ecological study"
+      ],
+      answer: 2
+    },
+    {
+      q: "A case-control study is especially useful for studying:",
+      options: [
+        "Common, chronic diseases only",
+        "Rare diseases, by comparing exposure history between cases and controls",
+        "Population-level trends only",
+        "Only diseases with no known risk factors"
+      ],
+      answer: 1
+    },
+    {
+      q: "The ecological fallacy is a risk in which study design?",
+      options: [
+        "Randomized controlled trial",
+        "Cohort study",
+        "Ecological study",
+        "Case-control study"
+      ],
+      answer: 2
+    }
+  ],
+  "measures-association": [
+    {
+      q: "A relative risk of 3.0 means the exposed group is:",
+      options: [
+        "Three times less likely to develop the outcome",
+        "Three times more likely to develop the outcome than the unexposed group",
+        "Unrelated to the outcome",
+        "30% more likely to develop the outcome"
+      ],
+      answer: 1
+    },
+    {
+      q: "The odds ratio closely approximates the relative risk when:",
+      options: [
+        "The disease is very common",
+        "The disease is rare",
+        "The study is a randomized controlled trial",
+        "Sample size is very small"
+      ],
+      answer: 1
+    },
+    {
+      q: "Number needed to treat is calculated as:",
+      options: [
+        "The inverse of the absolute risk reduction",
+        "The relative risk multiplied by sample size",
+        "The odds ratio divided by two",
+        "The total number of patients enrolled in a trial"
+      ],
+      answer: 0
+    }
+  ],
+  "bias-confounding": [
+    {
+      q: "Confounding occurs when a third variable is:",
+      options: [
+        "Only associated with the outcome, not the exposure",
+        "Associated with both exposure and outcome, and not on the causal pathway between them",
+        "Measured incorrectly by study staff",
+        "Only present in randomized controlled trials"
+      ],
+      answer: 1
+    },
+    {
+      q: "Effect modification differs from confounding because it represents:",
+      options: [
+        "A statistical error to be removed through adjustment",
+        "A genuine difference in effect across subgroups, which should be reported rather than adjusted away",
+        "A type of selection bias",
+        "The same phenomenon under a different name"
+      ],
+      answer: 1
+    },
+    {
+      q: "Recall bias is a particular concern in which study design?",
+      options: [
+        "Randomized controlled trial",
+        "Case-control study",
+        "Cohort study using medical records",
+        "Ecological study"
+      ],
+      answer: 1
+    }
+  ],
+  "screening": [
+    {
+      q: "A highly sensitive test is most useful for:",
+      options: [
+        "Ruling in disease when positive",
+        "Ruling out disease when negative",
+        "Determining disease prevalence",
+        "Replacing the need for confirmatory testing entirely"
+      ],
+      answer: 1
+    },
+    {
+      q: "Positive predictive value is directly influenced by:",
+      options: [
+        "The test's sensitivity only",
+        "The test's specificity only",
+        "The prevalence of disease in the tested population",
+        "The size of the laboratory running the test"
+      ],
+      answer: 2
+    },
+    {
+      q: "Lead-time bias can create the false impression that:",
+      options: [
+        "A test is more specific than it really is",
+        "Screening prolongs survival, when it only detects disease earlier without changing the outcome",
+        "A disease is more prevalent than it is",
+        "A treatment is unsafe"
+      ],
+      answer: 1
+    }
+  ],
+  "outbreak": [
+    {
+      q: "The basic reproduction number (R0) represents:",
+      options: [
+        "The total number of cases in an outbreak",
+        "The average number of secondary infections caused by one infectious person in a fully susceptible population",
+        "The percentage of the population that is vaccinated",
+        "The case fatality rate of a disease"
+      ],
+      answer: 1
+    },
+    {
+      q: "An epidemic curve is used primarily to:",
+      options: [
+        "Track hospital billing during an outbreak",
+        "Show the pattern of new case onsets over time and help infer the mode of transmission",
+        "Calculate a vaccine's effectiveness",
+        "Determine a disease's genetic sequence"
+      ],
+      answer: 1
+    },
+    {
+      q: "Herd immunity reduces disease transmission by:",
+      options: [
+        "Eliminating the pathogen entirely from the environment",
+        "Protecting susceptible individuals indirectly when enough of the population is immune",
+        "Increasing the number of susceptible hosts",
+        "Requiring individual quarantine of every case"
+      ],
+      answer: 1
+    }
+  ],
+
+  // ── ENVIRONMENTAL HEALTH ────────────────────────────────
+
+  "env-foundations": [
+    {
+      q: "A dose-response relationship describes:",
+      options: [
+        "How disease spreads between people",
+        "How the frequency or severity of a health effect changes with exposure level",
+        "The cost of environmental regulation",
+        "The location of an environmental hazard"
+      ],
+      answer: 1
+    },
+    {
+      q: "The precautionary principle suggests that:",
+      options: [
+        "Action should wait until harm is scientifically proven beyond doubt",
+        "Protective measures should be taken even without full scientific certainty of harm",
+        "Environmental regulations should be minimized",
+        "Only proven carcinogens should be regulated"
+      ],
+      answer: 1
+    }
+  ],
+  "toxicology": [
+    {
+      q: "LD50 refers to:",
+      options: [
+        "The dose that cures 50% of exposed individuals",
+        "The dose required to kill 50% of a test population",
+        "The maximum legal dose for humans",
+        "The average daily dose of a common medication"
+      ],
+      answer: 1
+    },
+    {
+      q: "Bioaccumulation occurs when:",
+      options: [
+        "A substance is quickly eliminated from the body",
+        "The rate of intake of a substance exceeds its rate of elimination, causing it to build up in an organism",
+        "A pollutant is broken down in soil",
+        "A chemical evaporates before absorption"
+      ],
+      answer: 1
+    },
+    {
+      q: "An endocrine disruptor works by:",
+      options: [
+        "Directly damaging DNA",
+        "Interfering with the body's hormone signaling",
+        "Blocking oxygen transport in blood",
+        "Increasing bioaccumulation of heavy metals only"
+      ],
+      answer: 1
+    }
+  ],
+  "air-water": [
+    {
+      q: "PM2.5 is concerning to health because it:",
+      options: [
+        "Is too large to be inhaled",
+        "Is small enough to penetrate deep into the lungs and enter the bloodstream",
+        "Only affects outdoor plants",
+        "Is regulated only in industrial zones"
+      ],
+      answer: 1
+    },
+    {
+      q: "The maximum contaminant level in drinking water is:",
+      options: [
+        "The lowest detectable level of any substance",
+        "The highest concentration of a contaminant legally allowed in public drinking water",
+        "A voluntary industry guideline with no legal standing",
+        "Set the same for all contaminants regardless of toxicity"
+      ],
+      answer: 1
+    }
+  ],
+  "env-justice": [
+    {
+      q: "Environmental justice is centrally concerned with:",
+      options: [
+        "Maximizing industrial output regardless of location",
+        "Fair treatment and meaningful involvement of all people in environmental decision-making",
+        "Reducing the cost of environmental cleanup",
+        "Eliminating all industrial facilities nationwide"
+      ],
+      answer: 1
+    },
+    {
+      q: "A 'sacrifice zone' refers to:",
+      options: [
+        "An area protected from all development",
+        "A heavily polluted area, often low-income or minority, that bears disproportionate environmental harm",
+        "A wildlife conservation area",
+        "A region with no industrial activity"
+      ],
+      answer: 1
+    }
+  ],
+  "occ-health": [
+    {
+      q: "In the hierarchy of controls, which is considered most effective?",
+      options: [
+        "Personal protective equipment",
+        "Administrative controls",
+        "Elimination of the hazard",
+        "Engineering controls"
+      ],
+      answer: 2
+    },
+    {
+      q: "OSHA is responsible for:",
+      options: [
+        "Setting drinking water standards",
+        "Setting and enforcing workplace safety and health standards",
+        "Regulating outdoor air quality",
+        "Approving new pharmaceuticals"
+      ],
+      answer: 1
+    }
+  ],
+
+  // ── BIOSTATISTICS ────────────────────────────────────────
+
+  "descriptive-stats": [
+    {
+      q: "Which measure of central tendency is least affected by extreme outliers?",
+      options: [
+        "Mean",
+        "Median",
+        "Standard deviation",
+        "Variance"
+      ],
+      answer: 1
+    },
+    {
+      q: "In a positively skewed distribution, the long tail points toward:",
+      options: [
+        "Lower values",
+        "Higher values",
+        "The mean only",
+        "There is no tail in a skewed distribution"
+      ],
+      answer: 1
+    }
+  ],
+  "probability": [
+    {
+      q: "The central limit theorem states that:",
+      options: [
+        "All populations are normally distributed",
+        "The distribution of sample means approaches normal as sample size increases, regardless of the population's shape",
+        "Sample size does not affect the shape of the sampling distribution",
+        "Probability values must always equal 1"
+      ],
+      answer: 1
+    },
+    {
+      q: "A 95% confidence interval reflects:",
+      options: [
+        "That there is a 95% chance the null hypothesis is true",
+        "A range of values likely to contain the true population parameter with a specified level of confidence",
+        "That 95% of individual data points fall within the range",
+        "The exact value of the population parameter"
+      ],
+      answer: 1
+    },
+    {
+      q: "The Poisson distribution is commonly used to model:",
+      options: [
+        "Continuous, normally distributed lab values",
+        "Rare disease counts occurring at a constant average rate",
+        "Binary treatment outcomes only",
+        "Linear relationships between two variables"
+      ],
+      answer: 1
+    }
+  ],
+  "hypothesis-testing": [
+    {
+      q: "A Type I error occurs when a study:",
+      options: [
+        "Fails to reject a false null hypothesis",
+        "Rejects a true null hypothesis",
+        "Has insufficient statistical power",
+        "Uses too large a sample size"
+      ],
+      answer: 1
+    },
+    {
+      q: "Statistical power is the probability of:",
+      options: [
+        "Committing a Type I error",
+        "Correctly detecting a true effect when one exists",
+        "Obtaining a p-value below 0.05 regardless of truth",
+        "Avoiding all forms of bias"
+      ],
+      answer: 1
+    },
+    {
+      q: "A small p-value suggests:",
+      options: [
+        "The effect size is large and clinically important",
+        "The observed data would be unusual if the null hypothesis were true",
+        "The null hypothesis is definitely false",
+        "The study had high statistical power"
+      ],
+      answer: 1
+    }
+  ],
+  "regression": [
+    {
+      q: "Logistic regression is most appropriate when the outcome variable is:",
+      options: [
+        "Continuous",
+        "Binary",
+        "Time-to-event",
+        "Categorical with more than 5 unordered levels"
+      ],
+      answer: 1
+    },
+    {
+      q: "R-squared represents:",
+      options: [
+        "The strength of a causal relationship",
+        "The proportion of variability in the outcome explained by the predictors",
+        "The p-value of the regression model",
+        "The sample size needed for the study"
+      ],
+      answer: 1
+    }
+  ],
+  "sampling": [
+    {
+      q: "Stratified sampling is used primarily to:",
+      options: [
+        "Save time by sampling only convenient participants",
+        "Ensure adequate representation of important subgroups within a population",
+        "Eliminate the need for random selection",
+        "Increase sampling error"
+      ],
+      answer: 1
+    },
+    {
+      q: "Sampling error differs from bias because it:",
+      options: [
+        "Is a systematic distortion introduced by study design",
+        "Is a random, expected consequence of sampling that tends to decrease with larger sample sizes",
+        "Cannot be reduced by any means",
+        "Only occurs in randomized controlled trials"
+      ],
+      answer: 1
+    }
+  ],
+
+  // ── NEW UNITS (added in redesign pass) ──────────────
+
+  "global-ethics": [
+    {
+      q: "The Belmont Report established which three core principles of research ethics?",
+      options: [
+        "Consent, confidentiality, and compensation",
+        "Respect for persons, beneficence, and justice",
+        "Autonomy, honesty, and transparency",
+        "Safety, efficacy, and equity"
+      ],
+      answer: 1
+    },
+    {
+      q: "\"Parachute research\" is criticized because it:",
+      options: [
+        "Takes too long to complete",
+        "Excludes local researchers and communities and leaves little lasting local benefit",
+        "Only uses randomized controlled trials",
+        "Focuses exclusively on noncommunicable disease"
+      ],
+      answer: 1
+    },
+    {
+      q: "An Institutional Review Board (IRB) exists primarily to:",
+      options: [
+        "Approve research budgets",
+        "Protect the rights, safety, and welfare of human research participants",
+        "Publish research findings",
+        "Recruit study participants"
+      ],
+      answer: 1
+    }
+  ],
+  "epi-chronic": [
+    {
+      q: "Screening for early-stage disease before symptoms appear is an example of:",
+      options: [
+        "Primary prevention",
+        "Secondary prevention",
+        "Tertiary prevention",
+        "Multifactorial etiology"
+      ],
+      answer: 1
+    },
+    {
+      q: "A long latency period between exposure and disease makes it harder to:",
+      options: [
+        "Treat the disease once diagnosed",
+        "Establish a clear causal link between the exposure and the disease",
+        "Vaccinate against the disease",
+        "Calculate the disease's case fatality rate"
+      ],
+      answer: 1
+    },
+    {
+      q: "Most chronic diseases, such as type 2 diabetes, are best described as having:",
+      options: [
+        "A single genetic cause",
+        "Multifactorial etiology involving genetic, environmental, and behavioral factors",
+        "No known risk factors",
+        "Only infectious causes"
+      ],
+      answer: 1
+    }
+  ],
+  "climate-health": [
+    {
+      q: "Climate mitigation differs from climate adaptation because it:",
+      options: [
+        "Responds to climate impacts already occurring",
+        "Aims to reduce or prevent greenhouse gas emissions at the source",
+        "Only applies to coastal cities",
+        "Is unrelated to public health"
+      ],
+      answer: 1
+    },
+    {
+      q: "Urban heat islands are primarily caused by:",
+      options: [
+        "High elevation",
+        "Human infrastructure such as pavement and buildings that absorb and retain heat",
+        "Proximity to the ocean",
+        "Low population density"
+      ],
+      answer: 1
+    },
+    {
+      q: "Climate change is expected to affect vector-borne disease patterns by:",
+      options: [
+        "Eliminating disease vectors entirely",
+        "Shifting the geographic range and seasonality of disease vectors",
+        "Having no measurable effect",
+        "Only affecting waterborne, not vector-borne, disease"
+      ],
+      answer: 1
+    }
+  ],
+  "survival-analysis": [
+    {
+      q: "Censoring in survival analysis refers to:",
+      options: [
+        "Removing outliers from a data set",
+        "Not knowing a subject's exact event time, often because the study ended first",
+        "A type of measurement bias",
+        "A method for randomizing participants"
+      ],
+      answer: 1
+    },
+    {
+      q: "A Kaplan-Meier curve is used to visualize:",
+      options: [
+        "The relationship between two continuous variables",
+        "The estimated probability of survival over time",
+        "The distribution of a categorical variable",
+        "Regression residuals"
+      ],
+      answer: 1
+    },
+    {
+      q: "The Cox proportional hazards model is used to:",
+      options: [
+        "Estimate the effect of predictors on the hazard of an event without assuming a specific shape for the hazard over time",
+        "Calculate a simple correlation coefficient",
+        "Replace the need for a control group",
+        "Measure sensitivity and specificity of a diagnostic test"
+      ],
+      answer: 0
+    }
+  ],
+
+};
+
+</script>
+<script>
+/* ============================================================
+   PubHealthPress — App Logic
+   ============================================================ */
+
+/* ── STATE ─────────────────────────────── */
+let currentCourse     = null;
+let currentUnit       = null;
+let currentUnitFilter = 'all';
+let currentTermIndex  = null;
+let currentTerm       = null;
+let typedSoFar        = '';
+let startTime         = null;
+let timerInterval     = null;
+let totalErrors       = 0;
+let totalKeystrokes   = 0;
+let practiceQueue     = null;   // array of {unit, termIndex} when in shuffle mode
+let practiceQueuePos  = 0;
+let mcqSessionScore   = { correct: 0, answered: 0 };
+
+const LS = { mastery: 'phpress_mastery', last: 'phpress_last', dates: 'phpress_dates' };
+
+const COURSE_ICONS = {
+  global: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/></svg>`,
+  epi: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M7.7 10.7h1.3l1-2.6 1.6 4.2 1-1.6H14"/><path d="M15.3 15.3 21 21"/></svg>`,
+  envhealth: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5S5.5 9 5.5 14a6.5 6.5 0 0 0 13 0C18.5 9 12 2.5 12 2.5z"/></svg>`,
+  biostats: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M4 20h16"/></svg>`
+};
+
+/* ── LOCAL STORAGE HELPERS ─────────────── */
+function loadJSON(key, fallback) {
+  try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; }
+  catch (e) { return fallback; }
+}
+function saveJSON(key, val) {
+  try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+}
+
+function getMastery() { return loadJSON(LS.mastery, {}); }
+function markMastered(unitId, termIndex) {
+  const m = getMastery();
+  if (!m[unitId]) m[unitId] = [];
+  if (!m[unitId].includes(termIndex)) m[unitId].push(termIndex);
+  saveJSON(LS.mastery, m);
+}
+function isMastered(unitId, termIndex) {
+  const m = getMastery();
+  return !!(m[unitId] && m[unitId].includes(termIndex));
+}
+function unitProgress(unit) {
+  const m = getMastery();
+  const mastered = (m[unit.id] || []).filter(i => i < unit.terms.length).length;
+  return { mastered, total: unit.terms.length };
+}
+function courseProgress(course) {
+  let mastered = 0, total = 0;
+  course.units.forEach(u => { const p = unitProgress(u); mastered += p.mastered; total += p.total; });
+  return { mastered, total };
+}
+
+function saveLastPosition(courseId, unitId) { saveJSON(LS.last, { courseId, unitId }); }
+function loadLastPosition() { return loadJSON(LS.last, null); }
+
+function recordPracticeDate() {
+  const today = new Date().toISOString().slice(0, 10);
+  const dates = loadJSON(LS.dates, []);
+  if (dates[dates.length - 1] !== today) {
+    dates.push(today);
+    if (dates.length > 400) dates.shift();
+    saveJSON(LS.dates, dates);
+  }
+}
+function computeStreak() {
+  const dates = loadJSON(LS.dates, []);
+  if (!dates.length) return 0;
+  const set = new Set(dates);
+  let streak = 0;
+  let d = new Date();
+  if (!set.has(d.toISOString().slice(0, 10))) d.setDate(d.getDate() - 1);
+  while (set.has(d.toISOString().slice(0, 10))) {
+    streak++;
+    d.setDate(d.getDate() - 1);
+  }
+  return streak;
+}
+
+/* ── NAVIGATION ────────────────────────── */
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  const el = document.getElementById(id);
+  el.classList.add('active');
+  el.style.animation = 'none';
+  el.offsetHeight;
+  el.style.animation = '';
+}
+
+function goHome() {
+  renderCourseGrid();
+  renderQuickActions();
+  showScreen('screen-home');
+}
+
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/* ── HOME RENDERING ────────────────────── */
+function renderHeroStats() {
+  let totalTerms = 0, totalUnits = 0, totalMCQ = 0;
+  Object.values(COURSES).forEach(c => {
+    totalUnits += c.units.length;
+    c.units.forEach(u => totalTerms += u.terms.length);
+  });
+  Object.values(MCQ).forEach(qs => totalMCQ += qs.length);
+  document.getElementById('hero-stats').innerHTML =
+    `<strong>${totalTerms}</strong> terms <span class="dot">·</span> ` +
+    `<strong>${totalUnits}</strong> units <span class="dot">·</span> ` +
+    `<strong>${Object.keys(COURSES).length}</strong> disciplines <span class="dot">·</span> ` +
+    `<strong>${totalMCQ}</strong> practice questions`;
+}
+
+function renderCourseGrid() {
+  const grid = document.getElementById('course-grid');
+  grid.innerHTML = Object.entries(COURSES).map(([id, course]) => {
+    const p = courseProgress(course);
+    const pct = p.total ? Math.round((p.mastered / p.total) * 100) : 0;
+    return `
+    <div class="course-card" onclick="selectCourse('${id}')">
+      <div class="course-icon">${COURSE_ICONS[id] || ''}</div>
+      <div class="course-name">${course.label}</div>
+      <div class="course-meta">${course.units.length} units · ${p.total} terms</div>
+      <div>
+        <div class="mini-progress"><div class="mini-progress-fill" style="width:${pct}%"></div></div>
+        <div class="mini-progress-label"><span>${p.mastered}</span>/${p.total} mastered</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderQuickActions() {
+  const wrap = document.getElementById('quick-actions');
+  const last = loadLastPosition();
+  let html = '';
+  if (last && COURSES[last.courseId]) {
+    const course = COURSES[last.courseId];
+    const unit = course.units.find(u => u.id === last.unitId);
+    if (unit) {
+      html += `<div class="quick-card quick-card-primary" onclick="resumeLast()">
+        <span class="quick-card-icon">▶</span>
+        <span class="quick-card-text"><span class="quick-card-label">Continue in ${unit.label}</span><span class="quick-card-sub">${course.label}</span></span>
+      </div>`;
+    }
+  }
+  html += `<div class="quick-card quick-card-ghost" onclick="practiceRandomTerm()">
+    <span class="quick-card-icon">🎲</span>
+    <span class="quick-card-text"><span class="quick-card-label">Random Term</span><span class="quick-card-sub">Jump in anywhere</span></span>
+  </div>`;
+  wrap.innerHTML = html;
+}
+
+function resumeLast() {
+  const last = loadLastPosition();
+  if (!last || !COURSES[last.courseId]) return;
+  const unitIndex = COURSES[last.courseId].units.findIndex(u => u.id === last.unitId);
+  if (unitIndex === -1) return;
+  currentCourse = last.courseId;
+  selectUnit(unitIndex);
+}
+
+function practiceRandomTerm() {
+  const all = [];
+  Object.entries(COURSES).forEach(([cid, course]) => {
+    course.units.forEach(u => u.terms.forEach((_, i) => all.push({ courseId: cid, unit: u, termIndex: i })));
+  });
+  if (!all.length) return;
+  const pick = all[Math.floor(Math.random() * all.length)];
+  currentCourse  = pick.courseId;
+  currentUnit    = pick.unit;
+  practiceQueue  = null;
+  startTyping(pick.termIndex);
+}
+
+/* ── COURSE / UNIT SELECTION ───────────── */
+function selectCourse(courseId) {
+  currentCourse = courseId;
+  const course  = COURSES[courseId];
+  document.getElementById('units-heading').textContent = course.label;
+  const p = courseProgress(course);
+  document.getElementById('units-heading-sub').textContent = `${p.mastered}/${p.total} terms mastered`;
+  currentUnitFilter = 'all';
+  renderFilterRow();
+  renderUnits(course);
+  showScreen('screen-units');
+}
+
+function renderFilterRow() {
+  const row = document.getElementById('unit-filter-row');
+  const filters = [
+    { id: 'all',         label: 'All' },
+    { id: 'not-started', label: 'Not Started' },
+    { id: 'in-progress', label: 'In Progress' },
+    { id: 'mastered',    label: 'Mastered' }
+  ];
+  row.innerHTML = filters.map(f =>
+    `<button class="filter-chip ${currentUnitFilter === f.id ? 'active' : ''}" onclick="setUnitFilter('${f.id}')">${f.label}</button>`
+  ).join('');
+}
+function setUnitFilter(id) {
+  currentUnitFilter = id;
+  renderFilterRow();
+  renderUnits(COURSES[currentCourse]);
+}
+function unitMatchesFilter(unit) {
+  const p = unitProgress(unit);
+  if (currentUnitFilter === 'all') return true;
+  if (currentUnitFilter === 'not-started') return p.mastered === 0;
+  if (currentUnitFilter === 'mastered') return p.total > 0 && p.mastered === p.total;
+  if (currentUnitFilter === 'in-progress') return p.mastered > 0 && p.mastered < p.total;
+  return true;
+}
+
+function renderUnits(course) {
+  const list  = document.getElementById('unit-list');
+  const items = course.units.map((u, i) => ({ u, i })).filter(({ u }) => unitMatchesFilter(u));
+
+  if (!items.length) {
+    list.innerHTML = `<div style="padding:2rem;text-align:center;color:var(--muted);font-family:var(--font-mono);font-size:0.8rem;">No units match this filter.</div>`;
+    return;
+  }
+
+  list.innerHTML = items.map(({ u, i }) => {
+    const p   = unitProgress(u);
+    const pct = p.total ? Math.round((p.mastered / p.total) * 100) : 0;
+    return `
+    <div class="unit-item" onclick="selectUnit(${i})">
+      <div class="unit-item-left">
+        <span class="unit-num">0${i + 1}</span>
+        <div class="unit-item-text">
+          <span class="unit-name">${u.label}</span>
+          <div class="mini-progress"><div class="mini-progress-fill" style="width:${pct}%"></div></div>
+        </div>
+      </div>
+      <div class="unit-item-right">
+        <span class="unit-count"><span class="mastered-num">${p.mastered}</span>/${p.total}</span>
+        <span class="unit-arrow">→</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function selectUnit(unitIndex) {
+  currentUnit   = COURSES[currentCourse].units[unitIndex];
+  practiceQueue = null;
+  saveLastPosition(currentCourse, currentUnit.id);
+  document.getElementById('terms-heading').textContent = currentUnit.label;
+  const p = unitProgress(currentUnit);
+  document.getElementById('terms-heading-sub').textContent = `${p.mastered}/${p.total} terms mastered`;
+  document.getElementById('terms-back').onclick = () => selectCourse(currentCourse);
+  renderTerms();
+  showScreen('screen-terms');
+}
+
+function goToTerms() {
+  const p = unitProgress(currentUnit);
+  document.getElementById('terms-heading-sub').textContent = `${p.mastered}/${p.total} terms mastered`;
+  renderTerms();
+  showScreen('screen-terms');
+}
+
+/* ── SHUFFLE PRACTICE ──────────────────── */
+function shuffleUnitPractice() {
+  if (!currentUnit || !currentUnit.terms.length) return;
+  const idxs = shuffleArray(currentUnit.terms.map((_, i) => i));
+  practiceQueue    = idxs.map(i => ({ unit: currentUnit, termIndex: i }));
+  practiceQueuePos = 0;
+  startQueueItem();
+}
+function shuffleCoursePractice() {
+  const course = COURSES[currentCourse];
+  let all = [];
+  course.units.forEach(u => u.terms.forEach((_, i) => all.push({ unit: u, termIndex: i })));
+  if (!all.length) return;
+  practiceQueue    = shuffleArray(all);
+  practiceQueuePos = 0;
+  startQueueItem();
+}
+function startQueueItem() {
+  const item  = practiceQueue[practiceQueuePos];
+  currentUnit = item.unit;
+  startTyping(item.termIndex, true);
+}
+
+/* ── RENDER TERMS ──────────────────────── */
+function renderTerms() {
+  const grid = document.getElementById('terms-grid');
+  if (!currentUnit.terms || currentUnit.terms.length === 0) {
+    grid.innerHTML = `<div style="padding:2.5rem;text-align:center;color:var(--muted);font-family:var(--font-mono);font-size:0.8rem;grid-column:1/-1;">— terms coming soon —</div>`;
+  } else {
+    grid.innerHTML = currentUnit.terms.map((t, i) => {
+      const mastered = isMastered(currentUnit.id, i);
+      return `
+      <div class="term-card ${mastered ? 'mastered' : ''}" onclick="startTyping(${i})">
+        <div class="term-card-top">
+          <div class="term-card-name">${t.term}</div>
+          ${mastered ? '<span class="term-mastered-badge">✓</span>' : ''}
+        </div>
+        <div class="term-card-preview">${t.definition}</div>
+      </div>`;
+    }).join('');
+  }
+  renderSectionNav();
+  renderMCQ();
+}
+
+function renderSectionNav() {
+  const nav = document.getElementById('terms-section-nav');
+  const hasMCQ = MCQ[currentUnit.id] && MCQ[currentUnit.id].length;
+  if (!hasMCQ) { nav.innerHTML = ''; return; }
+  nav.innerHTML = `
+    <a class="section-nav-chip" href="#terms-grid" onclick="event.preventDefault(); document.getElementById('terms-grid').scrollIntoView({behavior:'smooth'});">Definitions</a>
+    <a class="section-nav-chip" href="#mcq-section" onclick="event.preventDefault(); document.getElementById('mcq-section').scrollIntoView({behavior:'smooth'});">Practice Questions</a>
+  `;
+}
+
+/* ── RENDER MCQ ────────────────────────── */
+function renderMCQ() {
+  const section   = document.getElementById('mcq-section');
+  const list      = document.getElementById('mcq-list');
+  const questions = MCQ[currentUnit.id];
+
+  mcqSessionScore = { correct: 0, answered: 0 };
+  updateMCQScore();
+
+  if (!questions || questions.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = 'flex';
+  const letters = ['A', 'B', 'C', 'D'];
+
+  list.innerHTML = questions.map((q, qi) => `
+    <div class="mcq-card" id="mcq-card-${qi}">
+      <div class="mcq-question">${q.q}</div>
+      <div class="mcq-options">
+        ${q.options.map((opt, oi) => `
+          <button class="mcq-option" id="mcq-opt-${qi}-${oi}" onclick="answerMCQ(${qi}, ${oi})">
+            <span class="mcq-option-letter">${letters[oi]}</span>${opt}
+          </button>
+        `).join('')}
+      </div>
+      <div class="mcq-feedback" id="mcq-feedback-${qi}"></div>
+    </div>
+  `).join('');
+}
+
+function updateMCQScore() {
+  const scoreEl = document.getElementById('mcq-score');
+  if (mcqSessionScore.answered === 0) { scoreEl.style.display = 'none'; return; }
+  scoreEl.style.display = 'inline-block';
+  scoreEl.textContent = `${mcqSessionScore.correct}/${mcqSessionScore.answered} correct`;
+}
+
+function answerMCQ(qi, oi) {
+  const questions = MCQ[currentUnit.id];
+  const q         = questions[qi];
+  const opts      = document.querySelectorAll(`#mcq-card-${qi} .mcq-option`);
+  const feedback  = document.getElementById(`mcq-feedback-${qi}`);
+
+  opts.forEach(o => o.classList.add('disabled'));
+  mcqSessionScore.answered++;
+
+  if (oi === q.answer) {
+    opts[oi].classList.add('correct');
+    feedback.textContent  = '✓ Correct!';
+    feedback.className    = 'mcq-feedback correct';
+    mcqSessionScore.correct++;
+    incrementProblemsSolved();
+  } else {
+    opts[oi].classList.add('wrong');
+    opts[q.answer].classList.add('correct');
+    feedback.textContent = `✗ Incorrect — the answer was ${['A','B','C','D'][q.answer]}.`;
+    feedback.className   = 'mcq-feedback wrong';
+  }
+  updateMCQScore();
+}
+
+/* ── TYPING ENGINE ─────────────────────── */
+function startTyping(termIndex, fromQueue) {
+  if (!fromQueue) practiceQueue = null;
+  currentTermIndex = termIndex;
+  currentTerm      = currentUnit.terms[termIndex];
+  resetTypingState();
+
+  const course = COURSES[currentCourse];
+  document.getElementById('typing-breadcrumb').innerHTML =
+    `<span>${course.label}</span> / ${currentUnit.label}`;
+  document.getElementById('term-title').textContent = currentTerm.term;
+
+  renderDefinitionDisplay();
+  showScreen('screen-typing');
+  focusInput();
+
+  const { label, action } = computeNextAction();
+  const nextBtn = document.getElementById('btn-next');
+  nextBtn.textContent = label;
+  nextBtn.onclick     = action;
+}
+
+function computeNextAction() {
+  if (practiceQueue) {
+    if (practiceQueuePos + 1 < practiceQueue.length) {
+      const nextItem = practiceQueue[practiceQueuePos + 1];
+      return {
+        label: `Next: ${nextItem.unit.terms[nextItem.termIndex].term} →`,
+        action: () => { practiceQueuePos++; startQueueItem(); }
+      };
+    }
+    return { label: 'Practice Complete ✓', action: () => { practiceQueue = null; goToTerms(); } };
+  }
+  const nextIndex = currentTermIndex + 1;
+  if (nextIndex < currentUnit.terms.length) {
+    return { label: `Next: ${currentUnit.terms[nextIndex].term} →`, action: () => startTyping(nextIndex) };
+  }
+  return { label: 'Back to Unit', action: goToTerms };
+}
+
+function skipTerm() {
+  clearInterval(timerInterval);
+  const { action } = computeNextAction();
+  action();
+}
+
+function resetTypingState() {
+  typedSoFar      = '';
+  startTime       = null;
+  totalErrors     = 0;
+  totalKeystrokes = 0;
+  clearInterval(timerInterval);
+
+  document.getElementById('progress-fill').style.width = '0%';
+  document.getElementById('stat-accuracy').textContent  = '—';
+  document.getElementById('stat-time').textContent      = '0s';
+  document.getElementById('stat-progress').textContent  = '0%';
+  document.getElementById('hidden-input').value         = '';
+}
+
+function renderDefinitionDisplay() {
+  const def     = currentTerm.definition;
+  const display = document.getElementById('definition-display');
+  display.innerHTML = '';
+
+  for (let i = 0; i < def.length; i++) {
+    const span = document.createElement('span');
+    span.className     = 'def-char';
+    span.dataset.index = i;
+    span.textContent   = def[i];
+    display.appendChild(span);
+  }
+  insertCursor(0);
+}
+
+function insertCursor(position) {
+  const existing = document.querySelector('.def-cursor');
+  if (existing) existing.remove();
+
+  const cursor = document.createElement('span');
+  cursor.className = 'def-cursor';
+
+  const chars = document.querySelectorAll('.def-char');
+  if (position < chars.length) {
+    chars[position].parentNode.insertBefore(cursor, chars[position]);
+  } else if (chars.length > 0) {
+    chars[chars.length - 1].parentNode.appendChild(cursor);
+  }
+}
+
+function focusInput() { document.getElementById('hidden-input').focus(); }
+
+document.getElementById('hidden-input').addEventListener('input', function() {
+  handleTypingInput(this.value);
+});
+document.getElementById('hidden-input').addEventListener('keydown', function(e) {
+  if (e.key === 'Tab') e.preventDefault();
+});
+
+function handleTypingInput(value) {
+  if (!currentTerm) return;
+  const def = currentTerm.definition;
+
+  if (!startTime && value.length > 0) {
+    startTime     = Date.now();
+    timerInterval = setInterval(updateTimer, 100);
+  }
+
+  typedSoFar      = value;
+  totalKeystrokes = Math.max(totalKeystrokes, value.length);
+
+  const chars = document.querySelectorAll('.def-char');
+  let errors  = 0;
+
+  for (let i = 0; i < chars.length; i++) {
+    chars[i].classList.remove('correct', 'wrong');
+    if (i < value.length) {
+      if (value[i] === def[i]) chars[i].classList.add('correct');
+      else { chars[i].classList.add('wrong'); errors++; }
+    }
+  }
+
+  totalErrors = errors;
+  insertCursor(value.length);
+
+  const pct = Math.round((value.length / def.length) * 100);
+  document.getElementById('progress-fill').style.width    = pct + '%';
+  document.getElementById('stat-progress').textContent    = pct + '%';
+
+  if (value.length > 0) {
+    const correct = value.split('').filter((c, i) => c === def[i]).length;
+    document.getElementById('stat-accuracy').textContent = Math.round((correct / value.length) * 100) + '%';
+  }
+
+  if (value.length === def.length && errors === 0) onComplete();
+}
+
+function updateTimer() {
+  if (!startTime) return;
+  document.getElementById('stat-time').textContent =
+    Math.round((Date.now() - startTime) / 1000) + 's';
+}
+
+function onComplete() {
+  clearInterval(timerInterval);
+  const elapsed    = startTime ? Math.round((Date.now() - startTime) / 1000) : 0;
+  const def        = currentTerm.definition;
+  const correct    = typedSoFar.split('').filter((c, i) => c === def[i]).length;
+  const accuracy   = Math.round((correct / def.length) * 100);
+
+  document.getElementById('complete-term-name').textContent  = currentTerm.term;
+  document.getElementById('final-accuracy').textContent      = accuracy + '%';
+  document.getElementById('final-time').textContent          = elapsed + 's';
+  document.getElementById('final-errors').textContent        = totalErrors;
+  document.getElementById('complete-definition').textContent = currentTerm.definition;
+
+  markMastered(currentUnit.id, currentTermIndex);
+  recordPracticeDate();
+  updateStreakDisplay();
+  incrementTermsTyped();
+  setTimeout(() => showScreen('screen-complete'), 200);
+}
+
+function retryTerm() { startTyping(currentTermIndex, !!practiceQueue); }
+
+/* ── COUNTERS (CounterAPI v2 — v1 was deprecated Aug 7, 2026) ──
+   ⚠ Fill in your own workspace + API key below.
+   Sign up: https://counterapi.dev/signup → create a workspace →
+   generate an API key from the dashboard.
+───────────────────────────────────────── */
+const COUNTER_WORKSPACE = 'stemtype';           // ⚠ confirm this matches your CounterAPI workspace slug
+const COUNTER_API_KEY   = 'ut_RFNZYYNGR2LRGLpDngYyTcGNYxmHYdO8Mccn1jKZ';
+const COUNTER_BASE      = `https://api.counterapi.dev/v2/${COUNTER_WORKSPACE}`;
+const COUNTER_HEADERS   = { 'Authorization': `Bearer ${COUNTER_API_KEY}` };
+
+async function fetchCounterValue(url, attempt = 1) {
+  const controller = new AbortController();
+  const timeout    = setTimeout(() => controller.abort(), 4000);
+  try {
+    const res  = await fetch(url, { signal: controller.signal, headers: COUNTER_HEADERS });
+    clearTimeout(timeout);
+    if (!res.ok) throw new Error('bad status ' + res.status);
+    const data = await res.json();
+    return data.data?.up_count - data.data?.down_count || data.value || 0;
+  } catch (e) {
+    clearTimeout(timeout);
+    if (attempt < 4) {
+      await new Promise(r => setTimeout(r, attempt * 900)); // 900ms, 1800ms, 2700ms backoff
+      return fetchCounterValue(url, attempt + 1);
+    }
+    throw e;
+  }
+}
+
+async function incrementTermsTyped() {
+  try {
+    await fetch(`${COUNTER_BASE}/terms/up`, { headers: COUNTER_HEADERS });
+    loadTermsCount();
+  } catch(e) {}
+}
+async function loadTermsCount() {
+  try {
+    const val = await fetchCounterValue(`${COUNTER_BASE}/terms`);
+    document.getElementById('count-terms').textContent = Number(val).toLocaleString();
+  } catch(e) { document.getElementById('count-terms').textContent = '—'; }
+}
+
+async function incrementProblemsSolved() {
+  try {
+    await fetch(`${COUNTER_BASE}/problems/up`, { headers: COUNTER_HEADERS });
+    loadProblemsCount();
+  } catch(e) {}
+}
+async function loadProblemsCount() {
+  try {
+    const val = await fetchCounterValue(`${COUNTER_BASE}/problems`);
+    document.getElementById('count-problems').textContent = Number(val).toLocaleString();
+  } catch(e) { document.getElementById('count-problems').textContent = '—'; }
+}
+
+function updateStreakDisplay() {
+  document.getElementById('count-streak').textContent = computeStreak();
+}
+
+/* ── INIT ──────────────────────────────── */
+function init() {
+  renderHeroStats();
+  renderCourseGrid();
+  renderQuickActions();
+  updateStreakDisplay();
+  loadTermsCount();
+  loadProblemsCount();
+}
+
+init();
+</script>
+</body>
+</html>
